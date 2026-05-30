@@ -1,15 +1,6 @@
 /**
  * @file src/index.ts
- * @description CLI entry point for the BPHS-Bench evaluation framework.
- *
- * Runs the full benchmark suite and renders a formatted Markdown table
- * directly to the terminal, followed by an aggregate summary block.
- *
- * Usage:
- *   npm run bench
- *
- * To integrate a real AI agent, replace the `agent` parameter in `runBenchmark`
- * with your own `AgentCallable` implementation.
+ * @description CLI entry point for the Astro-Bench evaluation framework.
  */
 
 import { runBenchmark } from "./core/harness.js";
@@ -18,7 +9,7 @@ import type { BenchmarkSummary, EvaluationResult } from "./types/index.js";
 import type { BenchmarkDefinition } from "./benchmarks/index.js";
 
 // ---------------------------------------------------------------------------
-// ANSI Colour Helpers (no external dependencies)
+// ANSI Colour Helpers
 // ---------------------------------------------------------------------------
 
 const ANSI = {
@@ -36,77 +27,58 @@ const ANSI = {
   bgRed: "\x1b[41m",
 } as const;
 
-function bold(s: string): string {
-  return `${ANSI.bold}${s}${ANSI.reset}`;
-}
-function cyan(s: string): string {
-  return `${ANSI.cyan}${s}${ANSI.reset}`;
-}
-function green(s: string): string {
-  return `${ANSI.green}${s}${ANSI.reset}`;
-}
-function red(s: string): string {
-  return `${ANSI.red}${s}${ANSI.reset}`;
-}
-function yellow(s: string): string {
-  return `${ANSI.yellow}${s}${ANSI.reset}`;
-}
-function magenta(s: string): string {
-  return `${ANSI.magenta}${s}${ANSI.reset}`;
-}
-function dim(s: string): string {
-  return `${ANSI.dim}${s}${ANSI.reset}`;
-}
+function bold(s: string): string { return `${ANSI.bold}${s}${ANSI.reset}`; }
+function cyan(s: string): string { return `${ANSI.cyan}${s}${ANSI.reset}`; }
+function green(s: string): string { return `${ANSI.green}${s}${ANSI.reset}`; }
+function red(s: string): string { return `${ANSI.red}${s}${ANSI.reset}`; }
+function yellow(s: string): string { return `${ANSI.yellow}${s}${ANSI.reset}`; }
+function magenta(s: string): string { return `${ANSI.magenta}${s}${ANSI.reset}`; }
+function dim(s: string): string { return `${ANSI.dim}${s}${ANSI.reset}`; }
 
 // ---------------------------------------------------------------------------
 // Table Renderer
 // ---------------------------------------------------------------------------
 
-/** Column widths (characters) for the results table. */
 const COL = {
-  id: 15,
+  id: 10,
+  source: 14,
   tier: 10,
-  topic: 40,
-  gold: 14,
-  ai: 10,
-  delta: 7,
+  topic: 35,
+  gold: 7,
+  ai: 6,
+  pts: 6,
   result: 12,
   time: 10,
 } as const;
 
-/** Pads a string to a fixed width, truncating with "…" if needed. */
 function pad(value: string, width: number): string {
-  if (value.length > width) {
-    return value.slice(0, width - 1) + "…";
-  }
+  if (value.length > width) return value.slice(0, width - 1) + "…";
   return value.padEnd(width);
 }
 
-/** Renders the Markdown-compatible table header. */
 function renderTableHeader(): string {
-  const h = (label: string, width: number): string =>
-    pad(label, width);
+  const h = (label: string, width: number): string => pad(label, width);
 
   const header = [
-    h("Test Case ID", COL.id),
+    h("ID", COL.id),
+    h("Source", COL.source),
     h("Difficulty", COL.tier),
     h("Topic", COL.topic),
-    h("Target Score", COL.gold),
-    h("AI Score", COL.ai),
-    h("Δ", COL.delta),
+    h("Gold", COL.gold),
+    h("AI", COL.ai),
+    h("Pts", COL.pts),
     h("Result", COL.result),
-    h("Time (ms)", COL.time),
-  ]
-    .map((col) => bold(cyan(col)))
-    .join(" │ ");
+    h("Time", COL.time),
+  ].map((col) => bold(cyan(col))).join(" │ ");
 
   const separator = [
     "─".repeat(COL.id),
+    "─".repeat(COL.source),
     "─".repeat(COL.tier),
     "─".repeat(COL.topic),
     "─".repeat(COL.gold),
     "─".repeat(COL.ai),
-    "─".repeat(COL.delta),
+    "─".repeat(COL.pts),
     "─".repeat(COL.result),
     "─".repeat(COL.time),
   ].join("─┼─");
@@ -114,23 +86,17 @@ function renderTableHeader(): string {
   return `${header}\n${dim(separator)}`;
 }
 
-/** Renders a single result row with ANSI colouring. */
 function renderResultRow(result: EvaluationResult): string {
   const passLabel = result.passed
     ? green("✔ PASS")
+    : result.points === 0.5
+    ? yellow("⚠ NEAR")
     : result.parsedScore === null
     ? yellow("✘ PARSE ERR")
     : red("✘ FAIL");
 
-  const aiScore =
-    result.parsedScore !== null ? String(result.parsedScore) : red("—");
-
-  const delta =
-    result.delta !== null
-      ? result.delta === 0
-        ? green("0")
-        : red(`+${result.delta}`)
-      : dim("—");
+  const aiScore = result.parsedScore !== null ? String(result.parsedScore) : red("—");
+  const points = result.points === 1.0 ? green("1.0") : result.points === 0.5 ? yellow("0.5") : red("0.0");
 
   const tierColour: Record<string, (s: string) => string> = {
     EASY: green,
@@ -142,11 +108,12 @@ function renderResultRow(result: EvaluationResult): string {
 
   return [
     pad(result.testCaseId, COL.id),
-    pad(tierFn(result.tier), COL.tier + 10), // +10 for ANSI escape overhead
+    pad(result.source, COL.source),
+    pad(tierFn(result.tier), COL.tier + 10),
     pad(result.topic, COL.topic),
     pad(String(result.goldScore), COL.gold),
     pad(aiScore, COL.ai + (result.parsedScore === null ? 10 : 0)),
-    pad(delta, COL.delta + 10),
+    pad(points, COL.pts + 10),
     pad(passLabel, COL.result + 10),
     pad(`${result.executionTimeMs}ms`, COL.time),
   ].join(" │ ");
@@ -156,49 +123,62 @@ function renderResultRow(result: EvaluationResult): string {
 // Summary Block Renderer
 // ---------------------------------------------------------------------------
 
-/** Returns a coloured grade label based on the final score percentage. */
 function gradeLabel(score: number): string {
   if (score >= 90) return green("🏆  EXCELLENT");
-  if (score >= 70) return cyan("✔   GOOD");
-  if (score >= 50) return yellow("⚠   MODERATE");
+  if (score >= 75) return cyan("✔   GOOD");
+  if (score >= 55) return yellow("⚠   MODERATE");
   return red("✘   NEEDS WORK");
 }
 
-/** Renders the aggregate summary block beneath the results table. */
 function renderSummary(summary: BenchmarkSummary, bench: BenchmarkDefinition): string {
-  const score = summary.finalScorePercent.toFixed(1);
-  const grade = gradeLabel(summary.finalScorePercent);
+  const weighted = summary.weightedScorePercent.toFixed(1);
+  const exact = summary.finalScorePercent.toFixed(1);
+  const grade = gradeLabel(summary.weightedScorePercent);
 
   const tierBreakdown = ["EASY", "MEDIUM", "HARD", "VERY_HARD"]
     .map((tier) => {
       const tierResults = summary.results.filter((r) => r.tier === tier);
       if (tierResults.length === 0) return null;
-      const passed = tierResults.filter((r) => r.passed).length;
-      return `  ${pad(tier, 10)} ${green(String(passed))}/${tierResults.length}`;
+      const pts = tierResults.reduce((sum, r) => sum + r.points, 0);
+      return `  ${pad(tier, 10)} ${green(pts.toFixed(1))}/${tierResults.length}`;
+    })
+    .filter(Boolean)
+    .join("\n");
+
+  const sourceBreakdown = ["BPHS", "Phaladeepika", "Saravali"]
+    .map((source) => {
+      const srcResults = summary.results.filter((r) => r.source === source);
+      if (srcResults.length === 0) return null;
+      const pts = srcResults.reduce((sum, r) => sum + r.points, 0);
+      const score = (pts / srcResults.length) * 100;
+      return `  ${pad(source, 15)} ${bold(score.toFixed(1))}% (${pts.toFixed(1)}/${srcResults.length})`;
     })
     .filter(Boolean)
     .join("\n");
 
   return [
     "",
-    dim("─".repeat(115)),
+    dim("─".repeat(120)),
     "",
     bold(`  ${bench.name.toUpperCase()} SUMMARY`),
     "",
-    `  ${bold("Final Score:")}          ${bold(cyan(`${score}%`))}  ${grade}`,
-    `  ${bold("Exact Matches:")}        ${green(String(summary.exactMatches))} / ${summary.totalCases}`,
+    `  ${bold("Weighted Score:")}       ${bold(cyan(`${weighted}%`))}  ${grade}`,
+    `  ${bold("Exact Matches:")}        ${summary.exactMatches} / ${summary.totalCases} (${exact}%)`,
+    `  ${bold("Total Points:")}         ${summary.totalPoints.toFixed(1)} / ${summary.totalCases}`,
     `  ${bold("Failures:")}             ${summary.failures > 0 ? red(String(summary.failures)) : green("0")}`,
-    `  ${bold("Parse Errors:")}         ${summary.parseErrors > 0 ? yellow(String(summary.parseErrors)) : green("0")}`,
     `  ${bold("Mean Abs. Delta:")}      ${summary.meanAbsoluteDelta.toFixed(2)}`,
     `  ${bold("Total Runtime:")}        ${summary.totalExecutionTimeMs}ms`,
     "",
-    bold("  BY TIER"),
+    bold("  BY SOURCE"),
+    sourceBreakdown || "  (Single Source Run)",
+    "",
+    bold("  BY TIER (Points)"),
     tierBreakdown,
     "",
     dim(`  Run started:   ${summary.startedAt}`),
     dim(`  Run completed: ${summary.completedAt}`),
     "",
-    dim("─".repeat(115)),
+    dim("─".repeat(120)),
     "",
   ].join("\n");
 }
@@ -208,28 +188,12 @@ function renderSummary(summary: BenchmarkSummary, bench: BenchmarkDefinition): s
 // ---------------------------------------------------------------------------
 
 function renderBanner(bench: BenchmarkDefinition): void {
-  const padding = " ".repeat(Math.max(0, (48 - bench.name.length - 8) / 2));
-  const paddingDesc = " ".repeat(Math.max(0, (48 - bench.description.length) / 2));
-
+  const line = "═".repeat(50);
   process.stdout.write("\n");
-  process.stdout.write(
-    bold(cyan("  ╔══════════════════════════════════════════════════╗\n"))
-  );
-  process.stdout.write(
-    bold(cyan(`  ║  ${padding}${bench.name}  v1.0.0${padding}  ║\n`))
-  );
-  process.stdout.write(
-    bold(cyan(`  ║  ${paddingDesc}${bench.description}${paddingDesc}  ║\n`))
-  );
-  process.stdout.write(
-    bold(cyan("  ╚══════════════════════════════════════════════════╝\n"))
-  );
-  process.stdout.write("\n");
-  process.stdout.write(
-    dim(
-      `  Evaluating ${bench.dataset.length} test cases across EASY → MEDIUM → HARD → VERY_HARD tiers…\n`
-    )
-  );
+  process.stdout.write(bold(cyan(`  ╔${line}╗\n`)));
+  process.stdout.write(bold(cyan(`  ║${pad(" " + bench.name + " v1.1.0", 50)}║\n`)));
+  process.stdout.write(bold(cyan(`  ║${pad(" " + bench.description, 50)}║\n`)));
+  process.stdout.write(bold(cyan(`  ╚${line}╝\n`)));
   process.stdout.write("\n");
 }
 
@@ -238,7 +202,7 @@ function renderBanner(bench: BenchmarkDefinition): void {
 // ---------------------------------------------------------------------------
 
 async function main(): Promise<void> {
-  const benchId = process.argv[2] || "bphs";
+  const benchId = process.argv[2] || "combined";
   const bench = getBenchmark(benchId);
 
   if (!bench) {
@@ -249,31 +213,16 @@ async function main(): Promise<void> {
 
   renderBanner(bench);
 
-  // --- Run the benchmark suite ---
-  // Pass a custom `AgentCallable` here to benchmark a real AI agent:
-  //
-  //   const summary = await runBenchmark(bench.dataset, async (payload) => {
-  //     const res = await myClient.generate({
-  //       systemPrompt: JSON.stringify(payload.context),
-  //       userPrompt: payload.prompt,
-  //     });
-  //     return res.text;
-  //   });
-  //
   const summary = await runBenchmark(bench.dataset);
 
-  // --- Render the results table ---
   process.stdout.write(renderTableHeader() + "\n");
-
   for (const result of summary.results) {
     process.stdout.write(renderResultRow(result) + "\n");
   }
 
-  // --- Render the aggregate summary ---
   process.stdout.write(renderSummary(summary, bench));
 
-  // Exit with non-zero code if any cases failed (useful for CI pipelines).
-  if (summary.failures > 0 || summary.parseErrors > 0) {
+  if (summary.weightedScorePercent < 50) {
     process.exit(1);
   }
 }

@@ -1,5 +1,6 @@
 import { BPHS_BENCH_DATASET } from "./bphs/dataset.js";
 import { SARAVALI_BENCH_DATASET } from "./saravali/dataset.js";
+import { PHALADEEPIKA_BENCH_DATASET } from "./phaladeepika/dataset.js";
 import type { TestCase } from "../types/index.js";
 
 export interface BenchmarkDefinition {
@@ -17,10 +18,26 @@ export const BENCHMARKS: BenchmarkDefinition[] = [
     dataset: BPHS_BENCH_DATASET,
   },
   {
+    id: "phaladeepika",
+    name: "Phaladeepika-Bench",
+    description: "Mantreswara's Phaladeepika Evaluation Suite",
+    dataset: PHALADEEPIKA_BENCH_DATASET,
+  },
+  {
     id: "saravali",
     name: "Saravali-Bench",
     description: "Kalyana Varma's Saravali Evaluation Suite",
     dataset: SARAVALI_BENCH_DATASET,
+  },
+  {
+    id: "combined",
+    name: "Unified Vedic-Bench",
+    description: "Cross-source evaluation (BPHS + Phaladeepika + Saravali)",
+    dataset: [
+      ...BPHS_BENCH_DATASET,
+      ...PHALADEEPIKA_BENCH_DATASET,
+      ...SARAVALI_BENCH_DATASET,
+    ],
   },
 ];
 
