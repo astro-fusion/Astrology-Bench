@@ -4,13 +4,15 @@ A deterministic testing and evaluation framework for benchmarking AI-driven Vedi
 
 ## Overview
 
-Astro-Bench is designed to evaluate how accurately AI models interpret astrological configurations according to various classical texts. It supports multiple benchmark suites, each derived from a specific source of truth.
+Astro-Bench is designed to evaluate how accurately AI models interpret astrological configurations according to various classical texts. It supports multiple benchmark suites, each derived from a specific source of truth, and a synthesis module to test cross-paradigm logic.
 
 Currently supported benchmarks:
 - **BPHS-Bench**: Foundational Parashari system (10 cases).
-- **Phaladeepika-Bench**: Ashtakavarga and Predictive nuances (10 cases).
+- **Phaladeepika-Bench**: Mantreswara's specialized exceptions & transits (10 cases).
 - **Saravali-Bench**: Conjunctions and nuanced Yogas (10 cases).
-- **Unified Vedic-Bench**: A combined 30-case evaluation across all sources.
+- **Jaimini-Bench**: Chara Karaka and Rasi Drishti principles.
+- **Synthesis-Bench**: Resolving dialectical contradictions between systems.
+- **Astro-Bench Suite**: A unified 32-case evaluation across all classical modules.
 
 ## Architecture
 
@@ -23,12 +25,12 @@ The framework operates as a **"Black Box" numerical evaluator**:
 5. **Score**: Points are awarded based on proximity to the gold standard:
    - **1.0 pt**: Exact Match
    - **0.5 pt**: Near Match (±1 delta)
-   - **0.0 pt**: Fail
+   - **0.0 pt**: Fail or Parse Error
 6. **Report**: Comprehensive metrics including **Weighted Scores**, **Source Breakdowns**, and **Tier Analysis**.
 
 ## Usage
 
-### Run All Benchmarks (Combined)
+### Run All Benchmarks (Suite)
 ```bash
 npm run bench
 ```
@@ -38,6 +40,8 @@ npm run bench
 npm run bench bphs
 npm run bench phaladeepika
 npm run bench saravali
+npm run bench jaimini
+npm run bench synthesis
 ```
 
 ## Data Schema (TestCase)
@@ -46,8 +50,8 @@ Every evaluation unit follows a strict schema to ensure scientific rigor:
 
 | Field | Type | Description |
 |-------|------|-------------|
-| `id` | `string` | Unique identifier (e.g., `BPHS-01`) |
-| `source` | `string` | The classical text source |
+| `id` | `string` | Unique identifier (e.g., `PHD-01`) |
+| `source` | `Source` | The classical text source (BPHS, Phaladeepika, etc.) |
 | `tier` | `Tier` | Difficulty (EASY, MEDIUM, HARD, VERY_HARD) |
 | `logic` | `string` | The rule chain justifying the gold score |
 | `reference` | `object` | Book, Chapter, and Verse citations |
