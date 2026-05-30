@@ -1,0 +1,30 @@
+{
+  "name": "bphs-bench",
+  "version": "1.0.0",
+  "description": "Deterministic evaluation framework for AI-driven Vedic Astrology applications against BPHS text-based rules.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "bench": "tsx src/index.ts",
+    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "vedic-astrology",
+    "bphs",
+    "benchmark",
+    "evaluation",
+    "ai",
+    "astrology"
+  ],
+  "author": "AstroFusion",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
