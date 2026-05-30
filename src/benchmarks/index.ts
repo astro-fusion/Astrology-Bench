@@ -1,4 +1,5 @@
 import { BPHS_BENCH_DATASET } from "./bphs/dataset.js";
+import { SARAVALI_BENCH_DATASET } from "./saravali/dataset.js";
 import type { TestCase } from "../types/index.js";
 
 export interface BenchmarkDefinition {
@@ -14,6 +15,12 @@ export const BENCHMARKS: BenchmarkDefinition[] = [
     name: "BPHS-Bench",
     description: "Brihat Parashara Hora Shastra Evaluation Suite",
     dataset: BPHS_BENCH_DATASET,
+  },
+  {
+    id: "saravali",
+    name: "Saravali-Bench",
+    description: "Kalyana Varma's Saravali Evaluation Suite",
+    dataset: SARAVALI_BENCH_DATASET,
   },
 ];
 
