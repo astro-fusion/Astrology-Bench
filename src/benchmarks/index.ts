@@ -1,6 +1,8 @@
 import { BPHS_BENCH_DATASET } from "./bphs/dataset.js";
 import { SARAVALI_BENCH_DATASET } from "./saravali/dataset.js";
 import { PHALADEEPIKA_BENCH_DATASET } from "./phaladeepika/dataset.js";
+import { JAIMINI_BENCH_DATASET } from "./jaimini/dataset.js";
+import { SYNTHESIS_BENCH_DATASET } from "./synthesis/dataset.js";
 import type { TestCase } from "../types/index.js";
 
 export interface BenchmarkDefinition {
@@ -30,13 +32,27 @@ export const BENCHMARKS: BenchmarkDefinition[] = [
     dataset: SARAVALI_BENCH_DATASET,
   },
   {
+    id: "jaimini",
+    name: "Jaimini-Bench",
+    description: "Jaimini Sutras Evaluation Suite",
+    dataset: JAIMINI_BENCH_DATASET,
+  },
+  {
+    id: "synthesis",
+    name: "Synthesis-Bench",
+    description: "Cross-paradigm Synthesis Evaluation (BPHS vs Jaimini)",
+    dataset: SYNTHESIS_BENCH_DATASET,
+  },
+  {
     id: "combined",
-    name: "Unified Vedic-Bench",
-    description: "Cross-source evaluation (BPHS + Phaladeepika + Saravali)",
+    name: "Astro-Bench Suite",
+    description: "Unified evaluation across all classical modules",
     dataset: [
       ...BPHS_BENCH_DATASET,
       ...PHALADEEPIKA_BENCH_DATASET,
       ...SARAVALI_BENCH_DATASET,
+      ...JAIMINI_BENCH_DATASET,
+      ...SYNTHESIS_BENCH_DATASET,
     ],
   },
 ];

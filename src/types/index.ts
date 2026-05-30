@@ -8,7 +8,7 @@
 // ---------------------------------------------------------------------------
 
 /** Supported classical source texts. */
-export type Source = "BPHS" | "Phaladeepika" | "Saravali";
+export type Source = "BPHS" | "Phaladeepika" | "Saravali" | "Jaimini" | "Synthesis";
 
 // ---------------------------------------------------------------------------
 // Tier Difficulty
