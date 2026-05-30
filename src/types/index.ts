@@ -126,11 +126,11 @@ export interface ChartState {
 // ---------------------------------------------------------------------------
 
 /**
- * A single BPHS-Bench test case representing one benchmark evaluation unit.
+ * A single benchmark test case representing one evaluation unit.
  *
  * Combines the astrological context (`chartState`), the natural-language
  * prompt presented to the AI agent, and the immutable gold standard score
- * derived from BPHS rules.
+ * derived from classical rules.
  */
 export interface TestCase {
   /**
@@ -152,10 +152,27 @@ export interface TestCase {
   prompt: string;
 
   /**
-   * The immutable gold-standard expected score (1–5) derived from BPHS rules.
-   * This value must never be mutated during benchmark execution.
+   * The immutable gold-standard expected score (1–5).
    */
   readonly goldScore: 1 | 2 | 3 | 4 | 5;
+
+  /**
+   * The interpretive logic or rule chain that justifies the goldScore.
+   * Based on the source text specified in `reference`.
+   */
+  logic: string;
+
+  /**
+   * Precise citation for the interpretive rule.
+   */
+  reference: {
+    book: string;
+    chapter?: string;
+    verse?: string;
+  };
+
+  /** Optional tags for filtering (e.g., "wealth", "marriage", "yogas"). */
+  tags?: string[];
 
   /** The pre-calculated planetary state injected into the agent context. */
   chartState: ChartState;
