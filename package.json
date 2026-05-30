@@ -1,7 +1,7 @@
 {
-  "name": "bphs-bench",
+  "name": "astro-bench",
   "version": "1.0.0",
-  "description": "Deterministic evaluation framework for AI-driven Vedic Astrology applications against BPHS text-based rules.",
+  "description": "Deterministic evaluation framework for AI-driven Vedic Astrology applications against classical texts.",
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
@@ -11,11 +11,12 @@
   },
   "keywords": [
     "vedic-astrology",
-    "bphs",
+    "astrology",
     "benchmark",
     "evaluation",
     "ai",
-    "astrology"
+    "bphs",
+    "phaladeepika"
   ],
   "author": "AstroFusion",
   "license": "MIT",

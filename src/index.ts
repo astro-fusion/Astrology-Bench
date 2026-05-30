@@ -13,7 +13,9 @@
  */
 
 import { runBenchmark } from "./core/harness.js";
+import { BENCHMARKS, getBenchmark } from "./benchmarks/index.js";
 import type { BenchmarkSummary, EvaluationResult } from "./types/index.js";
+import type { BenchmarkDefinition } from "./benchmarks/index.js";
 
 // ---------------------------------------------------------------------------
 // ANSI Colour Helpers (no external dependencies)
@@ -163,7 +165,7 @@ function gradeLabel(score: number): string {
 }
 
 /** Renders the aggregate summary block beneath the results table. */
-function renderSummary(summary: BenchmarkSummary): string {
+function renderSummary(summary: BenchmarkSummary, bench: BenchmarkDefinition): string {
   const score = summary.finalScorePercent.toFixed(1);
   const grade = gradeLabel(summary.finalScorePercent);
 
@@ -181,7 +183,7 @@ function renderSummary(summary: BenchmarkSummary): string {
     "",
     dim("─".repeat(115)),
     "",
-    bold("  BPHS-BENCH SUMMARY"),
+    bold(`  ${bench.name.toUpperCase()} SUMMARY`),
     "",
     `  ${bold("Final Score:")}          ${bold(cyan(`${score}%`))}  ${grade}`,
     `  ${bold("Exact Matches:")}        ${green(String(summary.exactMatches))} / ${summary.totalCases}`,
@@ -205,16 +207,19 @@ function renderSummary(summary: BenchmarkSummary): string {
 // CLI Banner
 // ---------------------------------------------------------------------------
 
-function renderBanner(): void {
+function renderBanner(bench: BenchmarkDefinition): void {
+  const padding = " ".repeat(Math.max(0, (48 - bench.name.length - 8) / 2));
+  const paddingDesc = " ".repeat(Math.max(0, (48 - bench.description.length) / 2));
+
   process.stdout.write("\n");
   process.stdout.write(
     bold(cyan("  ╔══════════════════════════════════════════════════╗\n"))
   );
   process.stdout.write(
-    bold(cyan("  ║          BPHS-BENCH  v1.0.0                      ║\n"))
+    bold(cyan(`  ║  ${padding}${bench.name}  v1.0.0${padding}  ║\n`))
   );
   process.stdout.write(
-    bold(cyan("  ║  Brihat Parashara Hora Shastra Evaluation Suite   ║\n"))
+    bold(cyan(`  ║  ${paddingDesc}${bench.description}${paddingDesc}  ║\n`))
   );
   process.stdout.write(
     bold(cyan("  ╚══════════════════════════════════════════════════╝\n"))
@@ -222,7 +227,7 @@ function renderBanner(): void {
   process.stdout.write("\n");
   process.stdout.write(
     dim(
-      "  Evaluating 10 test cases across EASY → MEDIUM → HARD → VERY_HARD tiers…\n"
+      `  Evaluating ${bench.dataset.length} test cases across EASY → MEDIUM → HARD → VERY_HARD tiers…\n`
     )
   );
   process.stdout.write("\n");
@@ -233,12 +238,21 @@ function renderBanner(): void {
 // ---------------------------------------------------------------------------
 
 async function main(): Promise<void> {
-  renderBanner();
+  const benchId = process.argv[2] || "bphs";
+  const bench = getBenchmark(benchId);
+
+  if (!bench) {
+    process.stderr.write(`\n${red("[ERROR]")} Unknown benchmark: ${benchId}\n`);
+    process.stderr.write(`Available benchmarks: ${BENCHMARKS.map((b) => b.id).join(", ")}\n`);
+    process.exit(1);
+  }
+
+  renderBanner(bench);
 
   // --- Run the benchmark suite ---
   // Pass a custom `AgentCallable` here to benchmark a real AI agent:
   //
-  //   const summary = await runBenchmark(async (payload) => {
+  //   const summary = await runBenchmark(bench.dataset, async (payload) => {
   //     const res = await myClient.generate({
   //       systemPrompt: JSON.stringify(payload.context),
   //       userPrompt: payload.prompt,
@@ -246,7 +260,7 @@ async function main(): Promise<void> {
   //     return res.text;
   //   });
   //
-  const summary = await runBenchmark();
+  const summary = await runBenchmark(bench.dataset);
 
   // --- Render the results table ---
   process.stdout.write(renderTableHeader() + "\n");
@@ -256,7 +270,7 @@ async function main(): Promise<void> {
   }
 
   // --- Render the aggregate summary ---
-  process.stdout.write(renderSummary(summary));
+  process.stdout.write(renderSummary(summary, bench));
 
   // Exit with non-zero code if any cases failed (useful for CI pipelines).
   if (summary.failures > 0 || summary.parseErrors > 0) {

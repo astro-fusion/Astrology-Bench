@@ -17,7 +17,6 @@
  *   Final Bench Score % = (Exact Matches / Total Test Cases Run) × 100
  */
 
-import { BPHS_BENCH_DATASET } from "../data/dataset.js";
 import { tryParseAgentScore } from "./parser.js";
 import type {
   AgentPayload,
@@ -217,27 +216,29 @@ function computeSummary(
 // ---------------------------------------------------------------------------
 
 /**
- * Runs the full BPHS-Bench evaluation suite.
+ * Runs a benchmark evaluation suite.
  *
- * Iterates through every test case in `BPHS_BENCH_DATASET`, evaluates each
+ * Iterates through every test case in the provided dataset, evaluates each
  * against the provided agent (defaults to `mockAgentCall`), and returns
  * a complete `BenchmarkSummary`.
  *
+ * @param dataset - The array of test cases to evaluate.
  * @param agent - Optional agent callable. Defaults to `mockAgentCall`.
  *                Swap this for your real AI agent in production use.
  * @returns A fully populated `BenchmarkSummary` with all results.
  *
  * @example
  * // Run with mock agent (default):
- * const summary = await runBenchmark();
+ * const summary = await runBenchmark(myDataset);
  *
  * // Run with a real agent:
- * const summary = await runBenchmark(async (payload) => {
+ * const summary = await runBenchmark(myDataset, async (payload) => {
  *   const response = await myAIClient.generate(payload);
  *   return response.text;
  * });
  */
 export async function runBenchmark(
+  dataset: ReadonlyArray<TestCase>,
   agent: AgentCallable = mockAgentCall
 ): Promise<BenchmarkSummary> {
   const startedAt = new Date().toISOString();
@@ -246,7 +247,7 @@ export async function runBenchmark(
   // Evaluate all test cases sequentially to avoid rate-limiting issues with
   // real agents. Switch to Promise.all for parallel execution if needed.
   const results: EvaluationResult[] = [];
-  for (const testCase of BPHS_BENCH_DATASET) {
+  for (const testCase of dataset) {
     const result = await evaluateTestCase(testCase, agent);
     results.push(result);
   }

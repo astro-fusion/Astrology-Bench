@@ -1,6 +1,13 @@
-# BPHS-Bench
+# Astro-Bench
 
-A deterministic testing and evaluation framework for benchmarking AI-driven Vedic Astrology applications against the strict text-based rules of **Brihat Parashara Hora Shastra (BPHS)**.
+A deterministic testing and evaluation framework for benchmarking AI-driven Vedic Astrology applications against strict text-based rules from classical sources of truth.
+
+## Overview
+
+Astro-Bench is designed to evaluate how accurately AI models interpret astrological configurations according to various classical texts. It supports multiple benchmark suites, each derived from a specific source of truth.
+
+Currently supported benchmarks:
+- **BPHS-Bench**: Based on *Brihat Parashara Hora Shastra*.
 
 ## Architecture
 
@@ -13,53 +20,58 @@ The framework operates as a **"Black Box" numerical evaluator**:
 5. **Report** a formatted markdown table with pass/fail results.
 
 ```
-bphs-bench/
-├── package.json
-├── tsconfig.json
-├── README.md
-└── src/
-    ├── types/
-    │   └── index.ts          # ChartState, TestCase, EvaluationResult interfaces
-    ├── data/
-    │   └── dataset.ts        # 10 golden test cases (Easy → Very Hard)
-    ├── core/
-    │   ├── harness.ts        # Core execution engine & scoring matrix
-    │   └── parser.ts         # Fail-safe 1-5 integer extractor
-    └── index.ts              # CLI entry point
+astro-bench/
+├── src/
+│   ├── benchmarks/           # Benchmark definitions
+│   │   ├── index.ts          # Benchmark registry
+│   │   └── bphs/             # BPHS specific dataset
+│   ├── core/
+│   │   ├── harness.ts        # Generic execution engine
+│   │   └── parser.ts         # Fail-safe 1-5 integer extractor
+│   ├── types/
+│   │   └── index.ts          # Core interfaces
+│   └── index.ts              # CLI entry point
+```
+
+## Usage
+
+### Run Default Benchmark (BPHS)
+```bash
+npm run bench
+```
+
+### Run a Specific Benchmark
+```bash
+npm run bench bphs
+```
+
+## Adding a New Benchmark
+
+To add a new benchmark (e.g., *Phaladeepika-Bench*):
+
+1. Create a new directory `src/benchmarks/phaladeepika/`.
+2. Define your dataset in `dataset.ts` following the `TestCase` interface.
+3. Register the new benchmark in `src/benchmarks/index.ts`.
+
+```typescript
+// src/benchmarks/index.ts
+export const BENCHMARKS: BenchmarkDefinition[] = [
+  {
+    id: "bphs",
+    // ...
+  },
+  {
+    id: "phaladeepika",
+    name: "Phaladeepika-Bench",
+    description: "Evaluations based on Phaladeepika",
+    dataset: PHALADEEPIKA_DATASET,
+  }
+];
 ```
 
 ## Benchmark Formula
 
 $$\text{Final Bench Score \%} = \left( \frac{\text{Exact Matches}}{\text{Total Test Cases Run}} \right) \times 100$$
-
-## Test Case Tiers
-
-| Tier | Cases | Description |
-|------|-------|-------------|
-| EASY | 2 | Direct lordship, single-dimension interpretation |
-| MEDIUM | 3 | Parivartana, Varga traps, combustion filters |
-| HARD | 3 | Vipareeta Yogas, Varga subversion, multi-factor analysis |
-| VERY_HARD | 2 | Dialectical contradictions, timing windows, Neecha Bhanga |
-
-## Usage
-
-```bash
-npm install
-npm run bench
-```
-
-## Integrating a Real Agent
-
-Edit `src/core/harness.ts` and replace the `mockAgentCall` function with your actual AI agent invocation. The harness expects a plain string response containing the score somewhere in the output.
-
-```typescript
-// Replace this mock with your real agent call:
-async function callAgent(payload: AgentPayload): Promise<string> {
-  // e.g., call OpenAI, Gemini, or your custom BPHS AI
-  const response = await myAIClient.chat(payload);
-  return response.text;
-}
-```
 
 ## Scoring Interpretation
 
