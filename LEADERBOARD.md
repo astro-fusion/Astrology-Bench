@@ -28,8 +28,8 @@ Answer accuracy is the mean answer score with a Wilson 95% interval. Citation sc
 
 Runs:
 
-- `baseline-oracle`: oracle, split dev, 955 items, bench 0.1.0, engine 24d048b, items sha256 `b37434a1e5b1`
-- `baseline-random`: random, split dev, 955 items, bench 0.1.0, engine 24d048b, items sha256 `b37434a1e5b1`
-- `baseline-constant`: constant, split dev, 955 items, bench 0.1.0, engine 24d048b, items sha256 `b37434a1e5b1`
-- `baseline-mock`: mock, split dev, 955 items, bench 0.1.0, engine 24d048b, items sha256 `b37434a1e5b1`
-- `baseline-nochart-constant`: nochart:constant, split dev, 955 items, bench 0.1.0, engine 24d048b, items sha256 `b37434a1e5b1`
+- `baseline-oracle`: oracle, split dev, 955 items, bench 0.1.0, engine 24d048b, items sha256 `c32943bcb901`
+- `baseline-random`: random, split dev, 955 items, bench 0.1.0, engine 24d048b, items sha256 `c32943bcb901`
+- `baseline-constant`: constant, split dev, 955 items, bench 0.1.0, engine 24d048b, items sha256 `c32943bcb901`
+- `baseline-mock`: mock, split dev, 955 items, bench 0.1.0, engine 24d048b, items sha256 `c32943bcb901`
+- `baseline-nochart-constant`: nochart:constant, split dev, 955 items, bench 0.1.0, engine 24d048b, items sha256 `c32943bcb901`
