@@ -1,0 +1,71 @@
+# yaml-language-server: $schema=../../schema.json
+id: mundane.ch10.pancha_graha_cluster_detection
+version: 2
+name: Pancha Graha Yuti (5+ Planet Cluster) Mundane Generation Engine
+domain: mundane
+claim: >-
+  Pancha Graha Yuti (5+ Planet Cluster) Mundane Generation Engine - 5 or more traditional
+  planets occupy a single zodiac sign.
+source:
+  text: Chapter 10
+  chapter: Chapter 10
+  app_registry: docs/mundane/chapter10-rule-registry.yaml
+  id: ch10_pancha_graha_cluster_detection
+  note: >-
+    Chapter refers to the mundane text synthesis behind the AstroFusion registry (attributed
+    to B.V. Raman and M.C. Jain plus classical authors); the book edition is not identified,
+    see the export PROVENANCE.
+author: AstroFusion mundane rule registry (open export 2026-11-08)
+tier: experimental
+status: active
+params:
+  count: {value: 5, min: 4, max: 7, step: 1, unit: count}
+conditions:
+  planets_in_one_sign_gte:
+    count: $count
+reference_cases:
+- moment: '1962-02-05T00:00:00Z'
+  expect: fires
+  note: 'Chosen date. Engine: planets_in_one_sign_gte(count=5): largest cluster: 7 in Capricorn
+    (Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn); 5 needed'
+  verified_with: astro-rules explain 2026-11-08 (Lahiri, mean node, whole sign); not yet
+    checked in JHora
+- moment: '2020-01-01T00:00:00Z'
+  expect: silent
+  note: 'Chosen date. Engine: planets_in_one_sign_gte(count=5): largest cluster: 4 in Sagittarius
+    (Sun, Mercury, Jupiter, Saturn); 5 needed'
+  verified_with: astro-rules explain 2026-11-08 (Lahiri, mean node, whole sign); not yet
+    checked in JHora
+validation:
+  status: unvalidated
+notes:
+  original_condition:
+  - 5 or more traditional planets occupy a single zodiac sign.
+  original_thresholds:
+    minimum_cluster_planets: 5
+    kala_sarpa_governance_axis:
+    - 4
+    - 10
+  mapping_status: mapped
+  draft_conditions:
+    all:
+    - planets_in_one_sign_gte:
+        count: 5
+        bodies: traditional_planets
+  event_types:
+  - national_socioeconomics
+  confidence_in_app: source_based
+  severity_in_app: generational
+  validation:
+    report_row: Pancha Graha Yuti & 4-10 Kala Sarpa
+    verdict: NORMALIZE & REFINE
+    normalization: >-
+      Implement `evaluatePlanetaryClusterEra`. Compute benefic/malefic cluster composition,
+      map to 12 mundane house domains, model 4-10 Kala Sarpa as `governanceAxisPressureScore`
+      (not overthrow), and Rahu in 3rd as `nationalEffortModifier`.
+    kind: architectural_review_verdict
+    source_file: docs/mundane/chapter10-validation-report.md
+    empirical_backtest_result: null
+  encoding: Encoded 2026-11-08 when the missing predicates (planets_in_one_sign_gte) were
+    added. 'traditional planets' read as the seven visible grahas (the predicate
+    default); the nodes are not counted.

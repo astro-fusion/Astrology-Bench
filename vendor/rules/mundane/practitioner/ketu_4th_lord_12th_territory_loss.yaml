@@ -1,0 +1,65 @@
+# yaml-language-server: $schema=../../../schema.json
+id: mundane.practitioner.ketu_4th_lord_12th_territory_loss
+version: 2
+name: Ketu in the 4th and the 4th lord in the 12th of a national chart, territory loss
+domain: mundane
+claim: Ketu in the 4th house with the 4th lord in the 12th house of a national chart indicates loss of
+  territory.
+source:
+  url: https://anvayajyotish.com/blog/mundane-astrology-national-charts-geopolitical-predictions
+  text: 'Anvaya Jyotish, "Mundane astrology: national charts and geopolitical predictions" (n.d.)'
+  note: 'Practitioner statement; the page has not yet been opened by a maintainer (checked: false).'
+author: astro-research practitioner extraction (2026-11-08)
+tier: experimental
+status: active
+expected_effect:
+  event: territory_loss
+  direction: increase
+conditions:
+  all:
+  - in_house:
+      planet: Ketu
+      houses:
+      - 4
+  - lord_of_house_in:
+      house: 4
+      houses:
+      - 12
+reference_cases:
+- moment: '2002-07-04T04:48:00Z'
+  place: {lat: 28.61, lon: 77.21, tz: Asia/Kolkata}
+  expect: fires
+  note: 'First firing moment found by a scan. Engine: in_house(planet=Ketu, houses=[4]): Ketu is in Scorpio
+    22.7 deg, the 4th house from the Lagna in Leo; lord_of_house_in(house=4, houses=[12]): the 4th lord from
+    the Lagna is Mars, in the 12th (Cancer)'
+  verified_with: astro-rules explain 2026-11-08 (Lahiri, mean node, whole sign); not yet checked in
+    JHora
+- moment: '2000-01-01T06:00:00Z'
+  place: {lat: 28.61, lon: 77.21, tz: Asia/Kolkata}
+  expect: silent
+  note: 'A silent moment found by a scan. Engine: in_house(planet=Ketu, houses=[4]): Ketu is in Capricorn
+    11.2 deg, the 11th house from the Lagna in Pisces, not one of 4th; lord_of_house_in(house=4, houses=[12]):
+    the 4th lord from the Lagna is Mercury, in the 10th (Sagittarius), not 12th'
+  verified_with: astro-rules explain 2026-11-08 (Lahiri, mean node, whole sign); not yet checked in
+    JHora
+validation:
+  status: unvalidated
+notes:
+  mapping_status: practitioner_extracted
+  practitioner:
+    name: Anvaya Jyotish
+    url: https://anvayajyotish.com/blog/mundane-astrology-national-charts-geopolitical-predictions
+    date: n.d.
+    title: 'Mundane astrology: national charts and geopolitical predictions'
+    checked: false
+  root_source:
+    bibkey: null
+    citation: none cited by the practitioner
+  bib:
+  - anvaya_nationalcharts
+  original_condition:
+  - Ketu in the 4th house of the national chart
+  - lord of the 4th house placed in the 12th house
+  encoding: Encoded 2026-11-08 when the missing predicates (house_lord_in_house) were added. Read in
+    the chart of the moment for the place given (a national chart is the chart of its founding moment);
+    whole-sign houses.

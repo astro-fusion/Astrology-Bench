@@ -1,0 +1,62 @@
+# yaml-language-server: $schema=../../schema.json
+id: mundane.ch9.saturn_temporal_execution_delay
+version: 2
+name: Saturnine Temporal Execution Latency Filter
+domain: mundane
+claim: >-
+  Saturnine Temporal Execution Latency Filter - Saturnine political transformation manifests
+  towards the latter half (approx 2 years) of the transit window rather than on ingress day.
+source:
+  text: Chapter 9
+  chapter: Chapter 9
+  app_registry: docs/mundane/chapter9-rule-registry.yaml
+  id: ch9_saturn_temporal_execution_delay
+  note: >-
+    Chapter refers to the mundane text synthesis behind the AstroFusion registry (attributed
+    to B.V. Raman and M.C. Jain plus classical authors); the book edition is not identified,
+    see the export PROVENANCE.
+author: AstroFusion mundane rule registry (open export 2026-11-08)
+tier: experimental
+window:
+  unit: years
+  before: $window_before
+  after: $window_after
+  note: execution latency
+status: needs_predicates
+params:
+  window_before: {value: 1.5, min: 0, max: 3, step: 1, unit: years}
+  window_after: {value: 2.5, min: 0, max: 5, step: 1, unit: years}
+conditions: null
+validation:
+  status: unvalidated
+notes:
+  original_condition:
+    - >-
+      Saturnine political transformation manifests towards the latter half (approx 2 years)
+      of the transit window rather than on ingress day.
+  original_thresholds:
+    execution_delay_min_years: 1.5
+    execution_delay_max_years: 2.5
+  mapping_status: partial
+  draft_conditions:
+    all:
+      - latency_filter:
+          planet: Saturn
+          min_years: 1.5
+          max_years: 2.5
+  event_types:
+    - transit_execution
+  confidence_in_app: empirical
+  severity_in_app: informational
+  validation:
+    report_row: Saturnine Temporal Delay
+    verdict: IMPLEMENT LATENCY
+    normalization: >-
+      Apply an empirical `executionDelayYears` ($1.5 - 2.5$y) window to transit alerts, preventing
+      false premature collapse predictions.
+    kind: architectural_review_verdict
+    source_file: docs/mundane/chapter9-validation-report.md
+    empirical_backtest_result: null
+  needs_predicates: 'Not expressible yet: the vocabulary has no predicate for latency_filter.'
+  missing_predicates:
+    - latency_filter

@@ -1,0 +1,110 @@
+# yaml-language-server: $schema=../../schema.json
+id: mundane.core.r025_elemental_classification_of_accident_types
+version: 2
+name: Elemental Classification of Accident Types
+domain: mundane
+claim: >-
+  Elemental Classification of Accident Types - Fiery (Sun, Mars, Jupiter, Uranus / Aries,
+  Leo, Sag): FIRE/EXPLOSION, Sabotage, Collisions, Derailments.
+source:
+  text: Chapter 4
+  chapter: Chapter 4
+  app_registry: docs/mundane/rule-registry.yaml
+  id: RULE-025
+  note: >-
+    Chapter refers to the mundane text synthesis behind the AstroFusion registry (attributed
+    to B.V. Raman and M.C. Jain plus classical authors); the book edition is not identified,
+    see the export PROVENANCE.
+author: AstroFusion mundane rule registry (open export 2026-11-08)
+tier: experimental
+status: active
+params:
+  count: {value: 2, min: 1, max: 4, step: 1, unit: count}
+conditions:
+  any:
+  - afflicted_element:
+      element: fire
+      count_gte: $count
+  - afflicted_element:
+      element: water
+      count_gte: $count
+  - afflicted_element:
+      element: air
+      count_gte: $count
+reference_cases:
+- moment: '2000-01-01T00:00:00Z'
+  expect: fires
+  note: 'First firing moment found by a scan. Engine: afflicted_element(element=fire, count_gte=2):
+    malefics in fire signs (Aries, Leo, Sagittarius): Sun in Sagittarius, Saturn in Aries (2 needed);
+    afflicted_element(element=water, count_gte=2): malefics in water signs (Cancer, Scorpio, Pisces):
+    Rahu in Cancer (2 needed); afflicted_element(element=air, count_gte=2): malefics in air signs
+    (Gemini, Libra, Aquarius): Mars in Aquarius (2 needed)'
+  verified_with: astro-rules explain 2026-11-08 (Lahiri, mean node, whole sign); not yet
+    checked in JHora
+- moment: '2000-01-15T00:00:00Z'
+  expect: silent
+  note: 'A silent moment found by a scan. Engine: afflicted_element(element=fire, count_gte=2):
+    malefics in fire signs (Aries, Leo, Sagittarius): Saturn in Aries (2 needed); afflicted_element(element=water,
+    count_gte=2): malefics in water signs (Cancer, Scorpio, Pisces): Rahu in Cancer (2 needed);
+    afflicted_element(element=air, count_gte=2): malefics in air signs (Gemini, Libra, Aquarius):
+    Mars in Aquarius (2 needed)'
+  verified_with: astro-rules explain 2026-11-08 (Lahiri, mean node, whole sign); not yet
+    checked in JHora
+validation:
+  status: unvalidated
+notes:
+  original_condition:
+  - >-
+    Fiery (Sun, Mars, Jupiter, Uranus / Aries, Leo, Sag): FIRE/EXPLOSION, Sabotage, Collisions,
+    Derailments.
+  - >-
+    Watery (Moon, Venus, Neptune / Cancer, Scorpio, Pisces): WATER_HAZARD, Bridge Collapses,
+    Track Flooding, Rivers.
+  - >-
+    Airy (Gemini, Libra, Aquarius): WIND/GAS/SPACE, Atmospheric shear, gas incidents.
+  mapping_status: mapped
+  draft_conditions:
+    any:
+    - afflicted_element:
+        element: fire
+        planets:
+        - Sun
+        - Mars
+        - Jupiter
+        - Uranus
+        signs:
+        - Aries
+        - Leo
+        - Sagittarius
+    - afflicted_element:
+        element: water
+        planets:
+        - Moon
+        - Venus
+        - Neptune
+        signs:
+        - Cancer
+        - Scorpio
+        - Pisces
+    - afflicted_element:
+        element: air
+        signs:
+        - Gemini
+        - Libra
+        - Aquarius
+  event_types:
+  - transport
+  confidence_in_app: traditional_only
+  severity_in_app: elevated
+  validation:
+    verdict: KEEP
+    problem: Generic accident vs specific mode
+    normalization: >-
+      Categorize incidents dynamically into Fiery (`FIRE/EXPLOSION`), Watery (`WATER_HAZARD`),
+      and Airy (`WIND/GAS/SPACE`).
+    kind: architectural_review_verdict
+    source_file: docs/mundane/validation-report.md
+    empirical_backtest_result: null
+  encoding: 'Encoded 2026-11-08 when the missing predicates (afflicted_element) were added. Same
+    encoding as mundane.ch4.elemental_hazard_tags: an element is afflicted when at least $count
+    natural malefics occupy its signs; the accident-type labels are outputs, not conditions.'
