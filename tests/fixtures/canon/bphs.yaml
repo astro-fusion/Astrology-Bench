@@ -1,0 +1,37 @@
+entries:
+  - id: bphs.santhanam1984.ch36.v3
+    text: BPHS
+    edition: santhanam1984
+    chapter: "36"
+    verse: "3-4"
+    topic: yoga
+    rule_key: gaja_kesari
+    statement: Jupiter in a kendra from the Lagna or the Moon, joined or aspected by a benefic, gives Gaja Kesari yoga.
+    quote: FIXTURE QUOTE gaja kesari
+    url: https://example.org/bphs/36
+    verified: quoted
+    verified_by: fixture
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: Phaladeepika, chapter: "6", verse: "1"}
+  - id: bphs.santhanam1984.ch3.v49
+    text: BPHS
+    edition: santhanam1984
+    chapter: "3"
+    verse: "49"
+    topic: combustion
+    rule_key: combustion
+    statement: A planet too close to the Sun is combust.
+    quote: FIXTURE QUOTE combustion
+    verified: quoted
+    verified_by: fixture
+    verified_at: "2026-11-08"
+  - id: bphs.santhanam1984.ch26.v2
+    text: BPHS
+    edition: santhanam1984
+    chapter: "26"
+    verse: "2"
+    topic: aspect
+    rule_key: graha_drishti
+    statement: Planets aspect the 7th; Mars, Jupiter and Saturn have special aspects.
+    verified: paraphrased

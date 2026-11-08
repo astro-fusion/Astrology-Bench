@@ -1,0 +1,29 @@
+# Test fixture only. Quotes below are placeholders, not real translations.
+texts:
+  - id: BPHS
+    title: Brihat Parashara Hora Shastra
+    author: Parashara
+    translator: R. Santhanam
+    edition_id: santhanam1984
+    edition: Ranjan Publications
+    year: 1984
+    chapters: 97
+    public_domain: false
+    url: https://example.org/bphs
+    bibtex_key: santhanam1984bphs
+  - id: BrihatSamhita
+    title: Brihat Samhita
+    author: Varahamihira
+    edition_id: bhat1981
+    year: 1981
+    chapters: 106
+    public_domain: false
+    bibtex_key: bhat1981bs
+  - id: Phaladeepika
+    title: Phaladeepika
+    author: Mantreswara
+    edition_id: sastri1937
+    year: 1937
+    chapters: 28
+    public_domain: true
+    bibtex_key: sastri1937phaladeepika

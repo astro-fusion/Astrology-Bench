@@ -1,0 +1,13 @@
+entries:
+  - id: bs.bhat1981.ch17.v1
+    text: Brihat Samhita
+    edition: bhat1981
+    chapter: "17"
+    verse: "1"
+    topic: mundane
+    rule_key: mangal_ketu_primary
+    statement: Mars joined with Ketu portends disturbance of the earth.
+    quote: FIXTURE QUOTE mars ketu
+    verified: quoted
+    verified_by: fixture
+    verified_at: "2026-11-08"
