@@ -12,13 +12,15 @@ equal ``astro-bench run`` scores for the same responses. Task parameters:
 from __future__ import annotations
 
 from functools import lru_cache
+from pathlib import Path
 from typing import Any
 
-from .canon import Canon
-from .io import load_items
-from .prompts import render_user_message, system_prompt
-from .runner import grade_response
-from .schema import Item
+from astro_bench.canon import Canon
+from astro_bench.generators.common import repo_root
+from astro_bench.io import load_items
+from astro_bench.prompts import render_user_message, system_prompt
+from astro_bench.runner import grade_response
+from astro_bench.schema import Item
 
 try:  # inspect_ai is optional: the module imports without it, the tasks need it.
     from inspect_ai import Task, task
@@ -34,9 +36,15 @@ except ImportError:  # pragma: no cover - exercised only without the extra
         return func
 
 
+def _resolve(path: str) -> Path:
+    """Relative paths resolve against the checkout root (inspect chdirs to this file)."""
+    candidate = Path(path)
+    return candidate if candidate.is_absolute() else repo_root() / candidate
+
+
 @lru_cache(maxsize=4)
 def _canon(path: str) -> Canon:
-    return Canon.load_or_empty(path)
+    return Canon.load_or_empty(_resolve(path))
 
 
 def _require() -> None:
@@ -46,7 +54,7 @@ def _require() -> None:
 
 def select(items_dir: str, level: int, convention: str | None, task_name: str | None
            ) -> list[Item]:
-    items = [i for i in load_items(items_dir) if i.level == level]
+    items = [i for i in load_items(_resolve(items_dir)) if i.level == level]
     if convention:
         items = [i for i in items if i.convention.key == convention]
     if task_name:

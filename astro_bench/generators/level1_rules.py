@@ -116,7 +116,7 @@ def _citation_for(rule: Rule, canon: Canon) -> tuple[str, list[str], str]:
 
 
 def _rule_items(ctx: GenContext, rule: Rule, conv: Convention, n: int) -> list[Item]:
-    want = {True: n // 2 + n % 2, False: n // 2}
+    want = {True: n - n // 2, False: n // 2}
     got: dict[bool, list[tuple[Any, Any]]] = {True: [], False: []}
     task = task_of(rule)
     attempt = 0
@@ -149,8 +149,8 @@ def _rule_items(ctx: GenContext, rule: Rule, conv: Convention, n: int) -> list[I
 
 
 def generate(ctx: GenContext, n_default: int, n_other: int) -> list[Item]:
-    """``n_default`` items per task in the default cell (split over its rules), ``n_other``
-    in the true-node cell; each rule gets at least 2 items per cell."""
+    """About ``n_default`` items per task in the default cell (split over its rules, rounded
+    up to an even count per rule) and ``n_other`` in the true-node cell."""
     rules_dir = ctx.rules_dir or default_rules_dir()
     if not Path(rules_dir).exists():
         ctx.log(f"rules not found at {rules_dir}; skipping yoga/rule items")
@@ -163,7 +163,8 @@ def generate(ctx: GenContext, n_default: int, n_other: int) -> list[Item]:
             continue
         for conv in CELLS:
             total = n_default if conv == DEFAULT_CONVENTION else n_other
-            per_rule = max(2, total // len(group))
+            per_rule = max(2, -(-total // len(group)))
+            per_rule += per_rule % 2  # even, so each rule is exactly 50/50
             for rule in group:
                 items.extend(_rule_items(ctx, rule, conv, per_rule))
     return items

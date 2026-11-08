@@ -48,3 +48,16 @@ def test_run_result_round_trip(small_items: list[Item], canon) -> None:  # type:
     again = RunResult.model_validate_json(result.model_dump_json(exclude_none=True))
     assert again.summary == result.summary
     assert again.item_count == 20
+
+
+def test_render_user_message(small_items: list[Item]) -> None:
+    from astro_bench.prompts import render_user_message, system_prompt
+
+    item = next(i for i in small_items if i.level == 1)
+    text = render_user_message(item)
+    assert text.index("  Sun:") < text.index("  Moon:") < text.index("  Ketu:")
+    assert text.endswith(item.prompt)
+    bare = item.model_copy(update={"input": item.input.model_copy(update={"birth": None,
+                                                                         "chart": None})})
+    assert render_user_message(bare) == item.prompt
+    assert '"citations"' in system_prompt()

@@ -72,7 +72,7 @@ def test_yoga_items_balanced(small_items: list[Item]) -> None:
             by_rule[(item.rule_id or "", item.convention.key)].append(item.gold.answer)
     assert by_rule
     for answers in by_rule.values():
-        assert abs(sum(answers) - len(answers) / 2) <= 0.5
+        assert len(answers) % 2 == 0 and sum(answers) == len(answers) // 2
 
 
 def test_yoga_canon_ids_from_rule_key(small_items: list[Item], canon: Canon) -> None:

@@ -4,6 +4,8 @@ from __future__ import annotations
 
 from importlib import resources
 
+from vedic_astrology_core.rules.vocabulary import PLANET_NAMES
+
 from ..schema import Item
 
 
@@ -19,7 +21,7 @@ def render_input(item: Item) -> str:
     if birth is not None:
         where = f" ({birth.place})" if birth.place else ""
         lines.append(
-            f"Birth: {birth.utc} UTC, latitude {birth.lat:.4f}, "
+            f"Birth: {birth.utc}, latitude {birth.lat:.4f}, "
             f"longitude {birth.lon:.4f} (east positive){where}"
         )
     chart = item.input.chart
@@ -27,7 +29,8 @@ def render_input(item: Item) -> str:
         lines.append(f"Sidereal chart ({item.convention.words()}):")
         lines.append(f"  Lagna (ascendant): {chart.lagna:.2f} deg")
         lines.append("  Body: sidereal longitude deg, speed deg/day (negative = retrograde)")
-        for name, body in chart.bodies.items():
+        order = {name: i for i, name in enumerate(PLANET_NAMES)}
+        for name, body in sorted(chart.bodies.items(), key=lambda kv: order.get(kv[0], 99)):
             lines.append(f"  {name}: {body.lon:.2f}, {body.speed:+.2f}")
         if chart.cusps:
             cusps = ", ".join(f"{i + 1}: {c:.2f}" for i, c in enumerate(chart.cusps))
