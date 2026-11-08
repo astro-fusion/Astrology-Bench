@@ -13,7 +13,7 @@ from typing import Any
 
 from ..canon import Canon
 from ..generators import ENGINE_TASKS, level0, level1_rules
-from ..schema import Item
+from ..schema import Item, SolverItem
 from .base import respond
 
 
@@ -29,7 +29,10 @@ def gold_citations(item: Item, canon: Canon) -> list[dict[str, Any]]:
 
 
 class OracleSolver:
+    """Built by the runner, so it is the one solver given the full item (ADR-002)."""
+
     name = "oracle"
+    full_item = True
 
     def __init__(self, canon: Canon):
         self.canon = canon
@@ -47,7 +50,9 @@ class OracleSolver:
             return ENGINE_TASKS[item.task].solve(item)
         raise LookupError(f"oracle has no solver for task {item.task!r}")
 
-    def __call__(self, item: Item) -> str:
+    def __call__(self, item: Item | SolverItem) -> str:  # type: ignore[override]
+        if not isinstance(item, Item):
+            return "I cannot answer this item: the oracle needs the full item."
         try:
             answer = self.answer(item)
         except LookupError as exc:

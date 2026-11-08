@@ -13,7 +13,7 @@ from vedic_astrology_core.rules.vocabulary import (
 )
 
 from ..canon import Canon
-from ..schema import Item
+from ..schema import SolverItem
 
 
 def random_point(rng: random.Random) -> dict[str, Any]:
@@ -21,7 +21,7 @@ def random_point(rng: random.Random) -> dict[str, Any]:
             "nakshatra": rng.choice(NAKSHATRA_NAMES), "pada": rng.randint(1, 4)}
 
 
-def random_answer(item: Item, rng: random.Random, canon: Canon) -> Any:
+def random_answer(item: SolverItem, rng: random.Random, canon: Canon) -> Any:
     """A uniform draw from the item's answer space."""
     kind = item.answer_type
     if kind == "bool":

@@ -6,7 +6,7 @@ from importlib import resources
 
 from vedic_astrology_core.rules.vocabulary import PLANET_NAMES
 
-from ..schema import Item
+from ..schema import Item, SolverItem
 
 
 def system_prompt() -> str:
@@ -14,7 +14,7 @@ def system_prompt() -> str:
     return resources.files(__package__).joinpath("system.md").read_text(encoding="utf-8")
 
 
-def render_input(item: Item) -> str:
+def render_input(item: Item | SolverItem) -> str:
     """The item's birth data and chart table as plain text (empty when removed)."""
     lines: list[str] = []
     birth = item.input.birth
@@ -40,7 +40,7 @@ def render_input(item: Item) -> str:
     return "\n".join(lines)
 
 
-def render_user_message(item: Item) -> str:
+def render_user_message(item: Item | SolverItem) -> str:
     """The full user message: input block (if any) then the question."""
     block = render_input(item)
     return f"{block}\n\n{item.prompt}" if block else item.prompt

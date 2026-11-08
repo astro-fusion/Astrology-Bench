@@ -4,8 +4,13 @@ from __future__ import annotations
 
 import json
 
-from astro_bench.schema import Item
+from astro_bench.schema import SolverItem
 
 
-def always_true(item: Item) -> str:
+def always_true(item: SolverItem) -> str:
     return json.dumps({"answer": True, "citations": []})
+
+
+def peek_at_gold(item: SolverItem) -> str:
+    """A cheating solver: reads the gold if it can."""
+    return json.dumps({"answer": item.gold.answer})  # type: ignore[attr-defined]

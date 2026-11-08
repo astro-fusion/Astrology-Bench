@@ -110,6 +110,32 @@ class Item(_Strict):
     generator: GeneratorInfo
 
 
+InputMode = Literal["chart", "birth"]
+SolverKind = Literal["oracle", "baseline", "model", "system", "app_tools", "system_ui"]
+#: Kinds whose results must carry a non-empty ``solver_description`` (ADR-002).
+DESCRIBED_KINDS = ("system", "app_tools", "system_ui")
+
+
+class SolverItem(_Strict):
+    """What a solver sees (ADR-002): no gold, canon ids, rule id or generator."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    id: str
+    level: int
+    task: str
+    tier: Tier
+    convention: Convention
+    input: ItemInput
+    prompt: str
+    answer_type: AnswerType
+    choices: list[str] | None = None
+
+    @property
+    def input_mode(self) -> InputMode:
+        return "birth" if self.input.chart is None else "chart"
+
+
 # --------------------------------------------------------------------------- output
 
 
@@ -209,6 +235,14 @@ class RunResult(_Strict):
     model: str
     provider: str
     solver: str
+    kind: SolverKind
+    solver_description: str = ""
+    #: "nochart" for ``nochart:`` runs: an ablation, never ranked (ADR-002).
+    ablation: str | None = None
+    input_mode: InputMode = "chart"
+    sample_seed: int | None = None
+    sample_n: int | None = None
+    sample_ids_sha256: str | None = None
     bench_version: str
     items_sha256: str
     split: str

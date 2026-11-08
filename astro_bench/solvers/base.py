@@ -5,14 +5,19 @@ from __future__ import annotations
 import json
 from typing import Any, Protocol, runtime_checkable
 
-from ..schema import Item
+from ..schema import SolverItem
 
 
 @runtime_checkable
 class Solver(Protocol):
-    """Anything that maps an item to a raw text response (parsed by the runner)."""
+    """Anything that maps a redacted item to a raw text response (parsed by the runner).
 
-    def __call__(self, item: Item) -> str: ...
+    Solvers receive a :class:`SolverItem` (ADR-002): no gold, canon ids, rule id or
+    generator. Only a solver with ``full_item = True`` (the engine oracle, which the
+    runner builds itself) is handed the full item.
+    """
+
+    def __call__(self, item: SolverItem) -> str: ...
 
 
 def respond(answer: Any, citations: list[dict[str, Any]] | None = None,

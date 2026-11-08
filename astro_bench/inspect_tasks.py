@@ -6,7 +6,8 @@ Each sample's input is the rendered user message; the system prompt is
 ``prompts/system.md``; the scorer reuses the built-in parser and graders, so scores
 equal ``astro-bench run`` scores for the same responses. Task parameters:
 ``items`` (default ``items/``), ``canon`` (default ``canon/``), ``convention``
-(e.g. ``lahiri/mean/whole_sign``) and ``task`` (e.g. ``dasha``).
+(e.g. ``lahiri/mean/whole_sign``), ``task`` (e.g. ``dasha``) and ``input_mode``
+(``chart`` or ``birth``; Level 0 is always birth). Models see the redacted view only.
 """
 
 from __future__ import annotations
@@ -19,6 +20,7 @@ from astro_bench.canon import Canon
 from astro_bench.generators.common import repo_root
 from astro_bench.io import load_items
 from astro_bench.prompts import render_user_message, system_prompt
+from astro_bench.redact import to_solver_item
 from astro_bench.runner import grade_response
 from astro_bench.schema import Item
 
@@ -62,8 +64,11 @@ def select(items_dir: str, level: int, convention: str | None, task_name: str | 
     return items
 
 
-def to_sample(item: Item) -> Any:
-    return Sample(id=item.id, input=render_user_message(item),
+def to_sample(item: Item, input_mode: str = "chart") -> Any:
+    """The model sees only the redacted view (ADR-002); the full item stays in metadata
+    for the local scorer."""
+    view = to_solver_item(item, "birth" if input_mode == "birth" else "chart")
+    return Sample(id=item.id, input=render_user_message(view),
                   target=str(item.gold.answer),
                   metadata={"item": item.model_dump(mode="json", exclude_none=True)})
 
@@ -91,10 +96,12 @@ def astro_scorer(canon_dir: str = "canon") -> Any:
     return _astro()
 
 
-def _task(level: int, items: str, canon: str, convention: str | None, task_name: str | None
-          ) -> Any:
+def _task(level: int, items: str, canon: str, convention: str | None, task_name: str | None,
+          input_mode: str = "chart") -> Any:
     _require()
-    samples = [to_sample(i) for i in select(items, level, convention, task_name)]
+    if input_mode not in ("chart", "birth"):
+        raise ValueError("input_mode must be chart or birth")
+    samples = [to_sample(i, input_mode) for i in select(items, level, convention, task_name)]
     return Task(
         dataset=MemoryDataset(samples, name=f"astro-bench-level{level}"),
         solver=[system_message(system_prompt()), generate()],
@@ -104,20 +111,20 @@ def _task(level: int, items: str, canon: str, convention: str | None, task_name:
 
 @task
 def level0(items: str = "items", canon: str = "canon", convention: str | None = None,
-           task: str | None = None) -> Any:
+           task: str | None = None, input_mode: str = "chart") -> Any:
     """Level 0: compute positions from birth data."""
-    return _task(0, items, canon, convention, task)
+    return _task(0, items, canon, convention, task, input_mode)
 
 
 @task
 def level1(items: str = "items", canon: str = "canon", convention: str | None = None,
-           task: str | None = None) -> Any:
+           task: str | None = None, input_mode: str = "chart") -> Any:
     """Level 1: recognise nakshatra, varga, dasha, dignity, combustion, aspect, lordship, yogas."""
-    return _task(1, items, canon, convention, task)
+    return _task(1, items, canon, convention, task, input_mode)
 
 
 @task
 def level2(items: str = "items", canon: str = "canon", convention: str | None = None,
-           task: str | None = None) -> Any:
+           task: str | None = None, input_mode: str = "chart") -> Any:
     """Level 2: cite the classical text, chapter and verse of a rule."""
-    return _task(2, items, canon, convention, task)
+    return _task(2, items, canon, convention, task, input_mode)

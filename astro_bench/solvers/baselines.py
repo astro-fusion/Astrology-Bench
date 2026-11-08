@@ -11,7 +11,7 @@ from typing import Any
 from vedic_astrology_core.rules.vocabulary import LAGNA, NAKSHATRA_NAMES, PLANET_NAMES, SIGN_NAMES
 
 from ..canon import Canon
-from ..schema import Item
+from ..schema import Item, SolverItem
 from .answer_space import random_answer
 from .base import respond
 
@@ -25,7 +25,7 @@ class RandomSolver:
         self.canon = canon
         self.seed = seed
 
-    def __call__(self, item: Item) -> str:
+    def __call__(self, item: SolverItem) -> str:
         rng = random.Random(f"random|{self.seed}|{item.id}")
         answer = random_answer(item, rng, self.canon)
         cites = [answer] if item.answer_type == "citation" and answer else []
@@ -71,7 +71,7 @@ class ConstantSolver:
             out[name] = rec
         return out
 
-    def __call__(self, item: Item) -> str:
+    def __call__(self, item: SolverItem) -> str:
         answer, share = self.answers.get(item.task, (None, 0.0))
         cites = [answer] if item.answer_type == "citation" and isinstance(answer, dict) else []
         return respond(answer, cites, share)
@@ -88,7 +88,7 @@ class MockSolver:
 
     name = "mock"
 
-    def __call__(self, item: Item) -> str:
+    def __call__(self, item: SolverItem) -> str:
         seed = sum(ord(c) for c in item.id)
         if item.answer_type == "likert":
             score = seed % 5 + 1
@@ -101,7 +101,7 @@ class MockSolver:
             seed % 3]
 
     @staticmethod
-    def _answer(item: Item, seed: int) -> Any:
+    def _answer(item: SolverItem, seed: int) -> Any:
         kind = item.answer_type
         choices = item.choices or []
         if kind == "bool":

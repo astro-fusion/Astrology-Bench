@@ -16,10 +16,13 @@ from .generators import generate_items
 from .generators.common import repo_root
 from .io import item_files, items_sha256, load_items, write_items
 from .leaderboard import write_leaderboard
-from .runner import load_result, run, write_result
-from .schema import Item
+from .runner import SampleInfo, check_result, load_result, run, write_result
+from .sampling import ids_sha256, stratified_sample
+from .schema import DESCRIBED_KINDS, Item
 from .score import format_summary, summarize
-from .solvers import get_solver
+from .solvers import default_kind, get_solver
+
+SOLVER_KINDS = ["oracle", "baseline", "model", "system", "app_tools", "system_ui"]
 
 TEST_SEED_ENV = "ASTRO_BENCH_TEST_SEED"
 
@@ -150,9 +153,24 @@ def cmd_run(args: argparse.Namespace) -> int:
     if not items:
         _log("no items selected")
         return 2
+    kind = args.kind or default_kind(args.solver)
+    if kind is None:
+        _log(f"--kind is required for solver {args.solver!r} "
+             f"(one of {', '.join(SOLVER_KINDS)})")
+        return 2
+    if kind in DESCRIBED_KINDS and not (args.description or "").strip():
+        _log(f"--kind {kind} needs a non-empty --description (model, tools, retrieval, version)")
+        return 2
+    sample = None
+    if args.sample:
+        keys = [k.strip() for k in args.stratify.split(",") if k.strip()]
+        items = stratified_sample(items, args.sample, keys, args.sample_seed)
+        sample = SampleInfo(args.sample_seed, len(items), ids_sha256(items))
     solver = get_solver(args.solver, items, canon)
-    result = run(solver, items, canon, solver_name=args.solver, run_id=args.run_id,
-                 model=args.model, provider=args.provider, convention_filter=args.convention)
+    result = run(solver, items, canon, solver_name=args.solver, kind=kind,
+                 description=args.description or "", input_mode=args.input_mode,
+                 run_id=args.run_id, model=args.model, provider=args.provider,
+                 convention_filter=args.convention, sample=sample)
     path = write_result(result, args.out)
     s = result.summary.overall
     print(f"{path}: n={s.n} acc={s.answer_acc:.3f} cite={s.citation_mean} "
@@ -162,9 +180,21 @@ def cmd_run(args: argparse.Namespace) -> int:
 
 def cmd_score(args: argparse.Namespace) -> int:
     result = load_result(args.result)
+    problems = check_result(result)
+    for problem in problems:
+        print(f"REJECTED {result.run_id}: {problem}")
+    if problems:
+        return 1
     summary = summarize(result.per_item)
-    print(f"{result.run_id}: solver {result.solver}, split {result.split}, "
-          f"{result.item_count} items, items sha256 {result.items_sha256}")
+    print(f"{result.run_id}: solver {result.solver} ({result.kind}"
+          f"{', ablation ' + result.ablation if result.ablation else ''}), input mode "
+          f"{result.input_mode}, split {result.split}, {result.item_count} items, "
+          f"items sha256 {result.items_sha256}")
+    if result.solver_description:
+        print(f"description: {result.solver_description}")
+    if result.sample_n is not None:
+        print(f"sample: n={result.sample_n} seed={result.sample_seed} "
+              f"ids sha256 {result.sample_ids_sha256}")
     if result.split == "test":
         known = any(result.items_sha256 in p.read_text(encoding="utf-8")
                     for p in Path(args.manifests).glob("test-*.sha256"))
@@ -209,7 +239,19 @@ def build_parser() -> argparse.ArgumentParser:
 
     r = sub.add_parser("run", help="run a solver over items and write results/<run_id>.json")
     r.add_argument("--solver", required=True,
-                   help="oracle|random|constant|mock|nochart:<solver>|package.module:callable")
+                   help="oracle|random|constant|mock|nochart:<solver>|http_json:<config.yaml>|"
+                        "package.module:callable")
+    r.add_argument("--kind", choices=SOLVER_KINDS,
+                   help="required except for oracle (oracle) and random/constant/mock (baseline)")
+    r.add_argument("--description", help="what the solver is (model, tools, retrieval, app "
+                   "version); required for system, app_tools and system_ui")
+    r.add_argument("--input-mode", choices=["chart", "birth"], default="chart",
+                   help="chart (default): positions table; birth: birth data only "
+                        "(Level 0 is always birth)")
+    r.add_argument("--sample", type=int, help="run a reproducible stratified subset of N items")
+    r.add_argument("--stratify", default="task,level",
+                   help="comma list of task, level, tier, source, convention (default task,level)")
+    r.add_argument("--sample-seed", type=int, default=0, help="sampling seed (default 0)")
     r.add_argument("--items", default="items")
     r.add_argument("--out", default="results")
     r.add_argument("--canon", default="canon")
