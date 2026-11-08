@@ -8080,7 +8080,7 @@
    "varga_sign": "exact"
   }
  },
- "upstream_commit": "24d048b27f678ce6f00f772e062cd4a58a9ca6fe",
+ "upstream_commit": "7018b2aa3652460c03e819135c35d8b81190fbc1",
  "upstream_path": "tests/fixtures/golden_charts.json",
  "upstream_repo": "https://github.com/astro-fusion/astro_research-white-paper",
  "upstream_sha256": "9385ff3261dea24df2981566d3f781efcc3886ac81028abcf2e47a24e2eed01b"

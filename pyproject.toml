@@ -12,7 +12,7 @@ requires-python = ">=3.10"
 authors = [{ name = "Astro-Bench contributors" }]
 dependencies = [
     # The oracle engine, pinned by commit (ADR-001). Bump only with a re-generated dev split.
-    "vedic-astrology-core @ git+https://github.com/astro-fusion/astro_research-white-paper.git@24d048b",
+    "vedic-astrology-core @ git+https://github.com/astro-fusion/astro_research-white-paper.git@7018b2aa3652460c03e819135c35d8b81190fbc1",
     "pydantic>=2,<3",
     "PyYAML>=6.0,<7",
     "numpy>=1.21",

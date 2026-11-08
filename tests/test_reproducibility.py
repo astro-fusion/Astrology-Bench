@@ -73,3 +73,26 @@ def test_committed_values_survive_build_noise() -> None:
                 if not _stable_round(deg, noise, digits) or len(same_nak) > 1 or len(same_sign) > 1:
                     unstable.append(f"{item.id} {name} gold")
     assert unstable == []
+
+
+def test_engine_commit_is_pinned_everywhere() -> None:
+    """The engine commit in the package, the pyproject pin, the vendored snapshot and
+    every committed item agree, so a gold change can never ship without a re-pin."""
+    import json as _json
+    import re
+
+    import yaml
+
+    from astro_bench import ENGINE_COMMIT
+
+    root = ITEMS.parent
+    pin = re.search(r"astro_research-white-paper\.git@([0-9a-f]+)",
+                    (root / "pyproject.toml").read_text())
+    assert pin and pin.group(1).startswith(ENGINE_COMMIT)
+    upstream = yaml.safe_load((root / "vendor" / "rules" / "UPSTREAM.yaml").read_text())
+    assert upstream["upstream_commit"] == pin.group(1)
+    golden = _json.loads((root / "vendor" / "golden" / "golden_charts.subset.json").read_text())
+    assert golden["upstream_commit"] == pin.group(1)
+    if item_files(ITEMS):
+        commits = {i.generator.engine_commit for i in load_items(ITEMS)}
+        assert commits == {ENGINE_COMMIT}

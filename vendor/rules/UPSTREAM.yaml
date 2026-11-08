@@ -1,7 +1,7 @@
 upstream_repo: https://github.com/astro-fusion/astro_research-white-paper
 upstream_path: rules/
-upstream_commit: 24d048b27f678ce6f00f772e062cd4a58a9ca6fe
-synced_at: '2026-11-08T14:20:18Z'
+upstream_commit: 7018b2aa3652460c03e819135c35d8b81190fbc1
+synced_at: '2026-11-08T19:00:27Z'
 files:
   financial/jupiter_retrograde_contraction.yaml: c6214b2752cc41fe6b75edabb6c1f35fab21378260027c1f5c8bd883a2ec5e54
   financial/practitioner/CHARTS.md: cd8bfe6278fcc65e7f44087dd1779e5eb8d4fe428373cdfd896e273457ca8576
