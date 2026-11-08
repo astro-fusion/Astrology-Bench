@@ -162,6 +162,7 @@ does not clearly beat `constant` and `nochart` on a slice has shown nothing on i
   items are `needs_review` and not graded.
 - Level 4 is schema only.
 - v1 (TypeScript, 32 items, mock agent) is retired. See [CHANGELOG.md](CHANGELOG.md).
+- Gold corrections are logged in [CORRECTIONS.md](CORRECTIONS.md).
 
 ## Contributing
 

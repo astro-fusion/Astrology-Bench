@@ -35,8 +35,8 @@ Answer accuracy is the mean answer score with a Wilson 95% interval. Citation sc
 
 ## Runs
 
-- `baseline-constant`: constant (baseline), input chart, split dev, 955 items, bench 0.1.0, engine 24d048b, items sha256 `c32943bcb901`
-- `baseline-mock`: mock (baseline), input chart, split dev, 955 items, bench 0.1.0, engine 24d048b, items sha256 `c32943bcb901`
-- `baseline-oracle`: oracle (oracle), input chart, split dev, 955 items, bench 0.1.0, engine 24d048b, items sha256 `c32943bcb901`
-- `baseline-random`: random (baseline), input chart, split dev, 955 items, bench 0.1.0, engine 24d048b, items sha256 `c32943bcb901`
-- `baseline-nochart-constant`: nochart:constant (ablation: nochart), input chart, split dev, 955 items, bench 0.1.0, engine 24d048b, items sha256 `c32943bcb901`
+- `baseline-constant`: constant (baseline), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `5dc500ffaf8c`
+- `baseline-mock`: mock (baseline), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `5dc500ffaf8c`
+- `baseline-oracle`: oracle (oracle), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `5dc500ffaf8c`
+- `baseline-random`: random (baseline), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `5dc500ffaf8c`
+- `baseline-nochart-constant`: nochart:constant (ablation: nochart), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `5dc500ffaf8c`

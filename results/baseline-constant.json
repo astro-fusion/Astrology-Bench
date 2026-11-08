@@ -1,6 +1,6 @@
 {
  "run_id": "baseline-constant",
- "created_at": "2026-11-08T15:16:09Z",
+ "created_at": "2026-11-08T19:01:39Z",
  "model": "constant",
  "provider": "baseline",
  "solver": "constant",
@@ -8,10 +8,10 @@
  "solver_description": "",
  "input_mode": "chart",
  "bench_version": "0.1.0",
- "items_sha256": "c32943bcb901811cbbc0ad63c4cbde5d6b2c95f4299460050982984bc1690cc3",
+ "items_sha256": "5dc500ffaf8c4bb799403639c83878e5c4440ebdcca2c76e42a88a2216f21b53",
  "split": "dev",
  "item_count": 955,
- "engine_commit": "24d048b",
+ "engine_commit": "7018b2a",
  "per_item": [
   {
    "id": "L0-positions-golden-del_1947",
