@@ -5,22 +5,31 @@ Answer accuracy is the mean answer score with a Wilson 95% interval. Citation sc
 
 | solver | level | n | answer acc [95% CI] | citation score | fabricated-citation rate | parse-error rate | Brier |
 |---|---|---|---|---|---|---|---|
-| oracle | all | 839 | 100.0% [99.5, 100.0] | - | - | 0.0% | 0.000 |
+| oracle | all | 955 | 100.0% [99.6, 100.0] | +1.000 | 0.0% | 0.0% | 0.000 |
 | oracle | 0 | 95 | 100.0% [96.1, 100.0] | - | - | 0.0% | 0.000 |
-| oracle | 1 | 744 | 100.0% [99.5, 100.0] | - | - | 0.0% | 0.000 |
-| random | all | 839 | 11.5% [9.5, 13.8] | - | - | 0.0% | 0.227 |
+| oracle | 1 | 804 | 100.0% [99.5, 100.0] | +1.000 | 0.0% | 0.0% | 0.000 |
+| oracle | 2 | 56 | 100.0% [93.6, 100.0] | +1.000 | 0.0% | 0.0% | 0.000 |
+| random | all | 955 | 13.1% [11.1, 15.4] | -0.081 | 8.1% | 0.0% | 0.229 |
 | random | 0 | 95 | 5.6% [2.5, 12.2] | - | - | 0.0% | 0.200 |
-| random | 1 | 744 | 12.2% [10.1, 14.8] | - | - | 0.0% | 0.230 |
-| constant | all | 839 | 19.7% [17.2, 22.6] | - | - | 0.0% | 0.130 |
+| random | 1 | 804 | 14.9% [12.7, 17.6] | +0.000 | 0.0% | 0.0% | 0.231 |
+| random | 2 | 56 | 0.0% [0.0, 6.4] | -1.000 | 100.0% | 0.0% | 0.250 |
+| constant | all | 955 | 20.8% [18.3, 23.5] | -0.072 | 7.7% | 0.0% | 0.133 |
 | constant | 0 | 95 | 9.6% [5.1, 17.2] | - | - | 0.0% | 0.016 |
-| constant | 1 | 744 | 21.0% [18.3, 24.1] | - | - | 0.0% | 0.144 |
-| mock | all | 839 | 11.6% [9.6, 14.0] | - | - | 0.0% | 0.276 |
+| constant | 1 | 804 | 23.2% [20.4, 26.2] | +0.000 | 0.0% | 0.0% | 0.152 |
+| constant | 2 | 56 | 5.4% [1.8, 14.6] | -0.893 | 94.6% | 0.0% | 0.052 |
+| mock | all | 955 | 13.6% [11.5, 15.9] | -0.345 | 34.5% | 0.0% | 0.279 |
 | mock | 0 | 95 | 5.0% [2.1, 11.3] | - | - | 0.0% | 0.241 |
-| mock | 1 | 744 | 12.5% [10.3, 15.0] | - | - | 0.0% | 0.280 |
+| mock | 1 | 804 | 15.5% [13.2, 18.2] | -0.338 | 33.8% | 0.0% | 0.285 |
+| mock | 2 | 56 | 0.0% [0.0, 6.4] | -0.429 | 42.9% | 0.0% | 0.251 |
+| nochart:constant | all | 955 | 20.8% [18.3, 23.5] | -0.072 | 7.7% | 0.0% | 0.133 |
+| nochart:constant | 0 | 95 | 9.6% [5.1, 17.2] | - | - | 0.0% | 0.016 |
+| nochart:constant | 1 | 804 | 23.2% [20.4, 26.2] | +0.000 | 0.0% | 0.0% | 0.152 |
+| nochart:constant | 2 | 56 | 5.4% [1.8, 14.6] | -0.893 | 94.6% | 0.0% | 0.052 |
 
 Runs:
 
-- `baseline-oracle`: oracle, split dev, 839 items, bench 0.1.0, engine 24d048b, items sha256 `a87ca4a20401`
-- `baseline-random`: random, split dev, 839 items, bench 0.1.0, engine 24d048b, items sha256 `a87ca4a20401`
-- `baseline-constant`: constant, split dev, 839 items, bench 0.1.0, engine 24d048b, items sha256 `a87ca4a20401`
-- `baseline-mock`: mock, split dev, 839 items, bench 0.1.0, engine 24d048b, items sha256 `a87ca4a20401`
+- `baseline-oracle`: oracle, split dev, 955 items, bench 0.1.0, engine 24d048b, items sha256 `b37434a1e5b1`
+- `baseline-random`: random, split dev, 955 items, bench 0.1.0, engine 24d048b, items sha256 `b37434a1e5b1`
+- `baseline-constant`: constant, split dev, 955 items, bench 0.1.0, engine 24d048b, items sha256 `b37434a1e5b1`
+- `baseline-mock`: mock, split dev, 955 items, bench 0.1.0, engine 24d048b, items sha256 `b37434a1e5b1`
+- `baseline-nochart-constant`: nochart:constant, split dev, 955 items, bench 0.1.0, engine 24d048b, items sha256 `b37434a1e5b1`
