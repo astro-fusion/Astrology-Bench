@@ -24,6 +24,7 @@ from .common import (
     build_chart,
     chart_of,
     conventions,
+    lon_digits,
     make_item,
     parse_utc,
     planet_record,
@@ -45,16 +46,20 @@ FORMAT = (
 )
 
 
-def _point(longitude: float) -> dict[str, Any]:
+def _point(longitude: float, digits: int = 2) -> dict[str, Any]:
     _idx, sign, deg = get_zodiac_sign(longitude)
     nak = get_nakshatra(longitude)
-    return {"sign": sign, "deg_in_sign": round(deg, 2), "nakshatra": nak["name"],
+    return {"sign": sign, "deg_in_sign": round(deg, digits), "nakshatra": nak["name"],
             "pada": int(nak["pada"])}
 
 
 def positions_answer(chart: BirthChart) -> dict[str, Any]:
     """Engine gold: every graha's sign, degree, nakshatra, pada; the Lagna sign."""
-    answer = {name: _point(float(planet_record(chart, name)["longitude"])) for name in PLANET_NAMES}
+    answer = {
+        name: _point(float(planet_record(chart, name)["longitude"]),
+                     lon_digits(name, chart.node_type))
+        for name in PLANET_NAMES
+    }
     answer[LAGNA] = {"sign": chart.ascendant["sign_name"]}
     return answer
 

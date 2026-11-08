@@ -28,10 +28,12 @@ def render_input(item: Item) -> str:
     if chart is not None:
         lines.append(f"Sidereal chart ({item.convention.words()}):")
         lines.append(f"  Lagna (ascendant): {chart.lagna:.2f} deg")
-        lines.append("  Body: sidereal longitude deg, speed deg/day (negative = retrograde)")
+        lines.append("  Body: sidereal longitude deg (R = retrograde)")
         order = {name: i for i, name in enumerate(PLANET_NAMES)}
         for name, body in sorted(chart.bodies.items(), key=lambda kv: order.get(kv[0], 99)):
-            lines.append(f"  {name}: {body.lon:.2f}, {body.speed:+.2f}")
+            mark = " R" if body.retrograde else ""
+            digits = 1 if name in ("Rahu", "Ketu") and item.convention.node == "true" else 2
+            lines.append(f"  {name}: {body.lon:.{digits}f}{mark}")
         if chart.cusps:
             cusps = ", ".join(f"{i + 1}: {c:.2f}" for i, c in enumerate(chart.cusps))
             lines.append(f"  House cusps: {cusps}")

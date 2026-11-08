@@ -146,12 +146,30 @@ def planet_record(chart: BirthChart, name: str) -> dict[str, Any]:
     return rec
 
 
+#: Bodies whose speed sign is not published (nodes: build-dependent near zero speed).
+NO_SPEED_SIGN = ("Rahu", "Ketu")
+
+
+def lon_digits(name: str, node_model: str) -> int:
+    """Published decimals of a longitude: 1 for the true node, else 2.
+
+    The true node differs between Swiss Ephemeris builds by up to 1.1e-5 deg, which
+    would flip a 2-dp rounding about once per regeneration of the dev split.
+    """
+    return 1 if name in NO_SPEED_SIGN and node_model == "true" else 2
+
+
 def chart_table(chart: BirthChart, conv: Convention) -> ChartTable:
-    """Sidereal longitudes (2 dp), speeds (3 dp) and Lagna; cusps for non-whole-sign."""
+    """Sidereal longitudes (2 dp), retrograde flags and Lagna; cusps for non-whole-sign.
+
+    Speeds are reduced to their sign (the engine's ``retrograde``) because their low
+    digits are not reproducible across Swiss Ephemeris builds; see :class:`Body`.
+    """
     bodies = {
         name: Body(
-            lon=round(float(planet_record(chart, name)["longitude"]), 2),
-            speed=round(float(planet_record(chart, name)["longitude_speed"]), 3),
+            lon=round(float(planet_record(chart, name)["longitude"]), lon_digits(name, conv.node)),
+            retrograde=None if name in NO_SPEED_SIGN
+            else bool(planet_record(chart, name)["retrograde"]),
         )
         for name in PLANET_NAMES
     }

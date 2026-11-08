@@ -48,8 +48,15 @@ class Birth(_Strict):
 
 
 class Body(_Strict):
+    """One graha in the chart table: sidereal longitude (2 dp) and the speed sign.
+
+    Only the sign of the speed is published (``retrograde``), and not at all for Rahu
+    and Ketu: speeds, and true-node speeds above all, differ between Swiss Ephemeris
+    builds by up to 1e-4 deg/day, so a rounded magnitude is not reproducible.
+    """
+
     lon: float
-    speed: float
+    retrograde: bool | None = None
 
 
 class ChartTable(_Strict):
