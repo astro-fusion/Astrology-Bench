@@ -128,3 +128,40 @@ def test_helpers() -> None:
         dig({"a": 1}, "a.b")
     with pytest.raises(HttpSolverError):
         HttpJsonSolver({"url": "http://x"})
+
+
+PATH_MARKERS = ("/Users/", "/home/", "C:\\")
+
+
+def test_result_records_no_filesystem_path(server: Server, tmp_path: Path,
+                                           monkeypatch: pytest.MonkeyPatch,
+                                           small_items: list[Item], canon: Canon) -> None:
+    from astro_bench.runner import public_solver_name
+
+    path = tmp_path / "my-endpoint.yaml"
+    path.write_text(yaml.safe_dump(config(server.url)))
+    monkeypatch.setenv("BENCH_TEST_KEY", "k")
+    items = small_items[:2]
+    for name in (f"http_json:{path}", f"nochart:http_json:{path}"):
+        result = run(get_solver(name, items, canon), items, canon, solver_name=name,
+                     kind="system", description="test endpoint")
+        top = result.model_dump(mode="json", exclude={"per_item", "summary"})
+        markers = (*PATH_MARKERS, str(tmp_path))
+        leaked = {k: v for k, v in top.items()
+                  if isinstance(v, str) and any(m in v for m in markers)}
+        assert leaked == {}
+        assert result.solver.endswith("http_json:my-endpoint")
+        assert result.model == result.solver
+    assert public_solver_name("http_json:C:\\cfg\\app.yml") == "http_json:app"
+    assert public_solver_name("http_json:/home/u/x.yaml") == "http_json:x"
+    assert public_solver_name("mock") == "mock"
+
+
+def test_committed_results_contain_no_paths() -> None:
+    import json as _json
+
+    for path in sorted((Path(__file__).resolve().parents[1] / "results").glob("*.json")):
+        data = _json.loads(path.read_text())
+        for key, value in data.items():
+            if isinstance(value, str):
+                assert not any(m in value for m in PATH_MARKERS), (path.name, key)

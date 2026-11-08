@@ -6,7 +6,7 @@ import json
 from collections.abc import Sequence
 from dataclasses import dataclass
 from datetime import datetime, timezone
-from pathlib import Path
+from pathlib import Path, PurePath
 from typing import Any
 
 from . import BENCH_VERSION, ENGINE_COMMIT
@@ -63,6 +63,7 @@ def run(solver: Solver, items: Sequence[Item], canon: Canon, *, solver_name: str
         run_id: str | None = None, model: str | None = None, provider: str | None = None,
         split: str | None = None, convention_filter: str | None = None,
         sample: SampleInfo | None = None) -> RunResult:
+    solver_name = public_solver_name(solver_name)
     kind = kind or default_kind(solver_name)
     if kind is None:
         raise ValueError(f"solver {solver_name!r} needs an explicit kind")
@@ -99,6 +100,17 @@ def run(solver: Solver, items: Sequence[Item], canon: Canon, *, solver_name: str
         per_item=rows,
         summary=summarize(rows),
     )
+
+
+def public_solver_name(name: str) -> str:
+    """The solver name as recorded in results: ``http_json:<config path>`` becomes
+    ``http_json:<config basename without extension>`` (also inside ``nochart:``), so no
+    local filesystem path is ever written to a result file."""
+    if name.startswith("nochart:"):
+        return "nochart:" + public_solver_name(name.split(":", 1)[1])
+    if name.startswith("http_json:"):
+        return "http_json:" + PurePath(name.split(":", 1)[1].replace("\\", "/")).stem
+    return name
 
 
 def default_run_id(solver_name: str, input_mode: str = "chart") -> str:
