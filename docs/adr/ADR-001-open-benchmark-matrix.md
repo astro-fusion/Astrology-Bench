@@ -46,6 +46,10 @@ rater approval, Level 4 as schema only.
   24 places spanning latitudes -45 to +60, with the seed recorded on every item.
   Items are balanced: for yes/no tasks the generator rejects samples until positives
   and negatives are within 45/55.
+- Reproducibility across CPython builds: pyswisseph gives results that differ by about 1e-5
+  degrees between builds, so the chart table prints no speed magnitudes (a `retrograde` flag
+  instead, none for the nodes) and true-node longitudes to 1 decimal; `tests/test_reproducibility.py`
+  guards the rounding margin.
 
 ## Item schema (`items/**/*.jsonl`, one JSON object per line)
 
@@ -63,7 +67,7 @@ rater approval, Level 4 as schema only.
   "split": "dev",
   "input": {
     "birth": {"utc": "1990-05-15T04:45:00Z", "lat": 27.7172, "lon": 85.324},
-    "chart": {"lagna": 103.25, "bodies": {"Sun": {"lon": 30.38, "speed": 0.96}, "...": {}}}
+    "chart": {"lagna": 103.25, "bodies": {"Sun": {"lon": 30.38, "retrograde": false}, "...": {}}}
   },
   "prompt": "Using the sidereal chart above (Lahiri ayanamsa, mean node, whole-sign houses), is Gaja Kesari yoga present? Answer in the JSON format given in the system prompt and cite the classical text, chapter and verse that defines the yoga. If you cannot cite one, set citations to [] and say so.",
   "answer_type": "bool | category | set | positions | citation | likert",
