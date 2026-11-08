@@ -79,9 +79,10 @@ verse). The scorer accepts any `also_in` locus as a correct citation. Where they
 disagree on content, say how in a `dispute` note on the entry and keep both loci.
 Disputes found while building this canon include:
 
-- Gaja Kesari: BPHS (Santhanam 36.3-4) requires an angle from the ascendant or the
-  Moon and excludes debilitation, combustion and inimical sign; other texts use the
-  Moon alone.
+- Gaja Kesari: BPHS (Santhanam 36.3-4) allows an angle from the ascendant or the
+  Moon and excludes debilitation, combustion and inimical sign; the common
+  definition (Jataka Parijata, called Kesari yoga in Phaladeepika 6.14 per
+  Santhanam's note) is Jupiter in a kendra from the Moon alone.
 - Kemadruma: the cancelling conditions differ between BPHS 37.11-13, Brihat Jataka
   13.3 and Saravali 13.2.
 - Brihat Jataka 1.13: the stanza gives Mars at 28 degrees, Iyer's table note prints 29.

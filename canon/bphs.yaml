@@ -267,7 +267,9 @@ entries:
     verified: quoted
     verified_by: astro-bench B-2 agent
     verified_at: "2026-11-08"
-    dispute: "Santhanam's notes to this verse record that other texts (Jataka Parijata, Kumara Swameeyam, the Bombay edition) define Gaja Kesari differently, usually as Jupiter in a kendra from the Moon alone."
+    also_in:
+      - {text: "Phaladeepika", chapter: "6", verse: "14"}
+    dispute: "Santhanam's notes record that the common definition (Jataka Parijata) is Jupiter in a kendra from the Moon alone, which Phaladeepika 6.14 calls Kesari yoga; Kumara Swameeyam adds a waxing Moon with Jupiter in the 4th or 10th from it. The BPHS verse here also allows a kendra from the ascendant and excludes debilitation, combustion and inimical sign."
   - id: bphs.santhanam1984.ch36.v5-6
     text: "BPHS"
     edition: santhanam1984
