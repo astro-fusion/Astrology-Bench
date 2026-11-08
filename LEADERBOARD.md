@@ -24,6 +24,15 @@ Answer accuracy is the mean answer score with a Wilson 95% interval. Citation sc
 |  | mock | baseline | 2026-11-08 | chart | 1 | 804 | 15.5% [13.2, 18.2] | -0.338 | 33.8% | 0.0% | 0.285 |
 |  | mock | baseline | 2026-11-08 | chart | 2 | 56 | 0.0% [0.0, 6.4] | -0.429 | 42.9% | 0.0% | 0.251 |
 
+## Systems
+
+| # | solver | kind | date | input mode | level | n | answer acc [95% CI] | citation score | fabricated-citation rate | parse-error rate | Brier |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | http_json:app-tools | app_tools | 2026-11-08 | birth | all | 955 | 94.1% [92.5, 95.5] | +0.000 | 0.0% | 0.0% | 0.000 |
+|  | http_json:app-tools | app_tools | 2026-11-08 | birth | 0 | 95 | 100.0% [96.1, 100.0] | - | - | 0.0% | 0.000 |
+|  | http_json:app-tools | app_tools | 2026-11-08 | birth | 1 | 804 | 100.0% [99.5, 100.0] | +0.000 | 0.0% | 0.0% | 0.000 |
+|  | http_json:app-tools | app_tools | 2026-11-08 | birth | 2 | 56 | 0.0% [0.0, 6.4] | +0.000 | 0.0% | 0.0% | 0.000 |
+
 ## Ablations (not ranked)
 
 | # | solver | kind | date | input mode | level | n | answer acc [95% CI] | citation score | fabricated-citation rate | parse-error rate | Brier |
@@ -35,6 +44,7 @@ Answer accuracy is the mean answer score with a Wilson 95% interval. Citation sc
 
 ## Runs
 
+- `app-tools-repin-7018b2a`: http_json:app-tools (app_tools; AstroFusion MCP kundali tools over Rust engines, no LLM), input birth, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `5dc500ffaf8c`
 - `baseline-constant`: constant (baseline), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `5dc500ffaf8c`
 - `baseline-mock`: mock (baseline), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `5dc500ffaf8c`
 - `baseline-oracle`: oracle (oracle), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `5dc500ffaf8c`
