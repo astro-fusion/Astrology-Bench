@@ -14,8 +14,11 @@ conventions, tiers, splits). See `docs/adr/ADR-001-open-benchmark-matrix.md`.
 - Baselines in CI: oracle, random, constant, mock, nochart.
 - `inspect_ai` tasks, one per level, to run any supported provider.
 - Hidden test split with committed hash manifests.
-- The 32 v1 items move to `items/judgment/seed/legacy_v1.jsonl` as `needs_review`. Four
-  carry review notes.
+- The 32 v1 items move to `items/judgment/seed/legacy_v1.jsonl` as `needs_review`. Eighteen
+  carry review notes: four flagged in the design review and fourteen more found by
+  checking each item's stated logic against its chart.
+- `canon/`: 56 verified-quote entries across six classical texts with edition pinning
+  (BPHS = Santhanam 1984, Brihat Jataka = Iyer 1905); Kala Sarpa recorded as untraced.
 - Level 3 is a seed set awaiting three raters. Level 4 is schema only.
 - The v1 TypeScript runner is removed.
 

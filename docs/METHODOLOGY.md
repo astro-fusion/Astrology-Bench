@@ -109,9 +109,11 @@ Parse errors are excluded from calibration and counted separately.
 
 ## What a floor teaches (v1 constant-3)
 
-In v1, every item used a 1-to-5 scale, and partial credit was given for being close.
-A solver that always answered 3 scored about 40 percent. Nothing was learned about the
-solver. The floor was high because the scale was narrow and gold sat near the middle.
+The v1 grader gave 1.0 for an exact match on the 1-to-5 scale and 0.5 for a miss by one.
+With gold spread evenly over the five values, a solver that always answers 3 is exact
+one time in five and off by one two times in five, so it scores 0.2 + 0.4 x 0.5 = 40
+percent. Uniform random guessing scores 0.2 + 0.32 x 0.5 = 36 percent. Nothing was
+learned about the solver, and a reported 60 percent would have looked strong.
 
 The lessons built into v2:
 

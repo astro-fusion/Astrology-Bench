@@ -39,7 +39,7 @@ compare runs.
 
 ```sh
 # generate the public dev split
-astro-bench generate --level 0,1,2 --split dev --seed 20261108 --n-per-task 60
+astro-bench generate --level 0,1,2 --split dev --seed 20261108 --n-per-task 40
 
 # check the items
 astro-bench validate items/
@@ -119,6 +119,9 @@ does not clearly beat `constant` and `nochart` on a slice has shown nothing on i
 ## Status
 
 - v0.1 ships Levels 0, 1 and 2 as generated items.
+- The canon holds 56 verified-quote entries across six texts (BPHS, Brihat Jataka,
+  Phaladeepika, Saravali, Jaimini Sutras, Brihat Samhita); Kala Sarpa is recorded as
+  untraced. See `docs/CANON_POLICY.md`.
 - Level 3 is a seed set of human-authored items awaiting three raters. Until then the
   items are `needs_review` and not graded.
 - Level 4 is schema only.
