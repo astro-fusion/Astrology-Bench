@@ -1,0 +1,64 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install (engine pinned by commit in pyproject.toml)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Lint
+        run: ruff check .
+
+      - name: Type check (package only)
+        run: mypy
+
+      - name: Tests
+        run: pytest -q
+
+      - name: Validate committed items
+        run: astro-bench validate items/
+
+      - name: Generate determinism (twice, and against the committed dev split)
+        run: |
+          astro-bench generate --split dev --seed 20261108 --out "$RUNNER_TEMP/gen-a"
+          astro-bench generate --split dev --seed 20261108 --out "$RUNNER_TEMP/gen-b"
+          diff -r "$RUNNER_TEMP/gen-a" "$RUNNER_TEMP/gen-b"
+          for level in level0 level1 level2; do
+            if [ -d "items/$level" ]; then diff -r "items/$level" "$RUNNER_TEMP/gen-a/$level"; fi
+          done
+
+      - name: Baselines (no API key)
+        run: |
+          for solver in oracle random constant mock; do
+            astro-bench run --solver "$solver" --items items/ --out "$RUNNER_TEMP/results"
+          done
+          astro-bench leaderboard --results "$RUNNER_TEMP/results" --out "$RUNNER_TEMP/results/LEADERBOARD.md"
+
+      - name: Upload results
+        if: matrix.python-version == '3.12'
+        uses: actions/upload-artifact@v4
+        with:
+          name: baseline-results
+          path: ${{ runner.temp }}/results/
