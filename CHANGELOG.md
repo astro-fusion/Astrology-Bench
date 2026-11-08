@@ -21,6 +21,14 @@ conventions, tiers, splits). See `docs/adr/ADR-001-open-benchmark-matrix.md`.
   (BPHS = Santhanam 1984, Brihat Jataka = Iyer 1905); Kala Sarpa recorded as untraced.
 - Level 3 is a seed set awaiting three raters. Level 4 is schema only.
 - The v1 TypeScript runner is removed.
+- Solver protocol (ADR-002): solvers receive a redacted `SolverItem` without gold; results
+  carry `kind` (oracle, baseline, model, system, app_tools, system_ui),
+  `solver_description`, `input_mode` and sample metadata; `run` gains `--kind`,
+  `--description`, `--input-mode chart|birth`, `--sample`, `--stratify` and
+  `--sample-seed`; a generic `http_json:<config.yaml>` solver; the leaderboard groups by
+  kind and lists `nochart:` runs as unranked ablations.
+- Chart tables carry a retrograde flag instead of speeds, and true-node longitudes to
+  1 dp, so the dev split is byte-identical across Swiss Ephemeris builds.
 
 ## 1.0.0
 

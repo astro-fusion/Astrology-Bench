@@ -49,7 +49,7 @@ astro-bench run --solver oracle --items items/ --out results/
 astro-bench run --solver random --items items/ --out results/
 astro-bench run --solver constant --items items/ --out results/
 astro-bench run --solver mock --items items/ --out results/
-astro-bench run --solver nochart:random --items items/ --out results/
+astro-bench run --solver nochart:constant --items items/ --out results/
 
 # render the leaderboard
 astro-bench leaderboard --results results/ --out LEADERBOARD.md
@@ -63,8 +63,43 @@ pip install -e ".[eval]"
 inspect eval astro_bench/inspect_tasks.py@level1 --model anthropic/claude-sonnet-5-5
 ```
 
-Any provider that `inspect_ai` supports works. `astro-bench run` also accepts any Python
-callable `Solver` for offline work.
+Any provider that `inspect_ai` supports works; add `-T input_mode=birth` to give the
+model birth data only.
+
+### Running a model or a system, and `kind`
+
+Solvers never see the answers. Every solver receives a redacted item (`id, level, task,
+tier, convention, input, prompt, answer_type, choices`); `gold`, `canon_ids`, `rule_id`
+and `generator` are not present. Only the engine oracle, which the runner builds itself,
+sees the full item (ADR-002).
+
+Every result records a `kind`: `oracle`, `baseline`, `model` (a bare language model),
+`system` (a model with tools or retrieval), `app_tools` or `system_ui` (an application).
+`oracle` and `random`/`constant`/`mock` get their kind automatically; anything else
+needs `--kind`, and `system`, `app_tools` and `system_ui` also need `--description`
+saying what the system is (model, tools, retrieval, app version). `astro-bench score`
+rejects a system result without one.
+
+```sh
+# any HTTP endpoint: config names the URL, a body template and env-var headers
+astro-bench run --solver http_json:my_endpoint.yaml --kind system \
+  --description "model X with a chart-calculation tool, v1.4" \
+  --input-mode birth --sample 200 --stratify task,level --sample-seed 1
+
+# any Python callable taking a SolverItem and returning the reply text
+astro-bench run --solver mypkg.solver:answer --kind model
+```
+
+- `--input-mode chart` (default) gives the positions table; `--input-mode birth` gives
+  only the birth data and the convention, and the solver computes the chart. Level 0 is
+  always birth mode. The result and the leaderboard record the mode.
+- `--sample N --stratify task,level --sample-seed S` runs a reproducible stratified
+  subset; the result records the seed, `N` and the sha256 of the sampled ids.
+- An `http_json` config has `url`, `method`, `headers` (values may be `${ENV_VAR}`,
+  resolved at run time and an error when unset), `body_template` (JSON with `{system}`,
+  `{prompt}`, `{convention}`, `{input_mode}`, `{item_id}`), `reply_path` (dotted JSON
+  path) or `reply: text`, `rate_limit_per_minute`, `timeout_s` and `retry_on_429`. No
+  credentials belong in the repository.
 
 ## Required output format
 
@@ -108,12 +143,13 @@ Baselines run in CI without an API key:
 | `random` | Uniform over the answer space. |
 | `constant` | Majority class per task. |
 | `mock` | The v1 seeded pseudo-random responder, kept to reproduce old numbers. |
-| `nochart:<solver>` | Deletes `input.chart` and `input.birth` first. Detects prior-driven guessing. |
+| `nochart:<solver>` | Deletes `input.chart` and `input.birth` first. Detects prior-driven guessing. Labelled `ablation: nochart` and never ranked. |
 
 ## Leaderboard
 
-Numbers live in [LEADERBOARD.md](LEADERBOARD.md), rendered from `results/`. Baselines
-always appear beside model rows. Every rate carries a Wilson 95% interval. A model that
+Numbers live in [LEADERBOARD.md](LEADERBOARD.md), rendered from `results/`. Rows are
+grouped by kind with `kind`, `date` and `input mode` columns: baselines first, then
+models, then systems; only models and systems are ranked. Every rate carries a Wilson 95% interval. A model that
 does not clearly beat `constant` and `nochart` on a slice has shown nothing on it.
 
 ## Status

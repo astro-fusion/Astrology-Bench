@@ -140,6 +140,28 @@ intervals overlap.
 Slices (per task, source, convention, tier) are small. Intervals widen quickly there, so
 the leaderboard shows `n` beside each rate.
 
+## Solver kinds and input modes
+
+ADR-002 fixes how a solver is run and labelled, so that a reported number means one
+thing.
+
+- **Redacted items.** A solver receives only `id, level, task, tier, convention, input,
+  prompt, answer_type, choices`. `gold`, `canon_ids`, `rule_id` and `generator` are not
+  present. The oracle is the one exception and is constructed inside the runner from
+  the engine, not from the item's gold.
+- **Kind.** Every result carries `kind` in {oracle, baseline, model, system, app_tools,
+  system_ui} and a free-text `solver_description`. A tool-using system and a bare
+  language model are not comparable, so the leaderboard groups rows by kind: baselines
+  first, then `model`, then `system`. A system row without a description is rejected.
+- **Input mode.** `chart` (default) gives the positions table; `birth` gives only the
+  birth data plus the convention and lets the solver compute. Level 0 is always birth
+  mode. The mode is recorded and shown.
+- **Sampling.** `--sample N --stratify task,level --sample-seed S` draws a reproducible
+  stratified subset; the result records the sample seed and the sampled ids' sha256, so
+  two runs on the same sample are comparable.
+- **Nochart is a kind of ablation, not a solver.** `nochart:<solver>` results are
+  labelled `ablation: nochart` and are never ranked.
+
 ## Splits and contamination
 
 - `dev` is public. It is generated with seed 20261108 and committed under `items/`.
