@@ -20,13 +20,22 @@ def test_canon_indexes(canon: Canon) -> None:
     assert canon.chapter_in_range("BPHS", "97") and not canon.chapter_in_range("BPHS", "98")
     assert [e.id for e in canon.gold_for("gaja_kesari")] == GK
     assert canon.gold_for("graha_drishti") == []  # paraphrased only
+    # an entry found under its second rule key
+    assert [e.id for e in canon.gold_for("sunapha_anapha")] == ["bphs.santhanam1984.ch37.v7-10"]
+    assert [u["rule_key"] for u in canon.untraced] == ["kala_sarpa"]
     assert ("BPHS", 36) in canon.by_text_chapter
 
 
 def test_chapter_and_verse_parsing() -> None:
     assert chapter_number("Ch. 36") == 36 and chapter_number("intro") is None
-    assert verse_numbers("3-4") == {3, 4} and verse_numbers("3, 7") == {3, 7}
-    assert verse_numbers(None) == set()
+    assert verse_numbers("3-4") == {"3", "4"} and verse_numbers("3, 7") == {"3", "7"}
+    assert verse_numbers("57-63") == {str(n) for n in range(57, 64)}
+    assert verse_numbers("v. 12") == {"12"} and verse_numbers(None) == set()
+    # Jaimini pada.sutra
+    assert verse_numbers("1.11") == {"1.11"}
+    assert verse_numbers("1.2-3") == {"1.2", "1.3"} == verse_numbers("1.2-1.3")
+    assert verse_numbers("1.2") & verse_numbers("1.2-3")
+    assert not verse_numbers("2") & verse_numbers("1.2-3")
 
 
 @pytest.mark.parametrize(

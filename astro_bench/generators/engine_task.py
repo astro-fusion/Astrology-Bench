@@ -64,7 +64,7 @@ class EngineTask:
             query = self.query(rng, chart, moment)
             if query is None:
                 continue
-            source, canon_ids = task_canon(ctx.canon, self.name)
+            source, canon_ids = task_canon(ctx.canon, self.name, query)
             prompt = f"{self.prompt(conv, query)} {CITE_HINT}"
             return make_item(
                 ctx=ctx, level=1, task=self.name, tier=self.tier, conv=conv, index=index,

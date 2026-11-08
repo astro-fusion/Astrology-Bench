@@ -11,6 +11,7 @@ import re
 from collections import defaultdict
 from collections.abc import Iterable
 from pathlib import Path
+from typing import Any
 
 import yaml
 
@@ -56,32 +57,52 @@ def chapter_number(chapter: str | int | None) -> int | None:
     return int(match.group()) if match else None
 
 
-def verse_numbers(verse: str | int | None) -> set[int]:
-    """Every verse number named by a label such as "3", "3-4", "3,5" or "3–6"."""
+_RANGE = re.compile(r"^(?:(\d+)\.)?(\d+)\s*[-–]\s*(?:(\d+)\.)?(\d+)$")
+_SINGLE = re.compile(r"^(?:(\d+)\.)?(\d+)$")
+
+
+def verse_numbers(verse: str | int | None) -> set[str]:
+    """Every verse named by a label, as strings.
+
+    Plain verses: "3" -> {"3"}, "57-63" -> {"57", ..., "63"}, "3, 5" -> {"3", "5"}.
+    Dotted Jaimini ``pada.sutra`` verses keep the pada: "1.11" -> {"1.11"},
+    "1.2-3" and "1.2-1.3" -> {"1.2", "1.3"}. A label prefixed "v." or "verse" is accepted.
+    """
     if verse is None:
         return set()
-    found: set[int] = set()
-    for part in re.split(r"[,;/ ]+", str(verse)):
-        rng = re.match(r"^\D*(\d+)\s*[-–]\s*(\d+)", part)
+    found: set[str] = set()
+    text = re.sub(r"(?i)\b(?:verses?|vv?|sl(?:oka)?s?|sutras?)\.?\s*", "", str(verse))
+    for part in re.split(r"[,;/&]+|\s+and\s+", text):
+        part = part.strip().rstrip(".")
+        rng = _RANGE.match(part)
         if rng:
-            lo, hi = int(rng.group(1)), int(rng.group(2))
+            pada, lo_s, pada2, hi_s = rng.groups()
+            lo, hi = int(lo_s), int(hi_s)
+            if pada2 is not None and pada2 != pada:
+                found.update({f"{pada}.{lo}" if pada else str(lo), f"{pada2}.{hi}"})
+                continue
             if lo <= hi and hi - lo < 200:
-                found.update(range(lo, hi + 1))
+                prefix = f"{int(pada)}." if pada else ""
+                found.update(f"{prefix}{n}" for n in range(lo, hi + 1))
             continue
-        num = re.search(r"\d+", part)
-        if num:
-            found.add(int(num.group()))
+        single = _SINGLE.match(part)
+        if single:
+            pada, num = single.groups()
+            found.add(f"{int(pada)}.{int(num)}" if pada else str(int(num)))
     return found
 
 
 class Canon:
     """The loaded canon, indexed by rule key and by (text, chapter)."""
 
-    def __init__(self, registry: CanonRegistry, entries: Iterable[CanonEntry]):
+    def __init__(self, registry: CanonRegistry, entries: Iterable[CanonEntry],
+                 untraced: Iterable[dict[str, Any]] | None = None):
         self.registry = registry
         self.texts: dict[str, CanonText] = {t.id: t for t in registry.texts}
         self.entries: dict[str, CanonEntry] = {}
         self.by_rule_key: dict[str, list[CanonEntry]] = defaultdict(list)
+        #: Rules searched for and not found (``untraced:`` lists); never gold.
+        self.untraced: list[dict[str, Any]] = list(untraced or [])
         self.by_text_chapter: dict[tuple[str, int], list[CanonEntry]] = defaultdict(list)
         self._names: dict[str, str] = {}
         for text in registry.texts:
@@ -102,7 +123,8 @@ class Canon:
             if not self.chapter_in_range(text_id, entry.chapter):
                 problems.append(f"{entry.id}: chapter {entry.chapter} out of range")
             self.entries[entry.id] = entry
-            self.by_rule_key[entry.rule_key].append(entry)
+            for key in entry.keys:
+                self.by_rule_key[key].append(entry)
             num = chapter_number(entry.chapter)
             if num is not None:
                 self.by_text_chapter[(text_id, num)].append(entry)
@@ -121,13 +143,15 @@ class Canon:
         raw = yaml.safe_load(reg_path.read_text(encoding="utf-8")) or {}
         registry = CanonRegistry.model_validate(raw)
         entries: list[CanonEntry] = []
+        untraced: list[dict[str, Any]] = []
         for path in sorted(root.glob("*.yaml")):
             if path.name == "REGISTRY.yaml":
                 continue
             data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
             for raw_entry in data.get("entries") or []:
                 entries.append(CanonEntry.model_validate(raw_entry))
-        return cls(registry, entries)
+            untraced += [dict(u, file=path.name) for u in data.get("untraced") or []]
+        return cls(registry, entries, untraced)
 
     @classmethod
     def empty(cls) -> Canon:
@@ -159,7 +183,7 @@ class Canon:
         return 1 <= num <= self.texts[text_id].chapters
 
     def gold_for(self, rule_key: str) -> list[CanonEntry]:
-        """``verified: quoted`` entries for ``rule_key`` (sorted by id)."""
+        """``verified: quoted`` entries whose ``rule_key`` or ``rule_keys`` name ``rule_key``."""
         entries = self.by_rule_key.get(rule_key, [])
         return sorted((e for e in entries if e.verified == "quoted"), key=lambda e: e.id)
 

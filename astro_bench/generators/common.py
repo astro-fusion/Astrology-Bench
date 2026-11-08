@@ -168,26 +168,41 @@ def item_id(level: int, task: str, conv: Convention, index: int, tag: str | None
     return "-".join(parts)
 
 
-#: Canon rule keys looked up for the engine-direct tasks (first quoted match wins).
+#: Canon rule keys for the engine-direct tasks; every quoted entry under any key is gold.
+#: ``varga`` depends on the division asked. ``nakshatra`` and ``positions`` have no
+#: defining canon entry (the canon covers nakshatra lords, not the 13d20m division).
 TASK_RULE_KEYS: dict[str, list[str]] = {
     "positions": [],
-    "nakshatra": ["nakshatra", "nakshatra_pada"],
-    "varga": ["navamsa", "varga", "divisional_charts", "dasamsa", "saptamsa"],
-    "dasha": ["vimshottari", "vimshottari_dasha", "dasha"],
-    "dignity": ["dignity", "exaltation", "moolatrikona", "own_sign"],
-    "combustion": ["combustion", "astangata"],
-    "aspect": ["graha_drishti", "aspect", "aspects"],
-    "lordship": ["house_lordship", "lordship", "bhavesha_phala", "sign_lords"],
+    "nakshatra": [],
+    "dasha": ["vimshottari_dasha_years", "vimshottari_order"],
+    "dignity": ["exaltation_degrees", "debilitation_degrees", "moolatrikona", "own_signs",
+                "planetary_friendship"],
+    "combustion": ["combustion_orbs"],
+    "aspect": ["graha_drishti"],
+    "lordship": ["own_signs"],
 }
+VARGA_RULE_KEYS: dict[int, list[str]] = {9: ["navamsa_d9"], 10: ["dasamsa_d10"],
+                                         7: ["saptamsa_d7"]}
 
 
-def task_canon(canon: Canon, task: str) -> tuple[str, list[str]]:
+def task_rule_keys(task: str, query: dict[str, Any] | None = None) -> list[str]:
+    if task == "varga" and query and "varga" in query:
+        return VARGA_RULE_KEYS.get(int(query["varga"]), [])
+    return TASK_RULE_KEYS.get(task, [])
+
+
+def task_canon(canon: Canon, task: str, query: dict[str, Any] | None = None
+               ) -> tuple[str, list[str]]:
     """(source, canon_ids) for an engine-direct task; ``modern`` when nothing is quoted."""
-    for key in TASK_RULE_KEYS.get(task, []):
-        gold = canon.gold_for(key)
-        if gold:
-            return gold[0].text, [e.id for e in gold]
-    return "modern", []
+    ids: list[str] = []
+    source = "modern"
+    for key in task_rule_keys(task, query):
+        for entry in canon.gold_for(key):
+            if entry.id not in ids:
+                ids.append(entry.id)
+                if source == "modern":
+                    source = canon.resolve_text(entry.text) or entry.text
+    return source, ids
 
 
 def make_item(

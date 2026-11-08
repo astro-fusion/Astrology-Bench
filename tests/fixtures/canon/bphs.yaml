@@ -20,7 +20,7 @@ entries:
     chapter: "3"
     verse: "49"
     topic: combustion
-    rule_key: combustion
+    rule_key: combustion_orbs
     statement: A planet too close to the Sun is combust.
     quote: FIXTURE QUOTE combustion
     verified: quoted
@@ -35,3 +35,20 @@ entries:
     rule_key: graha_drishti
     statement: Planets aspect the 7th; Mars, Jupiter and Saturn have special aspects.
     verified: paraphrased
+  - id: bphs.santhanam1984.ch37.v7-10
+    text: BPHS
+    edition: santhanam1984
+    chapter: "37"
+    verse: "7-10"
+    topic: yoga
+    rule_key: sunapha
+    rule_keys: [sunapha, sunapha_anapha]
+    statement: A planet other than the Sun in the 2nd from the Moon gives Sunapha.
+    quote: FIXTURE QUOTE sunapha
+    url: https://example.org/bphs/37
+    verified: quoted
+    dispute: fixture dispute note
+untraced:
+  - rule_key: kala_sarpa
+    verified: untraced
+    note: fixture

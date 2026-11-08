@@ -28,7 +28,7 @@ from ..schema import Citation
 class Locus:
     text: str
     chapter: int
-    verses: frozenset[int]
+    verses: frozenset[str]
 
 
 @dataclass(frozen=True)

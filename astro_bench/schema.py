@@ -260,6 +260,8 @@ class CanonEntry(BaseModel):
     verse: str | None = None
     topic: str
     rule_key: str
+    #: Every rule this entry defines (``rule_key`` is the first); defaults to [rule_key].
+    rule_keys: list[str] = Field(default_factory=list)
     statement: str
     quote: str | None = None
     url: str | None = None
@@ -273,7 +275,12 @@ class CanonEntry(BaseModel):
     def _stringify(cls, value: Any) -> Any:
         return None if value is None else str(value)
 
-    @field_validator("also_in", mode="before")
+    @field_validator("also_in", "rule_keys", mode="before")
     @classmethod
-    def _also_in(cls, value: Any) -> Any:
+    def _none_list(cls, value: Any) -> Any:
         return [] if value is None else value
+
+    @property
+    def keys(self) -> list[str]:
+        """``rule_key`` followed by any other ``rule_keys``, without duplicates."""
+        return list(dict.fromkeys([self.rule_key, *self.rule_keys]))
