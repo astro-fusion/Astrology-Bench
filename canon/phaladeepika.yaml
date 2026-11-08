@@ -1,0 +1,75 @@
+# Canon entries for Phaladeepika, edition sastri1950. Only verified: quoted entries are Level 2 gold.
+# Quotes were machine-checked as substrings of the source text at the URL (whitespace-normalised, OCR text as scanned).
+schema_version: 1
+entries:
+  - id: phaladeepika.sastri1950.ch4.v5
+    text: "Phaladeepika"
+    edition: sastri1950
+    chapter: "4"
+    verse: "5"
+    topic: dignity
+    rule_key: retrograde_strength
+    statement: "The five non-luminous planets are strong when retrograde (a rule that conflicts with the later folk rule that exalted retrograde planets act as debilitated)."
+    quote: "The other five non-luminous planets are strong when they are retrograde."
+    url: "https://archive.org/stream/Phaladeepika2ndEd.1950ByVSubrahmanyaSastri/Phaladeepika%202nd%20Ed.%201950%20by%20V%20Subrahmanya%20Sastri_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+  - id: phaladeepika.sastri1950.ch4.v4
+    text: "Phaladeepika"
+    edition: sastri1950
+    chapter: "4"
+    verse: "4"
+    topic: dignity
+    rule_key: retrograde_strength
+    statement: "A planet is strong when retrograde even if posited in a depression or inimical sign."
+    quote: "A planet is said to possess strength when, he is retrograde or when his rays are full and brilliant, though posited in a depression or inimical"
+    url: "https://archive.org/stream/Phaladeepika2ndEd.1950ByVSubrahmanyaSastri/Phaladeepika%202nd%20Ed.%201950%20by%20V%20Subrahmanya%20Sastri_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+  - id: phaladeepika.sastri1950.ch4.v7
+    text: "Phaladeepika"
+    edition: sastri1950
+    chapter: "4"
+    verse: "7"
+    topic: combustion
+    rule_key: combustion_orbs
+    statement: "A planet's positional strength is nil when in its depression sign or eclipsed by the Sun's rays (no orb values are given in this verse)."
+    quote: "The strength is nil when he is in his depression sign or eclipsed by the Sun's rays."
+    url: "https://archive.org/stream/Phaladeepika2ndEd.1950ByVSubrahmanyaSastri/Phaladeepika%202nd%20Ed.%201950%20by%20V%20Subrahmanya%20Sastri_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    dispute: "This verse supports only the principle that combustion removes positional strength; it does not give orbs. Use BPHS 7.28-29 for orb values."
+  - id: phaladeepika.sastri1950.ch6.v5
+    text: "Phaladeepika"
+    edition: sastri1950
+    chapter: "6"
+    verse: "5"
+    topic: yoga
+    rule_key: sunapha
+    statement: "Planets other than the Sun in the 2nd, the 12th or both from the Moon give Sunapha, Anapha and Durudhara."
+    quote: "When planets other than the Sun occupy the 2nd, the 12th or both houses reckoned from the Moon, the resulting 3 Yogas are respectively styled"
+    url: "https://archive.org/stream/Phaladeepika2ndEd.1950ByVSubrahmanyaSastri/Phaladeepika%202nd%20Ed.%201950%20by%20V%20Subrahmanya%20Sastri_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "BPHS", chapter: "37", verse: "7-10"}
+      - {text: "Brihat Jataka", chapter: "13", verse: "3"}
+      - {text: "Saravali", chapter: "13", verse: "1"}
+  - id: phaladeepika.sastri1950.ch7.v26
+    text: "Phaladeepika"
+    edition: sastri1950
+    chapter: "7"
+    verse: "26"
+    topic: yoga
+    rule_key: neecha_bhanga
+    statement: "A planet in depression whose sign lord, or the lord of its exaltation sign, is in a kendra from the Moon or the Lagna makes the native a king and just ruler."
+    quote: "if the lord of the sign of depression or that of the planet's exaltation Rasi be in a Kendra position with respect to the Moon's place or the Lagna"
+    url: "https://archive.org/stream/Phaladeepika2ndEd.1950ByVSubrahmanyaSastri/Phaladeepika%202nd%20Ed.%201950%20by%20V%20Subrahmanya%20Sastri_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    dispute: "Sastri's note on this sloka records that some read \"the lord of the planet's exaltation Rasi\" as the planet exalted in that sign. Other cancellation rules in common use (for example the debilitated planet in a kendra) are not in this sloka."

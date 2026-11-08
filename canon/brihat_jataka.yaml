@@ -1,0 +1,78 @@
+# Canon entries for Brihat Jataka, edition iyer1905. Only verified: quoted entries are Level 2 gold.
+# Quotes were machine-checked as substrings of the source text at the URL (whitespace-normalised, OCR text as scanned).
+schema_version: 1
+entries:
+  - id: brihat_jataka.iyer1905.ch1.v13
+    text: "Brihat Jataka"
+    edition: iyer1905
+    chapter: "1"
+    verse: "13"
+    topic: dignity
+    rule_key: exaltation_degrees
+    rule_keys: [exaltation_degrees, debilitation_degrees]
+    statement: "Aries, Taurus, Capricorn, Virgo, Cancer, Pisces and Libra are the exaltation signs of the Sun to Saturn, at 10, 3, 28, 15, 5, 27 and 20 degrees; the opposite signs are the depression signs. The 7th (opposite) signs are the depression signs and the degrees of main depression equal those of exaltation."
+    quote: "The 10th, 3rd, 28th, 15th, 5th, 27th, and 20th are the degrees of main exaltation of the several planets. The 7th or opposite signs are the Neecha (depression) signs;"
+    url: "https://chestofbooks.com/new-age/astrology/Brihat-Jataka/Definitions-And-Elementary-Zodiacal-Principles-Part-3.html"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+  - id: brihat_jataka.iyer1905.ch1.v14
+    text: "Brihat Jataka"
+    edition: iyer1905
+    chapter: "1"
+    verse: "14"
+    topic: dignity
+    rule_key: moolatrikona
+    statement: "Leo, Taurus, Aries, Virgo, Sagittarius, Libra and Aquarius are the Moola Trikona houses of the Sun to Saturn respectively."
+    quote: "The signs Leo, Taurus, Aries, Virgo, Sagittari, Libra, and Aquarius are known as the Moola Trikona houses of the planets respectively."
+    url: "https://chestofbooks.com/new-age/astrology/Brihat-Jataka/Definitions-And-Elementary-Zodiacal-Principles-Part-3.html"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+  - id: brihat_jataka.iyer1905.ch2.v13
+    text: "Brihat Jataka"
+    edition: iyer1905
+    chapter: "2"
+    verse: "13"
+    topic: aspect
+    rule_key: graha_drishti
+    statement: "All planets aspect the 7th fully; Saturn the 3rd and 10th, Jupiter the 5th and 9th and Mars the 4th and 8th fully as well."
+    quote: "but Saturn aspects the 3rd and 10th houses with a full sight; Jupiter aspects the 5th and 9th houses with a full sight, and Mars aspects the 4th and 8th houses with a full sight."
+    url: "https://chestofbooks.com/new-age/astrology/Brihat-Jataka/Chapter-II-Definitions-And-Elementary-Planetary-Principles.html"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "BPHS", chapter: "26", verse: "2-5"}
+  - id: brihat_jataka.iyer1905.ch13.v3
+    text: "Brihat Jataka"
+    edition: iyer1905
+    chapter: "13"
+    verse: "3"
+    topic: yoga
+    rule_key: sunapha
+    rule_keys: [sunapha, anapha, durudhara, kemadruma]
+    statement: "Planets other than the Sun in the 2nd, the 12th or both from the Moon give Sunapha, Anapha and Durudhura yogas respectively. Planets other than the Sun in the 12th from the Moon give Anapha yoga. Planets other than the Sun in both the 2nd and 12th from the Moon give Durudhura yoga (spelt Puru-dhura in the Iyer text). Where none of the 2nd/12th arrangements holds, the yoga is known as Kemadruma."
+    quote: "if the other planets occupy the 2nd, the 12th, or both the 2nd and the 12th houses from the Moon, the yogas are respectively known as Sunapha, Anapha or Durudhura; otherwise (a), the yoga is known as Kemadruma"
+    url: "https://chestofbooks.com/new-age/astrology/Brihat-Jataka/Chapter-XIII-On-Chandra-Yogas-Lunar-Yogas.html"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "BPHS", chapter: "37", verse: "7-10"}
+      - {text: "Phaladeepika", chapter: "6", verse: "5"}
+      - {text: "Saravali", chapter: "13", verse: "1"}
+  - id: brihat_jataka.iyer1905.ch14.v1
+    text: "Brihat Jataka"
+    edition: iyer1905
+    chapter: "14"
+    verse: "1"
+    topic: yoga
+    rule_key: budha_aditya
+    statement: "The Sun and Mercury in one sign make the native skilled, intelligent, famous and comfortable (the conjunction effect; the name Budha-Aditya is not used)."
+    quote: "if the Sun and Mercury occupy a sign together, the person will be skilled in work, will be intelligent and famous, and will live in comfort;"
+    url: "https://chestofbooks.com/new-age/astrology/Brihat-Jataka/Chapter-XIV-On-Double-Planetary-Yogas.html"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    dispute: "The classical text gives the effect of the Sun-Mercury conjunction but not the later name Budha-Aditya; only the conjunction is attested here and no cancellation conditions are stated."

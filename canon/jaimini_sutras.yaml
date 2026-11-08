@@ -1,0 +1,79 @@
+# Canon entries for Jaimini Sutras, edition rao. Only verified: quoted entries are Level 2 gold.
+# Quotes were machine-checked as substrings of the source text at the URL (whitespace-normalised, OCR text as scanned).
+schema_version: 1
+entries:
+  - id: jaimini_sutras.rao.ch1.v1.2-3
+    text: "Jaimini Sutras"
+    edition: rao
+    chapter: "1"
+    verse: "1.2-3"
+    topic: aspect
+    rule_key: rasi_drishti
+    statement: "Signs aspect the signs in their front, excepting the sign next to them (movable signs aspect fixed signs except the adjacent one, and so on)."
+    quote: "The zodiacal signs aspect each other (in their front). SU. 3.-Parswabhecha. Excepting, the next zodiacal signs to them."
+    url: "https://archive.org/stream/JAIMINISUTRAS_201707/JAIMINI%20SUTRAS_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "BPHS", chapter: "8", verse: "1-3"}
+  - id: jaimini_sutras.rao.ch1.v1.11
+    text: "Jaimini Sutras"
+    edition: rao
+    chapter: "1"
+    verse: "1.11"
+    topic: varga
+    rule_key: chara_karakas
+    statement: "Of the seven planets from the Sun to Saturn, or the eight to Rahu, the one with the highest degrees is Atmakaraka."
+    quote: "whichever gets the highest number of degrees becomes the Atmakaraka."
+    url: "https://archive.org/stream/JAIMINISUTRAS_201707/JAIMINI%20SUTRAS_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "BPHS", chapter: "32", verse: "3-8"}
+  - id: jaimini_sutras.rao.ch1.v1.13
+    text: "Jaimini Sutras"
+    edition: rao
+    chapter: "1"
+    verse: "1.13"
+    topic: varga
+    rule_key: chara_karakas
+    statement: "The planet next in degrees to Atmakaraka becomes Amatyakaraka."
+    quote: "The planet who is next in kalas or degrees to Atmakaraka will become A matyakaraka."
+    url: "https://archive.org/stream/JAIMINISUTRAS_201707/JAIMINI%20SUTRAS_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "BPHS", chapter: "32", verse: "13-17"}
+  - id: jaimini_sutras.rao.ch1.v1.29
+    text: "Jaimini Sutras"
+    edition: rao
+    chapter: "1"
+    verse: "1.29"
+    topic: varga
+    rule_key: arudha_lagna
+    statement: "Arudha Lagna is found by counting as many signs from the lord of Lagna as the lord is removed from Lagna."
+    quote: "by counting as many signs from the place of lord of Lagna as the lord of Lagna is removed from Lagna."
+    url: "https://archive.org/stream/JAIMINISUTRAS_201707/JAIMINI%20SUTRAS_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "BPHS", chapter: "29", verse: "1-3"}
+  - id: jaimini_sutras.rao.ch1.v4.1
+    text: "Jaimini Sutras"
+    edition: rao
+    chapter: "1"
+    verse: "4.1"
+    topic: varga
+    rule_key: upapada
+    statement: "Upapada is the pada of the 12th house from Lagna."
+    quote: "For Upapada we have to take from the lord of the 12th from Lagna and count again that number of Rasis from the position of its lord and the sign which falls in that number will be Upapada."
+    url: "https://archive.org/stream/JAIMINISUTRAS_201707/JAIMINI%20SUTRAS_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "BPHS", chapter: "30", verse: "1-6"}

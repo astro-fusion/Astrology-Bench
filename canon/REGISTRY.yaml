@@ -1,0 +1,68 @@
+schema_version: 1
+texts:
+  - id: "BPHS"
+    title: "Brihat Parasara Hora Sastra"
+    author: "Parasara"
+    translator: "R. Santhanam"
+    edition_id: santhanam1984
+    edition: "Ranjan Publications, New Delhi, 2 vols (first printed 1984; the archive.org scan is a later printing)"
+    year: 1984
+    chapters: 97
+    public_domain: false
+    url: https://archive.org/details/brihatparasarahorashastrabyr.santhanam
+    bibtex_key: bphs_santhanam
+  - id: "Brihat Jataka"
+    title: "Brihat Jataka"
+    author: "Varahamihira"
+    translator: "N. Chidambaram Iyer (Aiyar)"
+    edition_id: iyer1905
+    edition: "2nd edition, revised and enlarged, Aryan Miscellany Office, 1905 (text read on chestofbooks.com)"
+    year: 1905
+    chapters: 28
+    public_domain: true
+    url: https://chestofbooks.com/new-age/astrology/Brihat-Jataka/index.html
+    bibtex_key: null
+  - id: "Brihat Samhita"
+    title: "Brihat Samhita"
+    author: "Varahamihira"
+    translator: "N. Chidambaram Iyer"
+    edition_id: iyer1884
+    edition: "Madras, 1884 (text read on wisdomlib.org, 106 chapters)"
+    year: 1884
+    chapters: 106
+    public_domain: true
+    url: https://www.wisdomlib.org/hinduism/book/brihat-samhita
+    bibtex_key: brihatsamhita_iyer1884
+  - id: "Phaladeepika"
+    title: "Phaladeepika"
+    author: "Mantreswara"
+    translator: "V. Subrahmanya Sastri"
+    edition_id: sastri1950
+    edition: "2nd edition, revised and enlarged, Aruna Press, Bangalore, 1950 (first edition 1937); Adhyayas I-XXVIII"
+    year: 1950
+    chapters: 28
+    public_domain: false
+    url: https://archive.org/details/Phaladeepika2ndEd.1950ByVSubrahmanyaSastri
+    bibtex_key: null
+  - id: "Saravali"
+    title: "Saravali"
+    author: "Kalyana Varma"
+    translator: "R. Santhanam"
+    edition_id: santhanam1983
+    edition: "Ranjan Publications, New Delhi, 1983 (archive.org scan KalyanaVarmasSaravali_201707, chapters 1-55)"
+    year: 1983
+    chapters: 55
+    public_domain: false
+    url: https://archive.org/details/KalyanaVarmasSaravali_201707
+    bibtex_key: null
+  - id: "Jaimini Sutras"
+    title: "Jaimini Sutras"
+    author: "Jaimini"
+    translator: "B. Suryanarain Rao"
+    edition_id: rao
+    edition: "Part 1 only in the archive.org scan (Adhyayas 1 and 2); the work has 4 adhyayas, so chapters 3 and 4 are unverified"
+    year: null
+    chapters: 4
+    public_domain: true
+    url: https://archive.org/details/JAIMINISUTRAS_201707
+    bibtex_key: null

@@ -1,0 +1,72 @@
+# Canon entries for Brihat Samhita, edition iyer1884. Only verified: quoted entries are Level 2 gold.
+# Quotes were machine-checked as substrings of the source text at the URL (whitespace-normalised, OCR text as scanned).
+schema_version: 1
+entries:
+  - id: brihat_samhita.iyer1884.ch14.v1
+    text: "Brihat Samhita"
+    edition: iyer1884
+    chapter: "14"
+    verse: "1"
+    topic: mundane
+    rule_key: kurma_vibhaga
+    statement: "The countries of the Earth are divided into nine divisions corresponding to the 27 lunar asterisms, three for each division, beginning from Krittika."
+    quote: "are divided into 9 divisions corresponding to the 27 lunar asterisms at the rate of 3 for each division and beginning from Kṛttikā"
+    url: "https://www.wisdomlib.org/hinduism/book/brihat-samhita/d/doc228914.html"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+  - id: brihat_samhita.iyer1884.ch32.v8
+    text: "Brihat Samhita"
+    edition: iyer1884
+    chapter: "32"
+    verse: "8"
+    topic: mundane
+    rule_key: bhukampa_lakshana
+    statement: "Earthquakes occurring when the Moon is in Uttaraphalguni, Hasta, Chitra, Swati, Punarvasu, Mrigashira or Ashwini belong to the circle of Vayu."
+    quote: "The asterisms of Uttaraphālguni, Hasta, Citrā, Svāti, Punarvasu, Mṛgaśīrṣa and Aśvinī are known as the circle or division of Vāyu."
+    url: "https://www.wisdomlib.org/hinduism/book/brihat-samhita/d/doc229177.html"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+  - id: brihat_samhita.iyer1884.ch5.v24
+    text: "Brihat Samhita"
+    edition: iyer1884
+    chapter: "5"
+    verse: "24"
+    topic: mundane
+    rule_key: eclipse_effects
+    statement: "Eclipses occurring before the calculated times bring miscarriage of pregnancy and wars; after the calculated times they bring loss of flowers and fruits and fear."
+    quote: "If the eclipses should occur before the calculated times, there will be miscarriage of pregnancy and wars in the land;"
+    url: "https://www.wisdomlib.org/hinduism/book/brihat-samhita/d/doc226721.html"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+  - id: brihat_samhita.iyer1884.ch5.v26
+    text: "Brihat Samhita"
+    edition: iyer1884
+    chapter: "5"
+    verse: "26"
+    topic: mundane
+    rule_key: eclipse_effects
+    statement: "Lunar and solar eclipses in one month bring dissensions within the army and wars for rulers."
+    quote: "princes will suffer both from dissensions among their own army and from wars."
+    url: "https://www.wisdomlib.org/hinduism/book/brihat-samhita/d/doc226721.html"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+  - id: brihat_samhita.iyer1884.ch69.v1
+    text: "Brihat Samhita"
+    edition: iyer1884
+    chapter: "69"
+    verse: "1"
+    topic: yoga
+    rule_key: pancha_mahapurusha
+    statement: "Mars, Mercury, Jupiter, Venus and Saturn, strong and in own or exaltation sign in kendras, give birth to the five great men."
+    quote: "When the five non-luminaries viz. Mars, Mercury, Jupiter, Venus and Saturn, possessed of strength, occupy their own or exaltation signs identical with kendras (1st, 4th, 7th and 10th houses), five illustrious personages (pañca-puruṣa) are born."
+    url: "https://www.wisdomlib.org/hinduism/book/brihat-samhita/d/doc229331.html"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "BPHS", chapter: "75", verse: "1-2"}
+      - {text: "Phaladeepika", chapter: "6", verse: "1"}

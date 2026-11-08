@@ -1,0 +1,85 @@
+# Canon entries for Saravali, edition santhanam1983. Only verified: quoted entries are Level 2 gold.
+# Quotes were machine-checked as substrings of the source text at the URL (whitespace-normalised, OCR text as scanned).
+schema_version: 1
+entries:
+  - id: saravali.santhanam1983.ch3.v35-36
+    text: "Saravali"
+    edition: santhanam1983
+    chapter: "3"
+    verse: "35-36"
+    topic: dignity
+    rule_key: exaltation_degrees
+    rule_keys: [exaltation_degrees, debilitation_degrees]
+    statement: "The planets are exalted in Aries, Taurus, Capricorn, Virgo, Cancer, Pisces and Libra and deeply exalted at 10, 3, 28, 15, 5, 27 and 20 degrees. The signs opposite the exaltation signs are the places of debilitation, at the same degrees."
+    quote: "These are deeply exalted at 10, 3, 28, 15, 5, 27 and 20 Degrees in the respective Rasis. The Rasis opposite exaltation are the places of debilitation for the planets concerned. And the respective degrees are of deep fall."
+    url: "https://archive.org/stream/KalyanaVarmasSaravali_201707/Kalyana%20Varmas%20Saravali_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "BPHS", chapter: "3", verse: "49-50"}
+      - {text: "Brihat Jataka", chapter: "1", verse: "13"}
+  - id: saravali.santhanam1983.ch4.v28-29
+    text: "Saravali"
+    edition: santhanam1983
+    chapter: "4"
+    verse: "28-29"
+    topic: dignity
+    rule_key: planetary_friendship
+    statement: "The Sun's enemies are Venus and Saturn, and the Moon has no enemies."
+    quote: "The Suns enemies are Venus and Saturn. The Moon has no enemies."
+    url: "https://archive.org/stream/KalyanaVarmasSaravali_201707/Kalyana%20Varmas%20Saravali_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "BPHS", chapter: "3", verse: "55"}
+  - id: saravali.santhanam1983.ch13.v1
+    text: "Saravali"
+    edition: santhanam1983
+    chapter: "13"
+    verse: "1"
+    topic: yoga
+    rule_key: sunapha
+    rule_keys: [sunapha, anapha]
+    statement: "Excepting the Sun, any planet in the 2nd from the Moon causes Sunapha yoga, in the 12th Anapha yoga. Excepting the Sun, any planet in the 12th from the Moon causes Anapha yoga."
+    quote: "Excepting the Sun, any other planet in the 2nd from the Moon causes Sunapha Yoga, in the 12th Anapha Yoga"
+    url: "https://archive.org/stream/KalyanaVarmasSaravali_201707/Kalyana%20Varmas%20Saravali_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "BPHS", chapter: "37", verse: "7-10"}
+      - {text: "Brihat Jataka", chapter: "13", verse: "3"}
+      - {text: "Phaladeepika", chapter: "6", verse: "5"}
+  - id: saravali.santhanam1983.ch13.v2
+    text: "Saravali"
+    edition: santhanam1983
+    chapter: "13"
+    verse: "2"
+    topic: yoga
+    rule_key: kemadruma
+    statement: "Kemadruma forms if the Moon's angles are devoid of planets or she is unaspected by all planets."
+    quote: "or, if the Moons Angles are devoid of planets, or, if she is un-aspected by all the planets."
+    url: "https://archive.org/stream/KalyanaVarmasSaravali_201707/Kalyana%20Varmas%20Saravali_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "BPHS", chapter: "37", verse: "11-13"}
+      - {text: "Brihat Jataka", chapter: "13", verse: "3"}
+      - {text: "Phaladeepika", chapter: "6", verse: "5"}
+  - id: saravali.santhanam1983.ch15.v8
+    text: "Saravali"
+    edition: santhanam1983
+    chapter: "15"
+    verse: "8"
+    topic: yoga
+    rule_key: chandra_mangala
+    statement: "The Moon and Mars together make the native valorous and brave in war, an artisan and metallurgist (the conjunction effect; the later wealth-giving Chandra-Mangala yoga is not stated)."
+    quote: "One, who has the Moon and Mars together, will be valorous, brave in war, be a boxer, will suffer bloody imbalances, or diseases,"
+    url: "https://archive.org/stream/KalyanaVarmasSaravali_201707/Kalyana%20Varmas%20Saravali_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    dispute: "The named Chandra-Mangala yoga as a wealth yoga (Moon-Mars conjunction or mutual aspect) was not found in the scanned texts; Saravali gives only the conjunction effects. Do not grade a named-yoga citation against this entry without the conjunction wording."

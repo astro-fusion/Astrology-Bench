@@ -1,0 +1,464 @@
+# Canon entries for BPHS, edition santhanam1984. Only verified: quoted entries are Level 2 gold.
+# Quotes were machine-checked as substrings of the source text at the URL (whitespace-normalised, OCR text as scanned).
+schema_version: 1
+entries:
+  - id: bphs.santhanam1984.ch3.v49-50
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "3"
+    verse: "49-50"
+    topic: dignity
+    rule_key: exaltation_degrees
+    rule_keys: [exaltation_degrees, debilitation_degrees]
+    statement: "The seven planets from the Sun are exalted in Aries, Taurus, Capricorn, Virgo, Cancer, Pisces and Libra, with deepest exaltation at 10, 3, 28, 15, 5, 27 and 20 degrees. Each planet is debilitated in the seventh sign from its exaltation sign, at the same degree as its deepest exaltation."
+    quote: "The deepest exaltation degrees are respectively 10, 3, 28, 15, 5, 27 and 20 in those signs. And in the seventh sign from the said exaltation sign each planet has its own debilitation."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "Brihat Jataka", chapter: "1", verse: "13"}
+      - {text: "Saravali", chapter: "3", verse: "35-36"}
+    dispute: "Iyer's table note to Brihat Jataka 1.13 prints 29 for Mars while the stanza text and BPHS give 28; read as an elapsed-versus-current degree convention, not a different rule."
+  - id: bphs.santhanam1984.ch3.v51-54
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "3"
+    verse: "51-54"
+    topic: dignity
+    rule_key: moolatrikona
+    statement: "The Sun's Moola-Trikona is the first 20 degrees of Leo; the remainder of Leo is his own sign (the verse sets out the other planets likewise)."
+    quote: "In Leo, the first 20 degrees are the Sun's Moola-Trikona while the rest is his own house."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "Brihat Jataka", chapter: "1", verse: "14"}
+    dispute: "Brihat Jataka 1.14 lists Moola-Trikona signs only (Leo, Taurus, Aries, Virgo, Sagittarius, Libra, Aquarius) without the degree splits that BPHS gives."
+  - id: bphs.santhanam1984.ch4.v6-7
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "4"
+    verse: "6-7"
+    topic: lordship
+    rule_key: own_signs
+    statement: "Aries is ruled by Mars."
+    quote: "It rises with its back (a Prishtodaya sign) and is fiery, its ruler is Mars"
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+  - id: bphs.santhanam1984.ch4.v8
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "4"
+    verse: "8"
+    topic: lordship
+    rule_key: own_signs
+    statement: "Taurus is ruled by Venus."
+    quote: "Its complexion is white, and is lorded by Venus."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+  - id: bphs.santhanam1984.ch4.v12
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "4"
+    verse: "12"
+    topic: lordship
+    rule_key: own_signs
+    statement: "Leo is ruled by the Sun."
+    quote: "Leo is ruled by the Sun and is Satwik."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+  - id: bphs.santhanam1984.ch3.v55
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "3"
+    verse: "55"
+    topic: dignity
+    rule_key: planetary_friendship
+    statement: "Natural friendship is derived from the Moola-Trikona sign: the lords of the 4th, 2nd, 12th, 5th, 9th and 8th signs from it are friends, apart from the lord of the exaltation sign."
+    quote: "Note the signs which are the 4th, 2nd, 12th, 5th, 9th and the 8th from the Moola-Trikona of a planet. The planets ruling such signs are its friends, apart from the lord of its exaltation sign."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "Saravali", chapter: "4", verse: "28-29"}
+    dispute: "Saravali 4.28-29 lists friendships planet by planet; BPHS gives a derivation formula. The two are reported by Santhanam as broadly consistent but not identical for every pair (e.g. Mercury and the Moon); the generator should accept either citation only for pairs both state."
+  - id: bphs.santhanam1984.ch7.v28-29
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "7"
+    verse: "28-29"
+    topic: combustion
+    rule_key: combustion_orbs
+    statement: "Combustion orbs from the Sun in direct and retrograde motion (Moon 12, Mars 17 and 8, Mercury 14 and 12, Jupiter 11 and 11, Venus 10 and 8, Saturn 16 and 16 degrees)."
+    quote: "Planet Combustion in direct motion Combustion in (R) motion Moon 12° ~ Mars 17° 8° Mercury 14° 12° Jupiter 11° 11° Venus 10° 8° Saturn 16° 16°"
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    dispute: "The source is a table linearised by OCR; read the columns in the printed page. Santhanam notes that Rahu and Ketu are not treated as combust."
+  - id: bphs.santhanam1984.ch26.v2-5
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "26"
+    verse: "2-5"
+    topic: aspect
+    rule_key: graha_drishti
+    statement: "All planets aspect the 7th fully; Saturn, Jupiter and Mars additionally aspect fully the 3rd and 10th, the 5th and 9th, and the 4th and 8th respectively."
+    quote: "All planets aspect the 7th fully. Saturn, Jupiter and Mars have special aspects respectively on 3rd and 10th, 5th and 9th, and 4th and 8th."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "Brihat Jataka", chapter: "2", verse: "13"}
+  - id: bphs.santhanam1984.ch46.v12-14
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "46"
+    verse: "12-14"
+    topic: nakshatra
+    rule_key: nakshatra_lords
+    rule_keys: [nakshatra_lords, vimshottari_order]
+    statement: "Dasha lordship by nakshatra runs from Krittika: Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury, Ketu, Venus, repeating through the 27 nakshatras. The Vimshottari order is Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury, Ketu, Venus."
+    quote: "Beginning from Krittika the lords of Dasha (periods) are the Sun, the Moon, Mars, Rahu, Jupiter, Saturn, Mercury, Ketu and Venus in that order,"
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+  - id: bphs.santhanam1984.ch46.v15
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "46"
+    verse: "15"
+    topic: dasha
+    rule_key: vimshottari_dasha_years
+    statement: "The Vimshottari periods for Sun, Moon, Mars, Rahu, Jupiter, Saturn, Mercury, Ketu and Venus are 6, 10, 7, 18, 16, 19, 17, 7 and 20 years."
+    quote: "The period, of Dasha of the Sun, the Moon, Mars, Rahu, Jupiter, Saturn, Mercury. Ketu and Venus are 6, 10, 7, 18, 16, 19, 17, 7 and 20 in that order."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+  - id: bphs.santhanam1984.ch6.v12
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "6"
+    verse: "12"
+    topic: varga
+    rule_key: navamsa_d9
+    statement: "Navamsha counting begins from the sign itself for movable signs, from the 9th for fixed signs and from the 5th for dual signs."
+    quote: "The Navamsha calculation are for a movable sign from there itself, for a fixed sign from the 9th thereof and for a dual sign from the 5th thereof."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+  - id: bphs.santhanam1984.ch6.v13-14
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "6"
+    verse: "13-14"
+    topic: varga
+    rule_key: dasamsa_d10
+    statement: "Dashamsa counting begins from the sign itself for odd signs and from the 9th for even signs, each part being 3 degrees."
+    quote: "Starting from the same sign for an odd sign and from the 9th with reference to an even sign, the 10 Dashamsas each of 3° are reckoned."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+  - id: bphs.santhanam1984.ch6.v10-11
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "6"
+    verse: "10-11"
+    topic: varga
+    rule_key: saptamsa_d7
+    statement: "Saptamsa counting begins from the sign itself for odd signs and from the 7th sign for even signs."
+    quote: "counting commences from the same sign in the case of an odd sign. It is from the seventh sign thereof while an even sign is considered."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+  - id: bphs.santhanam1984.ch6.v5-6
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "6"
+    verse: "5-6"
+    topic: varga
+    rule_key: hora_d2
+    statement: "In an odd sign the first half is the Sun's hora and the second the Moon's; the order reverses in an even sign."
+    quote: "The first half of an old sign is the Hora ruled by the Sun while the second half is the Hora of the Moon. The reverse is true in the case of an even sign."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+  - id: bphs.santhanam1984.ch6.v7-8
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "6"
+    verse: "7-8"
+    topic: varga
+    rule_key: drekkana_d3
+    statement: "The three drekkanas of a sign are its 1st, 5th and 9th signs."
+    quote: "The 1st, 5th and the 9th Rashis from a sign are its three decanates, and are respectively lorded by Narada, Agasthya and Doorvasa."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+  - id: bphs.santhanam1984.ch34.v2-7
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "34"
+    verse: "2-7"
+    topic: lordship
+    rule_key: house_lordship_kendra_trikona
+    statement: "The lord of a trine gives auspicious results; the lord of the ascendant, being both angle and trine, is especially auspicious; benefics owning angles lose their benefic effect."
+    quote: "The lord of a trine will give auspicious results. The lord of the ascendant is especially auspicious as the ascendant is an angle as well as trine."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+  - id: bphs.santhanam1984.ch39.v6-7
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "39"
+    verse: "6-7"
+    topic: yoga
+    rule_key: raja_yoga_kendra_trikona
+    rule_keys: [raja_yoga_kendra_trikona, parivartana]
+    statement: "If the ascendant lord (a kendra and trikona lord) and the 5th lord exchange signs, a Maha Raja yoga is produced. Exchange of signs between the ascendant lord and the 5th lord produces Maha Raja yoga."
+    quote: "exchange their signs or if Atmakaraka and Putra Karaka (Chara) are in the ascendant, the 5th, exaltation sign, own sign or own Navamsha in aspect to a benefice, Maha Raja yoga is produced."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "BPHS", chapter: "36", verse: "25-26"}
+  - id: bphs.santhanam1984.ch36.v25-26
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "36"
+    verse: "25-26"
+    topic: yoga
+    rule_key: parivartana
+    statement: "An exchange of signs between the lords of the 2nd and 9th, with the ascendant lord in an angle or trine, gives Khadga yoga."
+    quote: "Should there be an exchange of signs between the lords of the 2nd and the 9th as the ascendant lord is in an angle or in a trine Khadga yoga is obtainable."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+  - id: bphs.santhanam1984.ch36.v3-4
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "36"
+    verse: "3-4"
+    topic: yoga
+    rule_key: gaja_kesari
+    statement: "Jupiter in an angle from the ascendant or the Moon, joined or aspected by a benefic and free of debilitation, combustion and inimical sign, causes Gaja Kesari yoga."
+    quote: "Should Jupiter be in an angle from the ascendant or from the Moon, and be conjunct or aspected by (another) benefice, avoiding at the same time debilitation, combustion and inimical sign, Gaja Kesari yoga is caused."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    dispute: "Santhanam's notes to this verse record that other texts (Jataka Parijata, Kumara Swameeyam, the Bombay edition) define Gaja Kesari differently, usually as Jupiter in a kendra from the Moon alone."
+  - id: bphs.santhanam1984.ch36.v5-6
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "36"
+    verse: "5-6"
+    topic: yoga
+    rule_key: amala
+    statement: "A benefic exclusively in the 10th from the ascendant or the Moon forms Amala yoga."
+    quote: "If there be exclusively a benefice in the 10th from the ascendant or the Moon, Amala yoga exists."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+  - id: bphs.santhanam1984.ch37.v7-10
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "37"
+    verse: "7-10"
+    topic: yoga
+    rule_key: sunapha
+    rule_keys: [sunapha, anapha, durudhara]
+    statement: "A planet other than the Sun in the 2nd from the Moon causes Sunapha yoga. A planet other than the Sun in the 12th from the Moon causes Anapha yoga. Planets (other than the Sun) in both the 2nd and 12th from the Moon cause Durudhara yoga (spelt Duradhara by Santhanam)."
+    quote: "If there is a planet, other than the Sun, in the 2nd from the Moon Sunapha yoga, in the 12th Anapha yoga and planets in both places Duradhara yoga are caused."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "Brihat Jataka", chapter: "13", verse: "3"}
+      - {text: "Phaladeepika", chapter: "6", verse: "5"}
+      - {text: "Saravali", chapter: "13", verse: "1"}
+  - id: bphs.santhanam1984.ch37.v11-13
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "37"
+    verse: "11-13"
+    topic: yoga
+    rule_key: kemadruma
+    statement: "With no planet (excluding the Sun) with the Moon, in the 2nd or 12th from it, or in an angle from the ascendant, Kemadruma yoga is formed."
+    quote: "Excluding the Sun, should there be no planet with the Moon or in the 2nd/12th from the Moon or in an angle from the ascendant, Kemadruma yoga is formed."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "Brihat Jataka", chapter: "13", verse: "3"}
+      - {text: "Phaladeepika", chapter: "6", verse: "5"}
+      - {text: "Saravali", chapter: "13", verse: "2"}
+    dispute: "Texts disagree on the cancellation: Brihat Jataka 13.3 reports some authors (Garga, Parasara) saying the yoga fails when the Moon is in a kendra or has a companion; BPHS (Santhanam) counts planets in an angle from the ascendant as cancelling; Saravali 13.2 counts planets in the Moon's angles or the Moon being unaspected."
+  - id: bphs.santhanam1984.ch75.v1-2
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "75"
+    verse: "1-2"
+    topic: yoga
+    rule_key: pancha_mahapurusha
+    statement: "Mars, Mercury, Jupiter, Venus and Saturn in own or exaltation sign in a kendra from the ascendant form Ruchaka, Bhadra, Hamsa, Malavya and Sasa yogas respectively."
+    quote: "When Mars, Mercury, Jupiter, Venus and Saturn being in their own sign or in their sign of exaltation, be in Kendra to the Ascendant, they give rise to Ruchaka, Bhadra, Hamsa, Malayya and Sasa yogas respectively."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "Brihat Samhita", chapter: "69", verse: "1"}
+      - {text: "Phaladeepika", chapter: "6", verse: "1"}
+    dispute: "BPHS spells the fourth yoga Malayya and Brihat Samhita (Iyer) gives Rucaka with a query; Brihat Samhita 69.1 says \"kendras\" without \"from the ascendant\"."
+  - id: bphs.santhanam1984.ch39.v28
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "39"
+    verse: "28"
+    topic: yoga
+    rule_key: vipareeta_raja
+    statement: "Even if one of the 6th, 8th and 12th lords in debilitation aspects the ascendant, a Raja yoga results."
+    quote: "Even if one among the 6th, 8th and 12th lords being in debilitation aspects the ascendant there will be a Raja yoga."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "Phaladeepika", chapter: "6", verse: "57"}
+      - {text: "Phaladeepika", chapter: "6", verse: "63"}
+    dispute: "The named Vipareeta Raja yoga (Harsha, Sarala, Vimala) is Phaladeepika 6.57-63 in Sastri's numbering; Santhanam quotes it in his notes to BPHS rather than in a BPHS verse. This BPHS verse states the underlying principle for dusthana lords, not the named yoga."
+  - id: bphs.santhanam1984.ch13.v5
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "13"
+    verse: "5"
+    topic: yoga
+    rule_key: dhana_yoga_2_11
+    statement: "If the 2nd lord is in an angle while the 11th lord is in a trine from it, or is aspected by or conjunct Jupiter and Venus, the native will be wealthy."
+    quote: "If the lord of the 2nd is in an angle while the 11th lord is in a trine thereof or is aspected by or conjunct by Jupiter and Venus, the subject will be wealthy."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+  - id: bphs.santhanam1984.ch29.v1-3
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "29"
+    verse: "1-3"
+    topic: varga
+    rule_key: arudha_lagna
+    statement: "The pada (arudha) of the ascendant is the sign as many signs from the ascendant lord as he is from the ascendant."
+    quote: "The Padas of the ascendant will correspond to the sign arrived at by counting so many signs from the ascendant lord as he is away from the ascendant."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "Jaimini Sutras", chapter: "1", verse: "1.29"}
+  - id: bphs.santhanam1984.ch30.v1-6
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "30"
+    verse: "1-6"
+    topic: varga
+    rule_key: upapada
+    statement: "Upapada is calculated for the bhava following the natal ascendant (the 12th from the ascendant) and governs happiness from spouse and progeny; benefic conjunction or aspect gives full happiness."
+    quote: "Upa Pada is calculated for the Bhava following the natal ascendant. This Upa Pada is also called Gauna Pada."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "Jaimini Sutras", chapter: "1", verse: "4.1"}
+    dispute: "Santhanam renders the Upa Pada as calculated for the \"Bhava following the natal ascendant\"; the Jaimini Sutras (Rao) give it as the pada of the 12th house from the ascendant. Read together these are the same point only if \"following\" means the 12th (preceding sign)."
+  - id: bphs.santhanam1984.ch32.v3-8
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "32"
+    verse: "3-8"
+    topic: varga
+    rule_key: chara_karakas
+    statement: "The planet that has traversed the maximum degrees in a sign is Atmakaraka."
+    quote: "whichever has traversed maximum number of degrees in a particular sign is called Atmakaraka."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "Jaimini Sutras", chapter: "1", verse: "1.11"}
+  - id: bphs.santhanam1984.ch32.v13-17
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "32"
+    verse: "13-17"
+    topic: varga
+    rule_key: chara_karakas
+    statement: "Amatyakaraka is the planet next to Atmakaraka in longitude, followed in order by the Dhratru, Matru, Pitru, Putra, Gnati and Streekaraka."
+    quote: "The planet next to Atmakaraka in terms of longitude is called Amatyakaraka. Similarly follow one another in terms of longitude are Dhratru Karaka, Matru karaka, Pitru karaka, Putra karaka, Gnati karaka and Streekaraka."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "Jaimini Sutras", chapter: "1", verse: "1.13"}
+    dispute: "Santhanam notes that some treat Matru karaka and Putra karaka as one, giving a seven-karaka scheme; Jaimini Sutras 1.11 allows either seven or eight (with Rahu)."
+  - id: bphs.santhanam1984.ch33.v1
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "33"
+    verse: "1"
+    topic: varga
+    rule_key: karakamsa
+    statement: "Karakamsa is the Navamsha occupied by the Atmakaraka (translator's note to the opening verse)."
+    quote: "Karakamsa is the Navamsha occupied by the Atmakaraka planet."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    dispute: "The quote is Santhanam's note, not a verse: the BPHS verses of chapter 33 give effects of Karakamsa rather than a definition."
+  - id: bphs.santhanam1984.ch8.v1-3
+    text: "BPHS"
+    edition: santhanam1984
+    chapter: "8"
+    verse: "1-3"
+    topic: aspect
+    rule_key: rasi_drishti
+    statement: "Every movable sign aspects the three fixed signs except the one adjacent; every fixed sign the three movable signs except the adjacent one; common signs aspect the other common signs."
+    quote: "Every movable sign aspects the 3 fixed signs leaving the fixed sign adjacent to it. Every fixed sign lends aspect to the 3 movable signs barring the adjacent movable sign. And a common sign aspects the other three common signs."
+    url: "https://archive.org/stream/brihatparasarahorashastrabyr.santhanam/Brihat%20Par%C4%81%C5%9Bara%20Hor%C4%81%20%C5%9Ah%C4%81stra%20By%20R.%20Santhanam_djvu.txt"
+    verified: quoted
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
+    also_in:
+      - {text: "Jaimini Sutras", chapter: "1", verse: "1.2-3"}
+untraced:
+  - rule_key: kala_sarpa
+    verified: untraced
+    note: "No occurrence of Kala Sarpa / Kaal Sarp in the full text of BPHS (Santhanam), Brihat Jataka (Iyer), Phaladeepika (Sastri), Saravali chs 1-55 (Santhanam) or Jaimini Sutras part 1 (Rao). Treat as modern (source: modern) and never citation-graded."
+    searched: [BPHS, Brihat Jataka, Phaladeepika, Saravali, Jaimini Sutras]
+    verified_by: astro-bench B-2 agent
+    verified_at: "2026-11-08"
