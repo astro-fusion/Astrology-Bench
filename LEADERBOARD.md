@@ -7,22 +7,22 @@ Answer accuracy is the mean answer score with a Wilson 95% interval. Citation sc
 
 | # | solver | kind | date | input mode | level | n | answer acc [95% CI] | citation score | fabricated-citation rate | parse-error rate | Brier |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| - | oracle | oracle | 2026-11-08 | chart | all | 955 | 100.0% [99.6, 100.0] | +1.000 | 0.0% | 0.0% | 0.000 |
-|  | oracle | oracle | 2026-11-08 | chart | 0 | 95 | 100.0% [96.1, 100.0] | - | - | 0.0% | 0.000 |
-|  | oracle | oracle | 2026-11-08 | chart | 1 | 804 | 100.0% [99.5, 100.0] | +1.000 | 0.0% | 0.0% | 0.000 |
-|  | oracle | oracle | 2026-11-08 | chart | 2 | 56 | 100.0% [93.6, 100.0] | +1.000 | 0.0% | 0.0% | 0.000 |
-| - | random | baseline | 2026-11-08 | chart | all | 955 | 13.1% [11.1, 15.4] | -0.081 | 8.1% | 0.0% | 0.229 |
-|  | random | baseline | 2026-11-08 | chart | 0 | 95 | 5.6% [2.5, 12.2] | - | - | 0.0% | 0.200 |
-|  | random | baseline | 2026-11-08 | chart | 1 | 804 | 14.9% [12.7, 17.6] | +0.000 | 0.0% | 0.0% | 0.231 |
-|  | random | baseline | 2026-11-08 | chart | 2 | 56 | 0.0% [0.0, 6.4] | -1.000 | 100.0% | 0.0% | 0.250 |
-| - | constant | baseline | 2026-11-08 | chart | all | 955 | 20.8% [18.3, 23.5] | -0.072 | 7.7% | 0.0% | 0.133 |
-|  | constant | baseline | 2026-11-08 | chart | 0 | 95 | 9.6% [5.1, 17.2] | - | - | 0.0% | 0.016 |
-|  | constant | baseline | 2026-11-08 | chart | 1 | 804 | 23.2% [20.4, 26.2] | +0.000 | 0.0% | 0.0% | 0.152 |
-|  | constant | baseline | 2026-11-08 | chart | 2 | 56 | 5.4% [1.8, 14.6] | -0.893 | 94.6% | 0.0% | 0.052 |
-| - | mock | baseline | 2026-11-08 | chart | all | 955 | 13.6% [11.5, 15.9] | -0.345 | 34.5% | 0.0% | 0.279 |
-|  | mock | baseline | 2026-11-08 | chart | 0 | 95 | 5.0% [2.1, 11.3] | - | - | 0.0% | 0.241 |
-|  | mock | baseline | 2026-11-08 | chart | 1 | 804 | 15.5% [13.2, 18.2] | -0.338 | 33.8% | 0.0% | 0.285 |
-|  | mock | baseline | 2026-11-08 | chart | 2 | 56 | 0.0% [0.0, 6.4] | -0.429 | 42.9% | 0.0% | 0.251 |
+| - | oracle | oracle | 2026-11-09 | chart | all | 955 | 100.0% [99.6, 100.0] | +1.000 | 0.0% | 0.0% | 0.000 |
+|  | oracle | oracle | 2026-11-09 | chart | 0 | 95 | 100.0% [96.1, 100.0] | - | - | 0.0% | 0.000 |
+|  | oracle | oracle | 2026-11-09 | chart | 1 | 804 | 100.0% [99.5, 100.0] | +1.000 | 0.0% | 0.0% | 0.000 |
+|  | oracle | oracle | 2026-11-09 | chart | 2 | 56 | 100.0% [93.6, 100.0] | +1.000 | 0.0% | 0.0% | 0.000 |
+| - | random | baseline | 2026-11-09 | chart | all | 955 | 13.1% [11.1, 15.4] | -0.081 | 8.1% | 0.0% | 0.229 |
+|  | random | baseline | 2026-11-09 | chart | 0 | 95 | 5.6% [2.5, 12.2] | - | - | 0.0% | 0.200 |
+|  | random | baseline | 2026-11-09 | chart | 1 | 804 | 14.9% [12.7, 17.6] | +0.000 | 0.0% | 0.0% | 0.231 |
+|  | random | baseline | 2026-11-09 | chart | 2 | 56 | 0.0% [0.0, 6.4] | -1.000 | 100.0% | 0.0% | 0.250 |
+| - | constant | baseline | 2026-11-09 | chart | all | 955 | 20.8% [18.3, 23.5] | -0.072 | 7.7% | 0.0% | 0.133 |
+|  | constant | baseline | 2026-11-09 | chart | 0 | 95 | 9.6% [5.1, 17.2] | - | - | 0.0% | 0.016 |
+|  | constant | baseline | 2026-11-09 | chart | 1 | 804 | 23.2% [20.4, 26.2] | +0.000 | 0.0% | 0.0% | 0.152 |
+|  | constant | baseline | 2026-11-09 | chart | 2 | 56 | 5.4% [1.8, 14.6] | -0.893 | 94.6% | 0.0% | 0.052 |
+| - | mock | baseline | 2026-11-09 | chart | all | 955 | 13.6% [11.5, 15.9] | -0.348 | 34.8% | 0.0% | 0.282 |
+|  | mock | baseline | 2026-11-09 | chart | 0 | 95 | 5.0% [2.1, 11.3] | - | - | 0.0% | 0.241 |
+|  | mock | baseline | 2026-11-09 | chart | 1 | 804 | 15.5% [13.2, 18.2] | -0.338 | 33.8% | 0.0% | 0.285 |
+|  | mock | baseline | 2026-11-09 | chart | 2 | 56 | 0.0% [0.0, 6.4] | -0.464 | 46.4% | 0.0% | 0.315 |
 
 ## Systems
 
@@ -37,16 +37,16 @@ Answer accuracy is the mean answer score with a Wilson 95% interval. Citation sc
 
 | # | solver | kind | date | input mode | level | n | answer acc [95% CI] | citation score | fabricated-citation rate | parse-error rate | Brier |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| - | nochart:constant | ablation: nochart | 2026-11-08 | chart | all | 955 | 20.8% [18.3, 23.5] | -0.072 | 7.7% | 0.0% | 0.133 |
-|  | nochart:constant | ablation: nochart | 2026-11-08 | chart | 0 | 95 | 9.6% [5.1, 17.2] | - | - | 0.0% | 0.016 |
-|  | nochart:constant | ablation: nochart | 2026-11-08 | chart | 1 | 804 | 23.2% [20.4, 26.2] | +0.000 | 0.0% | 0.0% | 0.152 |
-|  | nochart:constant | ablation: nochart | 2026-11-08 | chart | 2 | 56 | 5.4% [1.8, 14.6] | -0.893 | 94.6% | 0.0% | 0.052 |
+| - | nochart:constant | ablation: nochart | 2026-11-09 | chart | all | 955 | 20.8% [18.3, 23.5] | -0.072 | 7.7% | 0.0% | 0.133 |
+|  | nochart:constant | ablation: nochart | 2026-11-09 | chart | 0 | 95 | 9.6% [5.1, 17.2] | - | - | 0.0% | 0.016 |
+|  | nochart:constant | ablation: nochart | 2026-11-09 | chart | 1 | 804 | 23.2% [20.4, 26.2] | +0.000 | 0.0% | 0.0% | 0.152 |
+|  | nochart:constant | ablation: nochart | 2026-11-09 | chart | 2 | 56 | 5.4% [1.8, 14.6] | -0.893 | 94.6% | 0.0% | 0.052 |
 
 ## Runs
 
 - `app-tools-astrofusion-dev`: http_json:app-tools (app_tools; AstroFusion MCP kundali tools over Rust engines plus canon rule-key citations, no LLM (dev split; adapter described in the private repo)), input birth, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `5dc500ffaf8c`
-- `baseline-constant`: constant (baseline), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `5dc500ffaf8c`
-- `baseline-mock`: mock (baseline), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `5dc500ffaf8c`
-- `baseline-oracle`: oracle (oracle), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `5dc500ffaf8c`
-- `baseline-random`: random (baseline), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `5dc500ffaf8c`
-- `baseline-nochart-constant`: nochart:constant (ablation: nochart), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `5dc500ffaf8c`
+- `baseline-constant`: constant (baseline), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `ce28c9245b9f`
+- `baseline-mock`: mock (baseline), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `ce28c9245b9f`
+- `baseline-oracle`: oracle (oracle), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `ce28c9245b9f`
+- `baseline-random`: random (baseline), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `ce28c9245b9f`
+- `baseline-nochart-constant`: nochart:constant (ablation: nochart), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `ce28c9245b9f`

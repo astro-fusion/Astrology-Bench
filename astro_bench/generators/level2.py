@@ -8,12 +8,20 @@ birth data or chart: the question is about the text, not a chart.
 
 from __future__ import annotations
 
+import hashlib
+
 from ..schema import Item
 from .common import DEFAULT_CONVENTION, GenContext, make_item
 
 TASK = "citation"
 TIER = "HARD"
 GENERATOR = "citation_from_canon"
+
+
+def opaque_id(canon_id: str) -> str:
+    """A stable id fragment that does not reveal the gold locus (the canon id names the
+    text, chapter and verse, and item ids are visible to solvers)."""
+    return hashlib.sha256(f"astro-bench-l2|{canon_id}".encode()).hexdigest()[:12]
 
 
 def prompt_for(statement: str, rule_key: str, topic: str) -> str:
@@ -44,6 +52,6 @@ def generate(ctx: GenContext) -> list[Item]:
             generator=GENERATOR, prompt=prompt_for(entry.statement, entry.rule_key, entry.topic),
             answer_type="citation", answer=answer, grader="citation", source=text_id,
             canon_ids=canon_ids, query={"rule_key": entry.rule_key, "canon_id": entry.id},
-            item_id_override=f"L2-citation-{entry.id}",
+            item_id_override=f"L2-citation-{opaque_id(entry.id)}",
         ))
     return items

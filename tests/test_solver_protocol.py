@@ -150,3 +150,14 @@ def test_leaderboard_groups_and_ablations(small_items: list[Item], canon: Canon)
     assert text.index("| oracle |") < text.index("| mock |")
     assert "| - | nochart:mock | ablation: nochart |" in text
     assert "| 1 | m | model |" in text and "| 1 | sys | system |" in text
+
+
+def test_redacted_view_leaks_no_answer_keys(small_items: list[Item]) -> None:
+    for item in small_items:
+        view = to_solver_item(item)
+        assert set(view.input.query) <= {"planet", "varga", "house", "level", "target_utc"}
+        text = view.model_dump_json()
+        for cid in item.canon_ids:
+            assert cid not in text, item.id  # not in the id, the query or the prompt
+        if item.rule_id:
+            assert item.rule_id not in text

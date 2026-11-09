@@ -86,7 +86,7 @@ def test_yoga_canon_ids_from_rule_key(small_items: list[Item], canon: Canon) -> 
 
 
 def test_level2_from_fixture_canon(small_items: list[Item], canon: Canon) -> None:
-    l2 = sorted((i for i in small_items if i.level == 2), key=lambda i: i.id)
+    l2 = sorted((i for i in small_items if i.level == 2), key=lambda i: i.input.query["canon_id"])
     assert [i.input.query["canon_id"] for i in l2] == [e.id for e in canon.quoted()]
     gk = next(i for i in l2 if i.input.query["rule_key"] == "gaja_kesari")
     assert gk.gold.answer == {"text": "BPHS", "chapter": "36", "verse": "3-4"}

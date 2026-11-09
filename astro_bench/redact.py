@@ -10,6 +10,11 @@ BIRTH_MODE_NOTE = (
 )
 
 
+#: Query keys a solver may see: task parameters that the prompt states anyway. Rule ids,
+#: rule keys, canon ids and golden-chart ids are answer-bearing and are dropped.
+VISIBLE_QUERY_KEYS = frozenset({"planet", "varga", "house", "level", "target_utc"})
+
+
 def effective_mode(item: Item, input_mode: InputMode) -> InputMode:
     """Level 0 is always birth mode; Level 2 items carry no chart either way."""
     return "birth" if item.level == 0 else input_mode
@@ -22,6 +27,7 @@ def to_solver_item(item: Item, input_mode: InputMode = "chart") -> SolverItem:
     computed under the item's convention, so the convention stays in the prompt.
     """
     inp = item.input.model_copy(deep=True)
+    inp.query = {k: v for k, v in inp.query.items() if k in VISIBLE_QUERY_KEYS}
     prompt = item.prompt
     if effective_mode(item, input_mode) == "birth" and inp.chart is not None:
         inp.chart = None

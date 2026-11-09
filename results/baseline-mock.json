@@ -1,6 +1,6 @@
 {
  "run_id": "baseline-mock",
- "created_at": "2026-11-08T19:01:45Z",
+ "created_at": "2026-11-09T01:45:11Z",
  "model": "mock",
  "provider": "baseline",
  "solver": "mock",
@@ -8,7 +8,7 @@
  "solver_description": "",
  "input_mode": "chart",
  "bench_version": "0.1.0",
- "items_sha256": "5dc500ffaf8c4bb799403639c83878e5c4440ebdcca2c76e42a88a2216f21b53",
+ "items_sha256": "ce28c9245b9fe6ef578a1dd25c743921fc24ca13acfdf39beb0482a52e3c9711",
  "split": "dev",
  "item_count": 955,
  "engine_commit": "7018b2a",
@@ -13253,7 +13253,7 @@
    "answer": true
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch13.v5",
+   "id": "L2-citation-0761dabc89ec",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -13261,17 +13261,125 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "69",
+    "verse": "9"
+   }
+  },
+  {
+   "id": "L2-citation-09f5a2883f74",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Brihat Samhita",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
    "citation_score": -1,
    "fabricated": true,
+   "confidence": 0.4,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "55",
+    "verse": "25"
+   }
+  },
+  {
+   "id": "L2-citation-0ec1ceb12214",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Jaimini Sutras",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "1",
+    "verse": "1"
+   }
+  },
+  {
+   "id": "L2-citation-11a53630785f",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.3,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "114",
+    "verse": "24"
+   }
+  },
+  {
+   "id": "L2-citation-1dc8378a5033",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Saravali",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.1,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "42",
+    "verse": "12"
+   }
+  },
+  {
+   "id": "L2-citation-1f785588a404",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Saravali",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.4,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "5",
+    "verse": "5"
+   }
+  },
+  {
+   "id": "L2-citation-1f988fa9da10",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Saravali",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
    "confidence": 0.5,
    "answer": {
     "text": "BPHS",
-    "chapter": "46",
-    "verse": "16"
+    "chapter": "26",
+    "verse": "26"
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch26.v2-5",
+   "id": "L2-citation-26033175e064",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -13279,35 +13387,17 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.4,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.1,
    "answer": {
     "text": "BPHS",
-    "chapter": "25",
-    "verse": "25"
+    "chapter": "62",
+    "verse": "2"
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch29.v1-3",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.4,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "25",
-    "verse": "25"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch3.v49-50",
+   "id": "L2-citation-265c9cad9ec9",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -13325,7 +13415,7 @@
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch3.v51-54",
+   "id": "L2-citation-292e2f821e17",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -13338,12 +13428,12 @@
    "confidence": 0.5,
    "answer": {
     "text": "BPHS",
-    "chapter": "76",
+    "chapter": "46",
     "verse": "16"
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch3.v55",
+   "id": "L2-citation-3668b3c5db92",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -13351,17 +13441,17 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
-   "citation_score": 0,
-   "fabricated": false,
-   "confidence": 0.9,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.6,
    "answer": {
     "text": "BPHS",
-    "chapter": "50",
-    "verse": "20"
+    "chapter": "97",
+    "verse": "7"
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch30.v1-6",
+   "id": "L2-citation-3792681ce55b",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -13369,89 +13459,35 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
-   "citation_score": 0,
-   "fabricated": false,
-   "confidence": 0.9,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.1,
    "answer": {
     "text": "BPHS",
-    "chapter": "20",
-    "verse": "20"
+    "chapter": "52",
+    "verse": "22"
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch32.v13-17",
+   "id": "L2-citation-3f08c3d42198",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "BPHS",
+   "source": "Brihat Jataka",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
+   "confidence": 0.6,
    "answer": {
     "text": "BPHS",
-    "chapter": "3",
-    "verse": "3"
+    "chapter": "47",
+    "verse": "17"
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch32.v3-8",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
-   "fabricated": false,
-   "confidence": 0.5,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "26",
-    "verse": "26"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch33.v1",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
-   "fabricated": false,
-   "confidence": 0.3,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "44",
-    "verse": "14"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch34.v2-7",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
-   "fabricated": false,
-   "confidence": 0.5,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "26",
-    "verse": "26"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch36.v25-26",
+   "id": "L2-citation-3fded1840a8f",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -13464,12 +13500,12 @@
    "confidence": 0.9,
    "answer": {
     "text": "BPHS",
-    "chapter": "10",
+    "chapter": "70",
     "verse": "10"
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch36.v3-4",
+   "id": "L2-citation-437475c46846",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -13479,19 +13515,19 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.5,
+   "confidence": 0.0,
    "answer": {
     "text": "BPHS",
-    "chapter": "26",
-    "verse": "26"
+    "chapter": "81",
+    "verse": "21"
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch36.v5-6",
+   "id": "L2-citation-43a17abacdaf",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "BPHS",
+   "source": "Jaimini Sutras",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
@@ -13505,7 +13541,7 @@
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch37.v11-13",
+   "id": "L2-citation-47b6109cd394",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -13515,145 +13551,19 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1,
+   "confidence": 0.7,
    "answer": {
     "text": "BPHS",
-    "chapter": "2",
-    "verse": "2"
+    "chapter": "48",
+    "verse": "18"
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch37.v7-10",
+   "id": "L2-citation-48643ba94ec8",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "76",
-    "verse": "16"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch39.v28",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
-   "fabricated": false,
-   "confidence": 0.6,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "107",
-    "verse": "17"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch39.v6-7",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
-   "fabricated": false,
-   "confidence": 0.4,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "35",
-    "verse": "5"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch4.v12",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
-   "fabricated": false,
-   "confidence": 0.3,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "44",
-    "verse": "14"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch4.v6-7",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
-   "fabricated": false,
-   "confidence": 0.8,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "99",
-    "verse": "9"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch4.v8",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.0,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "1",
-    "verse": "1"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch46.v12-14",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.3,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "4",
-    "verse": "4"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch46.v15",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
+   "source": "Brihat Jataka",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
@@ -13667,7 +13577,43 @@
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch6.v10-11",
+   "id": "L2-citation-4b47ffa393cb",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.9,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "70",
+    "verse": "10"
+   }
+  },
+  {
+   "id": "L2-citation-4e694b76017c",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Phaladeepika",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "50",
+    "verse": "20"
+   }
+  },
+  {
+   "id": "L2-citation-506fde4dc5d1",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -13685,25 +13631,7 @@
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch6.v12",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "46",
-    "verse": "16"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch6.v13-14",
+   "id": "L2-citation-54b33d91d345",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -13716,12 +13644,12 @@
    "confidence": 0.2,
    "answer": {
     "text": "BPHS",
-    "chapter": "73",
+    "chapter": "43",
     "verse": "13"
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch6.v5-6",
+   "id": "L2-citation-55e6c1ecc3e7",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -13731,15 +13659,15 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.8,
+   "confidence": 0.0,
    "answer": {
     "text": "BPHS",
-    "chapter": "99",
-    "verse": "9"
+    "chapter": "71",
+    "verse": "11"
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch6.v7-8",
+   "id": "L2-citation-561d174a6a4d",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -13749,15 +13677,15 @@
    "answer_score": 0.0,
    "citation_score": -1,
    "fabricated": true,
-   "confidence": 0.2,
+   "confidence": 0.7,
    "answer": {
     "text": "BPHS",
-    "chapter": "103",
-    "verse": "13"
+    "chapter": "88",
+    "verse": "28"
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch7.v28-29",
+   "id": "L2-citation-59742e328081",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -13767,55 +13695,19 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.5,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "86",
-    "verse": "26"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch75.v1-2",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.4,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "25",
-    "verse": "25"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch8.v1-3",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
    "confidence": 0.3,
    "answer": {
     "text": "BPHS",
-    "chapter": "94",
-    "verse": "4"
+    "chapter": "74",
+    "verse": "14"
    }
   },
   {
-   "id": "L2-citation-brihat_jataka.iyer1905.ch1.v13",
+   "id": "L2-citation-623850b3e0ab",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "Brihat Jataka",
+   "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
@@ -13829,173 +13721,47 @@
    }
   },
   {
-   "id": "L2-citation-brihat_jataka.iyer1905.ch1.v14",
+   "id": "L2-citation-6c60cfa0f24b",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "Brihat Jataka",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "59",
+    "verse": "29"
+   }
+  },
+  {
+   "id": "L2-citation-6e476974931a",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Phaladeepika",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
    "citation_score": -1,
    "fabricated": true,
-   "confidence": 0.1,
+   "confidence": 0.9,
    "answer": {
     "text": "BPHS",
-    "chapter": "82",
-    "verse": "22"
+    "chapter": "10",
+    "verse": "10"
    }
   },
   {
-   "id": "L2-citation-brihat_jataka.iyer1905.ch13.v3",
+   "id": "L2-citation-7caed961b97a",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "Brihat Jataka",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
-   "fabricated": false,
-   "confidence": 0.2,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "83",
-    "verse": "23"
-   }
-  },
-  {
-   "id": "L2-citation-brihat_jataka.iyer1905.ch14.v1",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Brihat Jataka",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.1,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "82",
-    "verse": "22"
-   }
-  },
-  {
-   "id": "L2-citation-brihat_jataka.iyer1905.ch2.v13",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Brihat Jataka",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.1,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "82",
-    "verse": "22"
-   }
-  },
-  {
-   "id": "L2-citation-brihat_samhita.iyer1884.ch14.v1",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Brihat Samhita",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.0,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "91",
-    "verse": "1"
-   }
-  },
-  {
-   "id": "L2-citation-brihat_samhita.iyer1884.ch32.v8",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Brihat Samhita",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
-   "fabricated": false,
-   "confidence": 0.7,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "98",
-    "verse": "8"
-   }
-  },
-  {
-   "id": "L2-citation-brihat_samhita.iyer1884.ch5.v24",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Brihat Samhita",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
-   "fabricated": false,
-   "confidence": 0.5,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "96",
-    "verse": "6"
-   }
-  },
-  {
-   "id": "L2-citation-brihat_samhita.iyer1884.ch5.v26",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Brihat Samhita",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
-   "fabricated": false,
-   "confidence": 0.7,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "98",
-    "verse": "8"
-   }
-  },
-  {
-   "id": "L2-citation-brihat_samhita.iyer1884.ch69.v1",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Brihat Samhita",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
-   "fabricated": false,
-   "confidence": 0.0,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "101",
-    "verse": "11"
-   }
-  },
-  {
-   "id": "L2-citation-jaimini_sutras.rao.ch1.v1.11",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Jaimini Sutras",
+   "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
@@ -14004,16 +13770,340 @@
    "confidence": 0.4,
    "answer": {
     "text": "BPHS",
-    "chapter": "5",
-    "verse": "5"
+    "chapter": "75",
+    "verse": "15"
    }
   },
   {
-   "id": "L2-citation-jaimini_sutras.rao.ch1.v1.13",
+   "id": "L2-citation-866c06f4fc60",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.7,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "98",
+    "verse": "8"
+   }
+  },
+  {
+   "id": "L2-citation-89e303427096",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "76",
+    "verse": "16"
+   }
+  },
+  {
+   "id": "L2-citation-8f5b0dcb32c4",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.1,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "62",
+    "verse": "2"
+   }
+  },
+  {
+   "id": "L2-citation-939272d424bb",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Brihat Jataka",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "46",
+    "verse": "16"
+   }
+  },
+  {
+   "id": "L2-citation-9de1866b29d6",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "106",
+    "verse": "16"
+   }
+  },
+  {
+   "id": "L2-citation-a18505f441ed",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Phaladeepika",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.7,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "88",
+    "verse": "28"
+   }
+  },
+  {
+   "id": "L2-citation-a7a625475e82",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.8,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "49",
+    "verse": "19"
+   }
+  },
+  {
+   "id": "L2-citation-a9cbd6036e8e",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.1,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "72",
+    "verse": "12"
+   }
+  },
+  {
+   "id": "L2-citation-adc1fb52b58d",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
    "source": "Jaimini Sutras",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "111",
+    "verse": "21"
+   }
+  },
+  {
+   "id": "L2-citation-b663a81c548d",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Brihat Samhita",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.4,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "95",
+    "verse": "5"
+   }
+  },
+  {
+   "id": "L2-citation-b68607c34772",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.2,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "3",
+    "verse": "3"
+   }
+  },
+  {
+   "id": "L2-citation-b719ec66d4f0",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Jaimini Sutras",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.4,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "25",
+    "verse": "25"
+   }
+  },
+  {
+   "id": "L2-citation-bcddd9714d62",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.9,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "70",
+    "verse": "10"
+   }
+  },
+  {
+   "id": "L2-citation-c3a0cc88c6ff",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.7,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "118",
+    "verse": "28"
+   }
+  },
+  {
+   "id": "L2-citation-c41d6e86bf87",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Phaladeepika",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.1,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "32",
+    "verse": "2"
+   }
+  },
+  {
+   "id": "L2-citation-c6c92bc93137",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Saravali",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.4,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "95",
+    "verse": "5"
+   }
+  },
+  {
+   "id": "L2-citation-cdc28e868ede",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Brihat Jataka",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "9",
+    "verse": "9"
+   }
+  },
+  {
+   "id": "L2-citation-ce5aec07ed8f",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Brihat Samhita",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.7,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "48",
+    "verse": "18"
+   }
+  },
+  {
+   "id": "L2-citation-cf7e30987ed8",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
@@ -14022,48 +14112,30 @@
    "confidence": 0.6,
    "answer": {
     "text": "BPHS",
-    "chapter": "7",
+    "chapter": "37",
     "verse": "7"
    }
   },
   {
-   "id": "L2-citation-jaimini_sutras.rao.ch1.v1.2-3",
+   "id": "L2-citation-dc0138ce3f26",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "Jaimini Sutras",
+   "source": "Phaladeepika",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
-   "citation_score": 0,
-   "fabricated": false,
-   "confidence": 0.2,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
    "answer": {
     "text": "BPHS",
-    "chapter": "53",
-    "verse": "23"
+    "chapter": "16",
+    "verse": "16"
    }
   },
   {
-   "id": "L2-citation-jaimini_sutras.rao.ch1.v1.29",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Jaimini Sutras",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
-   "fabricated": false,
-   "confidence": 0.3,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "14",
-    "verse": "14"
-   }
-  },
-  {
-   "id": "L2-citation-jaimini_sutras.rao.ch1.v4.1",
+   "id": "L2-citation-e0219e4058d1",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -14073,19 +14145,37 @@
    "answer_score": 0.0,
    "citation_score": -1,
    "fabricated": true,
-   "confidence": 0.8,
+   "confidence": 0.9,
    "answer": {
     "text": "BPHS",
-    "chapter": "79",
-    "verse": "19"
+    "chapter": "40",
+    "verse": "10"
    }
   },
   {
-   "id": "L2-citation-phaladeepika.sastri1950.ch4.v4",
+   "id": "L2-citation-e28276779294",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "Phaladeepika",
+   "source": "Saravali",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.7,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "88",
+    "verse": "28"
+   }
+  },
+  {
+   "id": "L2-citation-e527d9e0cfbc",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Brihat Samhita",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
@@ -14094,124 +14184,70 @@
    "confidence": 0.8,
    "answer": {
     "text": "BPHS",
-    "chapter": "29",
+    "chapter": "119",
     "verse": "29"
    }
   },
   {
-   "id": "L2-citation-phaladeepika.sastri1950.ch4.v5",
+   "id": "L2-citation-e8f7dcd3962d",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "Phaladeepika",
+   "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.9,
+   "confidence": 0.0,
    "answer": {
     "text": "BPHS",
-    "chapter": "30",
-    "verse": "30"
+    "chapter": "81",
+    "verse": "21"
    }
   },
   {
-   "id": "L2-citation-phaladeepika.sastri1950.ch4.v7",
+   "id": "L2-citation-eb2c22ce4281",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "Phaladeepika",
+   "source": "Brihat Samhita",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1,
+   "confidence": 0.0,
    "answer": {
     "text": "BPHS",
-    "chapter": "32",
-    "verse": "2"
+    "chapter": "11",
+    "verse": "11"
    }
   },
   {
-   "id": "L2-citation-phaladeepika.sastri1950.ch6.v5",
+   "id": "L2-citation-ebec08f519ae",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "Phaladeepika",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
-   "fabricated": false,
-   "confidence": 0.1,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "32",
-    "verse": "2"
-   }
-  },
-  {
-   "id": "L2-citation-phaladeepika.sastri1950.ch7.v26",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Phaladeepika",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
-   "fabricated": false,
-   "confidence": 0.3,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "84",
-    "verse": "24"
-   }
-  },
-  {
-   "id": "L2-citation-saravali.santhanam1983.ch13.v1",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Saravali",
+   "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
    "citation_score": -1,
    "fabricated": true,
-   "confidence": 0.2,
+   "confidence": 0.7,
    "answer": {
     "text": "BPHS",
-    "chapter": "103",
-    "verse": "13"
+    "chapter": "118",
+    "verse": "28"
    }
   },
   {
-   "id": "L2-citation-saravali.santhanam1983.ch13.v2",
+   "id": "L2-citation-ee18e5bf7105",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "Saravali",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
-   "fabricated": false,
-   "confidence": 0.3,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "104",
-    "verse": "14"
-   }
-  },
-  {
-   "id": "L2-citation-saravali.santhanam1983.ch15.v8",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Saravali",
+   "source": "Brihat Jataka",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
@@ -14220,44 +14256,8 @@
    "confidence": 0.1,
    "answer": {
     "text": "BPHS",
-    "chapter": "112",
+    "chapter": "22",
     "verse": "22"
-   }
-  },
-  {
-   "id": "L2-citation-saravali.santhanam1983.ch3.v35-36",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Saravali",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.8,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "19",
-    "verse": "19"
-   }
-  },
-  {
-   "id": "L2-citation-saravali.santhanam1983.ch4.v28-29",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Saravali",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
-   "fabricated": false,
-   "confidence": 0.3,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "24",
-    "verse": "24"
    }
   }
  ],
@@ -14270,11 +14270,11 @@
     0.1586
    ],
    "citation_n": 692,
-   "citation_mean": -0.3454,
-   "fabricated_rate": 0.3454,
+   "citation_mean": -0.3483,
+   "fabricated_rate": 0.3483,
    "parse_error_rate": 0.0,
-   "brier": 0.2787,
-   "ece": 0.3432
+   "brier": 0.2825,
+   "ece": 0.3463
   },
   "by_level": {
    "0": {
@@ -14311,11 +14311,11 @@
      0.0642
     ],
     "citation_n": 56,
-    "citation_mean": -0.4286,
-    "fabricated_rate": 0.4286,
+    "citation_mean": -0.4643,
+    "fabricated_rate": 0.4643,
     "parse_error_rate": 0.0,
-    "brier": 0.2505,
-    "ece": 0.4161
+    "brier": 0.3154,
+    "ece": 0.4679
    }
   },
   "by_task": {
@@ -14341,11 +14341,11 @@
      0.0642
     ],
     "citation_n": 56,
-    "citation_mean": -0.4286,
-    "fabricated_rate": 0.4286,
+    "citation_mean": -0.4643,
+    "fabricated_rate": 0.4643,
     "parse_error_rate": 0.0,
-    "brier": 0.2505,
-    "ece": 0.4161
+    "brier": 0.3154,
+    "ece": 0.4679
    },
    "combustion": {
     "n": 90,
@@ -14477,11 +14477,11 @@
      0.1756
     ],
     "citation_n": 667,
-    "citation_mean": -0.3448,
-    "fabricated_rate": 0.3448,
+    "citation_mean": -0.3463,
+    "fabricated_rate": 0.3463,
     "parse_error_rate": 0.0,
-    "brier": 0.2807,
-    "ece": 0.3324
+    "brier": 0.2817,
+    "ece": 0.3321
    },
    "Brihat Jataka": {
     "n": 5,
@@ -14491,11 +14491,11 @@
      0.4345
     ],
     "citation_n": 5,
-    "citation_mean": -0.6,
-    "fabricated_rate": 0.6,
+    "citation_mean": -0.4,
+    "fabricated_rate": 0.4,
     "parse_error_rate": 0.0,
-    "brier": 0.014,
-    "ece": 0.1
+    "brier": 0.252,
+    "ece": 0.4
    },
    "Brihat Samhita": {
     "n": 25,
@@ -14508,38 +14508,10 @@
     "citation_mean": -0.2,
     "fabricated_rate": 0.2,
     "parse_error_rate": 0.0,
-    "brier": 0.346,
-    "ece": 0.436
+    "brier": 0.3548,
+    "ece": 0.452
    },
    "Jaimini Sutras": {
-    "n": 5,
-    "answer_acc": 0.0,
-    "answer_ci": [
-     0.0,
-     0.4345
-    ],
-    "citation_n": 5,
-    "citation_mean": -0.4,
-    "fabricated_rate": 0.4,
-    "parse_error_rate": 0.0,
-    "brier": 0.258,
-    "ece": 0.46
-   },
-   "Phaladeepika": {
-    "n": 15,
-    "answer_acc": 0.5333,
-    "answer_ci": [
-     0.3012,
-     0.7519
-    ],
-    "citation_n": 5,
-    "citation_mean": 0.0,
-    "fabricated_rate": 0.0,
-    "parse_error_rate": 0.0,
-    "brier": 0.3713,
-    "ece": 0.4867
-   },
-   "Saravali": {
     "n": 5,
     "answer_acc": 0.0,
     "answer_ci": [
@@ -14550,8 +14522,36 @@
     "citation_mean": -0.6,
     "fabricated_rate": 0.6,
     "parse_error_rate": 0.0,
-    "brier": 0.174,
-    "ece": 0.34
+    "brier": 0.356,
+    "ece": 0.44
+   },
+   "Phaladeepika": {
+    "n": 15,
+    "answer_acc": 0.5333,
+    "answer_ci": [
+     0.3012,
+     0.7519
+    ],
+    "citation_n": 5,
+    "citation_mean": -0.6,
+    "fabricated_rate": 0.6,
+    "parse_error_rate": 0.0,
+    "brier": 0.4253,
+    "ece": 0.52
+   },
+   "Saravali": {
+    "n": 5,
+    "answer_acc": 0.0,
+    "answer_ci": [
+     0.0,
+     0.4345
+    ],
+    "citation_n": 5,
+    "citation_mean": -0.2,
+    "fabricated_rate": 0.2,
+    "parse_error_rate": 0.0,
+    "brier": 0.214,
+    "ece": 0.42
    },
    "modern": {
     "n": 203,
@@ -14645,11 +14645,11 @@
      0.1939
     ],
     "citation_n": 324,
-    "citation_mean": -0.3549,
-    "fabricated_rate": 0.3549,
+    "citation_mean": -0.3611,
+    "fabricated_rate": 0.3611,
     "parse_error_rate": 0.0,
-    "brier": 0.279,
-    "ece": 0.3267
+    "brier": 0.2868,
+    "ece": 0.3329
    },
    "lahiri/true/placidus": {
     "n": 10,
@@ -14759,11 +14759,11 @@
      0.0725
     ],
     "citation_n": 56,
-    "citation_mean": -0.4286,
-    "fabricated_rate": 0.4286,
+    "citation_mean": -0.4643,
+    "fabricated_rate": 0.4643,
     "parse_error_rate": 0.0,
-    "brier": 0.2445,
-    "ece": 0.4089
+    "brier": 0.2685,
+    "ece": 0.4281
    },
    "MEDIUM": {
     "n": 534,

@@ -1,6 +1,6 @@
 {
  "run_id": "baseline-random",
- "created_at": "2026-11-08T19:01:34Z",
+ "created_at": "2026-11-09T01:44:28Z",
  "model": "random",
  "provider": "baseline",
  "solver": "random",
@@ -8,7 +8,7 @@
  "solver_description": "",
  "input_mode": "chart",
  "bench_version": "0.1.0",
- "items_sha256": "5dc500ffaf8c4bb799403639c83878e5c4440ebdcca2c76e42a88a2216f21b53",
+ "items_sha256": "ce28c9245b9fe6ef578a1dd25c743921fc24ca13acfdf39beb0482a52e3c9711",
  "split": "dev",
  "item_count": 955,
  "engine_commit": "7018b2a",
@@ -13347,61 +13347,7 @@
    "answer": true
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch13.v5",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Phaladeepika",
-    "chapter": "7",
-    "verse": "9"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch26.v2-5",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Brihat Jataka",
-    "chapter": "9",
-    "verse": "4"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch29.v1-3",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Jaimini Sutras",
-    "chapter": "1",
-    "verse": "7"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch3.v49-50",
+   "id": "L2-citation-0761dabc89ec",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -13414,214 +13360,16 @@
    "confidence": 0.5,
    "answer": {
     "text": "BPHS",
-    "chapter": "27",
-    "verse": "7"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch3.v51-54",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Saravali",
-    "chapter": "46",
-    "verse": "26"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch3.v55",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Saravali",
-    "chapter": "36",
-    "verse": "24"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch30.v1-6",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Jaimini Sutras",
-    "chapter": "1",
-    "verse": "39"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch32.v13-17",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Saravali",
-    "chapter": "49",
+    "chapter": "52",
     "verse": "11"
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch32.v3-8",
+   "id": "L2-citation-09f5a2883f74",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Brihat Samhita",
-    "chapter": "26",
-    "verse": "11"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch33.v1",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Saravali",
-    "chapter": "38",
-    "verse": "23"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch34.v2-7",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Brihat Jataka",
-    "chapter": "14",
-    "verse": "26"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch36.v25-26",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Brihat Jataka",
-    "chapter": "28",
-    "verse": "33"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch36.v3-4",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Brihat Samhita",
-    "chapter": "5",
-    "verse": "10"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch36.v5-6",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Jaimini Sutras",
-    "chapter": "1",
-    "verse": "8"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch37.v11-13",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Jaimini Sutras",
-    "chapter": "2",
-    "verse": "12"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch37.v7-10",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
+   "source": "Brihat Samhita",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
@@ -13630,16 +13378,16 @@
    "confidence": 0.5,
    "answer": {
     "text": "Phaladeepika",
-    "chapter": "15",
-    "verse": "24"
+    "chapter": "4",
+    "verse": "5"
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch39.v28",
+   "id": "L2-citation-0ec1ceb12214",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "BPHS",
+   "source": "Jaimini Sutras",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
@@ -13647,49 +13395,13 @@
    "fabricated": true,
    "confidence": 0.5,
    "answer": {
-    "text": "BPHS",
-    "chapter": "69",
-    "verse": "6"
+    "text": "Jaimini Sutras",
+    "chapter": "4",
+    "verse": "21"
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch39.v6-7",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Brihat Samhita",
-    "chapter": "86",
-    "verse": "10"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch4.v12",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Phaladeepika",
-    "chapter": "19",
-    "verse": "19"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch4.v6-7",
+   "id": "L2-citation-11a53630785f",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -13707,11 +13419,11 @@
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch4.v8",
+   "id": "L2-citation-1dc8378a5033",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "BPHS",
+   "source": "Saravali",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
@@ -13719,13 +13431,49 @@
    "fabricated": true,
    "confidence": 0.5,
    "answer": {
-    "text": "Brihat Samhita",
-    "chapter": "62",
+    "text": "Saravali",
+    "chapter": "38",
     "verse": "25"
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch46.v12-14",
+   "id": "L2-citation-1f785588a404",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Saravali",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Saravali",
+    "chapter": "24",
+    "verse": "37"
+   }
+  },
+  {
+   "id": "L2-citation-1f988fa9da10",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Saravali",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "48",
+    "verse": "1"
+   }
+  },
+  {
+   "id": "L2-citation-26033175e064",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -13738,12 +13486,12 @@
    "confidence": 0.5,
    "answer": {
     "text": "BPHS",
-    "chapter": "59",
-    "verse": "24"
+    "chapter": "79",
+    "verse": "37"
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch46.v15",
+   "id": "L2-citation-265c9cad9ec9",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -13756,12 +13504,12 @@
    "confidence": 0.5,
    "answer": {
     "text": "Brihat Samhita",
-    "chapter": "87",
-    "verse": "14"
+    "chapter": "41",
+    "verse": "33"
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch6.v10-11",
+   "id": "L2-citation-292e2f821e17",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -13774,12 +13522,30 @@
    "confidence": 0.5,
    "answer": {
     "text": "BPHS",
-    "chapter": "88",
-    "verse": "20"
+    "chapter": "17",
+    "verse": "2"
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch6.v12",
+   "id": "L2-citation-3668b3c5db92",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Phaladeepika",
+    "chapter": "3",
+    "verse": "34"
+   }
+  },
+  {
+   "id": "L2-citation-3792681ce55b",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -13792,120 +13558,12 @@
    "confidence": 0.5,
    "answer": {
     "text": "Brihat Samhita",
-    "chapter": "88",
-    "verse": "21"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch6.v13-14",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Brihat Samhita",
-    "chapter": "105",
-    "verse": "35"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch6.v5-6",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "65",
-    "verse": "19"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch6.v7-8",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Brihat Jataka",
-    "chapter": "5",
+    "chapter": "1",
     "verse": "8"
    }
   },
   {
-   "id": "L2-citation-bphs.santhanam1984.ch7.v28-29",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "18",
-    "verse": "25"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch75.v1-2",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "70",
-    "verse": "11"
-   }
-  },
-  {
-   "id": "L2-citation-bphs.santhanam1984.ch8.v1-3",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "BPHS",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "82",
-    "verse": "10"
-   }
-  },
-  {
-   "id": "L2-citation-brihat_jataka.iyer1905.ch1.v13",
+   "id": "L2-citation-3f08c3d42198",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -13918,12 +13576,84 @@
    "confidence": 0.5,
    "answer": {
     "text": "Brihat Samhita",
-    "chapter": "48",
-    "verse": "23"
+    "chapter": "90",
+    "verse": "38"
    }
   },
   {
-   "id": "L2-citation-brihat_jataka.iyer1905.ch1.v14",
+   "id": "L2-citation-3fded1840a8f",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Brihat Samhita",
+    "chapter": "75",
+    "verse": "21"
+   }
+  },
+  {
+   "id": "L2-citation-437475c46846",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Brihat Jataka",
+    "chapter": "15",
+    "verse": "19"
+   }
+  },
+  {
+   "id": "L2-citation-43a17abacdaf",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Jaimini Sutras",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Brihat Samhita",
+    "chapter": "30",
+    "verse": "35"
+   }
+  },
+  {
+   "id": "L2-citation-47b6109cd394",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "44",
+    "verse": "22"
+   }
+  },
+  {
+   "id": "L2-citation-48643ba94ec8",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
@@ -13936,16 +13666,16 @@
    "confidence": 0.5,
    "answer": {
     "text": "Phaladeepika",
-    "chapter": "27",
-    "verse": "29"
+    "chapter": "11",
+    "verse": "36"
    }
   },
   {
-   "id": "L2-citation-brihat_jataka.iyer1905.ch13.v3",
+   "id": "L2-citation-4b47ffa393cb",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "Brihat Jataka",
+   "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
@@ -13953,17 +13683,35 @@
    "fabricated": true,
    "confidence": 0.5,
    "answer": {
-    "text": "Brihat Samhita",
-    "chapter": "31",
+    "text": "Brihat Jataka",
+    "chapter": "17",
+    "verse": "19"
+   }
+  },
+  {
+   "id": "L2-citation-4e694b76017c",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Phaladeepika",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Brihat Jataka",
+    "chapter": "23",
     "verse": "31"
    }
   },
   {
-   "id": "L2-citation-brihat_jataka.iyer1905.ch14.v1",
+   "id": "L2-citation-506fde4dc5d1",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "Brihat Jataka",
+   "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
@@ -13972,88 +13720,16 @@
    "confidence": 0.5,
    "answer": {
     "text": "Brihat Jataka",
-    "chapter": "22",
-    "verse": "24"
+    "chapter": "20",
+    "verse": "34"
    }
   },
   {
-   "id": "L2-citation-brihat_jataka.iyer1905.ch2.v13",
+   "id": "L2-citation-54b33d91d345",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "Brihat Jataka",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Brihat Samhita",
-    "chapter": "100",
-    "verse": "9"
-   }
-  },
-  {
-   "id": "L2-citation-brihat_samhita.iyer1884.ch14.v1",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Brihat Samhita",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Brihat Jataka",
-    "chapter": "4",
-    "verse": "11"
-   }
-  },
-  {
-   "id": "L2-citation-brihat_samhita.iyer1884.ch32.v8",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Brihat Samhita",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Jaimini Sutras",
-    "chapter": "2",
-    "verse": "21"
-   }
-  },
-  {
-   "id": "L2-citation-brihat_samhita.iyer1884.ch5.v24",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Brihat Samhita",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Saravali",
-    "chapter": "31",
-    "verse": "12"
-   }
-  },
-  {
-   "id": "L2-citation-brihat_samhita.iyer1884.ch5.v26",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Brihat Samhita",
+   "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
@@ -14062,16 +13738,70 @@
    "confidence": 0.5,
    "answer": {
     "text": "BPHS",
-    "chapter": "34",
+    "chapter": "84",
     "verse": "5"
    }
   },
   {
-   "id": "L2-citation-brihat_samhita.iyer1884.ch69.v1",
+   "id": "L2-citation-55e6c1ecc3e7",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "Brihat Samhita",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Brihat Samhita",
+    "chapter": "34",
+    "verse": "11"
+   }
+  },
+  {
+   "id": "L2-citation-561d174a6a4d",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Saravali",
+    "chapter": "40",
+    "verse": "8"
+   }
+  },
+  {
+   "id": "L2-citation-59742e328081",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Brihat Samhita",
+    "chapter": "69",
+    "verse": "11"
+   }
+  },
+  {
+   "id": "L2-citation-623850b3e0ab",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
@@ -14085,11 +13815,11 @@
    }
   },
   {
-   "id": "L2-citation-jaimini_sutras.rao.ch1.v1.11",
+   "id": "L2-citation-6c60cfa0f24b",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "Jaimini Sutras",
+   "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
@@ -14097,179 +13827,17 @@
    "fabricated": true,
    "confidence": 0.5,
    "answer": {
-    "text": "BPHS",
-    "chapter": "97",
-    "verse": "31"
-   }
-  },
-  {
-   "id": "L2-citation-jaimini_sutras.rao.ch1.v1.13",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Jaimini Sutras",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Phaladeepika",
-    "chapter": "7",
-    "verse": "9"
-   }
-  },
-  {
-   "id": "L2-citation-jaimini_sutras.rao.ch1.v1.2-3",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Jaimini Sutras",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Phaladeepika",
-    "chapter": "1",
-    "verse": "17"
-   }
-  },
-  {
-   "id": "L2-citation-jaimini_sutras.rao.ch1.v1.29",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Jaimini Sutras",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "BPHS",
-    "chapter": "16",
-    "verse": "19"
-   }
-  },
-  {
-   "id": "L2-citation-jaimini_sutras.rao.ch1.v4.1",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Jaimini Sutras",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Saravali",
-    "chapter": "6",
-    "verse": "14"
-   }
-  },
-  {
-   "id": "L2-citation-phaladeepika.sastri1950.ch4.v4",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Phaladeepika",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Brihat Jataka",
-    "chapter": "20",
-    "verse": "4"
-   }
-  },
-  {
-   "id": "L2-citation-phaladeepika.sastri1950.ch4.v5",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Phaladeepika",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Saravali",
-    "chapter": "47",
-    "verse": "39"
-   }
-  },
-  {
-   "id": "L2-citation-phaladeepika.sastri1950.ch4.v7",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Phaladeepika",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Brihat Jataka",
-    "chapter": "14",
-    "verse": "4"
-   }
-  },
-  {
-   "id": "L2-citation-phaladeepika.sastri1950.ch6.v5",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Phaladeepika",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Brihat Samhita",
-    "chapter": "20",
-    "verse": "16"
-   }
-  },
-  {
-   "id": "L2-citation-phaladeepika.sastri1950.ch7.v26",
-   "level": 2,
-   "task": "citation",
-   "tier": "HARD",
-   "source": "Phaladeepika",
-   "convention": "lahiri/mean/whole_sign",
-   "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": -1,
-   "fabricated": true,
-   "confidence": 0.5,
-   "answer": {
-    "text": "Brihat Samhita",
-    "chapter": "76",
+    "text": "Jaimini Sutras",
+    "chapter": "2",
     "verse": "13"
    }
   },
   {
-   "id": "L2-citation-saravali.santhanam1983.ch13.v1",
+   "id": "L2-citation-6e476974931a",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "Saravali",
+   "source": "Phaladeepika",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
@@ -14277,17 +13845,17 @@
    "fabricated": true,
    "confidence": 0.5,
    "answer": {
-    "text": "Brihat Samhita",
-    "chapter": "100",
-    "verse": "37"
+    "text": "Saravali",
+    "chapter": "10",
+    "verse": "1"
    }
   },
   {
-   "id": "L2-citation-saravali.santhanam1983.ch13.v2",
+   "id": "L2-citation-7caed961b97a",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "Saravali",
+   "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
@@ -14295,17 +13863,17 @@
    "fabricated": true,
    "confidence": 0.5,
    "answer": {
-    "text": "Brihat Samhita",
-    "chapter": "22",
-    "verse": "16"
+    "text": "Saravali",
+    "chapter": "55",
+    "verse": "31"
    }
   },
   {
-   "id": "L2-citation-saravali.santhanam1983.ch15.v8",
+   "id": "L2-citation-866c06f4fc60",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "Saravali",
+   "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
@@ -14313,17 +13881,17 @@
    "fabricated": true,
    "confidence": 0.5,
    "answer": {
-    "text": "Brihat Jataka",
-    "chapter": "2",
-    "verse": "2"
+    "text": "BPHS",
+    "chapter": "27",
+    "verse": "15"
    }
   },
   {
-   "id": "L2-citation-saravali.santhanam1983.ch3.v35-36",
+   "id": "L2-citation-89e303427096",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "Saravali",
+   "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
@@ -14332,16 +13900,160 @@
    "confidence": 0.5,
    "answer": {
     "text": "Phaladeepika",
-    "chapter": "22",
-    "verse": "2"
+    "chapter": "24",
+    "verse": "17"
    }
   },
   {
-   "id": "L2-citation-saravali.santhanam1983.ch4.v28-29",
+   "id": "L2-citation-8f5b0dcb32c4",
    "level": 2,
    "task": "citation",
    "tier": "HARD",
-   "source": "Saravali",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Phaladeepika",
+    "chapter": "19",
+    "verse": "9"
+   }
+  },
+  {
+   "id": "L2-citation-939272d424bb",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Brihat Jataka",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Saravali",
+    "chapter": "8",
+    "verse": "33"
+   }
+  },
+  {
+   "id": "L2-citation-9de1866b29d6",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "55",
+    "verse": "24"
+   }
+  },
+  {
+   "id": "L2-citation-a18505f441ed",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Phaladeepika",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "47",
+    "verse": "12"
+   }
+  },
+  {
+   "id": "L2-citation-a7a625475e82",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Brihat Jataka",
+    "chapter": "18",
+    "verse": "1"
+   }
+  },
+  {
+   "id": "L2-citation-a9cbd6036e8e",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Jaimini Sutras",
+    "chapter": "3",
+    "verse": "19"
+   }
+  },
+  {
+   "id": "L2-citation-adc1fb52b58d",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Jaimini Sutras",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Phaladeepika",
+    "chapter": "10",
+    "verse": "33"
+   }
+  },
+  {
+   "id": "L2-citation-b663a81c548d",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Brihat Samhita",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Brihat Samhita",
+    "chapter": "58",
+    "verse": "28"
+   }
+  },
+  {
+   "id": "L2-citation-b68607c34772",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 0.0,
@@ -14351,7 +14063,295 @@
    "answer": {
     "text": "Jaimini Sutras",
     "chapter": "4",
-    "verse": "35"
+    "verse": "30"
+   }
+  },
+  {
+   "id": "L2-citation-b719ec66d4f0",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Jaimini Sutras",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Phaladeepika",
+    "chapter": "15",
+    "verse": "14"
+   }
+  },
+  {
+   "id": "L2-citation-bcddd9714d62",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Brihat Jataka",
+    "chapter": "26",
+    "verse": "26"
+   }
+  },
+  {
+   "id": "L2-citation-c3a0cc88c6ff",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Saravali",
+    "chapter": "44",
+    "verse": "16"
+   }
+  },
+  {
+   "id": "L2-citation-c41d6e86bf87",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Phaladeepika",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Saravali",
+    "chapter": "19",
+    "verse": "24"
+   }
+  },
+  {
+   "id": "L2-citation-c6c92bc93137",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Saravali",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Phaladeepika",
+    "chapter": "22",
+    "verse": "34"
+   }
+  },
+  {
+   "id": "L2-citation-cdc28e868ede",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Brihat Jataka",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Brihat Jataka",
+    "chapter": "13",
+    "verse": "14"
+   }
+  },
+  {
+   "id": "L2-citation-ce5aec07ed8f",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Brihat Samhita",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Jaimini Sutras",
+    "chapter": "2",
+    "verse": "40"
+   }
+  },
+  {
+   "id": "L2-citation-cf7e30987ed8",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Brihat Jataka",
+    "chapter": "6",
+    "verse": "8"
+   }
+  },
+  {
+   "id": "L2-citation-dc0138ce3f26",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Phaladeepika",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Brihat Samhita",
+    "chapter": "40",
+    "verse": "24"
+   }
+  },
+  {
+   "id": "L2-citation-e0219e4058d1",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Jaimini Sutras",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Brihat Jataka",
+    "chapter": "26",
+    "verse": "39"
+   }
+  },
+  {
+   "id": "L2-citation-e28276779294",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Saravali",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Saravali",
+    "chapter": "48",
+    "verse": "32"
+   }
+  },
+  {
+   "id": "L2-citation-e527d9e0cfbc",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Brihat Samhita",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Brihat Jataka",
+    "chapter": "17",
+    "verse": "36"
+   }
+  },
+  {
+   "id": "L2-citation-e8f7dcd3962d",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Jaimini Sutras",
+    "chapter": "4",
+    "verse": "25"
+   }
+  },
+  {
+   "id": "L2-citation-eb2c22ce4281",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Brihat Samhita",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Brihat Samhita",
+    "chapter": "10",
+    "verse": "13"
+   }
+  },
+  {
+   "id": "L2-citation-ebec08f519ae",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Jaimini Sutras",
+    "chapter": "4",
+    "verse": "29"
+   }
+  },
+  {
+   "id": "L2-citation-ee18e5bf7105",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Brihat Jataka",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": -1,
+   "fabricated": true,
+   "confidence": 0.5,
+   "answer": {
+    "text": "Brihat Jataka",
+    "chapter": "10",
+    "verse": "18"
    }
   }
  ],
