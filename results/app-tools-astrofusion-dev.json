@@ -1,11 +1,11 @@
 {
- "run_id": "app-tools-repin-7018b2a",
- "created_at": "2026-11-08T19:03:10Z",
+ "run_id": "app-tools-astrofusion-dev",
+ "created_at": "2026-11-09T00:29:10Z",
  "model": "http_json:app-tools",
  "provider": "local",
  "solver": "http_json:app-tools",
  "kind": "app_tools",
- "solver_description": "AstroFusion MCP kundali tools over Rust engines, no LLM",
+ "solver_description": "AstroFusion MCP kundali tools over Rust engines plus canon rule-key citations, no LLM (dev split; adapter described in the private repo)",
  "input_mode": "birth",
  "bench_version": "0.1.0",
  "items_sha256": "5dc500ffaf8c4bb799403639c83878e5c4440ebdcca2c76e42a88a2216f21b53",
@@ -1162,7 +1162,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -1176,7 +1176,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1192,7 +1192,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1208,7 +1208,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1225,7 +1225,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1241,7 +1241,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1259,7 +1259,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1275,7 +1275,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1292,7 +1292,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -1306,7 +1306,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1322,7 +1322,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1338,7 +1338,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1354,7 +1354,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1370,7 +1370,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1387,7 +1387,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1403,7 +1403,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1420,7 +1420,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1436,7 +1436,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1452,7 +1452,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1469,7 +1469,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1485,7 +1485,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1501,7 +1501,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1517,7 +1517,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1535,7 +1535,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1554,7 +1554,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1571,7 +1571,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1587,7 +1587,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1603,7 +1603,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -1617,7 +1617,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1634,7 +1634,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1651,7 +1651,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1668,7 +1668,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -1682,7 +1682,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1698,7 +1698,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -1712,7 +1712,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1728,7 +1728,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -1742,7 +1742,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1758,7 +1758,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -1772,7 +1772,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1790,7 +1790,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -1804,7 +1804,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1820,7 +1820,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1836,7 +1836,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1852,7 +1852,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -1866,7 +1866,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1882,7 +1882,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -1896,7 +1896,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1912,7 +1912,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -1926,7 +1926,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1942,7 +1942,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1960,7 +1960,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -1974,7 +1974,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -1990,7 +1990,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -2004,7 +2004,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2021,7 +2021,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2039,7 +2039,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -2053,7 +2053,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2070,7 +2070,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -2084,7 +2084,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2102,7 +2102,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2118,7 +2118,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -2132,7 +2132,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2149,7 +2149,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2166,7 +2166,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2185,7 +2185,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2201,7 +2201,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2217,7 +2217,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2233,7 +2233,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2249,7 +2249,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2265,7 +2265,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2283,7 +2283,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2300,7 +2300,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2318,7 +2318,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -2332,7 +2332,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -2346,7 +2346,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -2360,7 +2360,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2377,7 +2377,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2394,7 +2394,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2411,7 +2411,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2427,7 +2427,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -2441,7 +2441,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -2455,7 +2455,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2471,7 +2471,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -2485,7 +2485,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2501,7 +2501,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2517,7 +2517,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2533,7 +2533,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -2547,7 +2547,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2563,7 +2563,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -2577,7 +2577,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -2591,7 +2591,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -2605,7 +2605,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2621,7 +2621,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -2635,7 +2635,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2652,7 +2652,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2668,7 +2668,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -2682,7 +2682,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2698,7 +2698,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -2712,7 +2712,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2728,7 +2728,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2746,7 +2746,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2762,7 +2762,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2778,7 +2778,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -2792,7 +2792,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2808,7 +2808,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2825,7 +2825,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -2839,7 +2839,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -2853,7 +2853,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2870,7 +2870,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2887,7 +2887,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2903,7 +2903,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2919,7 +2919,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2935,7 +2935,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -2949,7 +2949,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2966,7 +2966,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2982,7 +2982,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -2998,7 +2998,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3015,7 +3015,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -3029,7 +3029,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3045,7 +3045,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -3059,7 +3059,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3076,7 +3076,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3093,7 +3093,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3110,7 +3110,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3126,7 +3126,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3142,7 +3142,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3160,7 +3160,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -3174,7 +3174,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3190,7 +3190,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3208,7 +3208,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -3222,7 +3222,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -3236,7 +3236,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3252,7 +3252,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3269,7 +3269,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -3283,7 +3283,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3300,7 +3300,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3316,7 +3316,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3332,7 +3332,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3349,7 +3349,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3366,7 +3366,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -3380,7 +3380,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3396,7 +3396,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3412,7 +3412,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3429,7 +3429,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3446,7 +3446,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3463,7 +3463,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3480,7 +3480,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -3494,7 +3494,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3510,7 +3510,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -3524,7 +3524,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3541,7 +3541,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3557,7 +3557,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -3571,7 +3571,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3587,7 +3587,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3603,7 +3603,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3619,7 +3619,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3635,7 +3635,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3651,7 +3651,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3667,7 +3667,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3683,7 +3683,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -3697,7 +3697,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3713,7 +3713,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3729,7 +3729,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -3743,7 +3743,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -3757,7 +3757,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3773,7 +3773,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -3787,7 +3787,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3804,7 +3804,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3820,7 +3820,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -3834,7 +3834,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3850,7 +3850,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3866,7 +3866,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3882,7 +3882,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -3896,7 +3896,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3913,7 +3913,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3929,7 +3929,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -3943,7 +3943,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": []
@@ -3957,7 +3957,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3973,7 +3973,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -3989,7 +3989,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
@@ -4006,7 +4006,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Sun"
@@ -4020,7 +4020,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mars"
@@ -4034,7 +4034,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mercury"
@@ -4048,7 +4048,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mercury"
@@ -4062,7 +4062,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mars"
@@ -4076,7 +4076,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Rahu"
@@ -4090,7 +4090,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Sun"
@@ -4104,7 +4104,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Moon"
@@ -4118,7 +4118,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Venus"
@@ -4132,7 +4132,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mercury"
@@ -4146,7 +4146,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Moon"
@@ -4160,7 +4160,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mercury"
@@ -4174,7 +4174,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mercury"
@@ -4188,7 +4188,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Rahu"
@@ -4202,7 +4202,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mars"
@@ -4216,7 +4216,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mercury"
@@ -4230,7 +4230,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mars"
@@ -4244,7 +4244,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Rahu"
@@ -4258,7 +4258,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mercury"
@@ -4272,7 +4272,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Jupiter"
@@ -4286,7 +4286,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Jupiter"
@@ -4300,7 +4300,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Ketu"
@@ -4314,7 +4314,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Jupiter"
@@ -4328,7 +4328,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Saturn"
@@ -4342,7 +4342,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mercury"
@@ -4356,7 +4356,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Moon"
@@ -4370,7 +4370,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mercury"
@@ -4384,7 +4384,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mercury"
@@ -4398,7 +4398,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Jupiter"
@@ -4412,7 +4412,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mars"
@@ -4426,7 +4426,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mercury"
@@ -4440,7 +4440,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Saturn"
@@ -4454,7 +4454,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Sun"
@@ -4468,7 +4468,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mars"
@@ -4482,7 +4482,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Saturn"
@@ -4496,7 +4496,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Venus"
@@ -4510,7 +4510,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Saturn"
@@ -4524,7 +4524,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Saturn"
@@ -4538,7 +4538,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mercury"
@@ -4552,7 +4552,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Rahu"
@@ -4566,7 +4566,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Rahu"
@@ -4580,7 +4580,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Rahu"
@@ -4594,7 +4594,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Rahu"
@@ -4608,7 +4608,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mercury"
@@ -4622,7 +4622,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Jupiter"
@@ -4636,7 +4636,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Moon"
@@ -4650,7 +4650,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Saturn"
@@ -4664,7 +4664,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Moon"
@@ -4678,7 +4678,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Sun"
@@ -4692,7 +4692,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Venus"
@@ -4706,7 +4706,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Jupiter"
@@ -4720,7 +4720,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mercury"
@@ -4734,7 +4734,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Jupiter"
@@ -4748,7 +4748,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Ketu"
@@ -4762,7 +4762,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Rahu"
@@ -4776,7 +4776,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Ketu"
@@ -4790,7 +4790,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Jupiter"
@@ -4804,7 +4804,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Jupiter"
@@ -4818,7 +4818,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Jupiter"
@@ -4832,7 +4832,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Venus"
@@ -4846,7 +4846,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Moon"
@@ -4860,7 +4860,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Rahu"
@@ -4874,7 +4874,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Sun"
@@ -4888,7 +4888,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Ketu"
@@ -4902,7 +4902,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Venus"
@@ -4916,7 +4916,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Ketu"
@@ -4930,7 +4930,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mars"
@@ -4944,7 +4944,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Rahu"
@@ -4958,7 +4958,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Venus"
@@ -4972,7 +4972,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mercury"
@@ -4986,7 +4986,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mars"
@@ -5000,7 +5000,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Jupiter"
@@ -5014,7 +5014,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Rahu"
@@ -5028,7 +5028,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Rahu"
@@ -5042,7 +5042,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mars"
@@ -5056,7 +5056,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Moon"
@@ -5070,7 +5070,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Jupiter"
@@ -5084,7 +5084,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Venus"
@@ -5098,7 +5098,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Moon"
@@ -5112,7 +5112,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Moon"
@@ -5126,7 +5126,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mars"
@@ -5140,7 +5140,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Sun"
@@ -5154,7 +5154,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Mercury"
@@ -5168,7 +5168,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Ketu"
@@ -5182,7 +5182,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Rahu"
@@ -5196,7 +5196,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Jupiter"
@@ -5210,7 +5210,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Saturn"
@@ -5224,7 +5224,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Venus"
@@ -5238,7 +5238,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Saturn"
@@ -5252,7 +5252,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Moon"
@@ -5266,7 +5266,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "debilitated"
@@ -5280,7 +5280,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "own"
@@ -5294,7 +5294,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "friend"
@@ -5308,7 +5308,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "neutral"
@@ -5322,7 +5322,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "neutral"
@@ -5336,7 +5336,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "exalted"
@@ -5350,7 +5350,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "neutral"
@@ -5364,7 +5364,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "friend"
@@ -5378,7 +5378,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "neutral"
@@ -5392,7 +5392,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "enemy"
@@ -5406,7 +5406,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "neutral"
@@ -5420,7 +5420,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "moolatrikona"
@@ -5434,7 +5434,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "exalted"
@@ -5448,7 +5448,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "enemy"
@@ -5462,7 +5462,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "friend"
@@ -5476,7 +5476,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "friend"
@@ -5490,7 +5490,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "own"
@@ -5504,7 +5504,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "friend"
@@ -5518,7 +5518,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "neutral"
@@ -5532,7 +5532,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "exalted"
@@ -5546,7 +5546,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "own"
@@ -5560,7 +5560,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "enemy"
@@ -5574,7 +5574,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "enemy"
@@ -5588,7 +5588,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "enemy"
@@ -5602,7 +5602,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "friend"
@@ -5616,7 +5616,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "friend"
@@ -5630,7 +5630,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "enemy"
@@ -5644,7 +5644,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "exalted"
@@ -5658,7 +5658,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "neutral"
@@ -5672,7 +5672,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "moolatrikona"
@@ -5686,7 +5686,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "neutral"
@@ -5700,7 +5700,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "debilitated"
@@ -5714,7 +5714,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "own"
@@ -5728,7 +5728,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "own"
@@ -5742,7 +5742,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "enemy"
@@ -5756,7 +5756,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "neutral"
@@ -5770,7 +5770,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "moolatrikona"
@@ -5784,7 +5784,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "debilitated"
@@ -5798,7 +5798,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "friend"
@@ -5812,7 +5812,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "own"
@@ -5826,7 +5826,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "enemy"
@@ -5840,7 +5840,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "enemy"
@@ -5854,7 +5854,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "own"
@@ -5868,7 +5868,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "enemy"
@@ -5882,7 +5882,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "friend"
@@ -5896,7 +5896,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "own"
@@ -5910,7 +5910,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "friend"
@@ -5924,7 +5924,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "debilitated"
@@ -5938,7 +5938,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "enemy"
@@ -5952,7 +5952,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "enemy"
@@ -5966,7 +5966,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "debilitated"
@@ -5980,7 +5980,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "own"
@@ -5994,7 +5994,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "neutral"
@@ -6008,7 +6008,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "own"
@@ -6022,7 +6022,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "exalted"
@@ -6036,7 +6036,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "own"
@@ -6050,7 +6050,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "own"
@@ -6064,7 +6064,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "own"
@@ -6078,7 +6078,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "friend"
@@ -6092,7 +6092,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "enemy"
@@ -6106,7 +6106,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "moolatrikona"
@@ -6120,7 +6120,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "neutral"
@@ -6134,7 +6134,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "enemy"
@@ -6148,7 +6148,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "neutral"
@@ -6162,7 +6162,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "debilitated"
@@ -6176,7 +6176,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "own"
@@ -6190,7 +6190,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "friend"
@@ -6204,7 +6204,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "neutral"
@@ -6218,7 +6218,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "neutral"
@@ -6232,7 +6232,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "moolatrikona"
@@ -6246,7 +6246,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "enemy"
@@ -6260,7 +6260,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "enemy"
@@ -6274,7 +6274,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "debilitated"
@@ -6288,7 +6288,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "own"
@@ -6302,7 +6302,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "own"
@@ -6316,7 +6316,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "exalted"
@@ -6330,7 +6330,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "own"
@@ -6344,7 +6344,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "enemy"
@@ -6358,7 +6358,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "friend"
@@ -6372,7 +6372,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "friend"
@@ -6386,7 +6386,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "moolatrikona"
@@ -6400,7 +6400,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "moolatrikona"
@@ -6414,7 +6414,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "enemy"
@@ -6428,7 +6428,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "own"
@@ -6442,7 +6442,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "neutral"
@@ -6456,7 +6456,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "neutral"
@@ -6470,7 +6470,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "friend"
@@ -6484,7 +6484,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "friend"
@@ -6498,7 +6498,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "neutral"
@@ -6512,7 +6512,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "friend"
@@ -6526,7 +6526,7 @@
    "convention": "krishnamurti/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "4"
@@ -6540,7 +6540,7 @@
    "convention": "krishnamurti/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "2"
@@ -6554,7 +6554,7 @@
    "convention": "krishnamurti/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "9"
@@ -6568,7 +6568,7 @@
    "convention": "krishnamurti/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "4"
@@ -6582,7 +6582,7 @@
    "convention": "krishnamurti/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "9"
@@ -6596,7 +6596,7 @@
    "convention": "krishnamurti/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "10"
@@ -6610,7 +6610,7 @@
    "convention": "krishnamurti/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "2"
@@ -6624,7 +6624,7 @@
    "convention": "krishnamurti/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "4"
@@ -6638,7 +6638,7 @@
    "convention": "krishnamurti/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "12"
@@ -6652,7 +6652,7 @@
    "convention": "krishnamurti/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "10"
@@ -6666,7 +6666,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "8"
@@ -6680,7 +6680,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "4"
@@ -6694,7 +6694,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "7"
@@ -6708,7 +6708,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "6"
@@ -6722,7 +6722,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "6"
@@ -6736,7 +6736,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "12"
@@ -6750,7 +6750,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "6"
@@ -6764,7 +6764,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "12"
@@ -6778,7 +6778,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "9"
@@ -6792,7 +6792,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "3"
@@ -6806,7 +6806,7 @@
    "convention": "krishnamurti/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "12"
@@ -6820,7 +6820,7 @@
    "convention": "krishnamurti/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "2"
@@ -6834,7 +6834,7 @@
    "convention": "krishnamurti/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "4"
@@ -6848,7 +6848,7 @@
    "convention": "krishnamurti/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "10"
@@ -6862,7 +6862,7 @@
    "convention": "krishnamurti/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "3"
@@ -6876,7 +6876,7 @@
    "convention": "krishnamurti/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "12"
@@ -6890,7 +6890,7 @@
    "convention": "krishnamurti/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "4"
@@ -6904,7 +6904,7 @@
    "convention": "krishnamurti/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "11"
@@ -6918,7 +6918,7 @@
    "convention": "krishnamurti/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "12"
@@ -6932,7 +6932,7 @@
    "convention": "krishnamurti/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "11"
@@ -6946,7 +6946,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "8"
@@ -6960,7 +6960,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "9"
@@ -6974,7 +6974,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "11"
@@ -6988,7 +6988,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "6"
@@ -7002,7 +7002,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "7"
@@ -7016,7 +7016,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "7"
@@ -7030,7 +7030,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "1"
@@ -7044,7 +7044,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "12"
@@ -7058,7 +7058,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "4"
@@ -7072,7 +7072,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "5"
@@ -7086,7 +7086,7 @@
    "convention": "lahiri/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "1"
@@ -7100,7 +7100,7 @@
    "convention": "lahiri/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "1"
@@ -7114,7 +7114,7 @@
    "convention": "lahiri/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "11"
@@ -7128,7 +7128,7 @@
    "convention": "lahiri/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "6"
@@ -7142,7 +7142,7 @@
    "convention": "lahiri/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "8"
@@ -7156,7 +7156,7 @@
    "convention": "lahiri/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "6"
@@ -7170,7 +7170,7 @@
    "convention": "lahiri/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "9"
@@ -7184,7 +7184,7 @@
    "convention": "lahiri/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "9"
@@ -7198,7 +7198,7 @@
    "convention": "lahiri/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "8"
@@ -7212,7 +7212,7 @@
    "convention": "lahiri/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "7"
@@ -7226,7 +7226,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "4"
@@ -7240,7 +7240,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "8"
@@ -7254,7 +7254,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "12"
@@ -7268,7 +7268,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "11"
@@ -7282,7 +7282,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "5"
@@ -7296,7 +7296,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "10"
@@ -7310,7 +7310,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "2"
@@ -7324,7 +7324,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "3"
@@ -7338,7 +7338,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "6"
@@ -7352,7 +7352,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "2"
@@ -7366,7 +7366,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "11"
@@ -7380,7 +7380,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "7"
@@ -7394,7 +7394,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "1"
@@ -7408,7 +7408,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "12"
@@ -7422,7 +7422,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "10"
@@ -7436,7 +7436,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "12"
@@ -7450,7 +7450,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "9"
@@ -7464,7 +7464,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "1"
@@ -7478,7 +7478,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "10"
@@ -7492,7 +7492,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "9"
@@ -7506,7 +7506,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "2"
@@ -7520,7 +7520,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "2"
@@ -7534,7 +7534,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "10"
@@ -7548,7 +7548,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "3"
@@ -7562,7 +7562,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "12"
@@ -7576,7 +7576,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "11"
@@ -7590,7 +7590,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "4"
@@ -7604,7 +7604,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "9"
@@ -7618,7 +7618,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "8"
@@ -7632,7 +7632,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "4"
@@ -7646,7 +7646,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "4"
@@ -7660,7 +7660,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "12"
@@ -7674,7 +7674,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "11"
@@ -7688,7 +7688,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "8"
@@ -7702,7 +7702,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "3"
@@ -7716,7 +7716,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "3"
@@ -7730,7 +7730,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "10"
@@ -7744,7 +7744,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "9"
@@ -7758,7 +7758,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "10"
@@ -7772,7 +7772,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "4"
@@ -7786,7 +7786,7 @@
    "convention": "lahiri/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "4"
@@ -7800,7 +7800,7 @@
    "convention": "lahiri/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "1"
@@ -7814,7 +7814,7 @@
    "convention": "lahiri/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "12"
@@ -7828,7 +7828,7 @@
    "convention": "lahiri/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "6"
@@ -7842,7 +7842,7 @@
    "convention": "lahiri/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "5"
@@ -7856,7 +7856,7 @@
    "convention": "lahiri/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "2"
@@ -7870,7 +7870,7 @@
    "convention": "lahiri/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "2"
@@ -7884,7 +7884,7 @@
    "convention": "lahiri/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "4"
@@ -7898,7 +7898,7 @@
    "convention": "lahiri/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "12"
@@ -7912,7 +7912,7 @@
    "convention": "lahiri/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "4"
@@ -7926,7 +7926,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "8"
@@ -7940,7 +7940,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "12"
@@ -7954,7 +7954,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "5"
@@ -7968,7 +7968,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "3"
@@ -7982,7 +7982,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "12"
@@ -7996,7 +7996,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "10"
@@ -8010,7 +8010,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "4"
@@ -8024,7 +8024,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "6"
@@ -8038,7 +8038,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "10"
@@ -8052,7 +8052,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "2"
@@ -8066,7 +8066,7 @@
    "convention": "raman/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "4"
@@ -8080,7 +8080,7 @@
    "convention": "raman/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "9"
@@ -8094,7 +8094,7 @@
    "convention": "raman/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "9"
@@ -8108,7 +8108,7 @@
    "convention": "raman/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "7"
@@ -8122,7 +8122,7 @@
    "convention": "raman/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "8"
@@ -8136,7 +8136,7 @@
    "convention": "raman/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "9"
@@ -8150,7 +8150,7 @@
    "convention": "raman/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "8"
@@ -8164,7 +8164,7 @@
    "convention": "raman/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "5"
@@ -8178,7 +8178,7 @@
    "convention": "raman/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "1"
@@ -8192,7 +8192,7 @@
    "convention": "raman/mean/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "10"
@@ -8206,7 +8206,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "1"
@@ -8220,7 +8220,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "4"
@@ -8234,7 +8234,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "2"
@@ -8248,7 +8248,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "10"
@@ -8262,7 +8262,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "2"
@@ -8276,7 +8276,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "1"
@@ -8290,7 +8290,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "6"
@@ -8304,7 +8304,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "9"
@@ -8318,7 +8318,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "9"
@@ -8332,7 +8332,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "10"
@@ -8346,7 +8346,7 @@
    "convention": "raman/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "7"
@@ -8360,7 +8360,7 @@
    "convention": "raman/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "4"
@@ -8374,7 +8374,7 @@
    "convention": "raman/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "10"
@@ -8388,7 +8388,7 @@
    "convention": "raman/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "2"
@@ -8402,7 +8402,7 @@
    "convention": "raman/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "1"
@@ -8416,7 +8416,7 @@
    "convention": "raman/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "10"
@@ -8430,7 +8430,7 @@
    "convention": "raman/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "6"
@@ -8444,7 +8444,7 @@
    "convention": "raman/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "3"
@@ -8458,7 +8458,7 @@
    "convention": "raman/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "11"
@@ -8472,7 +8472,7 @@
    "convention": "raman/true/placidus",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "12"
@@ -8486,7 +8486,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "2"
@@ -8500,7 +8500,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "9"
@@ -8514,7 +8514,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "10"
@@ -8528,7 +8528,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "5"
@@ -8542,7 +8542,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "12"
@@ -8556,7 +8556,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "6"
@@ -8570,7 +8570,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "8"
@@ -8584,7 +8584,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "6"
@@ -8598,7 +8598,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "1"
@@ -8612,7 +8612,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "5"
@@ -10846,7 +10846,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Aquarius"
@@ -10860,7 +10860,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Leo"
@@ -10874,7 +10874,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Libra"
@@ -10888,7 +10888,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Libra"
@@ -10902,7 +10902,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Capricorn"
@@ -10916,7 +10916,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Cancer"
@@ -10930,7 +10930,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Leo"
@@ -10944,7 +10944,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Aquarius"
@@ -10958,7 +10958,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Leo"
@@ -10972,7 +10972,7 @@
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Cancer"
@@ -10986,7 +10986,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Leo"
@@ -11000,7 +11000,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Pisces"
@@ -11014,7 +11014,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Virgo"
@@ -11028,7 +11028,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Sagittarius"
@@ -11042,7 +11042,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Taurus"
@@ -11056,7 +11056,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Taurus"
@@ -11070,7 +11070,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Leo"
@@ -11084,7 +11084,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Taurus"
@@ -11098,7 +11098,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Aquarius"
@@ -11112,7 +11112,7 @@
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Pisces"
@@ -11126,7 +11126,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Aquarius"
@@ -11140,7 +11140,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Virgo"
@@ -11154,7 +11154,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Gemini"
@@ -11168,7 +11168,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Taurus"
@@ -11182,7 +11182,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Capricorn"
@@ -11196,7 +11196,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Sagittarius"
@@ -11210,7 +11210,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Libra"
@@ -11224,7 +11224,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Pisces"
@@ -11238,7 +11238,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Scorpio"
@@ -11252,7 +11252,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Virgo"
@@ -11266,7 +11266,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Leo"
@@ -11280,7 +11280,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Capricorn"
@@ -11294,7 +11294,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Libra"
@@ -11308,7 +11308,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Gemini"
@@ -11322,7 +11322,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Sagittarius"
@@ -11336,7 +11336,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Gemini"
@@ -11350,7 +11350,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Capricorn"
@@ -11364,7 +11364,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Taurus"
@@ -11378,7 +11378,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Gemini"
@@ -11392,7 +11392,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Sagittarius"
@@ -11406,7 +11406,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Cancer"
@@ -11420,7 +11420,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Leo"
@@ -11434,7 +11434,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Virgo"
@@ -11448,7 +11448,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Aquarius"
@@ -11462,7 +11462,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Aries"
@@ -11476,7 +11476,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Pisces"
@@ -11490,7 +11490,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Gemini"
@@ -11504,7 +11504,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Cancer"
@@ -11518,7 +11518,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Libra"
@@ -11532,7 +11532,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Scorpio"
@@ -11546,7 +11546,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Libra"
@@ -11560,7 +11560,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Capricorn"
@@ -11574,7 +11574,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Aquarius"
@@ -11588,7 +11588,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Gemini"
@@ -11602,7 +11602,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Libra"
@@ -11616,7 +11616,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Gemini"
@@ -11630,7 +11630,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Libra"
@@ -11644,7 +11644,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Gemini"
@@ -11658,7 +11658,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Taurus"
@@ -11672,7 +11672,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Scorpio"
@@ -11686,7 +11686,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Capricorn"
@@ -11700,7 +11700,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Cancer"
@@ -11714,7 +11714,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Aquarius"
@@ -11728,7 +11728,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Sagittarius"
@@ -11742,7 +11742,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Cancer"
@@ -11756,7 +11756,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Libra"
@@ -11770,7 +11770,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Scorpio"
@@ -11784,7 +11784,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Taurus"
@@ -11798,7 +11798,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Aries"
@@ -11812,7 +11812,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Aquarius"
@@ -11826,7 +11826,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Libra"
@@ -11840,7 +11840,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Gemini"
@@ -11854,7 +11854,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Taurus"
@@ -11868,7 +11868,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Libra"
@@ -11882,7 +11882,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Virgo"
@@ -11896,7 +11896,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Virgo"
@@ -11910,7 +11910,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Aquarius"
@@ -11924,7 +11924,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Cancer"
@@ -11938,7 +11938,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Cancer"
@@ -11952,7 +11952,7 @@
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Pisces"
@@ -11966,7 +11966,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Taurus"
@@ -11980,7 +11980,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Pisces"
@@ -11994,7 +11994,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Cancer"
@@ -12008,7 +12008,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Aries"
@@ -12022,7 +12022,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Cancer"
@@ -12036,7 +12036,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Capricorn"
@@ -12050,7 +12050,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Aquarius"
@@ -12064,7 +12064,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Libra"
@@ -12078,7 +12078,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Aries"
@@ -12092,7 +12092,7 @@
    "convention": "raman/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": "Virgo"
@@ -12340,7 +12340,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": false
@@ -12354,7 +12354,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": false
@@ -12368,7 +12368,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": true
@@ -12382,7 +12382,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": false
@@ -12396,7 +12396,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": false
@@ -12410,7 +12410,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": true
@@ -12424,7 +12424,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": false
@@ -12438,7 +12438,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": true
@@ -12452,7 +12452,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": true
@@ -12466,7 +12466,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": true
@@ -12480,7 +12480,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": false
@@ -12494,7 +12494,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": false
@@ -12508,7 +12508,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": true
@@ -12522,7 +12522,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": true
@@ -12536,7 +12536,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": false
@@ -12550,7 +12550,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": true
@@ -12564,7 +12564,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": true
@@ -12578,7 +12578,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": false
@@ -12592,7 +12592,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": true
@@ -12606,7 +12606,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": true
@@ -12620,7 +12620,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": false
@@ -12634,7 +12634,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": true
@@ -12648,7 +12648,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": false
@@ -12662,7 +12662,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": true
@@ -12676,7 +12676,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": false
@@ -12690,7 +12690,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": false
@@ -12704,7 +12704,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": false
@@ -12718,7 +12718,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": false
@@ -12732,7 +12732,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": false
@@ -12746,7 +12746,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": true
@@ -12760,7 +12760,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": true
@@ -12774,7 +12774,7 @@
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": true
@@ -12788,7 +12788,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": true
@@ -12802,7 +12802,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": false
@@ -12816,7 +12816,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": false
@@ -12830,7 +12830,7 @@
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
    "answer_score": 1.0,
-   "citation_score": 0,
+   "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
    "answer": true
@@ -12843,10 +12843,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "13",
+    "verse": "5",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch26.v2-5",
@@ -12856,10 +12862,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "26",
+    "verse": "2-5",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch29.v1-3",
@@ -12869,10 +12881,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "29",
+    "verse": "1-3",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch3.v49-50",
@@ -12882,10 +12900,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "3",
+    "verse": "49-50",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch3.v51-54",
@@ -12895,10 +12919,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "3",
+    "verse": "51-54",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch3.v55",
@@ -12908,10 +12938,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "3",
+    "verse": "55",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch30.v1-6",
@@ -12921,10 +12957,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "30",
+    "verse": "1-6",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch32.v13-17",
@@ -12934,10 +12976,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "32",
+    "verse": "3-8",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch32.v3-8",
@@ -12947,10 +12995,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "32",
+    "verse": "3-8",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch33.v1",
@@ -12960,10 +13014,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "33",
+    "verse": "1",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch34.v2-7",
@@ -12973,10 +13033,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "34",
+    "verse": "2-7",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch36.v25-26",
@@ -12986,10 +13052,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "39",
+    "verse": "6-7",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch36.v3-4",
@@ -12999,10 +13071,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "36",
+    "verse": "3-4",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch36.v5-6",
@@ -13012,10 +13090,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "36",
+    "verse": "5-6",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch37.v11-13",
@@ -13025,10 +13109,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "37",
+    "verse": "11-13",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch37.v7-10",
@@ -13038,10 +13128,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "37",
+    "verse": "7-10",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch39.v28",
@@ -13051,10 +13147,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "39",
+    "verse": "28",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch39.v6-7",
@@ -13064,10 +13166,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "39",
+    "verse": "6-7",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch4.v12",
@@ -13077,10 +13185,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "4",
+    "verse": "6-7",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch4.v6-7",
@@ -13090,10 +13204,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "4",
+    "verse": "6-7",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch4.v8",
@@ -13103,10 +13223,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "4",
+    "verse": "6-7",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch46.v12-14",
@@ -13116,10 +13242,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "46",
+    "verse": "12-14",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch46.v15",
@@ -13129,10 +13261,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "46",
+    "verse": "15",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch6.v10-11",
@@ -13142,10 +13280,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "6",
+    "verse": "10-11",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch6.v12",
@@ -13155,10 +13299,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "6",
+    "verse": "12",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch6.v13-14",
@@ -13168,10 +13318,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "6",
+    "verse": "13-14",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch6.v5-6",
@@ -13181,10 +13337,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "6",
+    "verse": "5-6",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch6.v7-8",
@@ -13194,10 +13356,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "6",
+    "verse": "7-8",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch7.v28-29",
@@ -13207,10 +13375,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "7",
+    "verse": "28-29",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch75.v1-2",
@@ -13220,10 +13394,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "75",
+    "verse": "1-2",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-bphs.santhanam1984.ch8.v1-3",
@@ -13233,10 +13413,16 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "8",
+    "verse": "1-3",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-brihat_jataka.iyer1905.ch1.v13",
@@ -13246,10 +13432,16 @@
    "source": "Brihat Jataka",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "3",
+    "verse": "49-50",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-brihat_jataka.iyer1905.ch1.v14",
@@ -13259,10 +13451,16 @@
    "source": "Brihat Jataka",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "3",
+    "verse": "51-54",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-brihat_jataka.iyer1905.ch13.v3",
@@ -13272,10 +13470,16 @@
    "source": "Brihat Jataka",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "37",
+    "verse": "7-10",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-brihat_jataka.iyer1905.ch14.v1",
@@ -13285,10 +13489,16 @@
    "source": "Brihat Jataka",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "Brihat Jataka",
+    "chapter": "14",
+    "verse": "1",
+    "edition": "Iyer 1905"
+   }
   },
   {
    "id": "L2-citation-brihat_jataka.iyer1905.ch2.v13",
@@ -13298,10 +13508,16 @@
    "source": "Brihat Jataka",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "26",
+    "verse": "2-5",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-brihat_samhita.iyer1884.ch14.v1",
@@ -13311,10 +13527,16 @@
    "source": "Brihat Samhita",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "Brihat Samhita",
+    "chapter": "14",
+    "verse": "1",
+    "edition": "Iyer 1884"
+   }
   },
   {
    "id": "L2-citation-brihat_samhita.iyer1884.ch32.v8",
@@ -13324,10 +13546,16 @@
    "source": "Brihat Samhita",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "Brihat Samhita",
+    "chapter": "32",
+    "verse": "8",
+    "edition": "Iyer 1884"
+   }
   },
   {
    "id": "L2-citation-brihat_samhita.iyer1884.ch5.v24",
@@ -13337,10 +13565,16 @@
    "source": "Brihat Samhita",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "Brihat Samhita",
+    "chapter": "5",
+    "verse": "24",
+    "edition": "Iyer 1884"
+   }
   },
   {
    "id": "L2-citation-brihat_samhita.iyer1884.ch5.v26",
@@ -13350,10 +13584,16 @@
    "source": "Brihat Samhita",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "Brihat Samhita",
+    "chapter": "5",
+    "verse": "24",
+    "edition": "Iyer 1884"
+   }
   },
   {
    "id": "L2-citation-brihat_samhita.iyer1884.ch69.v1",
@@ -13363,10 +13603,16 @@
    "source": "Brihat Samhita",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "75",
+    "verse": "1-2",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-jaimini_sutras.rao.ch1.v1.11",
@@ -13376,10 +13622,16 @@
    "source": "Jaimini Sutras",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "32",
+    "verse": "3-8",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-jaimini_sutras.rao.ch1.v1.13",
@@ -13389,10 +13641,16 @@
    "source": "Jaimini Sutras",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "32",
+    "verse": "3-8",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-jaimini_sutras.rao.ch1.v1.2-3",
@@ -13402,10 +13660,16 @@
    "source": "Jaimini Sutras",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "8",
+    "verse": "1-3",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-jaimini_sutras.rao.ch1.v1.29",
@@ -13415,10 +13679,16 @@
    "source": "Jaimini Sutras",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "29",
+    "verse": "1-3",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-jaimini_sutras.rao.ch1.v4.1",
@@ -13428,10 +13698,16 @@
    "source": "Jaimini Sutras",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "30",
+    "verse": "1-6",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-phaladeepika.sastri1950.ch4.v4",
@@ -13441,10 +13717,16 @@
    "source": "Phaladeepika",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "Phaladeepika",
+    "chapter": "4",
+    "verse": "5",
+    "edition": "Sastri 1950"
+   }
   },
   {
    "id": "L2-citation-phaladeepika.sastri1950.ch4.v5",
@@ -13454,10 +13736,16 @@
    "source": "Phaladeepika",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "Phaladeepika",
+    "chapter": "4",
+    "verse": "5",
+    "edition": "Sastri 1950"
+   }
   },
   {
    "id": "L2-citation-phaladeepika.sastri1950.ch4.v7",
@@ -13467,10 +13755,16 @@
    "source": "Phaladeepika",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "7",
+    "verse": "28-29",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-phaladeepika.sastri1950.ch6.v5",
@@ -13480,10 +13774,16 @@
    "source": "Phaladeepika",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "37",
+    "verse": "7-10",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-phaladeepika.sastri1950.ch7.v26",
@@ -13493,10 +13793,16 @@
    "source": "Phaladeepika",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "Phaladeepika",
+    "chapter": "7",
+    "verse": "26",
+    "edition": "Sastri 1950"
+   }
   },
   {
    "id": "L2-citation-saravali.santhanam1983.ch13.v1",
@@ -13506,10 +13812,16 @@
    "source": "Saravali",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "37",
+    "verse": "7-10",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-saravali.santhanam1983.ch13.v2",
@@ -13519,10 +13831,16 @@
    "source": "Saravali",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "37",
+    "verse": "11-13",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-saravali.santhanam1983.ch15.v8",
@@ -13532,10 +13850,16 @@
    "source": "Saravali",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "Saravali",
+    "chapter": "15",
+    "verse": "8",
+    "edition": "Santhanam 1983"
+   }
   },
   {
    "id": "L2-citation-saravali.santhanam1983.ch3.v35-36",
@@ -13545,10 +13869,16 @@
    "source": "Saravali",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "3",
+    "verse": "49-50",
+    "edition": "Santhanam 1984"
+   }
   },
   {
    "id": "L2-citation-saravali.santhanam1983.ch4.v28-29",
@@ -13558,22 +13888,28 @@
    "source": "Saravali",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
-   "citation_score": 0,
+   "answer_score": 1.0,
+   "citation_score": 1,
    "fabricated": false,
-   "confidence": 0.0
+   "confidence": 1.0,
+   "answer": {
+    "text": "BPHS",
+    "chapter": "3",
+    "verse": "55",
+    "edition": "Santhanam 1984"
+   }
   }
  ],
  "summary": {
   "overall": {
    "n": 955,
-   "answer_acc": 0.9414,
+   "answer_acc": 1.0,
    "answer_ci": [
-    0.9246,
-    0.9546
+    0.996,
+    1.0
    ],
    "citation_n": 692,
-   "citation_mean": 0.0,
+   "citation_mean": 1.0,
    "fabricated_rate": 0.0,
    "parse_error_rate": 0.0,
    "brier": 0.0,
@@ -13600,7 +13936,7 @@
      1.0
     ],
     "citation_n": 636,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13608,13 +13944,13 @@
    },
    "2": {
     "n": 56,
-    "answer_acc": 0.0,
+    "answer_acc": 1.0,
     "answer_ci": [
-     0.0,
-     0.0642
+     0.9358,
+     1.0
     ],
     "citation_n": 56,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13630,7 +13966,7 @@
      1.0
     ],
     "citation_n": 90,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13638,13 +13974,13 @@
    },
    "citation": {
     "n": 56,
-    "answer_acc": 0.0,
+    "answer_acc": 1.0,
     "answer_ci": [
-     0.0,
-     0.0642
+     0.9358,
+     1.0
     ],
     "citation_n": 56,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13658,7 +13994,7 @@
      1.0
     ],
     "citation_n": 90,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13672,7 +14008,7 @@
      1.0
     ],
     "citation_n": 90,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13686,7 +14022,7 @@
      1.0
     ],
     "citation_n": 90,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13700,7 +14036,7 @@
      1.0
     ],
     "citation_n": 150,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13750,7 +14086,7 @@
      1.0
     ],
     "citation_n": 90,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13764,7 +14100,7 @@
      1.0
     ],
     "citation_n": 36,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13774,13 +14110,13 @@
   "by_source": {
    "BPHS": {
     "n": 697,
-    "answer_acc": 0.9555,
+    "answer_acc": 1.0,
     "answer_ci": [
-     0.9376,
-     0.9685
+     0.9945,
+     1.0
     ],
     "citation_n": 667,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13788,13 +14124,13 @@
    },
    "Brihat Jataka": {
     "n": 5,
-    "answer_acc": 0.0,
+    "answer_acc": 1.0,
     "answer_ci": [
-     0.0,
-     0.4345
+     0.5655,
+     1.0
     ],
     "citation_n": 5,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13802,13 +14138,13 @@
    },
    "Brihat Samhita": {
     "n": 25,
-    "answer_acc": 0.8,
+    "answer_acc": 1.0,
     "answer_ci": [
-     0.6087,
-     0.9114
+     0.8668,
+     1.0
     ],
     "citation_n": 5,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13816,13 +14152,13 @@
    },
    "Jaimini Sutras": {
     "n": 5,
-    "answer_acc": 0.0,
+    "answer_acc": 1.0,
     "answer_ci": [
-     0.0,
-     0.4345
+     0.5655,
+     1.0
     ],
     "citation_n": 5,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13830,13 +14166,13 @@
    },
    "Phaladeepika": {
     "n": 15,
-    "answer_acc": 0.6667,
+    "answer_acc": 1.0,
     "answer_ci": [
-     0.4171,
-     0.8482
+     0.7961,
+     1.0
     ],
     "citation_n": 5,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13844,13 +14180,13 @@
    },
    "Saravali": {
     "n": 5,
-    "answer_acc": 0.0,
+    "answer_acc": 1.0,
     "answer_ci": [
-     0.0,
-     0.4345
+     0.5655,
+     1.0
     ],
     "citation_n": 5,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13878,7 +14214,7 @@
      1.0
     ],
     "citation_n": 10,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13892,7 +14228,7 @@
      1.0
     ],
     "citation_n": 60,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13906,7 +14242,7 @@
      1.0
     ],
     "citation_n": 10,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13920,7 +14256,7 @@
      1.0
     ],
     "citation_n": 60,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13934,7 +14270,7 @@
      1.0
     ],
     "citation_n": 10,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13942,13 +14278,13 @@
    },
    "lahiri/mean/whole_sign": {
     "n": 471,
-    "answer_acc": 0.8811,
+    "answer_acc": 1.0,
     "answer_ci": [
-     0.8487,
-     0.9073
+     0.9919,
+     1.0
     ],
     "citation_n": 324,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13962,7 +14298,7 @@
      1.0
     ],
     "citation_n": 10,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13976,7 +14312,7 @@
      1.0
     ],
     "citation_n": 68,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -13990,7 +14326,7 @@
      1.0
     ],
     "citation_n": 10,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -14004,7 +14340,7 @@
      1.0
     ],
     "citation_n": 60,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -14018,7 +14354,7 @@
      1.0
     ],
     "citation_n": 10,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -14032,7 +14368,7 @@
      1.0
     ],
     "citation_n": 60,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -14048,7 +14384,7 @@
      1.0
     ],
     "citation_n": 180,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -14056,13 +14392,13 @@
    },
    "HARD": {
     "n": 151,
-    "answer_acc": 0.6291,
+    "answer_acc": 1.0,
     "answer_ci": [
-     0.5498,
-     0.7021
+     0.9752,
+     1.0
     ],
     "citation_n": 56,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
@@ -14076,7 +14412,7 @@
      1.0
     ],
     "citation_n": 456,
-    "citation_mean": 0.0,
+    "citation_mean": 1.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
     "brier": 0.0,
