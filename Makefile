@@ -5,6 +5,7 @@ SEED ?= 20261108
 
 install:
 	$(PY) -m pip install -e ".[dev]"
+	$(PY) scripts/fetch_ephe.py
 
 lint:
 	$(PY) -m ruff check .

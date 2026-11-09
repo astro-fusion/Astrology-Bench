@@ -7,8 +7,10 @@ stream does not depend on ``PYTHONHASHSEED`` or on the order items are generated
 
 from __future__ import annotations
 
+import copy
 import random
 import warnings
+from collections import Counter
 from collections.abc import Callable, Sequence
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta, timezone
@@ -22,6 +24,7 @@ from vedic_astrology_core.rules.vocabulary import PLANET_NAMES, to_planet_enum
 
 from .. import BENCH_VERSION, ENGINE_COMMIT
 from ..canon import Canon
+from ..ephemeris import EPHE_SET_SHA256
 from ..schema import (
     Birth,
     Body,
@@ -73,6 +76,12 @@ class GenContext:
     canon: Canon
     rules_dir: Path | None = None
     log: Callable[[str], None] = field(default=lambda msg: None)
+    #: Samples rejected per (task, reason); logged after generation.
+    rejections: Counter[tuple[str, str]] = field(default_factory=Counter)
+    ephemeris_model: str = "swieph"
+
+    def reject(self, task: str, reason: str) -> None:
+        self.rejections[(task, reason)] += 1
 
 
 def conventions(house_dependent: bool = False, whole_sign_only: bool = False) -> list[Convention]:
@@ -267,6 +276,7 @@ def make_item(
             "generator": GeneratorInfo(
                 name=generator, version=BENCH_VERSION, seed=ctx.seed,
                 engine_commit=ENGINE_COMMIT, index=index,
+                ephemeris_model=ctx.ephemeris_model, ephe_sha256=EPHE_SET_SHA256,
             ),
         }
     )
@@ -277,3 +287,65 @@ CITE_HINT = (
     "chapter and verse that supports your answer. If you cannot cite one, set citations "
     "to [] and say so."
 )
+
+
+# --------------------------------------------------------------------------- boundaries
+
+#: Edge spacing: pada edges every 3 deg 20'; sign and nakshatra edges are multiples.
+PADA_SPAN = 10.0 / 3.0
+#: Minimum distance from an edge: true-node longitudes differ most between ephemeris
+#: sources and are published to 1 dp, so they get the widest margin.
+TRUE_NODE_MARGIN = 0.02
+BODY_MARGIN = 0.002
+
+
+def edge_distance(longitude: float) -> float:
+    """Distance (deg) from ``longitude`` to the nearest multiple of 3 deg 20'."""
+    r = (longitude % 360.0) % PADA_SPAN
+    return min(r, PADA_SPAN - r)
+
+
+def near_edge(chart: BirthChart, conv: Convention) -> bool:
+    """True when any body (or the Lagna) sits too close to a pada, nakshatra or sign edge."""
+    for name in PLANET_NAMES:
+        margin = TRUE_NODE_MARGIN if name in NO_SPEED_SIGN and conv.node == "true" \
+            else BODY_MARGIN
+        if edge_distance(float(planet_record(chart, name)["longitude"])) < margin:
+            return True
+    return edge_distance(float(chart.ascendant["longitude"])) < BODY_MARGIN
+
+
+def table_chart(chart: BirthChart, table: ChartTable) -> BirthChart:
+    """A copy of the engine chart whose positions are the published, rounded table.
+
+    Gold for chart-mode items is computed on this (what the solver sees) with the same
+    engine functions; the engine's own record format is reused, with sign, degrees and
+    combustion recomputed by the engine helpers from the rounded longitudes.
+    """
+    from vedic_astrology_core.astrology.ayanamsa import get_zodiac_sign
+    from vedic_astrology_core.astrology.combustion import is_combust
+    from vedic_astrology_core.config.constants import PlanetDict
+
+    tc = copy.copy(chart)
+    sun = table.bodies["Sun"].lon
+    planets = PlanetDict()
+    for name in PLANET_NAMES:
+        rec = dict(planet_record(chart, name))
+        lon = table.bodies[name].lon
+        idx, sign_name, deg = get_zodiac_sign(lon)
+        retro = table.bodies[name].retrograde
+        retro = bool(rec["retrograde"]) if retro is None else retro
+        enum = to_planet_enum(name)
+        rec.update(longitude=lon, sign=idx, sign_name=sign_name, degrees_in_sign=deg,
+                   retrograde=retro, combust=is_combust(enum, lon, sun, retro))
+        planets[enum] = rec
+    idx, sign_name, deg = get_zodiac_sign(table.lagna)
+    tc._ascendant = {"longitude": table.lagna, "sign": idx, "sign_name": sign_name,
+                     "degrees_in_sign": deg, "full_name": f"{sign_name} {deg:.2f}°"}
+    if table.cusps is not None:
+        tc._cusps = list(table.cusps)
+    tc._houses = None
+    tc._planets = planets
+    for rec in planets.values():
+        rec["house"] = tc._house_of_longitude(rec["longitude"])
+    return tc

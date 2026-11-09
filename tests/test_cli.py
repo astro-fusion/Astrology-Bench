@@ -52,6 +52,7 @@ def test_run_score_leaderboard(tmp_path: Path, capsys: pytest.CaptureFixture[str
     assert main(["score", str(tmp_path / "res" / "baseline-oracle.json")]) == 0
     assert "1.000" in capsys.readouterr().out
     out = tmp_path / "LB.md"
-    assert main(["leaderboard", "--results", str(tmp_path / "res"), "--out", str(out)]) == 0
+    assert main(["leaderboard", "--results", str(tmp_path / "res"), "--out", str(out),
+                 "--items", str(items)]) == 0
     text = out.read_text()
     assert text.index("| oracle |") < text.index("| constant |")

@@ -12,6 +12,7 @@ from __future__ import annotations
 from typing import Any
 
 from ..canon import Canon
+from ..ephemeris import configure
 from ..generators import ENGINE_TASKS, level0, level1_rules
 from ..schema import Item, SolverItem
 from .base import respond
@@ -35,6 +36,7 @@ class OracleSolver:
     full_item = True
 
     def __init__(self, canon: Canon):
+        configure()  # the oracle computes from the pinned Swiss Ephemeris files only
         self.canon = canon
 
     def answer(self, item: Item) -> Any:

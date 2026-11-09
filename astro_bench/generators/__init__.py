@@ -6,6 +6,7 @@ from collections.abc import Callable, Sequence
 from pathlib import Path
 
 from ..canon import Canon
+from ..ephemeris import configure
 from ..schema import Item
 from . import level0, level1_engine, level1_relations, level1_rules, level2
 from .common import GenContext, load_places
@@ -31,8 +32,9 @@ def generate_items(
 ) -> list[Item]:
     """Generate every requested level. Golden Level 0 and Level 2 items are built from
     public data (the PyJHora fixture, the canon), so they are dev-only."""
+    model = configure()  # pinned Swiss Ephemeris files; raises rather than use Moshier
     ctx = GenContext(seed=seed, split=split, places=load_places(places_path), canon=canon,
-                     rules_dir=rules_dir, log=log)
+                     rules_dir=rules_dir, log=log, ephemeris_model=model)
 
     def wanted(task: str) -> bool:
         return tasks is None or task in tasks
@@ -51,6 +53,8 @@ def generate_items(
                       if wanted(i.task)]
     if 2 in levels and split == "dev" and wanted("citation"):
         items += level2.generate(ctx)
+    for (task_name, reason), count in sorted(ctx.rejections.items()):
+        log(f"resampled {count:5d}  {task_name}: {reason}")
     ids = [i.id for i in items]
     if len(ids) != len(set(ids)):
         raise RuntimeError("generator produced duplicate item ids")

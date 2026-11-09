@@ -207,7 +207,7 @@ def cmd_score(args: argparse.Namespace) -> int:
 
 
 def cmd_leaderboard(args: argparse.Namespace) -> int:
-    path = write_leaderboard(args.results, args.out)
+    path = write_leaderboard(args.results, args.out, args.items)
     print(f"wrote {path}")
     return 0
 
@@ -325,6 +325,8 @@ def build_parser() -> argparse.ArgumentParser:
     lb = sub.add_parser("leaderboard", help="render LEADERBOARD.md from results/")
     lb.add_argument("--results", default="results")
     lb.add_argument("--out", default="LEADERBOARD.md")
+    lb.add_argument("--items", default="items",
+                    help="current split; rows scored on other items are listed as older split")
     lb.set_defaults(func=cmd_leaderboard)
     return parser
 

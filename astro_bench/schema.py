@@ -87,6 +87,10 @@ class GeneratorInfo(_Strict):
     seed: int | None = None
     engine_commit: str
     index: int | None = None
+    #: "swieph" (Swiss Ephemeris files) for every item generated after 2026-11-09.
+    ephemeris_model: str | None = None
+    #: sha256 of the pinned ephemeris file set (astro_bench.ephemeris.EPHE_SET_SHA256).
+    ephe_sha256: str | None = None
 
 
 class Item(_Strict):
@@ -294,6 +298,8 @@ class RunResult(_Strict):
     answered_n: int | None = None
     missing_ids: list[str] = Field(default_factory=list)
     pack_manifest: str | None = None
+    ephemeris_model: str | None = None
+    ephe_sha256: str | None = None
     bench_version: str
     items_sha256: str
     split: str

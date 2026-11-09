@@ -25,13 +25,14 @@ from functools import lru_cache
 from pathlib import Path
 from typing import Any
 
-from vedic_astrology_core.rules.context import EvalContext, Location
+from vedic_astrology_core.astrology.chart import BirthChart
+from vedic_astrology_core.rules.context import EvalContext, Location, Sky
 from vedic_astrology_core.rules.engine import evaluate_context, rule_inputs
 from vedic_astrology_core.rules.loader import RuleRegistry, discover
 from vedic_astrology_core.rules.schema import Rule
 
 from ..canon import Canon
-from ..schema import Convention, Item
+from ..schema import ChartTable, Convention, Item
 from .common import (
     CITE_HINT,
     DEFAULT_CONVENTION,
@@ -40,10 +41,12 @@ from .common import (
     build_chart,
     chart_table,
     make_item,
+    near_edge,
     parse_utc,
     repo_root,
     rng_for,
     sample_birth,
+    table_chart,
 )
 
 TIER = "MEDIUM"
@@ -99,6 +102,15 @@ def fires(rule: Rule, moment: Any, lat: float, lon: float, tz: str, node: str) -
     return bool(evaluate_context(rule, ctx).fired)
 
 
+def fires_on_table(rule: Rule, chart: BirthChart, table: ChartTable, node: str) -> bool:
+    """The rule evaluated on the published, rounded chart table (chart-mode gold)."""
+    tc = table_chart(chart, table)
+    sky = Sky.from_positions(dict(tc.planets))
+    sky.node_model = node
+    sky._ascendant = table.lagna
+    return bool(evaluate_context(rule, EvalContext(sky)).fired)
+
+
 def prompt_for(rule: Rule, conv: Convention) -> str:
     claim = " ".join(rule.claim.split())
     return (
@@ -126,8 +138,16 @@ def _rule_items(ctx: GenContext, rule: Rule, conv: Convention, n: int) -> list[I
         attempt += 1
         moment, place = sample_birth(rng, ctx.places)
         verdict = fires(rule, moment, place.lat, place.lon, place.tz, conv.node)
-        if len(got[verdict]) < want[verdict]:
-            got[verdict].append((moment, place))
+        if len(got[verdict]) >= want[verdict]:
+            continue
+        chart = build_chart(moment, place.lat, place.lon, conv)
+        if near_edge(chart, conv):
+            ctx.reject(task, "near an edge")
+            continue
+        if fires_on_table(rule, chart, chart_table(chart, conv), conv.node) != verdict:
+            ctx.reject(task, "table and engine disagree")
+            continue
+        got[verdict].append((moment, place))
     if len(got[True]) < want[True] or len(got[False]) < want[False]:
         ctx.log(f"{rule.id} {conv.key}: could not balance "
                 f"({len(got[True])}+/{len(got[False])}-); skipped")

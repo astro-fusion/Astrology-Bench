@@ -93,7 +93,7 @@ VARGA = EngineTask(
 # --------------------------------------------------------------------------- dasha
 
 DASHA_YEAR_DAYS = 365.25
-BOUNDARY_MARGIN = timedelta(days=2)
+BOUNDARY_MARGIN = timedelta(days=4)
 
 
 def _dasha_query(rng: random.Random, chart: BirthChart, moment: datetime) -> dict[str, Any] | None:

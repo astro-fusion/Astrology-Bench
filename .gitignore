@@ -54,3 +54,6 @@ __pycache__/
 venv/
 # Hidden test split must never be written inside the repo
 items-test/
+
+# Swiss Ephemeris files (fetched by scripts/fetch_ephe.py, AGPL / SE Professional licence)
+ephe/

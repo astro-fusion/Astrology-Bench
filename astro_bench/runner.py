@@ -11,6 +11,7 @@ from typing import Any
 
 from . import BENCH_VERSION, ENGINE_COMMIT
 from .canon import Canon
+from .ephemeris import EPHE_SET_SHA256, configure
 from .graders import grade_answer, grade_citations
 from .io import items_sha256
 from .parse import ParseError, parse_response
@@ -91,6 +92,8 @@ def run(solver: Solver, items: Sequence[Item], canon: Canon, *, solver_name: str
         sample_seed=sample.seed if sample else None,
         sample_n=sample.n if sample else None,
         sample_ids_sha256=sample.ids_sha256 if sample else None,
+        ephemeris_model=configure(),
+        ephe_sha256=EPHE_SET_SHA256,
         bench_version=BENCH_VERSION,
         items_sha256=items_sha256(items),
         split=split or ",".join(splits),

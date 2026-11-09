@@ -26,6 +26,7 @@ from .common import (
     conventions,
     lon_digits,
     make_item,
+    near_edge,
     parse_utc,
     planet_record,
     repo_root,
@@ -81,8 +82,15 @@ def generate(ctx: GenContext, n_default: int, n_other: int) -> list[Item]:
     for conv in conventions():
         n = n_default if conv == DEFAULT_CONVENTION else n_other
         for index in range(n):
-            moment, place = sample_birth(rng_for(ctx.seed, TASK, conv, index), ctx.places)
-            chart = build_chart(moment, place.lat, place.lon, conv)
+            for attempt in range(200):
+                rng = rng_for(ctx.seed, TASK, conv, index, salt=str(attempt) if attempt else "")
+                moment, place = sample_birth(rng, ctx.places)
+                chart = build_chart(moment, place.lat, place.lon, conv)
+                if not near_edge(chart, conv):
+                    break
+                ctx.reject(TASK, "near an edge")
+            else:
+                raise RuntimeError(f"{TASK}: no sample away from edges")
             items.append(make_item(
                 ctx=ctx, level=0, task=TASK, tier=TIER, conv=conv, index=index,
                 generator=GENERATOR, prompt=prompt_for(conv), answer_type="positions",

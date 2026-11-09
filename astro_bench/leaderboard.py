@@ -7,11 +7,12 @@ ranked by overall answer accuracy; baseline and ``ablation: nochart`` rows never
 
 from __future__ import annotations
 
-from collections.abc import Sequence
+from collections.abc import Mapping, Sequence
 from pathlib import Path
 
+from .io import item_files, items_sha256, load_items
 from .runner import load_result
-from .schema import RunResult, Stat
+from .schema import Item, RunResult, Stat
 from .solvers import BASELINES
 
 BASELINE_ORDER = {name: i for i, name in enumerate(BASELINES)}
@@ -65,7 +66,19 @@ def _block(results: Sequence[RunResult], ranked: bool) -> list[str]:
     return lines
 
 
-def render(results: Sequence[RunResult]) -> str:
+def on_current_split(result: RunResult, current: Mapping[str, Item]) -> bool:
+    """True when every item of the run still exists unchanged in the current split."""
+    subset = [current.get(row.id) for row in result.per_item]
+    if any(item is None for item in subset):
+        return False
+    return items_sha256([i for i in subset if i is not None]) == result.items_sha256
+
+
+def render(results: Sequence[RunResult], current: Mapping[str, Item] | None = None) -> str:
+    """``current`` (id -> item of the current split) moves rows scored on another split
+    into an unranked "Older split" table; without it every row counts as current."""
+    older = [r for r in results if current is not None and not on_current_split(r, current)]
+    results = [r for r in results if r not in older]
     lines = [
         "# Astro-Bench leaderboard",
         "",
@@ -99,8 +112,14 @@ def render(results: Sequence[RunResult]) -> str:
     ablations = sorted((r for r in results if r.ablation), key=_baseline_key)
     if ablations:
         lines += ["", "## Ablations (not ranked)", ""] + _block(ablations, False)
+    older = sorted(older, key=lambda r: r.run_id)
+    if older:
+        lines += ["", "## Older split (not ranked)", "",
+                  "Scored on an earlier version of the items (see CORRECTIONS.md); kept for "
+                  "the record. Their numbers are not comparable with the tables above.", ""]
+        lines += _block(older, False)
     lines += ["", "## Runs", ""]
-    for result in [*main, *partial, *ablations]:
+    for result in [*main, *partial, *ablations, *older]:
         desc = f"; {result.solver_description}" if result.solver_description else ""
         sample = (f", sample n={result.sample_n} seed={result.sample_seed}"
                   if result.sample_n is not None else "")
@@ -115,7 +134,11 @@ def load_results(results_dir: str | Path) -> list[RunResult]:
     return [load_result(p) for p in sorted(Path(results_dir).glob("*.json"))]
 
 
-def write_leaderboard(results_dir: str | Path, out: str | Path) -> Path:
+def write_leaderboard(results_dir: str | Path, out: str | Path,
+                      items_dir: str | Path | None = "items") -> Path:
     path = Path(out)
-    path.write_text(render(load_results(results_dir)), encoding="utf-8")
+    current = None
+    if items_dir is not None and item_files(items_dir):
+        current = {i.id: i for i in load_items(items_dir)}
+    path.write_text(render(load_results(results_dir), current), encoding="utf-8")
     return path
