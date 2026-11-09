@@ -1,11 +1,11 @@
 {
  "run_id": "claude-sonnet-notools-sample100-v2",
- "created_at": "2026-11-09T03:01:57Z",
+ "created_at": "2026-11-09T03:22:32Z",
  "model": "manual:claude-sonnet-5-5-via-claude-code-subagent-no-to",
  "provider": "manual",
  "solver": "manual:claude-sonnet-5-5-via-claude-code-subagent-no-to",
  "kind": "model",
- "solver_description": "Claude Sonnet 5.5 via Claude Code subagent, no tools (Read and Write only), 2026-11-09, 100-item sample; re-scored on dev split v2 (carried-over replies)",
+ "solver_description": "Claude Sonnet 5.5 via Claude Code subagent, no tools, 2026-11-09, 100-item sample v2",
  "input_mode": "chart",
  "sample_seed": 1,
  "sample_n": 100,
@@ -31,7 +31,7 @@
   "pack_path": "runs/packs/pack-100-chart-v2/pack-100.manifest.json",
   "pack_sha256": "ab7b12578d036b6fca14d45dc78bb7d407af537e6432e6752c0901b119535d31",
   "replies_path": "results/claude-sonnet-notools-sample100-v2.replies.jsonl",
-  "replies_sha256": "3737d2106c6f3fcfead24e35132eec4a89c23d8a3135fd64e31268677a26a392",
+  "replies_sha256": "b1e3adf432a8581f34466d0b6c68bb67461dbacf89632f396cafc3b55a82940d",
   "brief_path": "runs/claude-sonnet-notools-sample100/brief.md",
   "agent_report_path": "runs/claude-sonnet-notools-sample100/agent-report.md",
   "engine_commit": "7018b2a",
@@ -43,18 +43,9 @@
   ],
   "notes": "Measured as a bare language model: the brief restricted the subagent to one Read of the pack and one Write of the replies, with no Bash, Python, web or calculator. The restriction is an instruction in the brief, not a sandbox; the agent's own report is published verbatim beside the brief."
  },
- "status": "partial",
- "answered_n": 92,
- "missing_ids": [
-  "L0-positions-raman-true-ws-000006",
-  "L1-combustion-lahiri-mean-ws-000033",
-  "L1-dignity-krishnamurti-true-ws-000004",
-  "L1-dignity-krishnamurti-true-ws-000005",
-  "L1-dignity-lahiri-mean-ws-000038",
-  "L1-lordship-raman-mean-ws-000009",
-  "L1-varga-lahiri-mean-ws-000004",
-  "L1-varga-lahiri-true-ws-000007"
- ],
+ "status": "complete",
+ "answered_n": 100,
+ "missing_ids": [],
  "pack_manifest": "runs/packs/pack-100-chart-v2/pack-100.manifest.json",
  "ephemeris_model": "swieph",
  "ephe_sha256": "0cfc76a9dc51296f2241492e3376f1e71d13dd4f36b476253d4b82df57dfc990",
@@ -179,10 +170,10 @@
    "tier": "HARD",
    "source": "modern",
    "convention": "raman/true/whole_sign",
-   "parse_error": true,
-   "answer_score": 0.0,
+   "parse_error": false,
+   "answer_score": 0.65,
    "fabricated": false,
-   "error": "solver raised LookupError: no reply for L0-positions-raman-true-ws-000006"
+   "confidence": 0.05
   },
   {
    "id": "L1-aspect-krishnamurti-mean-ws-000009",
@@ -404,11 +395,14 @@
    "tier": "EASY",
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
-   "parse_error": true,
-   "answer_score": 0.0,
+   "parse_error": false,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "error": "solver raised LookupError: no reply for L1-combustion-lahiri-mean-ws-000033"
+   "confidence": 0.9,
+   "answer": [
+    "Venus"
+   ]
   },
   {
    "id": "L1-combustion-lahiri-mean-ws-000034",
@@ -648,11 +642,12 @@
    "tier": "EASY",
    "source": "BPHS",
    "convention": "krishnamurti/true/whole_sign",
-   "parse_error": true,
-   "answer_score": 0.0,
+   "parse_error": false,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "error": "solver raised LookupError: no reply for L1-dignity-krishnamurti-true-ws-000004"
+   "confidence": 0.8,
+   "answer": "neutral"
   },
   {
    "id": "L1-dignity-krishnamurti-true-ws-000005",
@@ -661,11 +656,12 @@
    "tier": "EASY",
    "source": "BPHS",
    "convention": "krishnamurti/true/whole_sign",
-   "parse_error": true,
-   "answer_score": 0.0,
+   "parse_error": false,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "error": "solver raised LookupError: no reply for L1-dignity-krishnamurti-true-ws-000005"
+   "confidence": 0.95,
+   "answer": "exalted"
   },
   {
    "id": "L1-dignity-krishnamurti-true-ws-000009",
@@ -730,11 +726,12 @@
    "tier": "EASY",
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
-   "parse_error": true,
-   "answer_score": 0.0,
+   "parse_error": false,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "error": "solver raised LookupError: no reply for L1-dignity-lahiri-mean-ws-000038"
+   "confidence": 0.9,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-raman-true-ws-000005",
@@ -925,11 +922,12 @@
    "tier": "MEDIUM",
    "source": "BPHS",
    "convention": "raman/mean/whole_sign",
-   "parse_error": true,
-   "answer_score": 0.0,
+   "parse_error": false,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "error": "solver raised LookupError: no reply for L1-lordship-raman-mean-ws-000009"
+   "confidence": 0.95,
+   "answer": "10"
   },
   {
    "id": "L1-lordship-raman-true-pl-000002",
@@ -1230,11 +1228,12 @@
    "tier": "MEDIUM",
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
-   "parse_error": true,
-   "answer_score": 0.0,
+   "parse_error": false,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "error": "solver raised LookupError: no reply for L1-varga-lahiri-mean-ws-000004"
+   "confidence": 0.93,
+   "answer": "Aries"
   },
   {
    "id": "L1-varga-lahiri-mean-ws-000030",
@@ -1285,11 +1284,12 @@
    "tier": "MEDIUM",
    "source": "BPHS",
    "convention": "lahiri/true/whole_sign",
-   "parse_error": true,
-   "answer_score": 0.0,
+   "parse_error": false,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "error": "solver raised LookupError: no reply for L1-varga-lahiri-true-ws-000007"
+   "confidence": 0.85,
+   "answer": "Taurus"
   },
   {
    "id": "L1-varga-raman-mean-ws-000004",
@@ -1483,44 +1483,44 @@
  "summary": {
   "overall": {
    "n": 100,
-   "answer_acc": 0.8175,
+   "answer_acc": 0.894,
    "answer_ci": [
-    0.7305,
-    0.881
+    0.8184,
+    0.9404
    ],
    "citation_n": 73,
    "citation_mean": 0.0,
    "fabricated_rate": 0.0,
-   "parse_error_rate": 0.08,
-   "brier": 0.0532,
-   "ece": 0.1873
+   "parse_error_rate": 0.0,
+   "brier": 0.0535,
+   "ece": 0.1855
   },
   "by_level": {
    "0": {
     "n": 10,
-    "answer_acc": 0.475,
+    "answer_acc": 0.54,
     "answer_ci": [
-     0.2188,
-     0.7451
+     0.2661,
+     0.7917
     ],
     "citation_n": 0,
-    "parse_error_rate": 0.1,
-    "brier": 0.2635,
-    "ece": 0.4978
+    "parse_error_rate": 0.0,
+    "brier": 0.2732,
+    "ece": 0.508
    },
    "1": {
     "n": 84,
-    "answer_acc": 0.9167,
+    "answer_acc": 1.0,
     "answer_ci": [
-     0.8378,
-     0.959
+     0.9563,
+     1.0
     ],
     "citation_n": 67,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
-    "parse_error_rate": 0.0833,
-    "brier": 0.032,
-    "ece": 0.1578
+    "parse_error_rate": 0.0,
+    "brier": 0.0304,
+    "ece": 0.1532
    },
    "2": {
     "n": 6,
@@ -1568,17 +1568,17 @@
    },
    "combustion": {
     "n": 10,
-    "answer_acc": 0.9,
+    "answer_acc": 1.0,
     "answer_ci": [
-     0.5958,
-     0.9821
+     0.7225,
+     1.0
     ],
     "citation_n": 10,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
-    "parse_error_rate": 0.1,
-    "brier": 0.0225,
-    "ece": 0.15
+    "parse_error_rate": 0.0,
+    "brier": 0.0213,
+    "ece": 0.145
    },
    "dasha": {
     "n": 9,
@@ -1596,31 +1596,31 @@
    },
    "dignity": {
     "n": 9,
-    "answer_acc": 0.6667,
+    "answer_acc": 1.0,
     "answer_ci": [
-     0.3542,
-     0.8794
+     0.7009,
+     1.0
     ],
     "citation_n": 9,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
-    "parse_error_rate": 0.3333,
-    "brier": 0.0271,
-    "ece": 0.1583
+    "parse_error_rate": 0.0,
+    "brier": 0.0239,
+    "ece": 0.1444
    },
    "lordship": {
     "n": 16,
-    "answer_acc": 0.9375,
+    "answer_acc": 1.0,
     "answer_ci": [
-     0.7167,
-     0.9889
+     0.8064,
+     1.0
     ],
     "citation_n": 16,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
-    "parse_error_rate": 0.0625,
-    "brier": 0.0158,
-    "ece": 0.1233
+    "parse_error_rate": 0.0,
+    "brier": 0.015,
+    "ece": 0.1188
    },
    "nakshatra": {
     "n": 9,
@@ -1636,15 +1636,15 @@
    },
    "positions": {
     "n": 10,
-    "answer_acc": 0.475,
+    "answer_acc": 0.54,
     "answer_ci": [
-     0.2188,
-     0.7451
+     0.2661,
+     0.7917
     ],
     "citation_n": 0,
-    "parse_error_rate": 0.1,
-    "brier": 0.2635,
-    "ece": 0.4978
+    "parse_error_rate": 0.0,
+    "brier": 0.2732,
+    "ece": 0.508
    },
    "rule": {
     "n": 6,
@@ -1660,17 +1660,17 @@
    },
    "varga": {
     "n": 9,
-    "answer_acc": 0.7778,
+    "answer_acc": 1.0,
     "answer_ci": [
-     0.4526,
-     0.9368
+     0.7009,
+     1.0
     ],
     "citation_n": 9,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
-    "parse_error_rate": 0.2222,
-    "brier": 0.035,
-    "ece": 0.1857
+    "parse_error_rate": 0.0,
+    "brier": 0.0303,
+    "ece": 0.1689
    },
    "yoga": {
     "n": 6,
@@ -1690,17 +1690,17 @@
   "by_source": {
    "BPHS": {
     "n": 74,
-    "answer_acc": 0.8649,
+    "answer_acc": 0.9595,
     "answer_ci": [
-     0.7688,
-     0.9249
+     0.8875,
+     0.9861
     ],
     "citation_n": 70,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
-    "parse_error_rate": 0.0946,
-    "brier": 0.0353,
-    "ece": 0.1672
+    "parse_error_rate": 0.0,
+    "brier": 0.0332,
+    "ece": 0.1611
    },
    "Brihat Jataka": {
     "n": 1,
@@ -1770,15 +1770,15 @@
    },
    "modern": {
     "n": 21,
-    "answer_acc": 0.75,
+    "answer_acc": 0.781,
     "answer_ci": [
-     0.5367,
-     0.886
+     0.5692,
+     0.9059
     ],
     "citation_n": 0,
-    "parse_error_rate": 0.0476,
-    "brier": 0.124,
-    "ece": 0.2765
+    "parse_error_rate": 0.0,
+    "brier": 0.1352,
+    "ece": 0.2919
    }
   },
   "by_convention": {
@@ -1826,17 +1826,17 @@
    },
    "krishnamurti/true/whole_sign": {
     "n": 9,
-    "answer_acc": 0.7194,
+    "answer_acc": 0.9417,
     "answer_ci": [
-     0.3995,
-     0.9081
+     0.6255,
+     0.9936
     ],
     "citation_n": 7,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
-    "parse_error_rate": 0.2222,
-    "brier": 0.0633,
-    "ece": 0.2207
+    "parse_error_rate": 0.0,
+    "brier": 0.0539,
+    "ece": 0.1994
    },
    "lahiri/mean/placidus": {
     "n": 1,
@@ -1854,17 +1854,17 @@
    },
    "lahiri/mean/whole_sign": {
     "n": 44,
-    "answer_acc": 0.7784,
+    "answer_acc": 0.8466,
     "answer_ci": [
-     0.6363,
-     0.8758
+     0.7129,
+     0.9246
     ],
     "citation_n": 33,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
-    "parse_error_rate": 0.0682,
-    "brier": 0.0454,
-    "ece": 0.1668
+    "parse_error_rate": 0.0,
+    "brier": 0.0429,
+    "ece": 0.1616
    },
    "lahiri/true/placidus": {
     "n": 1,
@@ -1882,17 +1882,17 @@
    },
    "lahiri/true/whole_sign": {
     "n": 13,
-    "answer_acc": 0.8288,
+    "answer_acc": 0.9058,
     "answer_ci": [
-     0.5589,
-     0.9487
+     0.6458,
+     0.9807
     ],
     "citation_n": 7,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
-    "parse_error_rate": 0.0769,
-    "brier": 0.1002,
-    "ece": 0.2446
+    "parse_error_rate": 0.0,
+    "brier": 0.0942,
+    "ece": 0.2373
    },
    "raman/mean/placidus": {
     "n": 1,
@@ -1910,17 +1910,17 @@
    },
    "raman/mean/whole_sign": {
     "n": 9,
-    "answer_acc": 0.8278,
+    "answer_acc": 0.9389,
     "answer_ci": [
-     0.5011,
-     0.9583
+     0.6221,
+     0.9931
     ],
     "citation_n": 6,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
-    "parse_error_rate": 0.1111,
-    "brier": 0.0436,
-    "ece": 0.1837
+    "parse_error_rate": 0.0,
+    "brier": 0.039,
+    "ece": 0.1689
    },
    "raman/true/placidus": {
     "n": 2,
@@ -1938,61 +1938,61 @@
    },
    "raman/true/whole_sign": {
     "n": 11,
-    "answer_acc": 0.8477,
+    "answer_acc": 0.9068,
     "answer_ci": [
-     0.554,
-     0.9615
+     0.62,
+     0.9831
     ],
     "citation_n": 8,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
-    "parse_error_rate": 0.0909,
-    "brier": 0.0557,
-    "ece": 0.2095
+    "parse_error_rate": 0.0,
+    "brier": 0.0834,
+    "ece": 0.245
    }
   },
   "by_tier": {
    "EASY": {
     "n": 28,
-    "answer_acc": 0.8571,
+    "answer_acc": 1.0,
     "answer_ci": [
-     0.6851,
-     0.943
+     0.8794,
+     1.0
     ],
     "citation_n": 19,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
-    "parse_error_rate": 0.1429,
-    "brier": 0.0195,
-    "ece": 0.1354
+    "parse_error_rate": 0.0,
+    "brier": 0.0189,
+    "ece": 0.1321
    },
    "HARD": {
     "n": 16,
-    "answer_acc": 0.2969,
+    "answer_acc": 0.3375,
     "answer_ci": [
-     0.1314,
-     0.541
+     0.1585,
+     0.5794
     ],
     "citation_n": 6,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
-    "parse_error_rate": 0.0625,
-    "brier": 0.1621,
-    "ece": 0.3387
+    "parse_error_rate": 0.0,
+    "brier": 0.1745,
+    "ece": 0.355
    },
    "MEDIUM": {
     "n": 56,
-    "answer_acc": 0.9464,
+    "answer_acc": 1.0,
     "answer_ci": [
-     0.8539,
-     0.9816
+     0.9358,
+     1.0
     ],
     "citation_n": 48,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
-    "parse_error_rate": 0.0536,
-    "brier": 0.0376,
-    "ece": 0.1679
+    "parse_error_rate": 0.0,
+    "brier": 0.0362,
+    "ece": 0.1637
    }
   }
  }

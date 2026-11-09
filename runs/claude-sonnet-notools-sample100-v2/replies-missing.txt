@@ -1,0 +1,23 @@
+### L0-positions-raman-true-ws-000006
+{"answer": {"Sun": {"sign": "Capricorn", "deg_in_sign": 13.7, "nakshatra": "Shravana", "pada": 2}, "Moon": {"sign": "Virgo", "deg_in_sign": 4.7, "nakshatra": "Uttara Phalguni", "pada": 3}, "Mars": {"sign": "Capricorn", "deg_in_sign": 18.0, "nakshatra": "Shravana", "pada": 3}, "Mercury": {"sign": "Capricorn", "deg_in_sign": 12.0, "nakshatra": "Shravana", "pada": 1}, "Jupiter": {"sign": "Capricorn", "deg_in_sign": 21.0, "nakshatra": "Shravana", "pada": 4}, "Venus": {"sign": "Capricorn", "deg_in_sign": 5.0, "nakshatra": "Uttara Ashadha", "pada": 3}, "Saturn": {"sign": "Capricorn", "deg_in_sign": 17.0, "nakshatra": "Shravana", "pada": 3}, "Rahu": {"sign": "Cancer", "deg_in_sign": 28.0, "nakshatra": "Ashlesha", "pada": 4}, "Ketu": {"sign": "Capricorn", "deg_in_sign": 28.0, "nakshatra": "Dhanishta", "pada": 2}, "Lagna": {"sign": "Pisces"}}, "citations": [], "confidence": 0.05, "note": "Estimated from memory without computation; degrees are rough, only the Sun and Moon signs are reasonably likely."}
+
+### L1-combustion-lahiri-mean-ws-000033
+{"answer": ["Venus"], "citations": [], "confidence": 0.9, "note": "Venus is 7.48 deg from the Sun, inside the 10 deg orb. Mercury is 19.49 deg away, outside 14. Other planets are far outside their orbs. No citation given."}
+
+### L1-dignity-krishnamurti-true-ws-000004
+{"answer": "neutral", "citations": [], "confidence": 0.8, "note": "Moon at 270.93 is in Capricorn, ruled by Saturn. The Moon is not exalted, debilitated or in its own sign. Naisargika relation of Moon to Saturn is neutral."}
+
+### L1-dignity-krishnamurti-true-ws-000005
+{"answer": "exalted", "citations": [], "confidence": 0.95, "note": "Saturn at 189.54 is in Libra, its exaltation sign."}
+
+### L1-dignity-lahiri-mean-ws-000038
+{"answer": "own", "citations": [], "confidence": 0.9, "note": "Venus at 195.18 is Libra 15.18 deg, past the 0-15 deg moolatrikona range, so own sign."}
+
+### L1-lordship-raman-mean-ws-000009
+{"answer": "10", "citations": [], "confidence": 0.95, "note": "Lagna is Capricorn, so the 7th is Cancer, ruled by Moon. Moon at 180.70 is in Libra, the 10th house."}
+
+### L1-varga-lahiri-mean-ws-000004
+{"answer": "Aries", "citations": [], "confidence": 0.93, "note": "Mercury at Sagittarius 1.56 deg is in the first navamsa. Sagittarius is a fire sign, so counting starts from Aries."}
+
+### L1-varga-lahiri-true-ws-000007
+{"answer": "Taurus", "citations": [], "confidence": 0.85, "note": "Rahu at Sagittarius 15.2 deg is in the 6th dasamsa part. Sagittarius is an odd sign, so counting starts from Sagittarius and the 6th is Taurus."}

@@ -1,0 +1,23 @@
+### L0-positions-raman-true-ws-000006
+{"answer": {"Sun": {"sign": "Capricorn", "deg_in_sign": 13.10, "nakshatra": "Shravana", "pada": 1}, "Moon": {"sign": "Libra", "deg_in_sign": 5.00, "nakshatra": "Chitra", "pada": 4}, "Mars": {"sign": "Virgo", "deg_in_sign": 20.00, "nakshatra": "Hasta", "pada": 4}, "Mercury": {"sign": "Capricorn", "deg_in_sign": 5.00, "nakshatra": "Uttara Ashadha", "pada": 3}, "Jupiter": {"sign": "Libra", "deg_in_sign": 10.00, "nakshatra": "Swati", "pada": 2}, "Venus": {"sign": "Sagittarius", "deg_in_sign": 20.00, "nakshatra": "Purva Ashadha", "pada": 3}, "Saturn": {"sign": "Libra", "deg_in_sign": 22.00, "nakshatra": "Vishakha", "pada": 1}, "Rahu": {"sign": "Cancer", "deg_in_sign": 28.00, "nakshatra": "Ashlesha", "pada": 4}, "Ketu": {"sign": "Capricorn", "deg_in_sign": 28.00, "nakshatra": "Dhanishta", "pada": 2}, "Lagna": {"sign": "Pisces"}}, "citations": [], "confidence": 0.02, "note": "Estimated without an ephemeris; only the Sun and the Rahu/Ketu axis are roughly grounded (Raman about 21.8 deg in 1962). Moon, Mars, Mercury, Jupiter, Venus, Saturn and Lagna are guesses."}
+
+### L1-combustion-lahiri-mean-ws-000033
+{"answer": ["Venus"], "citations": [], "confidence": 0.8, "note": "Venus is 7.48 deg from the Sun (Sun 252.40, Venus 259.88), inside the 10 deg orb for a direct Venus. Moon (44.1), Mars (30.0), Mercury (19.5), Jupiter (56.2) and Saturn (114.7) are all outside their orbs. No classical citation given; the orbs are those stated in the question."}
+
+### L1-dignity-krishnamurti-true-ws-000004
+{"answer": "enemy", "citations": [], "confidence": 0.75, "note": "Moon at 270.93 is in Capricorn (own sign Cancer, exaltation Taurus, debilitation Scorpio, moolatrikona Taurus 4-30, none apply). Capricorn is ruled by Saturn, and the natural relation of Moon to Saturn is enemy. No citation given for the naisargika table."}
+
+### L1-dignity-krishnamurti-true-ws-000005
+{"answer": "exalted", "citations": [], "confidence": 0.85, "note": "Saturn at 189.54 is in Libra, its exaltation sign. Moolatrikona for Saturn is Aquarius, so it does not apply. No verse cited."}
+
+### L1-dignity-lahiri-mean-ws-000038
+{"answer": "own", "citations": [], "confidence": 0.7, "note": "Venus at 195.18 is 15.18 deg into Libra. Libra is Venus's own sign, and the Libra moolatrikona range (0-15 deg) is just exceeded, so moolatrikona does not apply. No verse cited."}
+
+### L1-lordship-raman-mean-ws-000009
+{"answer": "10", "citations": [], "confidence": 0.75, "note": "Lagna 286.27 is Capricorn, so the 7th house is Cancer, ruled by the Moon. Moon at 180.70 is in Libra, which is the 10th house counted from Capricorn as the 1st."}
+
+### L1-varga-lahiri-mean-ws-000004
+{"answer": "Libra", "citations": [], "confidence": 0.7, "note": "Mercury at 241.56 is 1.56 deg into Sagittarius. Navamsa is 3 deg 20 min, so this is the first navamsa. Sagittarius is a dual sign, and its navamsa count starts from Libra. No verse cited."}
+
+### L1-varga-lahiri-true-ws-000007
+{"answer": "Taurus", "citations": [], "confidence": 0.6, "note": "Rahu at 255.2 is 15.2 deg into Sagittarius. Dasamsa is 3 deg, so this is division 6 (index 5). Sagittarius is an odd sign, so its dasamsa count starts from Sagittarius, giving Taurus. No verse cited."}

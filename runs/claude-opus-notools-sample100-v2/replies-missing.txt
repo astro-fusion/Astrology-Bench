@@ -1,0 +1,23 @@
+### L0-positions-raman-true-ws-000006
+{"answer": {"Sun": {"sign": "Capricorn", "deg_in_sign": 13.50, "nakshatra": "Shravana", "pada": 2}, "Moon": {"sign": "Virgo", "deg_in_sign": 9.10, "nakshatra": "Uttara Phalguni", "pada": 4}, "Mars": {"sign": "Capricorn", "deg_in_sign": 11.10, "nakshatra": "Shravana", "pada": 1}, "Mercury": {"sign": "Capricorn", "deg_in_sign": 26.10, "nakshatra": "Dhanishta", "pada": 1}, "Jupiter": {"sign": "Capricorn", "deg_in_sign": 20.70, "nakshatra": "Shravana", "pada": 4}, "Venus": {"sign": "Capricorn", "deg_in_sign": 15.10, "nakshatra": "Shravana", "pada": 2}, "Saturn": {"sign": "Capricorn", "deg_in_sign": 12.10, "nakshatra": "Shravana", "pada": 1}, "Rahu": {"sign": "Cancer", "deg_in_sign": 24.10, "nakshatra": "Ashlesha", "pada": 1}, "Ketu": {"sign": "Capricorn", "deg_in_sign": 24.10, "nakshatra": "Dhanishta", "pada": 1}, "Lagna": {"sign": "Pisces"}}, "citations": [], "confidence": 0.1, "note": "Mental estimate from the Feb 1962 Aquarius (tropical) grand conjunction; Raman ayanamsa about 21.9 deg; signs likely right, degrees rough."}
+
+### L1-combustion-lahiri-mean-ws-000033
+{"answer": ["Venus"], "citations": [], "confidence": 0.9, "note": "Venus 7.48 deg from Sun (<10); Mercury 19.49 deg (>14); others far. No verse cited with confidence."}
+
+### L1-dignity-krishnamurti-true-ws-000004
+{"answer": "neutral", "citations": [], "confidence": 0.85, "note": "Moon in Capricorn (Saturn's sign); Moon treats Saturn as neutral (Moon has no enemies)."}
+
+### L1-dignity-krishnamurti-true-ws-000005
+{"answer": "exalted", "citations": [], "confidence": 0.93, "note": "Saturn at Libra 9.54; Libra is Saturn's exaltation sign."}
+
+### L1-dignity-lahiri-mean-ws-000038
+{"answer": "own", "citations": [], "confidence": 0.8, "note": "Venus at Libra 15.18, just beyond the BPHS moolatrikona range Libra 0-15, so own sign."}
+
+### L1-lordship-raman-mean-ws-000009
+{"answer": "10", "citations": [], "confidence": 0.92, "note": "Capricorn lagna; 7th is Cancer, lord Moon at 180.70 (Libra) = 10th house."}
+
+### L1-varga-lahiri-mean-ws-000004
+{"answer": "Aries", "citations": [], "confidence": 0.92, "note": "Mercury Sagittarius 1.56; fire sign navamsa starts from Aries, first pada."}
+
+### L1-varga-lahiri-true-ws-000007
+{"answer": "Taurus", "citations": [], "confidence": 0.88, "note": "Rahu Sagittarius 15.2 (odd sign, count from same sign); 6th dasamsa -> Taurus."}

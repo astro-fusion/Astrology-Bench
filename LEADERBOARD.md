@@ -24,6 +24,23 @@ Answer accuracy is the mean answer score with a Wilson 95% interval. Citation sc
 |  | mock | baseline | 2026-11-09 | chart | 1 | 804 | 15.6% [13.3, 18.3] | -0.338 | 33.8% | 0.0% | 0.286 |
 |  | mock | baseline | 2026-11-09 | chart | 2 | 56 | 0.0% [0.0, 6.4] | -0.464 | 46.4% | 0.0% | 0.315 |
 
+## Models
+
+| # | solver | kind | date | input mode | level | n | answer acc [95% CI] | citation score | fabricated-citation rate | parse-error rate | Brier |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | [manual:claude-opus-5-5-via-claude-code-subagent-no-tool](runs/claude-opus-notools-sample100-v2/CARD.md) | model | 2026-11-09 | chart | all | 100 | 90.1% [82.7, 94.6] | -0.014 | 1.4% | 0.0% | 0.083 |
+|  | [manual:claude-opus-5-5-via-claude-code-subagent-no-tool](runs/claude-opus-notools-sample100-v2/CARD.md) | model | 2026-11-09 | chart | 0 | 10 | 81.5% [50.5, 95.0] | - | - | 0.0% | 0.496 |
+|  | [manual:claude-opus-5-5-via-claude-code-subagent-no-tool](runs/claude-opus-notools-sample100-v2/CARD.md) | model | 2026-11-09 | chart | 1 | 84 | 97.6% [91.7, 99.3] | +0.000 | 0.0% | 0.0% | 0.037 |
+|  | [manual:claude-opus-5-5-via-claude-code-subagent-no-tool](runs/claude-opus-notools-sample100-v2/CARD.md) | model | 2026-11-09 | chart | 2 | 6 | 0.0% [0.0, 39.0] | -0.167 | 16.7% | 0.0% | 0.034 |
+| 2 | [manual:claude-sonnet-5-5-via-claude-code-subagent-no-to](runs/claude-sonnet-notools-sample100-v2/CARD.md) | model | 2026-11-09 | chart | all | 100 | 89.4% [81.8, 94.0] | +0.000 | 0.0% | 0.0% | 0.053 |
+|  | [manual:claude-sonnet-5-5-via-claude-code-subagent-no-to](runs/claude-sonnet-notools-sample100-v2/CARD.md) | model | 2026-11-09 | chart | 0 | 10 | 54.0% [26.6, 79.2] | - | - | 0.0% | 0.273 |
+|  | [manual:claude-sonnet-5-5-via-claude-code-subagent-no-to](runs/claude-sonnet-notools-sample100-v2/CARD.md) | model | 2026-11-09 | chart | 1 | 84 | 100.0% [95.6, 100.0] | +0.000 | 0.0% | 0.0% | 0.030 |
+|  | [manual:claude-sonnet-5-5-via-claude-code-subagent-no-to](runs/claude-sonnet-notools-sample100-v2/CARD.md) | model | 2026-11-09 | chart | 2 | 6 | 0.0% [0.0, 39.0] | +0.000 | 0.0% | 0.0% | 0.010 |
+| 3 | [manual:claude-haiku-5-5-via-claude-code-subagent-no-too](runs/claude-haiku-notools-sample100-v2/CARD.md) | model | 2026-11-09 | chart | all | 100 | 79.7% [70.8, 86.4] | +0.000 | 0.0% | 0.0% | 0.162 |
+|  | [manual:claude-haiku-5-5-via-claude-code-subagent-no-too](runs/claude-haiku-notools-sample100-v2/CARD.md) | model | 2026-11-09 | chart | 0 | 10 | 20.5% [5.9, 51.5] | - | - | 0.0% | 0.046 |
+|  | [manual:claude-haiku-5-5-via-claude-code-subagent-no-too](runs/claude-haiku-notools-sample100-v2/CARD.md) | model | 2026-11-09 | chart | 1 | 84 | 92.5% [84.8, 96.4] | +0.000 | 0.0% | 0.0% | 0.185 |
+|  | [manual:claude-haiku-5-5-via-claude-code-subagent-no-too](runs/claude-haiku-notools-sample100-v2/CARD.md) | model | 2026-11-09 | chart | 2 | 6 | 0.0% [0.0, 39.0] | +0.000 | 0.0% | 0.0% | 0.040 |
+
 ## Systems
 
 | # | solver | kind | date | input mode | level | n | answer acc [95% CI] | citation score | fabricated-citation rate | parse-error rate | Brier |
@@ -32,15 +49,10 @@ Answer accuracy is the mean answer score with a Wilson 95% interval. Citation sc
 |  | [http_json:app-tools](runs/app-tools-astrofusion-dev-v2/CARD.md) | app_tools | 2026-11-09 | birth | 0 | 95 | 100.0% [96.1, 100.0] | - | - | 0.0% | 0.000 |
 |  | [http_json:app-tools](runs/app-tools-astrofusion-dev-v2/CARD.md) | app_tools | 2026-11-09 | birth | 1 | 804 | 100.0% [99.5, 100.0] | +1.000 | 0.0% | 0.0% | 0.000 |
 |  | [http_json:app-tools](runs/app-tools-astrofusion-dev-v2/CARD.md) | app_tools | 2026-11-09 | birth | 2 | 56 | 100.0% [93.6, 100.0] | +1.000 | 0.0% | 0.0% | 0.000 |
-
-## In progress (not ranked)
-
-| run | kind | date | answered / total | card |
-|---|---|---|---|---|
-| `claude-code-sonnet-tools-sample100-v2` | system_ui | 2026-11-09 | 92/100 | [CARD](runs/claude-code-sonnet-tools-sample100-v2/CARD.md) |
-| `claude-haiku-notools-sample100-v2` | model | 2026-11-09 | 92/100 | [CARD](runs/claude-haiku-notools-sample100-v2/CARD.md) |
-| `claude-opus-notools-sample100-v2` | model | 2026-11-09 | 92/100 | [CARD](runs/claude-opus-notools-sample100-v2/CARD.md) |
-| `claude-sonnet-notools-sample100-v2` | model | 2026-11-09 | 92/100 | [CARD](runs/claude-sonnet-notools-sample100-v2/CARD.md) |
+| 2 | [manual:claude-code-harness-claude-sonnet-5-5-subagent-t](runs/claude-code-sonnet-tools-sample100-v2/CARD.md) | system_ui | 2026-11-09 | chart | all | 100 | 94.0% [87.5, 97.2] | +0.000 | 0.0% | 0.0% | 0.029 |
+|  | [manual:claude-code-harness-claude-sonnet-5-5-subagent-t](runs/claude-code-sonnet-tools-sample100-v2/CARD.md) | system_ui | 2026-11-09 | chart | 0 | 10 | 100.0% [72.2, 100.0] | - | - | 0.0% | 0.097 |
+|  | [manual:claude-code-harness-claude-sonnet-5-5-subagent-t](runs/claude-code-sonnet-tools-sample100-v2/CARD.md) | system_ui | 2026-11-09 | chart | 1 | 84 | 100.0% [95.6, 100.0] | +0.000 | 0.0% | 0.0% | 0.022 |
+|  | [manual:claude-code-harness-claude-sonnet-5-5-subagent-t](runs/claude-code-sonnet-tools-sample100-v2/CARD.md) | system_ui | 2026-11-09 | chart | 2 | 6 | 0.0% [0.0, 39.0] | +0.000 | 0.0% | 0.0% | 0.010 |
 
 ## Ablations (not ranked)
 
@@ -85,10 +97,10 @@ Scored on an earlier version of the items (see CORRECTIONS.md); kept for the rec
 - `baseline-mock`: mock (baseline), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `8a04f44fc2af`
 - `baseline-oracle`: oracle (oracle), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `8a04f44fc2af`
 - `baseline-random`: random (baseline), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `8a04f44fc2af`
-- `claude-code-sonnet-tools-sample100-v2`: manual:claude-code-harness-claude-sonnet-5-5-subagent-t (system_ui; Claude Code harness, Claude Sonnet 5.5 subagent, tools allowed (Bash, Python, pyswisseph), 2026-11-09, 100-item sample; re-scored on dev split v2 (carried-over replies)), input chart, split dev, 100 items, sample n=100 seed=1, bench 0.1.0, engine 7018b2a, items sha256 `d3e53ef899c0`
-- `claude-haiku-notools-sample100-v2`: manual:claude-haiku-5-5-via-claude-code-subagent-no-too (model; Claude Haiku 5.5 via Claude Code subagent, no tools (Read and Write only), 2026-11-09, 100-item sample; re-scored on dev split v2 (carried-over replies)), input chart, split dev, 100 items, sample n=100 seed=1, bench 0.1.0, engine 7018b2a, items sha256 `d3e53ef899c0`
-- `claude-opus-notools-sample100-v2`: manual:claude-opus-5-5-via-claude-code-subagent-no-tool (model; Claude Opus 5.5 via Claude Code subagent, no tools (Read and Write only), 2026-11-09, 100-item sample; re-scored on dev split v2 (carried-over replies)), input chart, split dev, 100 items, sample n=100 seed=1, bench 0.1.0, engine 7018b2a, items sha256 `d3e53ef899c0`
-- `claude-sonnet-notools-sample100-v2`: manual:claude-sonnet-5-5-via-claude-code-subagent-no-to (model; Claude Sonnet 5.5 via Claude Code subagent, no tools (Read and Write only), 2026-11-09, 100-item sample; re-scored on dev split v2 (carried-over replies)), input chart, split dev, 100 items, sample n=100 seed=1, bench 0.1.0, engine 7018b2a, items sha256 `d3e53ef899c0`
+- `claude-code-sonnet-tools-sample100-v2`: manual:claude-code-harness-claude-sonnet-5-5-subagent-t (system_ui; Claude Code harness, Claude Sonnet 5.5 subagent, tools allowed, 2026-11-09, 100-item sample v2), input chart, split dev, 100 items, sample n=100 seed=1, bench 0.1.0, engine 7018b2a, items sha256 `d3e53ef899c0`
+- `claude-haiku-notools-sample100-v2`: manual:claude-haiku-5-5-via-claude-code-subagent-no-too (model; Claude Haiku 5.5 via Claude Code subagent, no tools, 2026-11-09, 100-item sample v2), input chart, split dev, 100 items, sample n=100 seed=1, bench 0.1.0, engine 7018b2a, items sha256 `d3e53ef899c0`
+- `claude-opus-notools-sample100-v2`: manual:claude-opus-5-5-via-claude-code-subagent-no-tool (model; Claude Opus 5.5 via Claude Code subagent, no tools, 2026-11-09, 100-item sample v2), input chart, split dev, 100 items, sample n=100 seed=1, bench 0.1.0, engine 7018b2a, items sha256 `d3e53ef899c0`
+- `claude-sonnet-notools-sample100-v2`: manual:claude-sonnet-5-5-via-claude-code-subagent-no-to (model; Claude Sonnet 5.5 via Claude Code subagent, no tools, 2026-11-09, 100-item sample v2), input chart, split dev, 100 items, sample n=100 seed=1, bench 0.1.0, engine 7018b2a, items sha256 `d3e53ef899c0`
 - `baseline-nochart-constant`: nochart:constant (ablation: nochart), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `8a04f44fc2af`
 - `app-tools-astrofusion-dev`: http_json:app-tools (app_tools; AstroFusion MCP kundali tools over Rust engines plus canon rule-key citations, no LLM (dev split, regenerated after the Level 2 id leak fix; adapter described in the private repo)), input birth, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `ce28c9245b9f`
 - `claude-code-sonnet-tools-sample100`: manual:claude-code-harness-claude-sonnet-5-5-subagent-t (system_ui; Claude Code harness, Claude Sonnet 5.5 subagent, tools allowed (Bash, Python, pyswisseph), 2026-11-09, 100-item sample), input chart, split dev, 100 items, sample n=100 seed=1, bench 0.1.0, engine 7018b2a, items sha256 `34c4f0711a46`
