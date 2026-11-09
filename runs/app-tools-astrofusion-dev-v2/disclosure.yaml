@@ -1,0 +1,17 @@
+# Disclosure card source (ADR-002 decision 7).
+harness: "AstroFusion private adapter over MCP kundali tools + cite_rule, no LLM"
+model_id: none
+model_name: none (no language model)
+effort: "n/a (no model)"
+tools_allowed: true
+tools_used: [birth chart, divisional charts, dasha at a moment, dignities, combustion, graha drishti, yogas by name, lordship mapping, cite_rule]
+operator: "maintainer, 2026-11-09 (rerun on dev split v2, Swiss Ephemeris gold)"
+date: "2026-11-09"
+brief_path: runs/app-tools-astrofusion-dev-v2/brief.md
+deviations: []
+notes: >-
+  Run through the generic http_json solver in birth input mode on the full dev split
+  (955 items). The adapter answers with the app's MCP kundali tools on its Rust engines
+  over Swiss Ephemeris and cites by canon rule key with cite_rule; the task-to-tool and
+  task-to-citation-key mappings live in the private repository. No pack or raw-replies
+  file: requests went item by item over HTTP.

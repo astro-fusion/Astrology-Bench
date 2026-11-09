@@ -24,6 +24,15 @@ Answer accuracy is the mean answer score with a Wilson 95% interval. Citation sc
 |  | mock | baseline | 2026-11-09 | chart | 1 | 804 | 15.6% [13.3, 18.3] | -0.338 | 33.8% | 0.0% | 0.286 |
 |  | mock | baseline | 2026-11-09 | chart | 2 | 56 | 0.0% [0.0, 6.4] | -0.464 | 46.4% | 0.0% | 0.315 |
 
+## Systems
+
+| # | solver | kind | date | input mode | level | n | answer acc [95% CI] | citation score | fabricated-citation rate | parse-error rate | Brier |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | [http_json:app-tools](runs/app-tools-astrofusion-dev-v2/CARD.md) | app_tools | 2026-11-09 | birth | all | 955 | 100.0% [99.6, 100.0] | +1.000 | 0.0% | 0.0% | 0.000 |
+|  | [http_json:app-tools](runs/app-tools-astrofusion-dev-v2/CARD.md) | app_tools | 2026-11-09 | birth | 0 | 95 | 100.0% [96.1, 100.0] | - | - | 0.0% | 0.000 |
+|  | [http_json:app-tools](runs/app-tools-astrofusion-dev-v2/CARD.md) | app_tools | 2026-11-09 | birth | 1 | 804 | 100.0% [99.5, 100.0] | +1.000 | 0.0% | 0.0% | 0.000 |
+|  | [http_json:app-tools](runs/app-tools-astrofusion-dev-v2/CARD.md) | app_tools | 2026-11-09 | birth | 2 | 56 | 100.0% [93.6, 100.0] | +1.000 | 0.0% | 0.0% | 0.000 |
+
 ## In progress (not ranked)
 
 | run | kind | date | answered / total | card |
@@ -71,6 +80,7 @@ Scored on an earlier version of the items (see CORRECTIONS.md); kept for the rec
 
 ## Runs
 
+- `app-tools-astrofusion-dev-v2`: http_json:app-tools (app_tools; AstroFusion MCP kundali tools over Rust engines plus canon rule-key citations, no LLM (dev split v2, Swiss Ephemeris gold; adapter described in the private repo)), input birth, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `8a04f44fc2af`
 - `baseline-constant`: constant (baseline), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `8a04f44fc2af`
 - `baseline-mock`: mock (baseline), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `8a04f44fc2af`
 - `baseline-oracle`: oracle (oracle), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `8a04f44fc2af`
