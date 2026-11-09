@@ -1,0 +1,1992 @@
+{
+ "run_id": "claude-sonnet-notools-sample100",
+ "created_at": "2026-11-09T02:28:08Z",
+ "model": "manual:claude-sonnet-5-5-via-claude-code-subagent-no-to",
+ "provider": "manual",
+ "solver": "manual:claude-sonnet-5-5-via-claude-code-subagent-no-to",
+ "kind": "model",
+ "solver_description": "Claude Sonnet 5.5 via Claude Code subagent, no tools (Read and Write only), 2026-11-09, 100-item sample",
+ "input_mode": "chart",
+ "sample_seed": 1,
+ "sample_n": 100,
+ "sample_ids_sha256": "611fa404c666170d5809fb72593b2d0f15b973f2e5b65c5599f1988ce181be18",
+ "disclosure": {
+  "harness": "Claude Code (subagent spawned with the Agent tool by the maintainer's Claude Code session, main model Claude Fable 5.1)",
+  "model_id": "claude-sonnet-5-5",
+  "model_name": "Claude Sonnet 5.5",
+  "effort": "Claude Code default for subagents, not readable by the operator",
+  "tools_allowed": false,
+  "tools_used": [
+   "Read",
+   "Write"
+  ],
+  "operator": "maintainer, 2026-11-09",
+  "date": "2026-11-09",
+  "input_mode": "chart",
+  "sample": {
+   "n": 100,
+   "seed": 1,
+   "ids_sha256": "611fa404c666170d5809fb72593b2d0f15b973f2e5b65c5599f1988ce181be18"
+  },
+  "pack_path": "runs/pack-100-chart.md",
+  "pack_sha256": "ba19a25455f009acf2f7d3ad88b1939ba9838599dfe32ba99e0ae610619eb554",
+  "replies_path": "runs/claude-sonnet-notools-sample100/replies.txt",
+  "replies_sha256": "b4ebb1726be9e99ebf781b54c685882c0b42b2cd3821f30b44a78b682a8b0d47",
+  "brief_path": "runs/claude-sonnet-notools-sample100/brief.md",
+  "agent_report_path": "runs/claude-sonnet-notools-sample100/agent-report.md",
+  "engine_commit": "7018b2a",
+  "deviations": [
+   "Read the pack twice: the first Read truncated at line 806, so a second Read of the same file (offset 807) loaded items 50-100. No other tool was used.",
+   "States it did all arithmetic by hand with no calculator; Level 0 positions are low-confidence guesses; all six Level 2 items abstain (answer null, no citations) (agent report)."
+  ],
+  "notes": "Measured as a bare language model: the brief restricted the subagent to one Read of the pack and one Write of the replies, with no Bash, Python, web or calculator. The restriction is an instruction in the brief, not a sandbox; the agent's own report is published verbatim beside the brief."
+ },
+ "bench_version": "0.1.0",
+ "items_sha256": "34c4f0711a46b3c6ced2cdf1ee7d5e0a5e778e888157afbd710042a0f935c788",
+ "split": "dev",
+ "item_count": 100,
+ "engine_commit": "7018b2a",
+ "per_item": [
+  {
+   "id": "L0-positions-krishnamurti-mean-ws-000005",
+   "level": 0,
+   "task": "positions",
+   "tier": "HARD",
+   "source": "modern",
+   "convention": "krishnamurti/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.475,
+   "fabricated": false,
+   "confidence": 0.03
+  },
+  {
+   "id": "L0-positions-krishnamurti-true-ws-000006",
+   "level": 0,
+   "task": "positions",
+   "tier": "HARD",
+   "source": "modern",
+   "convention": "krishnamurti/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.475,
+   "fabricated": false,
+   "confidence": 0.03
+  },
+  {
+   "id": "L0-positions-lahiri-mean-ws-000004",
+   "level": 0,
+   "task": "positions",
+   "tier": "HARD",
+   "source": "modern",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.625,
+   "fabricated": false,
+   "confidence": 0.03
+  },
+  {
+   "id": "L0-positions-lahiri-mean-ws-000025",
+   "level": 0,
+   "task": "positions",
+   "tier": "HARD",
+   "source": "modern",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.625,
+   "fabricated": false,
+   "confidence": 0.03
+  },
+  {
+   "id": "L0-positions-lahiri-true-ws-000007",
+   "level": 0,
+   "task": "positions",
+   "tier": "HARD",
+   "source": "modern",
+   "convention": "lahiri/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.65,
+   "fabricated": false,
+   "confidence": 0.03
+  },
+  {
+   "id": "L0-positions-lahiri-true-ws-000008",
+   "level": 0,
+   "task": "positions",
+   "tier": "HARD",
+   "source": "modern",
+   "convention": "lahiri/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.725,
+   "fabricated": false,
+   "confidence": 0.03
+  },
+  {
+   "id": "L0-positions-lahiri-true-ws-000009",
+   "level": 0,
+   "task": "positions",
+   "tier": "HARD",
+   "source": "modern",
+   "convention": "lahiri/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.4,
+   "fabricated": false,
+   "confidence": 0.03
+  },
+  {
+   "id": "L0-positions-raman-mean-ws-000004",
+   "level": 0,
+   "task": "positions",
+   "tier": "HARD",
+   "source": "modern",
+   "convention": "raman/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.45,
+   "fabricated": false,
+   "confidence": 0.03
+  },
+  {
+   "id": "L0-positions-raman-true-ws-000002",
+   "level": 0,
+   "task": "positions",
+   "tier": "HARD",
+   "source": "modern",
+   "convention": "raman/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.325,
+   "fabricated": false,
+   "confidence": 0.03
+  },
+  {
+   "id": "L0-positions-raman-true-ws-000006",
+   "level": 0,
+   "task": "positions",
+   "tier": "HARD",
+   "source": "modern",
+   "convention": "raman/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.6,
+   "fabricated": false,
+   "confidence": 0.03
+  },
+  {
+   "id": "L1-aspect-krishnamurti-mean-ws-000009",
+   "level": 1,
+   "task": "aspect",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "krishnamurti/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": [
+    "Mars"
+   ]
+  },
+  {
+   "id": "L1-aspect-lahiri-mean-ws-000029",
+   "level": 1,
+   "task": "aspect",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": [
+    "Mercury",
+    "Jupiter",
+    "Saturn"
+   ]
+  },
+  {
+   "id": "L1-aspect-lahiri-mean-ws-000031",
+   "level": 1,
+   "task": "aspect",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": [
+    "Rahu"
+   ]
+  },
+  {
+   "id": "L1-aspect-lahiri-mean-ws-000037",
+   "level": 1,
+   "task": "aspect",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": []
+  },
+  {
+   "id": "L1-aspect-lahiri-true-ws-000003",
+   "level": 1,
+   "task": "aspect",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": [
+    "Moon",
+    "Mars",
+    "Jupiter",
+    "Venus"
+   ]
+  },
+  {
+   "id": "L1-aspect-lahiri-true-ws-000009",
+   "level": 1,
+   "task": "aspect",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": [
+    "Mars",
+    "Venus",
+    "Rahu"
+   ]
+  },
+  {
+   "id": "L1-aspect-raman-mean-ws-000001",
+   "level": 1,
+   "task": "aspect",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "raman/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": [
+    "Sun",
+    "Mercury",
+    "Venus"
+   ]
+  },
+  {
+   "id": "L1-aspect-raman-mean-ws-000003",
+   "level": 1,
+   "task": "aspect",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "raman/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": []
+  },
+  {
+   "id": "L1-aspect-raman-true-ws-000003",
+   "level": 1,
+   "task": "aspect",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "raman/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": [
+    "Saturn"
+   ]
+  },
+  {
+   "id": "L1-aspect-raman-true-ws-000007",
+   "level": 1,
+   "task": "aspect",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "raman/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": [
+    "Jupiter"
+   ]
+  },
+  {
+   "id": "L1-combustion-krishnamurti-mean-ws-000009",
+   "level": 1,
+   "task": "combustion",
+   "tier": "EASY",
+   "source": "BPHS",
+   "convention": "krishnamurti/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": [
+    "Mars",
+    "Mercury",
+    "Venus"
+   ]
+  },
+  {
+   "id": "L1-combustion-lahiri-mean-ws-000014",
+   "level": 1,
+   "task": "combustion",
+   "tier": "EASY",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": [
+    "Mercury"
+   ]
+  },
+  {
+   "id": "L1-combustion-lahiri-mean-ws-000016",
+   "level": 1,
+   "task": "combustion",
+   "tier": "EASY",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": []
+  },
+  {
+   "id": "L1-combustion-lahiri-mean-ws-000033",
+   "level": 1,
+   "task": "combustion",
+   "tier": "EASY",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": [
+    "Mars",
+    "Saturn"
+   ]
+  },
+  {
+   "id": "L1-combustion-lahiri-mean-ws-000034",
+   "level": 1,
+   "task": "combustion",
+   "tier": "EASY",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": [
+    "Mercury",
+    "Saturn"
+   ]
+  },
+  {
+   "id": "L1-combustion-lahiri-true-ws-000000",
+   "level": 1,
+   "task": "combustion",
+   "tier": "EASY",
+   "source": "BPHS",
+   "convention": "lahiri/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": [
+    "Mercury"
+   ]
+  },
+  {
+   "id": "L1-combustion-lahiri-true-ws-000008",
+   "level": 1,
+   "task": "combustion",
+   "tier": "EASY",
+   "source": "BPHS",
+   "convention": "lahiri/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": [
+    "Mercury"
+   ]
+  },
+  {
+   "id": "L1-combustion-raman-mean-ws-000005",
+   "level": 1,
+   "task": "combustion",
+   "tier": "EASY",
+   "source": "BPHS",
+   "convention": "raman/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": []
+  },
+  {
+   "id": "L1-combustion-raman-true-ws-000002",
+   "level": 1,
+   "task": "combustion",
+   "tier": "EASY",
+   "source": "BPHS",
+   "convention": "raman/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": []
+  },
+  {
+   "id": "L1-combustion-raman-true-ws-000005",
+   "level": 1,
+   "task": "combustion",
+   "tier": "EASY",
+   "source": "BPHS",
+   "convention": "raman/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": []
+  },
+  {
+   "id": "L1-dasha-krishnamurti-true-ws-000002",
+   "level": 1,
+   "task": "dasha",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "krishnamurti/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": "Mercury"
+  },
+  {
+   "id": "L1-dasha-krishnamurti-true-ws-000008",
+   "level": 1,
+   "task": "dasha",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "krishnamurti/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.65,
+   "answer": "Mercury"
+  },
+  {
+   "id": "L1-dasha-krishnamurti-true-ws-000009",
+   "level": 1,
+   "task": "dasha",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "krishnamurti/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": "Jupiter"
+  },
+  {
+   "id": "L1-dasha-lahiri-mean-ws-000007",
+   "level": 1,
+   "task": "dasha",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": "Mercury"
+  },
+  {
+   "id": "L1-dasha-lahiri-mean-ws-000011",
+   "level": 1,
+   "task": "dasha",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.75,
+   "answer": "Saturn"
+  },
+  {
+   "id": "L1-dasha-lahiri-mean-ws-000013",
+   "level": 1,
+   "task": "dasha",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.55,
+   "answer": "Mars"
+  },
+  {
+   "id": "L1-dasha-lahiri-mean-ws-000019",
+   "level": 1,
+   "task": "dasha",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.7,
+   "answer": "Rahu"
+  },
+  {
+   "id": "L1-dasha-lahiri-mean-ws-000035",
+   "level": 1,
+   "task": "dasha",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": "Ketu"
+  },
+  {
+   "id": "L1-dasha-raman-true-ws-000007",
+   "level": 1,
+   "task": "dasha",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "raman/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.5,
+   "answer": "Venus"
+  },
+  {
+   "id": "L1-dignity-krishnamurti-mean-ws-000007",
+   "level": 1,
+   "task": "dignity",
+   "tier": "EASY",
+   "source": "BPHS",
+   "convention": "krishnamurti/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": "friend"
+  },
+  {
+   "id": "L1-dignity-krishnamurti-true-ws-000004",
+   "level": 1,
+   "task": "dignity",
+   "tier": "EASY",
+   "source": "BPHS",
+   "convention": "krishnamurti/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": "friend"
+  },
+  {
+   "id": "L1-dignity-krishnamurti-true-ws-000005",
+   "level": 1,
+   "task": "dignity",
+   "tier": "EASY",
+   "source": "BPHS",
+   "convention": "krishnamurti/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": "friend"
+  },
+  {
+   "id": "L1-dignity-krishnamurti-true-ws-000009",
+   "level": 1,
+   "task": "dignity",
+   "tier": "EASY",
+   "source": "BPHS",
+   "convention": "krishnamurti/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": "exalted"
+  },
+  {
+   "id": "L1-dignity-lahiri-mean-ws-000008",
+   "level": 1,
+   "task": "dignity",
+   "tier": "EASY",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": "neutral"
+  },
+  {
+   "id": "L1-dignity-lahiri-mean-ws-000022",
+   "level": 1,
+   "task": "dignity",
+   "tier": "EASY",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": "own"
+  },
+  {
+   "id": "L1-dignity-lahiri-mean-ws-000023",
+   "level": 1,
+   "task": "dignity",
+   "tier": "EASY",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": "enemy"
+  },
+  {
+   "id": "L1-dignity-lahiri-mean-ws-000038",
+   "level": 1,
+   "task": "dignity",
+   "tier": "EASY",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": "friend"
+  },
+  {
+   "id": "L1-dignity-raman-true-ws-000005",
+   "level": 1,
+   "task": "dignity",
+   "tier": "EASY",
+   "source": "BPHS",
+   "convention": "raman/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": "neutral"
+  },
+  {
+   "id": "L1-lordship-krishnamurti-mean-pl-000001",
+   "level": 1,
+   "task": "lordship",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "krishnamurti/mean/placidus",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": "2"
+  },
+  {
+   "id": "L1-lordship-krishnamurti-mean-ws-000005",
+   "level": 1,
+   "task": "lordship",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "krishnamurti/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": "12"
+  },
+  {
+   "id": "L1-lordship-krishnamurti-true-pl-000003",
+   "level": 1,
+   "task": "lordship",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "krishnamurti/true/placidus",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": "10"
+  },
+  {
+   "id": "L1-lordship-lahiri-mean-pl-000000",
+   "level": 1,
+   "task": "lordship",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/mean/placidus",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": "1"
+  },
+  {
+   "id": "L1-lordship-lahiri-mean-ws-000011",
+   "level": 1,
+   "task": "lordship",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": "7"
+  },
+  {
+   "id": "L1-lordship-lahiri-mean-ws-000032",
+   "level": 1,
+   "task": "lordship",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": "11"
+  },
+  {
+   "id": "L1-lordship-lahiri-mean-ws-000034",
+   "level": 1,
+   "task": "lordship",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": "3"
+  },
+  {
+   "id": "L1-lordship-lahiri-mean-ws-000038",
+   "level": 1,
+   "task": "lordship",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": "10"
+  },
+  {
+   "id": "L1-lordship-lahiri-true-pl-000005",
+   "level": 1,
+   "task": "lordship",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/true/placidus",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": "2"
+  },
+  {
+   "id": "L1-lordship-lahiri-true-ws-000002",
+   "level": 1,
+   "task": "lordship",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": "5"
+  },
+  {
+   "id": "L1-lordship-raman-mean-pl-000005",
+   "level": 1,
+   "task": "lordship",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "raman/mean/placidus",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": "9"
+  },
+  {
+   "id": "L1-lordship-raman-mean-ws-000003",
+   "level": 1,
+   "task": "lordship",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "raman/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": "10"
+  },
+  {
+   "id": "L1-lordship-raman-mean-ws-000009",
+   "level": 1,
+   "task": "lordship",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "raman/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": "10"
+  },
+  {
+   "id": "L1-lordship-raman-true-pl-000002",
+   "level": 1,
+   "task": "lordship",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "raman/true/placidus",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": "10"
+  },
+  {
+   "id": "L1-lordship-raman-true-pl-000003",
+   "level": 1,
+   "task": "lordship",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "raman/true/placidus",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": "2"
+  },
+  {
+   "id": "L1-lordship-raman-true-ws-000006",
+   "level": 1,
+   "task": "lordship",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "raman/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": "8"
+  },
+  {
+   "id": "L1-nakshatra-krishnamurti-mean-ws-000007",
+   "level": 1,
+   "task": "nakshatra",
+   "tier": "EASY",
+   "source": "modern",
+   "convention": "krishnamurti/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": {
+    "nakshatra": "Krittika",
+    "pada": 2
+   }
+  },
+  {
+   "id": "L1-nakshatra-krishnamurti-true-ws-000008",
+   "level": 1,
+   "task": "nakshatra",
+   "tier": "EASY",
+   "source": "modern",
+   "convention": "krishnamurti/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": {
+    "nakshatra": "Pushya",
+    "pada": 2
+   }
+  },
+  {
+   "id": "L1-nakshatra-lahiri-mean-ws-000000",
+   "level": 1,
+   "task": "nakshatra",
+   "tier": "EASY",
+   "source": "modern",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": {
+    "nakshatra": "Purva Phalguni",
+    "pada": 1
+   }
+  },
+  {
+   "id": "L1-nakshatra-lahiri-mean-ws-000010",
+   "level": 1,
+   "task": "nakshatra",
+   "tier": "EASY",
+   "source": "modern",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": {
+    "nakshatra": "Magha",
+    "pada": 1
+   }
+  },
+  {
+   "id": "L1-nakshatra-lahiri-mean-ws-000028",
+   "level": 1,
+   "task": "nakshatra",
+   "tier": "EASY",
+   "source": "modern",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": {
+    "nakshatra": "Chitra",
+    "pada": 3
+   }
+  },
+  {
+   "id": "L1-nakshatra-lahiri-true-ws-000001",
+   "level": 1,
+   "task": "nakshatra",
+   "tier": "EASY",
+   "source": "modern",
+   "convention": "lahiri/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": {
+    "nakshatra": "Purva Ashadha",
+    "pada": 3
+   }
+  },
+  {
+   "id": "L1-nakshatra-raman-mean-ws-000007",
+   "level": 1,
+   "task": "nakshatra",
+   "tier": "EASY",
+   "source": "modern",
+   "convention": "raman/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": {
+    "nakshatra": "Rohini",
+    "pada": 4
+   }
+  },
+  {
+   "id": "L1-nakshatra-raman-mean-ws-000008",
+   "level": 1,
+   "task": "nakshatra",
+   "tier": "EASY",
+   "source": "modern",
+   "convention": "raman/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": {
+    "nakshatra": "Mrigashira",
+    "pada": 2
+   }
+  },
+  {
+   "id": "L1-nakshatra-raman-true-ws-000006",
+   "level": 1,
+   "task": "nakshatra",
+   "tier": "EASY",
+   "source": "modern",
+   "convention": "raman/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": {
+    "nakshatra": "Jyeshtha",
+    "pada": 1
+   }
+  },
+  {
+   "id": "L1-rule-mangal_8th_aspect_ketu-lahiri-mean-ws-000004",
+   "level": 1,
+   "task": "rule",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": true
+  },
+  {
+   "id": "L1-rule-mangal_ketu_primary-lahiri-mean-ws-000003",
+   "level": 1,
+   "task": "rule",
+   "tier": "MEDIUM",
+   "source": "Brihat Samhita",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": true
+  },
+  {
+   "id": "L1-rule-mangal_shani_malefic-lahiri-mean-ws-000000",
+   "level": 1,
+   "task": "rule",
+   "tier": "MEDIUM",
+   "source": "Phaladeepika",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": false
+  },
+  {
+   "id": "L1-rule-shani_10th_aspect_mars-lahiri-true-ws-000000",
+   "level": 1,
+   "task": "rule",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "fabricated": false,
+   "confidence": 0.9,
+   "answer": true
+  },
+  {
+   "id": "L1-rule-venus_own_sign-lahiri-mean-ws-000001",
+   "level": 1,
+   "task": "rule",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "fabricated": false,
+   "confidence": 0.95,
+   "answer": true
+  },
+  {
+   "id": "L1-rule-venus_own_sign-lahiri-true-ws-000001",
+   "level": 1,
+   "task": "rule",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "fabricated": false,
+   "confidence": 0.95,
+   "answer": true
+  },
+  {
+   "id": "L1-varga-krishnamurti-mean-ws-000002",
+   "level": 1,
+   "task": "varga",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "krishnamurti/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": "Libra"
+  },
+  {
+   "id": "L1-varga-krishnamurti-true-ws-000008",
+   "level": 1,
+   "task": "varga",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "krishnamurti/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": "Aquarius"
+  },
+  {
+   "id": "L1-varga-lahiri-mean-ws-000004",
+   "level": 1,
+   "task": "varga",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": "Capricorn"
+  },
+  {
+   "id": "L1-varga-lahiri-mean-ws-000030",
+   "level": 1,
+   "task": "varga",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": "Libra"
+  },
+  {
+   "id": "L1-varga-lahiri-mean-ws-000032",
+   "level": 1,
+   "task": "varga",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": "Aquarius"
+  },
+  {
+   "id": "L1-varga-lahiri-true-ws-000005",
+   "level": 1,
+   "task": "varga",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": "Libra"
+  },
+  {
+   "id": "L1-varga-lahiri-true-ws-000007",
+   "level": 1,
+   "task": "varga",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": "Taurus"
+  },
+  {
+   "id": "L1-varga-raman-mean-ws-000004",
+   "level": 1,
+   "task": "varga",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "raman/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.8,
+   "answer": "Virgo"
+  },
+  {
+   "id": "L1-varga-raman-true-ws-000002",
+   "level": 1,
+   "task": "varga",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "raman/true/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.85,
+   "answer": "Cancer"
+  },
+  {
+   "id": "L1-yoga-budha_aditya-lahiri-mean-ws-000008",
+   "level": 1,
+   "task": "yoga",
+   "tier": "MEDIUM",
+   "source": "modern",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "fabricated": false,
+   "confidence": 0.95,
+   "answer": true
+  },
+  {
+   "id": "L1-yoga-budha_aditya-lahiri-mean-ws-000013",
+   "level": 1,
+   "task": "yoga",
+   "tier": "MEDIUM",
+   "source": "modern",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "fabricated": false,
+   "confidence": 0.95,
+   "answer": false
+  },
+  {
+   "id": "L1-yoga-gaja_kesari_classical-lahiri-mean-ws-000008",
+   "level": 1,
+   "task": "yoga",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.55,
+   "answer": true
+  },
+  {
+   "id": "L1-yoga-gaja_kesari_moon_kendra-lahiri-mean-ws-000005",
+   "level": 1,
+   "task": "yoga",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.95,
+   "answer": true
+  },
+  {
+   "id": "L1-yoga-gaja_kesari_moon_kendra-lahiri-mean-ws-000009",
+   "level": 1,
+   "task": "yoga",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.95,
+   "answer": false
+  },
+  {
+   "id": "L1-yoga-gaja_kesari_moon_kendra-lahiri-mean-ws-000011",
+   "level": 1,
+   "task": "yoga",
+   "tier": "MEDIUM",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 1.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.95,
+   "answer": true
+  },
+  {
+   "id": "L2-citation-1dc8378a5033",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Saravali",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.1
+  },
+  {
+   "id": "L2-citation-3f08c3d42198",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Brihat Jataka",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.1
+  },
+  {
+   "id": "L2-citation-623850b3e0ab",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.1
+  },
+  {
+   "id": "L2-citation-7caed961b97a",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.1
+  },
+  {
+   "id": "L2-citation-a9cbd6036e8e",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "BPHS",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.1
+  },
+  {
+   "id": "L2-citation-adc1fb52b58d",
+   "level": 2,
+   "task": "citation",
+   "tier": "HARD",
+   "source": "Jaimini Sutras",
+   "convention": "lahiri/mean/whole_sign",
+   "parse_error": false,
+   "answer_score": 0.0,
+   "citation_score": 0,
+   "fabricated": false,
+   "confidence": 0.1
+  }
+ ],
+ "summary": {
+  "overall": {
+   "n": 100,
+   "answer_acc": 0.8935,
+   "answer_ci": [
+    0.8179,
+    0.94
+   ],
+   "citation_n": 73,
+   "citation_mean": 0.0,
+   "fabricated_rate": 0.0,
+   "parse_error_rate": 0.0,
+   "brier": 0.054,
+   "ece": 0.189
+  },
+  "by_level": {
+   "0": {
+    "n": 10,
+    "answer_acc": 0.535,
+    "answer_ci": [
+     0.2623,
+     0.7882
+    ],
+    "citation_n": 0,
+    "parse_error_rate": 0.0,
+    "brier": 0.2697,
+    "ece": 0.505
+   },
+   "1": {
+    "n": 84,
+    "answer_acc": 1.0,
+    "answer_ci": [
+     0.9563,
+     1.0
+    ],
+    "citation_n": 67,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0315,
+    "ece": 0.1577
+   },
+   "2": {
+    "n": 6,
+    "answer_acc": 0.0,
+    "answer_ci": [
+     0.0,
+     0.3903
+    ],
+    "citation_n": 6,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.01,
+    "ece": 0.1
+   }
+  },
+  "by_task": {
+   "aspect": {
+    "n": 10,
+    "answer_acc": 1.0,
+    "answer_ci": [
+     0.7225,
+     1.0
+    ],
+    "citation_n": 10,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.04,
+    "ece": 0.2
+   },
+   "citation": {
+    "n": 6,
+    "answer_acc": 0.0,
+    "answer_ci": [
+     0.0,
+     0.3903
+    ],
+    "citation_n": 6,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.01,
+    "ece": 0.1
+   },
+   "combustion": {
+    "n": 10,
+    "answer_acc": 1.0,
+    "answer_ci": [
+     0.7225,
+     1.0
+    ],
+    "citation_n": 10,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0225,
+    "ece": 0.15
+   },
+   "dasha": {
+    "n": 9,
+    "answer_acc": 1.0,
+    "answer_ci": [
+     0.7009,
+     1.0
+    ],
+    "citation_n": 9,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0947,
+    "ece": 0.2833
+   },
+   "dignity": {
+    "n": 9,
+    "answer_acc": 1.0,
+    "answer_ci": [
+     0.7009,
+     1.0
+    ],
+    "citation_n": 9,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0256,
+    "ece": 0.1556
+   },
+   "lordship": {
+    "n": 16,
+    "answer_acc": 1.0,
+    "answer_ci": [
+     0.8064,
+     1.0
+    ],
+    "citation_n": 16,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0155,
+    "ece": 0.1219
+   },
+   "nakshatra": {
+    "n": 9,
+    "answer_acc": 1.0,
+    "answer_ci": [
+     0.7009,
+     1.0
+    ],
+    "citation_n": 0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0114,
+    "ece": 0.1056
+   },
+   "positions": {
+    "n": 10,
+    "answer_acc": 0.535,
+    "answer_ci": [
+     0.2623,
+     0.7882
+    ],
+    "citation_n": 0,
+    "parse_error_rate": 0.0,
+    "brier": 0.2697,
+    "ece": 0.505
+   },
+   "rule": {
+    "n": 6,
+    "answer_acc": 1.0,
+    "answer_ci": [
+     0.6097,
+     1.0
+    ],
+    "citation_n": 0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0075,
+    "ece": 0.0833
+   },
+   "varga": {
+    "n": 9,
+    "answer_acc": 1.0,
+    "answer_ci": [
+     0.7009,
+     1.0
+    ],
+    "citation_n": 9,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0361,
+    "ece": 0.1889
+   },
+   "yoga": {
+    "n": 6,
+    "answer_acc": 1.0,
+    "answer_ci": [
+     0.6097,
+     1.0
+    ],
+    "citation_n": 4,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0358,
+    "ece": 0.1167
+   }
+  },
+  "by_source": {
+   "BPHS": {
+    "n": 74,
+    "answer_acc": 0.9595,
+    "answer_ci": [
+     0.8875,
+     0.9861
+    ],
+    "citation_n": 70,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0344,
+    "ece": 0.1662
+   },
+   "Brihat Jataka": {
+    "n": 1,
+    "answer_acc": 0.0,
+    "answer_ci": [
+     0.0,
+     0.7935
+    ],
+    "citation_n": 1,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.01,
+    "ece": 0.1
+   },
+   "Brihat Samhita": {
+    "n": 1,
+    "answer_acc": 1.0,
+    "answer_ci": [
+     0.2065,
+     1.0
+    ],
+    "citation_n": 0,
+    "parse_error_rate": 0.0,
+    "brier": 0.01,
+    "ece": 0.1
+   },
+   "Jaimini Sutras": {
+    "n": 1,
+    "answer_acc": 0.0,
+    "answer_ci": [
+     0.0,
+     0.7935
+    ],
+    "citation_n": 1,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.01,
+    "ece": 0.1
+   },
+   "Phaladeepika": {
+    "n": 1,
+    "answer_acc": 1.0,
+    "answer_ci": [
+     0.2065,
+     1.0
+    ],
+    "citation_n": 0,
+    "parse_error_rate": 0.0,
+    "brier": 0.01,
+    "ece": 0.1
+   },
+   "Saravali": {
+    "n": 1,
+    "answer_acc": 0.0,
+    "answer_ci": [
+     0.0,
+     0.7935
+    ],
+    "citation_n": 1,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.01,
+    "ece": 0.1
+   },
+   "modern": {
+    "n": 21,
+    "answer_acc": 0.7786,
+    "answer_ci": [
+     0.5666,
+     0.9044
+    ],
+    "citation_n": 0,
+    "parse_error_rate": 0.0,
+    "brier": 0.1335,
+    "ece": 0.2905
+   }
+  },
+  "by_convention": {
+   "krishnamurti/mean/placidus": {
+    "n": 1,
+    "answer_acc": 1.0,
+    "answer_ci": [
+     0.2065,
+     1.0
+    ],
+    "citation_n": 1,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0225,
+    "ece": 0.15
+   },
+   "krishnamurti/mean/whole_sign": {
+    "n": 7,
+    "answer_acc": 0.925,
+    "answer_ci": [
+     0.557,
+     0.9918
+    ],
+    "citation_n": 5,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0465,
+    "ece": 0.185
+   },
+   "krishnamurti/true/placidus": {
+    "n": 1,
+    "answer_acc": 1.0,
+    "answer_ci": [
+     0.2065,
+     1.0
+    ],
+    "citation_n": 1,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0225,
+    "ece": 0.15
+   },
+   "krishnamurti/true/whole_sign": {
+    "n": 9,
+    "answer_acc": 0.9417,
+    "answer_ci": [
+     0.6255,
+     0.9936
+    ],
+    "citation_n": 7,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0542,
+    "ece": 0.205
+   },
+   "lahiri/mean/placidus": {
+    "n": 1,
+    "answer_acc": 1.0,
+    "answer_ci": [
+     0.2065,
+     1.0
+    ],
+    "citation_n": 1,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0225,
+    "ece": 0.15
+   },
+   "lahiri/mean/whole_sign": {
+    "n": 44,
+    "answer_acc": 0.8466,
+    "answer_ci": [
+     0.7129,
+     0.9246
+    ],
+    "citation_n": 33,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0442,
+    "ece": 0.1668
+   },
+   "lahiri/true/placidus": {
+    "n": 1,
+    "answer_acc": 1.0,
+    "answer_ci": [
+     0.2065,
+     1.0
+    ],
+    "citation_n": 1,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0225,
+    "ece": 0.15
+   },
+   "lahiri/true/whole_sign": {
+    "n": 13,
+    "answer_acc": 0.9058,
+    "answer_ci": [
+     0.6458,
+     0.9807
+    ],
+    "citation_n": 7,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0955,
+    "ece": 0.2412
+   },
+   "raman/mean/placidus": {
+    "n": 1,
+    "answer_acc": 1.0,
+    "answer_ci": [
+     0.2065,
+     1.0
+    ],
+    "citation_n": 1,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0225,
+    "ece": 0.15
+   },
+   "raman/mean/whole_sign": {
+    "n": 9,
+    "answer_acc": 0.9389,
+    "answer_ci": [
+     0.6221,
+     0.9931
+    ],
+    "citation_n": 6,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0399,
+    "ece": 0.1744
+   },
+   "raman/true/placidus": {
+    "n": 2,
+    "answer_acc": 1.0,
+    "answer_ci": [
+     0.3424,
+     1.0
+    ],
+    "citation_n": 2,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0225,
+    "ece": 0.15
+   },
+   "raman/true/whole_sign": {
+    "n": 11,
+    "answer_acc": 0.9023,
+    "answer_ci": [
+     0.6147,
+     0.9816
+    ],
+    "citation_n": 8,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0802,
+    "ece": 0.2423
+   }
+  },
+  "by_tier": {
+   "EASY": {
+    "n": 28,
+    "answer_acc": 1.0,
+    "answer_ci": [
+     0.8794,
+     1.0
+    ],
+    "citation_n": 19,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0199,
+    "ece": 0.1375
+   },
+   "HARD": {
+    "n": 16,
+    "answer_acc": 0.3344,
+    "answer_ci": [
+     0.1564,
+     0.5765
+    ],
+    "citation_n": 6,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.1723,
+    "ece": 0.3531
+   },
+   "MEDIUM": {
+    "n": 56,
+    "answer_acc": 1.0,
+    "answer_ci": [
+     0.9358,
+     1.0
+    ],
+    "citation_n": 48,
+    "citation_mean": 0.0,
+    "fabricated_rate": 0.0,
+    "parse_error_rate": 0.0,
+    "brier": 0.0372,
+    "ece": 0.1679
+   }
+  }
+ }
+}

@@ -1,0 +1,299 @@
+### L0-positions-krishnamurti-mean-ws-000005
+{"answer": {"Sun": {"sign": "Capricorn", "deg_in_sign": 24.78, "nakshatra": "Dhanishta", "pada": 1}, "Moon": {"sign": "Virgo", "deg_in_sign": 26.80, "nakshatra": "Chitra", "pada": 2}, "Mars": {"sign": "Virgo", "deg_in_sign": 17.00, "nakshatra": "Hasta", "pada": 3}, "Mercury": {"sign": "Capricorn", "deg_in_sign": 7.00, "nakshatra": "Uttara Ashadha", "pada": 4}, "Jupiter": {"sign": "Capricorn", "deg_in_sign": 12.00, "nakshatra": "Shravana", "pada": 1}, "Venus": {"sign": "Capricorn", "deg_in_sign": 14.00, "nakshatra": "Shravana", "pada": 2}, "Saturn": {"sign": "Leo", "deg_in_sign": 24.00, "nakshatra": "Purva Phalguni", "pada": 4}, "Rahu": {"sign": "Pisces", "deg_in_sign": 17.07, "nakshatra": "Revati", "pada": 1}, "Ketu": {"sign": "Virgo", "deg_in_sign": 17.07, "nakshatra": "Hasta", "pada": 3}, "Lagna": {"sign": "Scorpio"}}, "citations": [], "confidence": 0.1, "note": "Mental estimate; Sun and mean node from low-precision formulas, other planets from memory of cycles."}
+
+### L0-positions-krishnamurti-true-ws-000006
+{"answer": {"Sun": {"sign": "Libra", "deg_in_sign": 14.80, "nakshatra": "Swati", "pada": 3}, "Moon": {"sign": "Pisces", "deg_in_sign": 18.40, "nakshatra": "Revati", "pada": 1}, "Mars": {"sign": "Sagittarius", "deg_in_sign": 12.00, "nakshatra": "Mula", "pada": 4}, "Mercury": {"sign": "Libra", "deg_in_sign": 2.00, "nakshatra": "Chitra", "pada": 3}, "Jupiter": {"sign": "Aries", "deg_in_sign": 25.00, "nakshatra": "Bharani", "pada": 4}, "Venus": {"sign": "Scorpio", "deg_in_sign": 27.00, "nakshatra": "Jyeshtha", "pada": 4}, "Saturn": {"sign": "Virgo", "deg_in_sign": 25.00, "nakshatra": "Chitra", "pada": 1}, "Rahu": {"sign": "Capricorn", "deg_in_sign": 24.20, "nakshatra": "Dhanishta", "pada": 1}, "Ketu": {"sign": "Cancer", "deg_in_sign": 24.20, "nakshatra": "Ashlesha", "pada": 3}, "Lagna": {"sign": "Scorpio"}}, "citations": [], "confidence": 0.1, "note": "Mental estimate; low precision."}
+
+### L0-positions-lahiri-mean-ws-000004
+{"answer": {"Sun": {"sign": "Sagittarius", "deg_in_sign": 26.47, "nakshatra": "Purva Ashadha", "pada": 4}, "Moon": {"sign": "Cancer", "deg_in_sign": 20.90, "nakshatra": "Ashlesha", "pada": 2}, "Mars": {"sign": "Leo", "deg_in_sign": 29.00, "nakshatra": "Uttara Phalguni", "pada": 1}, "Mercury": {"sign": "Sagittarius", "deg_in_sign": 9.00, "nakshatra": "Mula", "pada": 3}, "Jupiter": {"sign": "Pisces", "deg_in_sign": 7.10, "nakshatra": "Uttara Bhadrapada", "pada": 2}, "Venus": {"sign": "Aquarius", "deg_in_sign": 2.50, "nakshatra": "Dhanishta", "pada": 3}, "Saturn": {"sign": "Libra", "deg_in_sign": 4.50, "nakshatra": "Chitra", "pada": 4}, "Rahu": {"sign": "Scorpio", "deg_in_sign": 18.40, "nakshatra": "Jyeshtha", "pada": 1}, "Ketu": {"sign": "Taurus", "deg_in_sign": 18.40, "nakshatra": "Rohini", "pada": 3}, "Lagna": {"sign": "Libra"}}, "citations": [], "confidence": 0.15, "note": "Mental estimate; low precision."}
+
+### L0-positions-lahiri-mean-ws-000025
+{"answer": {"Sun": {"sign": "Aries", "deg_in_sign": 13.96, "nakshatra": "Bharani", "pada": 1}, "Moon": {"sign": "Scorpio", "deg_in_sign": 14.50, "nakshatra": "Anuradha", "pada": 4}, "Mars": {"sign": "Capricorn", "deg_in_sign": 5.00, "nakshatra": "Uttara Ashadha", "pada": 3}, "Mercury": {"sign": "Aries", "deg_in_sign": 27.00, "nakshatra": "Krittika", "pada": 1}, "Jupiter": {"sign": "Cancer", "deg_in_sign": 26.80, "nakshatra": "Ashlesha", "pada": 4}, "Venus": {"sign": "Taurus", "deg_in_sign": 29.00, "nakshatra": "Mrigashira", "pada": 2}, "Saturn": {"sign": "Scorpio", "deg_in_sign": 6.80, "nakshatra": "Anuradha", "pada": 2}, "Rahu": {"sign": "Scorpio", "deg_in_sign": 16.63, "nakshatra": "Anuradha", "pada": 4}, "Ketu": {"sign": "Taurus", "deg_in_sign": 16.63, "nakshatra": "Rohini", "pada": 2}, "Lagna": {"sign": "Scorpio"}}, "citations": [], "confidence": 0.1, "note": "Mental estimate; low precision."}
+
+### L0-positions-lahiri-true-ws-000007
+{"answer": {"Sun": {"sign": "Gemini", "deg_in_sign": 29.60, "nakshatra": "Punarvasu", "pada": 3}, "Moon": {"sign": "Pisces", "deg_in_sign": 20.10, "nakshatra": "Revati", "pada": 2}, "Mars": {"sign": "Cancer", "deg_in_sign": 4.00, "nakshatra": "Pushya", "pada": 1}, "Mercury": {"sign": "Cancer", "deg_in_sign": 20.90, "nakshatra": "Ashlesha", "pada": 2}, "Jupiter": {"sign": "Virgo", "deg_in_sign": 20.40, "nakshatra": "Hasta", "pada": 4}, "Venus": {"sign": "Taurus", "deg_in_sign": 19.00, "nakshatra": "Rohini", "pada": 3}, "Saturn": {"sign": "Scorpio", "deg_in_sign": 28.00, "nakshatra": "Jyeshtha", "pada": 4}, "Rahu": {"sign": "Leo", "deg_in_sign": 1.20, "nakshatra": "Magha", "pada": 1}, "Ketu": {"sign": "Aquarius", "deg_in_sign": 1.20, "nakshatra": "Dhanishta", "pada": 3}, "Lagna": {"sign": "Taurus"}}, "citations": [], "confidence": 0.15, "note": "Mental estimate; low precision."}
+
+### L0-positions-lahiri-true-ws-000008
+{"answer": {"Sun": {"sign": "Pisces", "deg_in_sign": 17.34, "nakshatra": "Revati", "pada": 1}, "Moon": {"sign": "Gemini", "deg_in_sign": 8.90, "nakshatra": "Ardra", "pada": 1}, "Mars": {"sign": "Capricorn", "deg_in_sign": 6.60, "nakshatra": "Uttara Ashadha", "pada": 3}, "Mercury": {"sign": "Aquarius", "deg_in_sign": 18.90, "nakshatra": "Shatabhisha", "pada": 4}, "Jupiter": {"sign": "Capricorn", "deg_in_sign": 0.40, "nakshatra": "Uttara Ashadha", "pada": 2}, "Venus": {"sign": "Taurus", "deg_in_sign": 2.96, "nakshatra": "Krittika", "pada": 2}, "Saturn": {"sign": "Capricorn", "deg_in_sign": 6.80, "nakshatra": "Uttara Ashadha", "pada": 3}, "Rahu": {"sign": "Gemini", "deg_in_sign": 9.00, "nakshatra": "Ardra", "pada": 1}, "Ketu": {"sign": "Sagittarius", "deg_in_sign": 9.00, "nakshatra": "Mula", "pada": 3}, "Lagna": {"sign": "Pisces"}}, "citations": [], "confidence": 0.15, "note": "Mental estimate; low precision."}
+
+### L0-positions-lahiri-true-ws-000009
+{"answer": {"Sun": {"sign": "Aries", "deg_in_sign": 10.31, "nakshatra": "Ashwini", "pada": 4}, "Moon": {"sign": "Pisces", "deg_in_sign": 26.80, "nakshatra": "Revati", "pada": 4}, "Mars": {"sign": "Cancer", "deg_in_sign": 29.00, "nakshatra": "Ashlesha", "pada": 4}, "Mercury": {"sign": "Pisces", "deg_in_sign": 27.00, "nakshatra": "Revati", "pada": 4}, "Jupiter": {"sign": "Leo", "deg_in_sign": 20.00, "nakshatra": "Purva Phalguni", "pada": 3}, "Venus": {"sign": "Aries", "deg_in_sign": 12.00, "nakshatra": "Ashwini", "pada": 4}, "Saturn": {"sign": "Capricorn", "deg_in_sign": 23.00, "nakshatra": "Shravana", "pada": 4}, "Rahu": {"sign": "Aquarius", "deg_in_sign": 12.00, "nakshatra": "Shatabhisha", "pada": 2}, "Ketu": {"sign": "Leo", "deg_in_sign": 12.00, "nakshatra": "Magha", "pada": 4}, "Lagna": {"sign": "Aquarius"}}, "citations": [], "confidence": 0.1, "note": "Mental estimate; low precision."}
+
+### L0-positions-raman-mean-ws-000004
+{"answer": {"Sun": {"sign": "Gemini", "deg_in_sign": 20.02, "nakshatra": "Punarvasu", "pada": 1}, "Moon": {"sign": "Libra", "deg_in_sign": 17.80, "nakshatra": "Swati", "pada": 4}, "Mars": {"sign": "Gemini", "deg_in_sign": 5.60, "nakshatra": "Mrigashira", "pada": 4}, "Mercury": {"sign": "Cancer", "deg_in_sign": 8.60, "nakshatra": "Pushya", "pada": 2}, "Jupiter": {"sign": "Pisces", "deg_in_sign": 4.60, "nakshatra": "Uttara Bhadrapada", "pada": 1}, "Venus": {"sign": "Taurus", "deg_in_sign": 7.60, "nakshatra": "Krittika", "pada": 4}, "Saturn": {"sign": "Aries", "deg_in_sign": 9.60, "nakshatra": "Ashwini", "pada": 3}, "Rahu": {"sign": "Leo", "deg_in_sign": 11.57, "nakshatra": "Magha", "pada": 4}, "Ketu": {"sign": "Aquarius", "deg_in_sign": 11.57, "nakshatra": "Shatabhisha", "pada": 2}, "Lagna": {"sign": "Aries"}}, "citations": [], "confidence": 0.1, "note": "Mental estimate; Lagna sits near the Pisces/Aries cusp and Sun near the Ardra/Punarvasu boundary."}
+
+### L0-positions-raman-true-ws-000002
+{"answer": {"Sun": {"sign": "Aquarius", "deg_in_sign": 22.56, "nakshatra": "Purva Bhadrapada", "pada": 1}, "Moon": {"sign": "Leo", "deg_in_sign": 18.06, "nakshatra": "Purva Phalguni", "pada": 2}, "Mars": {"sign": "Libra", "deg_in_sign": 18.70, "nakshatra": "Swati", "pada": 4}, "Mercury": {"sign": "Aquarius", "deg_in_sign": 8.70, "nakshatra": "Shatabhisha", "pada": 1}, "Jupiter": {"sign": "Cancer", "deg_in_sign": 18.70, "nakshatra": "Ashlesha", "pada": 1}, "Venus": {"sign": "Capricorn", "deg_in_sign": 14.60, "nakshatra": "Shravana", "pada": 2}, "Saturn": {"sign": "Leo", "deg_in_sign": 15.70, "nakshatra": "Purva Phalguni", "pada": 1}, "Rahu": {"sign": "Libra", "deg_in_sign": 27.70, "nakshatra": "Vishakha", "pada": 3}, "Ketu": {"sign": "Aries", "deg_in_sign": 27.70, "nakshatra": "Krittika", "pada": 1}, "Lagna": {"sign": "Virgo"}}, "citations": [], "confidence": 0.1, "note": "Mental estimate; low precision."}
+
+### L0-positions-raman-true-ws-000006
+{"answer": {"Sun": {"sign": "Scorpio", "deg_in_sign": 26.67, "nakshatra": "Jyeshtha", "pada": 4}, "Moon": {"sign": "Leo", "deg_in_sign": 4.70, "nakshatra": "Magha", "pada": 2}, "Mars": {"sign": "Virgo", "deg_in_sign": 0.30, "nakshatra": "Uttara Phalguni", "pada": 2}, "Mercury": {"sign": "Scorpio", "deg_in_sign": 13.30, "nakshatra": "Anuradha", "pada": 3}, "Jupiter": {"sign": "Capricorn", "deg_in_sign": 5.30, "nakshatra": "Uttara Ashadha", "pada": 3}, "Venus": {"sign": "Capricorn", "deg_in_sign": 1.30, "nakshatra": "Uttara Ashadha", "pada": 2}, "Saturn": {"sign": "Virgo", "deg_in_sign": 6.30, "nakshatra": "Uttara Phalguni", "pada": 3}, "Rahu": {"sign": "Pisces", "deg_in_sign": 21.50, "nakshatra": "Revati", "pada": 2}, "Ketu": {"sign": "Virgo", "deg_in_sign": 21.50, "nakshatra": "Hasta", "pada": 4}, "Lagna": {"sign": "Scorpio"}}, "citations": [], "confidence": 0.1, "note": "Mental estimate; low precision."}
+
+### L1-aspect-krishnamurti-mean-ws-000009
+{"answer": ["Mars"], "citations": [], "confidence": 0.9, "note": "Mars in Leo casts its 8th aspect on Pisces. No verse citation given (not certain of exact verse)."}
+
+### L1-aspect-lahiri-mean-ws-000029
+{"answer": ["Mercury", "Jupiter", "Saturn"], "citations": [], "confidence": 0.9, "note": "9th = Taurus: Mercury (Scorpio, 7th), Jupiter (Capricorn, 5th), Saturn (Pisces, 3rd). No citation given."}
+
+### L1-aspect-lahiri-mean-ws-000031
+{"answer": ["Rahu"], "citations": [], "confidence": 0.9, "note": "8th = Taurus; Rahu in Scorpio aspects 7th. No citation given."}
+
+### L1-aspect-lahiri-mean-ws-000037
+{"answer": [], "citations": [], "confidence": 0.9, "note": "5th = Cancer; no planet aspects it. No citation given."}
+
+### L1-aspect-lahiri-true-ws-000003
+{"answer": ["Moon", "Mars", "Jupiter", "Venus"], "citations": [], "confidence": 0.9, "note": "9th = Aries; four planets in Libra aspect it by the 7th. No citation given."}
+
+### L1-aspect-lahiri-true-ws-000009
+{"answer": ["Mars", "Venus", "Rahu"], "citations": [], "confidence": 0.9, "note": "3rd = Pisces: Mars from Leo (8th), Venus and Rahu from Virgo (7th). No citation given."}
+
+### L1-aspect-raman-mean-ws-000001
+{"answer": ["Sun", "Mercury", "Venus"], "citations": [], "confidence": 0.9, "note": "2nd = Leo; Sun, Mercury, Venus in Aquarius aspect it. No citation given."}
+
+### L1-aspect-raman-mean-ws-000003
+{"answer": [], "citations": [], "confidence": 0.9, "note": "8th = Cancer; none aspect it. No citation given."}
+
+### L1-aspect-raman-true-ws-000003
+{"answer": ["Saturn"], "citations": [], "confidence": 0.9, "note": "7th = Scorpio; Saturn in Aquarius casts its 10th aspect. No citation given."}
+
+### L1-aspect-raman-true-ws-000007
+{"answer": ["Jupiter"], "citations": [], "confidence": 0.9, "note": "8th = Pisces; Jupiter in Scorpio casts its 5th aspect. No citation given."}
+
+### L1-combustion-krishnamurti-mean-ws-000009
+{"answer": ["Mars", "Mercury", "Venus"], "citations": [], "confidence": 0.9, "note": "Mars 16.48, Mercury(R) 3.73, Venus 4.54 from Sun; Saturn 17.38 outside 15. No citation given."}
+
+### L1-combustion-lahiri-mean-ws-000014
+{"answer": ["Mercury"], "citations": [], "confidence": 0.92, "note": "No citation given."}
+
+### L1-combustion-lahiri-mean-ws-000016
+{"answer": [], "citations": [], "confidence": 0.9, "note": "No citation given."}
+
+### L1-combustion-lahiri-mean-ws-000033
+{"answer": ["Mars", "Saturn"], "citations": [], "confidence": 0.9, "note": "Mars 16.70, Saturn 7.06; Mercury 15.41 outside 14. No citation given."}
+
+### L1-combustion-lahiri-mean-ws-000034
+{"answer": ["Mercury", "Saturn"], "citations": [], "confidence": 0.9, "note": "No citation given."}
+
+### L1-combustion-lahiri-true-ws-000000
+{"answer": ["Mercury"], "citations": [], "confidence": 0.92, "note": "No citation given."}
+
+### L1-combustion-lahiri-true-ws-000008
+{"answer": ["Mercury"], "citations": [], "confidence": 0.92, "note": "No citation given."}
+
+### L1-combustion-raman-mean-ws-000005
+{"answer": [], "citations": [], "confidence": 0.9, "note": "No citation given."}
+
+### L1-combustion-raman-true-ws-000002
+{"answer": [], "citations": [], "confidence": 0.88, "note": "Venus 11.58 outside 10. No citation given."}
+
+### L1-combustion-raman-true-ws-000005
+{"answer": [], "citations": [], "confidence": 0.9, "note": "Mercury 15.95 outside 14. No citation given."}
+
+### L1-dasha-krishnamurti-true-ws-000002
+{"answer": "Mercury", "citations": [], "confidence": 0.85, "note": "Moon in Purva Bhadrapada (Jupiter); Mercury MD ~1971-1988. No citation given."}
+
+### L1-dasha-krishnamurti-true-ws-000008
+{"answer": "Mercury", "citations": [], "confidence": 0.8, "note": "Moon in Hasta; Mercury MD began ~early 2011, Mercury-Mercury AD running. No citation given."}
+
+### L1-dasha-krishnamurti-true-ws-000009
+{"answer": "Jupiter", "citations": [], "confidence": 0.88, "note": "Moon in Vishakha near start; Jupiter MD to ~1963. No citation given."}
+
+### L1-dasha-lahiri-mean-ws-000007
+{"answer": "Mercury", "citations": [], "confidence": 0.88, "note": "Moon in Anuradha; Saturn balance ~3.34y, Mercury MD 2020-2037. No citation given."}
+
+### L1-dasha-lahiri-mean-ws-000011
+{"answer": "Saturn", "citations": [], "confidence": 0.82, "note": "Moon in Shravana; Saturn MD from ~1992.4, Saturn-Saturn AD. No citation given."}
+
+### L1-dasha-lahiri-mean-ws-000013
+{"answer": "Mars", "citations": [], "confidence": 0.75, "note": "Moon in Hasta; Saturn MD from ~1995.9, elapsed ~12.62y lands in Saturn-Mars AD. No citation given."}
+
+### L1-dasha-lahiri-mean-ws-000019
+{"answer": "Rahu", "citations": [], "confidence": 0.8, "note": "Moon in Purva Phalguni; Rahu MD from ~2057.6, Rahu-Rahu AD. No citation given."}
+
+### L1-dasha-lahiri-mean-ws-000035
+{"answer": "Ketu", "citations": [], "confidence": 0.85, "note": "Moon in Mrigashira; Ketu MD ~1984.5-1991.5. No citation given."}
+
+### L1-dasha-raman-true-ws-000007
+{"answer": "Venus", "citations": [], "confidence": 0.65, "note": "Moon in Hasta; Rahu MD from ~1942.06, elapsed ~11.63y just past Rahu-Ketu end (11.55). No citation given."}
+
+### L1-dignity-krishnamurti-mean-ws-000007
+{"answer": "friend", "citations": [], "confidence": 0.88, "note": "Moon in Leo; Sun is Moon's friend. No citation given."}
+
+### L1-dignity-krishnamurti-true-ws-000004
+{"answer": "friend", "citations": [], "confidence": 0.88, "note": "Sun in Scorpio; Mars is Sun's friend. No citation given."}
+
+### L1-dignity-krishnamurti-true-ws-000005
+{"answer": "friend", "citations": [], "confidence": 0.88, "note": "Moon in Virgo; Mercury is Moon's friend. No citation given."}
+
+### L1-dignity-krishnamurti-true-ws-000009
+{"answer": "exalted", "citations": [], "confidence": 0.92, "note": "Mars in Capricorn. No citation given."}
+
+### L1-dignity-lahiri-mean-ws-000008
+{"answer": "neutral", "citations": [], "confidence": 0.85, "note": "Mars in Aquarius; Saturn neutral to Mars. No citation given."}
+
+### L1-dignity-lahiri-mean-ws-000022
+{"answer": "own", "citations": [], "confidence": 0.9, "note": "Mercury in Gemini. No citation given."}
+
+### L1-dignity-lahiri-mean-ws-000023
+{"answer": "enemy", "citations": [], "confidence": 0.85, "note": "Jupiter in Libra; Venus is Jupiter's enemy. No citation given."}
+
+### L1-dignity-lahiri-mean-ws-000038
+{"answer": "friend", "citations": [], "confidence": 0.88, "note": "Moon in Gemini; Mercury is Moon's friend. No citation given."}
+
+### L1-dignity-raman-true-ws-000005
+{"answer": "neutral", "citations": [], "confidence": 0.85, "note": "Moon in Aquarius; Saturn neutral to Moon. No citation given."}
+
+### L1-lordship-krishnamurti-mean-pl-000001
+{"answer": "2", "citations": [], "confidence": 0.85, "note": "9th cusp Pisces, Jupiter 143.89 between cusps 2 and 3. No citation given."}
+
+### L1-lordship-krishnamurti-mean-ws-000005
+{"answer": "12", "citations": [], "confidence": 0.9, "note": "4th = Virgo, Mercury in Taurus = 12th from Gemini. No citation given."}
+
+### L1-lordship-krishnamurti-true-pl-000003
+{"answer": "10", "citations": [], "confidence": 0.85, "note": "Scorpio cusp, Mars 173.72 between cusps 10 and 11. No citation given."}
+
+### L1-lordship-lahiri-mean-pl-000000
+{"answer": "1", "citations": [], "confidence": 0.85, "note": "8th cusp Aries, Mars 192.37 before cusp 2 (194.34). No citation given."}
+
+### L1-lordship-lahiri-mean-ws-000011
+{"answer": "9", "citations": [], "confidence": 0.9, "note": "No citation given."}
+
+### L1-lordship-lahiri-mean-ws-000032
+{"answer": "11", "citations": [], "confidence": 0.9, "note": "No citation given."}
+
+### L1-lordship-lahiri-mean-ws-000034
+{"answer": "3", "citations": [], "confidence": 0.9, "note": "No citation given."}
+
+### L1-lordship-lahiri-mean-ws-000038
+{"answer": "10", "citations": [], "confidence": 0.9, "note": "No citation given."}
+
+### L1-lordship-lahiri-true-pl-000005
+{"answer": "2", "citations": [], "confidence": 0.85, "note": "2nd cusp Gemini, Mercury 86.47 between cusps 2 and 3. No citation given."}
+
+### L1-lordship-lahiri-true-ws-000002
+{"answer": "5", "citations": [], "confidence": 0.9, "note": "No citation given."}
+
+### L1-lordship-raman-mean-pl-000005
+{"answer": "9", "citations": [], "confidence": 0.85, "note": "6th cusp Capricorn, Saturn 38.56 between cusps 9 and 10. No citation given."}
+
+### L1-lordship-raman-mean-ws-000003
+{"answer": "10", "citations": [], "confidence": 0.9, "note": "No citation given."}
+
+### L1-lordship-raman-mean-ws-000009
+{"answer": "10", "citations": [], "confidence": 0.9, "note": "No citation given."}
+
+### L1-lordship-raman-true-pl-000002
+{"answer": "10", "citations": [], "confidence": 0.85, "note": "Pisces cusp, Jupiter 263.26 between cusps 10 and 11. No citation given."}
+
+### L1-lordship-raman-true-pl-000003
+{"answer": "2", "citations": [], "confidence": 0.85, "note": "12th cusp Libra, Venus 265.97 between cusps 2 and 3. No citation given."}
+
+### L1-lordship-raman-true-ws-000006
+{"answer": "8", "citations": [], "confidence": 0.9, "note": "No citation given."}
+
+### L1-nakshatra-krishnamurti-mean-ws-000007
+{"answer": {"nakshatra": "Krittika", "pada": 2}, "citations": [], "confidence": 0.92, "note": "No citation given."}
+
+### L1-nakshatra-krishnamurti-true-ws-000008
+{"answer": {"nakshatra": "Pushya", "pada": 2}, "citations": [], "confidence": 0.92, "note": "No citation given."}
+
+### L1-nakshatra-lahiri-mean-ws-000000
+{"answer": {"nakshatra": "Purva Phalguni", "pada": 1}, "citations": [], "confidence": 0.92, "note": "No citation given."}
+
+### L1-nakshatra-lahiri-mean-ws-000010
+{"answer": {"nakshatra": "Magha", "pada": 1}, "citations": [], "confidence": 0.92, "note": "No citation given."}
+
+### L1-nakshatra-lahiri-mean-ws-000028
+{"answer": {"nakshatra": "Chitra", "pada": 3}, "citations": [], "confidence": 0.92, "note": "No citation given."}
+
+### L1-nakshatra-lahiri-true-ws-000001
+{"answer": {"nakshatra": "Purva Ashadha", "pada": 3}, "citations": [], "confidence": 0.92, "note": "No citation given."}
+
+### L1-nakshatra-raman-mean-ws-000007
+{"answer": {"nakshatra": "Rohini", "pada": 4}, "citations": [], "confidence": 0.92, "note": "No citation given."}
+
+### L1-nakshatra-raman-mean-ws-000008
+{"answer": {"nakshatra": "Mrigashira", "pada": 2}, "citations": [], "confidence": 0.92, "note": "No citation given."}
+
+### L1-nakshatra-raman-true-ws-000006
+{"answer": {"nakshatra": "Jyeshtha", "pada": 1}, "citations": [], "confidence": 0.9, "note": "No citation given."}
+
+### L1-rule-mangal_8th_aspect_ketu-lahiri-mean-ws-000004
+{"answer": true, "citations": [], "confidence": 0.88, "note": "Mars in Aries, Ketu in Scorpio (8th). No citation given."}
+
+### L1-rule-mangal_ketu_primary-lahiri-mean-ws-000003
+{"answer": true, "citations": [], "confidence": 0.9, "note": "Mars and Ketu 0.22 deg apart in Gemini. No citation given."}
+
+### L1-rule-mangal_shani_malefic-lahiri-mean-ws-000000
+{"answer": false, "citations": [], "confidence": 0.92, "note": "No citation given."}
+
+### L1-rule-shani_10th_aspect_mars-lahiri-true-ws-000000
+{"answer": true, "citations": [], "confidence": 0.88, "note": "Saturn in Pisces, Mars in Sagittarius (10th). No citation given."}
+
+### L1-rule-venus_own_sign-lahiri-mean-ws-000001
+{"answer": true, "citations": [], "confidence": 0.93, "note": "Venus in Libra. No citation given."}
+
+### L1-rule-venus_own_sign-lahiri-true-ws-000001
+{"answer": true, "citations": [], "confidence": 0.93, "note": "Venus in Libra. No citation given."}
+
+### L1-varga-krishnamurti-mean-ws-000002
+{"answer": "Libra", "citations": [], "confidence": 0.88, "note": "Jupiter Aquarius 2.55, first navamsa from Libra. No citation given."}
+
+### L1-varga-krishnamurti-true-ws-000008
+{"answer": "Aquarius", "citations": [], "confidence": 0.85, "note": "Saturn Pisces 11.5; even sign starts from 9th (Scorpio), 4th part. No citation given."}
+
+### L1-varga-lahiri-mean-ws-000004
+{"answer": "Capricorn", "citations": [], "confidence": 0.85, "note": "Moon Pisces 6.84; start Scorpio, 3rd part. No citation given."}
+
+### L1-varga-lahiri-mean-ws-000030
+{"answer": "Libra", "citations": [], "confidence": 0.85, "note": "Rahu Aries 29.70, 7th saptamsa from Aries. No citation given."}
+
+### L1-varga-lahiri-mean-ws-000032
+{"answer": "Aquarius", "citations": [], "confidence": 0.85, "note": "Venus Leo 28.31, 7th saptamsa from Leo. No citation given."}
+
+### L1-varga-lahiri-true-ws-000005
+{"answer": "Libra", "citations": [], "confidence": 0.85, "note": "Sun Gemini 17.64, 5th saptamsa from Gemini. No citation given."}
+
+### L1-varga-lahiri-true-ws-000007
+{"answer": "Taurus", "citations": [], "confidence": 0.85, "note": "Rahu Sagittarius 15.1, 6th dasamsa from Sagittarius. No citation given."}
+
+### L1-varga-raman-mean-ws-000004
+{"answer": "Virgo", "citations": [], "confidence": 0.85, "note": "Jupiter Pisces 0.33; even sign starts from 7th (Virgo). No citation given."}
+
+### L1-varga-raman-true-ws-000002
+{"answer": "Cancer", "citations": [], "confidence": 0.88, "note": "Rahu Virgo 20.3, 7th navamsa from Capricorn. No citation given."}
+
+### L1-yoga-budha_aditya-lahiri-mean-ws-000008
+{"answer": false, "citations": [], "confidence": 0.93, "note": "Sun Capricorn, Mercury Aquarius. No citation given."}
+
+### L1-yoga-budha_aditya-lahiri-mean-ws-000013
+{"answer": false, "citations": [], "confidence": 0.93, "note": "Sun Leo, Mercury Virgo. No citation given."}
+
+### L1-yoga-gaja_kesari_classical-lahiri-mean-ws-000008
+{"answer": true, "citations": [], "confidence": 0.55, "note": "Jupiter in Aquarius on the Lagna (kendra), aspected by Mercury from Leo; not debilitated, combust or in an enemy sign (Saturn neutral). Mercury is with the Sun, so benefic status is debatable. No citation given."}
+
+### L1-yoga-gaja_kesari_moon_kendra-lahiri-mean-ws-000005
+{"answer": true, "citations": [], "confidence": 0.92, "note": "Moon Taurus, Jupiter Leo (4th). No citation given."}
+
+### L1-yoga-gaja_kesari_moon_kendra-lahiri-mean-ws-000009
+{"answer": false, "citations": [], "confidence": 0.92, "note": "Moon Aries, Jupiter Scorpio (8th). No citation given."}
+
+### L1-yoga-gaja_kesari_moon_kendra-lahiri-mean-ws-000011
+{"answer": true, "citations": [], "confidence": 0.92, "note": "Moon Cancer, Jupiter Libra (4th). No citation given."}
+
+### L2-citation-1dc8378a5033
+{"answer": null, "citations": [], "confidence": 0.0, "note": "Not confident of the exact chapter and verse; abstaining."}
+
+### L2-citation-3f08c3d42198
+{"answer": null, "citations": [], "confidence": 0.0, "note": "Not confident of the exact chapter and verse; abstaining."}
+
+### L2-citation-623850b3e0ab
+{"answer": null, "citations": [], "confidence": 0.0, "note": "Not confident of the exact chapter and verse; abstaining."}
+
+### L2-citation-7caed961b97a
+{"answer": null, "citations": [], "confidence": 0.0, "note": "Not confident of the exact chapter and verse; abstaining."}
+
+### L2-citation-a9cbd6036e8e
+{"answer": null, "citations": [], "confidence": 0.0, "note": "Not confident of the exact chapter and verse; abstaining."}
+
+### L2-citation-adc1fb52b58d
+{"answer": {"text": "Jaimini Sutras", "chapter": "1.1", "verse": "2", "edition": "Sanjay Rath"}, "citations": [{"text": "Jaimini Sutras", "chapter": "1.1", "verse": "2", "edition": "Sanjay Rath"}], "confidence": 0.45, "note": "Adhyaya 1, Pada 1, sutra 2 (abhipasyanti rksani); the exception for the adjacent sign follows in sutra 3."}
