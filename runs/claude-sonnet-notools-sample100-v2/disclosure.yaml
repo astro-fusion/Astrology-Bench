@@ -1,0 +1,27 @@
+harness: Claude Code (subagent spawned with the Agent tool by the maintainer's Claude Code session, main
+  model Claude Fable 5.1)
+model_id: claude-sonnet-5-5
+model_name: Claude Sonnet 5.5
+effort: Claude Code default for subagents, not readable by the operator
+tools_allowed: false
+tools_used:
+- Read
+- Write
+operator: maintainer, 2026-11-09
+date: '2026-11-09'
+brief_path: runs/claude-sonnet-notools-sample100/brief.md
+agent_report_path: runs/claude-sonnet-notools-sample100/agent-report.md
+deviations:
+- 'Read the pack twice: the first Read truncated at line 806, so a second Read of the same file (offset
+  807) loaded items 50-100. No other tool was used.'
+- States it did all arithmetic by hand with no calculator; Level 0 positions are low-confidence guesses;
+  all six Level 2 items abstain (answer null, no citations) (agent report).
+- 'Re-scored on dev split v2 (Swiss Ephemeris gold, CORRECTIONS 2026-11-09) without a new model call:
+  92 of 100 replies from claude-sonnet-notools-sample100 are carried over unchanged; the 8 items whose
+  prompt changed in v2 (L0-positions-raman-true-ws-000006, L1-combustion-lahiri-mean-ws-000033, L1-dignity-krishnamurti-true-ws-000004,
+  L1-dignity-krishnamurti-true-ws-000005, L1-dignity-lahiri-mean-ws-000038, L1-lordship-raman-mean-ws-000009,
+  L1-varga-lahiri-mean-ws-000004, L1-varga-lahiri-true-ws-000007) are dropped and unanswered, so the row
+  is partial.'
+notes: 'Measured as a bare language model: the brief restricted the subagent to one Read of the pack and
+  one Write of the replies, with no Bash, Python, web or calculator. The restriction is an instruction
+  in the brief, not a sandbox; the agent''s own report is published verbatim beside the brief.'

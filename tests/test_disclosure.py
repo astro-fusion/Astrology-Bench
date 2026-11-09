@@ -111,7 +111,11 @@ def test_committed_results_are_fully_disclosed() -> None:
             if path:
                 assert digest == sha256_file(ROOT / path), (r.run_id, path)
         if d.pack_path:
-            manifest = json.loads((ROOT / d.pack_path).with_suffix(".manifest.json").read_text())
-            assert manifest["pack_sha256"] == d.pack_sha256
+            pack = ROOT / d.pack_path
+            chunked = pack.name.endswith(".manifest.json")  # chunked: the manifest is hashed
+            manifest = json.loads((pack if chunked else pack.with_suffix(".manifest.json"))
+                                  .read_text())
+            if not chunked:
+                assert manifest["pack_sha256"] == d.pack_sha256
             assert manifest["ids_sha256"] == r.sample_ids_sha256
         assert f"`{r.run_id}`" in (ROOT / "runs" / "README.md").read_text()

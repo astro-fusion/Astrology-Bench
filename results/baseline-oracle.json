@@ -1,14 +1,18 @@
 {
  "run_id": "baseline-oracle",
- "created_at": "2026-11-09T01:44:04Z",
+ "created_at": "2026-11-09T03:02:52Z",
  "model": "oracle",
  "provider": "baseline",
  "solver": "oracle",
  "kind": "oracle",
  "solver_description": "",
  "input_mode": "chart",
+ "status": "complete",
+ "missing_ids": [],
+ "ephemeris_model": "swieph",
+ "ephe_sha256": "0cfc76a9dc51296f2241492e3376f1e71d13dd4f36b476253d4b82df57dfc990",
  "bench_version": "0.1.0",
- "items_sha256": "ce28c9245b9fe6ef578a1dd25c743921fc24ca13acfdf39beb0482a52e3c9711",
+ "items_sha256": "8a04f44fc2af6a74c8c2a3c9b6310f1421c06bf2d1f25ac3bc9d4acc8b4ccec4",
  "split": "dev",
  "item_count": 955,
  "engine_commit": "7018b2a",
@@ -1439,9 +1443,7 @@
    "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
-   "answer": [
-    "Mars"
-   ]
+   "answer": []
   },
   {
    "id": "L1-aspect-krishnamurti-true-ws-000008",
@@ -3433,8 +3435,7 @@
    "fabricated": false,
    "confidence": 1.0,
    "answer": [
-    "Mars",
-    "Saturn"
+    "Venus"
    ]
   },
   {
@@ -4205,7 +4206,7 @@
    "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
-   "answer": "Mars"
+   "answer": "Rahu"
   },
   {
    "id": "L1-dasha-krishnamurti-true-ws-000005",
@@ -5465,7 +5466,7 @@
    "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
-   "answer": "friend"
+   "answer": "neutral"
   },
   {
    "id": "L1-dignity-krishnamurti-true-ws-000005",
@@ -5479,7 +5480,7 @@
    "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
-   "answer": "friend"
+   "answer": "exalted"
   },
   {
    "id": "L1-dignity-krishnamurti-true-ws-000006",
@@ -6081,7 +6082,7 @@
    "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
-   "answer": "friend"
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000039",
@@ -6207,7 +6208,7 @@
    "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
-   "answer": "neutral"
+   "answer": "friend"
   },
   {
    "id": "L1-dignity-lahiri-true-ws-000008",
@@ -6697,7 +6698,7 @@
    "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
-   "answer": "7"
+   "answer": "4"
   },
   {
    "id": "L1-lordship-krishnamurti-mean-ws-000003",
@@ -8789,8 +8790,8 @@
    "fabricated": false,
    "confidence": 1.0,
    "answer": {
-    "nakshatra": "Punarvasu",
-    "pada": 2
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -10614,7 +10615,7 @@
    "answer_score": 1.0,
    "fabricated": false,
    "confidence": 1.0,
-   "answer": false
+   "answer": true
   },
   {
    "id": "L1-rule-shani_10th_aspect_mars-lahiri-mean-ws-000003",
@@ -10640,7 +10641,7 @@
    "answer_score": 1.0,
    "fabricated": false,
    "confidence": 1.0,
-   "answer": true
+   "answer": false
   },
   {
    "id": "L1-rule-shani_10th_aspect_mars-lahiri-mean-ws-000005",
@@ -11059,7 +11060,7 @@
    "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
-   "answer": "Taurus"
+   "answer": "Aries"
   },
   {
    "id": "L1-varga-krishnamurti-true-ws-000006",
@@ -11185,7 +11186,7 @@
    "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
-   "answer": "Capricorn"
+   "answer": "Aries"
   },
   {
    "id": "L1-varga-lahiri-mean-ws-000005",
@@ -11353,7 +11354,7 @@
    "citation_score": 1,
    "fabricated": false,
    "confidence": 1.0,
-   "answer": "Capricorn"
+   "answer": "Pisces"
   },
   {
    "id": "L1-varga-lahiri-mean-ws-000017",

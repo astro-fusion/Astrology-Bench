@@ -1,14 +1,18 @@
 {
  "run_id": "baseline-constant",
- "created_at": "2026-11-09T01:44:48Z",
+ "created_at": "2026-11-09T03:03:35Z",
  "model": "constant",
  "provider": "baseline",
  "solver": "constant",
  "kind": "baseline",
  "solver_description": "",
  "input_mode": "chart",
+ "status": "complete",
+ "missing_ids": [],
+ "ephemeris_model": "swieph",
+ "ephe_sha256": "0cfc76a9dc51296f2241492e3376f1e71d13dd4f36b476253d4b82df57dfc990",
  "bench_version": "0.1.0",
- "items_sha256": "ce28c9245b9fe6ef578a1dd25c743921fc24ca13acfdf39beb0482a52e3c9711",
+ "items_sha256": "8a04f44fc2af6a74c8c2a3c9b6310f1421c06bf2d1f25ac3bc9d4acc8b4ccec4",
  "split": "dev",
  "item_count": 955,
  "engine_commit": "7018b2a",
@@ -33,7 +37,7 @@
    "source": "modern",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.025,
+   "answer_score": 0.075,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -45,7 +49,7 @@
    "source": "modern",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.125,
+   "answer_score": 0.05,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -93,7 +97,7 @@
    "source": "modern",
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.125,
+   "answer_score": 0.1,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -105,7 +109,7 @@
    "source": "modern",
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.05,
+   "answer_score": 0.0,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -141,7 +145,7 @@
    "source": "modern",
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.175,
+   "answer_score": 0.2,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -153,7 +157,7 @@
    "source": "modern",
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.125,
+   "answer_score": 0.1,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -237,7 +241,7 @@
    "source": "modern",
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
-   "answer_score": 0.15,
+   "answer_score": 0.125,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -249,7 +253,7 @@
    "source": "modern",
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
-   "answer_score": 0.1,
+   "answer_score": 0.05,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -309,7 +313,7 @@
    "source": "modern",
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
-   "answer_score": 0.075,
+   "answer_score": 0.125,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -321,7 +325,7 @@
    "source": "modern",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.05,
+   "answer_score": 0.075,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -333,7 +337,7 @@
    "source": "modern",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.15,
+   "answer_score": 0.125,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -369,7 +373,7 @@
    "source": "modern",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.35,
+   "answer_score": 0.325,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -429,7 +433,7 @@
    "source": "modern",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.125,
+   "answer_score": 0.175,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -441,7 +445,7 @@
    "source": "modern",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.05,
+   "answer_score": 0.0,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -453,7 +457,7 @@
    "source": "modern",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.05,
+   "answer_score": 0.0,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -525,7 +529,7 @@
    "source": "modern",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.1,
+   "answer_score": 0.125,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -657,7 +661,7 @@
    "source": "modern",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.275,
+   "answer_score": 0.25,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -669,7 +673,7 @@
    "source": "modern",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.175,
+   "answer_score": 0.225,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -765,7 +769,7 @@
    "source": "modern",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.075,
+   "answer_score": 0.05,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -777,7 +781,7 @@
    "source": "modern",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.275,
+   "answer_score": 0.225,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -801,7 +805,7 @@
    "source": "modern",
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
-   "answer_score": 0.225,
+   "answer_score": 0.2,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -849,7 +853,7 @@
    "source": "modern",
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
-   "answer_score": 0.05,
+   "answer_score": 0.125,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -861,7 +865,7 @@
    "source": "modern",
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
-   "answer_score": 0.075,
+   "answer_score": 0.1,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -897,7 +901,7 @@
    "source": "modern",
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
-   "answer_score": 0.025,
+   "answer_score": 0.075,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -909,7 +913,7 @@
    "source": "modern",
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 0.05,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -933,7 +937,7 @@
    "source": "modern",
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.125,
+   "answer_score": 0.175,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -969,7 +973,7 @@
    "source": "modern",
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.15,
+   "answer_score": 0.1,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -993,7 +997,7 @@
    "source": "modern",
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.25,
+   "answer_score": 0.275,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -1005,7 +1009,7 @@
    "source": "modern",
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.05,
+   "answer_score": 0.1,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -1017,7 +1021,7 @@
    "source": "modern",
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.225,
+   "answer_score": 0.275,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -1101,7 +1105,7 @@
    "source": "modern",
    "convention": "raman/true/whole_sign",
    "parse_error": false,
-   "answer_score": 0.325,
+   "answer_score": 0.35,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -1113,7 +1117,7 @@
    "source": "modern",
    "convention": "raman/true/whole_sign",
    "parse_error": false,
-   "answer_score": 0.3,
+   "answer_score": 0.15,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -1125,7 +1129,7 @@
    "source": "modern",
    "convention": "raman/true/whole_sign",
    "parse_error": false,
-   "answer_score": 0.125,
+   "answer_score": 0.05,
    "fabricated": false,
    "confidence": 0.0
   },
@@ -1164,7 +1168,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1178,7 +1182,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1192,7 +1196,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1206,7 +1210,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1220,7 +1224,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1234,7 +1238,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1248,7 +1252,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1262,7 +1266,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1276,7 +1280,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1290,7 +1294,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1304,7 +1308,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1318,7 +1322,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1332,7 +1336,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1346,7 +1350,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1360,7 +1364,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1374,7 +1378,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1388,7 +1392,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1399,10 +1403,10 @@
    "source": "BPHS",
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1416,7 +1420,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1430,7 +1434,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1444,7 +1448,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1458,7 +1462,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1472,7 +1476,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1486,7 +1490,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1500,7 +1504,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1514,7 +1518,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1528,7 +1532,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1542,7 +1546,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1556,7 +1560,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1570,7 +1574,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1584,7 +1588,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1598,7 +1602,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1612,7 +1616,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1626,7 +1630,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1640,7 +1644,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1654,7 +1658,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1668,7 +1672,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1682,7 +1686,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1696,7 +1700,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1710,7 +1714,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1724,7 +1728,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1738,7 +1742,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1752,7 +1756,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1766,7 +1770,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1780,7 +1784,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1794,7 +1798,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1808,7 +1812,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1822,7 +1826,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1836,7 +1840,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1850,7 +1854,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1864,7 +1868,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1878,7 +1882,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1892,7 +1896,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1906,7 +1910,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1920,7 +1924,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1934,7 +1938,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1948,7 +1952,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1962,7 +1966,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1976,7 +1980,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -1990,7 +1994,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2004,7 +2008,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2018,7 +2022,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2032,7 +2036,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2046,7 +2050,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2060,7 +2064,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2074,7 +2078,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2088,7 +2092,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2102,7 +2106,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2116,7 +2120,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2130,7 +2134,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2144,7 +2148,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2158,7 +2162,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2172,7 +2176,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2186,7 +2190,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2200,7 +2204,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2214,7 +2218,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2228,7 +2232,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2242,7 +2246,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2256,7 +2260,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2270,7 +2274,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2284,7 +2288,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2298,7 +2302,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2312,7 +2316,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2326,7 +2330,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2340,7 +2344,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2354,7 +2358,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2368,7 +2372,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2382,7 +2386,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2396,7 +2400,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -2410,7 +2414,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2778,
+   "confidence": 0.2889,
    "answer": []
   },
   {
@@ -5124,8 +5128,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-krishnamurti-mean-ws-000001",
@@ -5135,11 +5139,11 @@
    "source": "BPHS",
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-krishnamurti-mean-ws-000002",
@@ -5152,8 +5156,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-krishnamurti-mean-ws-000003",
@@ -5166,8 +5170,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-krishnamurti-mean-ws-000004",
@@ -5180,8 +5184,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-krishnamurti-mean-ws-000005",
@@ -5194,8 +5198,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-krishnamurti-mean-ws-000006",
@@ -5208,8 +5212,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-krishnamurti-mean-ws-000007",
@@ -5222,8 +5226,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-krishnamurti-mean-ws-000008",
@@ -5236,8 +5240,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-krishnamurti-mean-ws-000009",
@@ -5247,11 +5251,11 @@
    "source": "BPHS",
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-krishnamurti-true-ws-000000",
@@ -5264,8 +5268,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-krishnamurti-true-ws-000001",
@@ -5278,8 +5282,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-krishnamurti-true-ws-000002",
@@ -5292,8 +5296,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-krishnamurti-true-ws-000003",
@@ -5303,11 +5307,11 @@
    "source": "BPHS",
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-krishnamurti-true-ws-000004",
@@ -5320,8 +5324,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-krishnamurti-true-ws-000005",
@@ -5334,8 +5338,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-krishnamurti-true-ws-000006",
@@ -5345,11 +5349,11 @@
    "source": "BPHS",
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-krishnamurti-true-ws-000007",
@@ -5362,8 +5366,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-krishnamurti-true-ws-000008",
@@ -5376,8 +5380,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-krishnamurti-true-ws-000009",
@@ -5390,8 +5394,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000000",
@@ -5401,11 +5405,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000001",
@@ -5415,11 +5419,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000002",
@@ -5429,11 +5433,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000003",
@@ -5443,11 +5447,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000004",
@@ -5460,8 +5464,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000005",
@@ -5474,8 +5478,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000006",
@@ -5485,11 +5489,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000007",
@@ -5502,8 +5506,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000008",
@@ -5516,8 +5520,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000009",
@@ -5530,8 +5534,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000010",
@@ -5544,8 +5548,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000011",
@@ -5558,8 +5562,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000012",
@@ -5569,11 +5573,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000013",
@@ -5583,11 +5587,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000014",
@@ -5597,11 +5601,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000015",
@@ -5614,8 +5618,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000016",
@@ -5628,8 +5632,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000017",
@@ -5642,8 +5646,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000018",
@@ -5656,8 +5660,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000019",
@@ -5667,11 +5671,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000020",
@@ -5681,11 +5685,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000021",
@@ -5695,11 +5699,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000022",
@@ -5709,11 +5713,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000023",
@@ -5723,11 +5727,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000024",
@@ -5740,8 +5744,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000025",
@@ -5751,11 +5755,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000026",
@@ -5768,8 +5772,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000027",
@@ -5782,8 +5786,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000028",
@@ -5793,11 +5797,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000029",
@@ -5807,11 +5811,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000030",
@@ -5824,8 +5828,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000031",
@@ -5835,11 +5839,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000032",
@@ -5852,8 +5856,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000033",
@@ -5863,11 +5867,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000034",
@@ -5880,8 +5884,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000035",
@@ -5891,11 +5895,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000036",
@@ -5905,11 +5909,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000037",
@@ -5919,11 +5923,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000038",
@@ -5933,11 +5937,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-mean-ws-000039",
@@ -5947,11 +5951,11 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-true-ws-000000",
@@ -5964,8 +5968,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-true-ws-000001",
@@ -5978,8 +5982,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-true-ws-000002",
@@ -5989,11 +5993,11 @@
    "source": "BPHS",
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-true-ws-000003",
@@ -6006,8 +6010,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-true-ws-000004",
@@ -6020,8 +6024,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-true-ws-000005",
@@ -6031,11 +6035,11 @@
    "source": "BPHS",
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-true-ws-000006",
@@ -6048,8 +6052,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-true-ws-000007",
@@ -6062,8 +6066,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-true-ws-000008",
@@ -6076,8 +6080,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-lahiri-true-ws-000009",
@@ -6090,8 +6094,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-raman-mean-ws-000000",
@@ -6101,11 +6105,11 @@
    "source": "BPHS",
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-raman-mean-ws-000001",
@@ -6115,11 +6119,11 @@
    "source": "BPHS",
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-raman-mean-ws-000002",
@@ -6132,8 +6136,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-raman-mean-ws-000003",
@@ -6143,11 +6147,11 @@
    "source": "BPHS",
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-raman-mean-ws-000004",
@@ -6157,11 +6161,11 @@
    "source": "BPHS",
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-raman-mean-ws-000005",
@@ -6174,8 +6178,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-raman-mean-ws-000006",
@@ -6185,11 +6189,11 @@
    "source": "BPHS",
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-raman-mean-ws-000007",
@@ -6199,11 +6203,11 @@
    "source": "BPHS",
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-raman-mean-ws-000008",
@@ -6216,8 +6220,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-raman-mean-ws-000009",
@@ -6230,8 +6234,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-raman-true-ws-000000",
@@ -6244,8 +6248,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-raman-true-ws-000001",
@@ -6258,8 +6262,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-raman-true-ws-000002",
@@ -6269,11 +6273,11 @@
    "source": "BPHS",
    "convention": "raman/true/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-raman-true-ws-000003",
@@ -6283,11 +6287,11 @@
    "source": "BPHS",
    "convention": "raman/true/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-raman-true-ws-000004",
@@ -6300,8 +6304,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-raman-true-ws-000005",
@@ -6314,8 +6318,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-raman-true-ws-000006",
@@ -6328,8 +6332,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-raman-true-ws-000007",
@@ -6342,8 +6346,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-raman-true-ws-000008",
@@ -6356,8 +6360,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-dignity-raman-true-ws-000009",
@@ -6370,8 +6374,8 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.2,
-   "answer": "enemy"
+   "confidence": 0.2111,
+   "answer": "own"
   },
   {
    "id": "L1-lordship-krishnamurti-mean-pl-000000",
@@ -6384,7 +6388,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6398,7 +6402,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6412,7 +6416,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6426,7 +6430,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6440,7 +6444,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6454,7 +6458,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6468,7 +6472,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6482,7 +6486,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6496,7 +6500,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6510,7 +6514,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6524,7 +6528,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6538,7 +6542,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6549,10 +6553,10 @@
    "source": "BPHS",
    "convention": "krishnamurti/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6566,7 +6570,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6580,7 +6584,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6594,7 +6598,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6608,7 +6612,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6622,7 +6626,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6636,7 +6640,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6650,7 +6654,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6664,7 +6668,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6678,7 +6682,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6692,7 +6696,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6706,7 +6710,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6720,7 +6724,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6734,7 +6738,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6748,7 +6752,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6762,7 +6766,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6776,7 +6780,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6790,7 +6794,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6804,7 +6808,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6818,7 +6822,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6832,7 +6836,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6846,7 +6850,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6860,7 +6864,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6874,7 +6878,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6888,7 +6892,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6902,7 +6906,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6916,7 +6920,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6930,7 +6934,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6944,7 +6948,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6958,7 +6962,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6972,7 +6976,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -6986,7 +6990,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7000,7 +7004,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7014,7 +7018,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7028,7 +7032,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7042,7 +7046,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7056,7 +7060,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7070,7 +7074,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7084,7 +7088,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7098,7 +7102,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7112,7 +7116,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7126,7 +7130,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7140,7 +7144,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7154,7 +7158,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7168,7 +7172,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7182,7 +7186,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7196,7 +7200,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7210,7 +7214,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7224,7 +7228,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7238,7 +7242,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7252,7 +7256,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7266,7 +7270,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7280,7 +7284,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7294,7 +7298,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7308,7 +7312,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7322,7 +7326,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7336,7 +7340,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7350,7 +7354,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7364,7 +7368,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7378,7 +7382,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7392,7 +7396,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7406,7 +7410,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7420,7 +7424,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7434,7 +7438,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7448,7 +7452,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7462,7 +7466,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7476,7 +7480,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7490,7 +7494,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7504,7 +7508,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7518,7 +7522,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7532,7 +7536,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7546,7 +7550,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7560,7 +7564,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7574,7 +7578,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7588,7 +7592,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7602,7 +7606,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7616,7 +7620,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7630,7 +7634,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7644,7 +7648,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7658,7 +7662,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7672,7 +7676,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7686,7 +7690,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7700,7 +7704,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7714,7 +7718,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7728,7 +7732,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7742,7 +7746,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7756,7 +7760,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7770,7 +7774,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7784,7 +7788,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7798,7 +7802,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7812,7 +7816,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7826,7 +7830,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7840,7 +7844,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7854,7 +7858,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7868,7 +7872,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7882,7 +7886,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7896,7 +7900,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7910,7 +7914,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7924,7 +7928,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7938,7 +7942,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7952,7 +7956,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7966,7 +7970,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7980,7 +7984,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -7994,7 +7998,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8008,7 +8012,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8022,7 +8026,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8036,7 +8040,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8050,7 +8054,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8064,7 +8068,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8078,7 +8082,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8092,7 +8096,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8106,7 +8110,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8120,7 +8124,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8134,7 +8138,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8148,7 +8152,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8162,7 +8166,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8176,7 +8180,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8190,7 +8194,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8204,7 +8208,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8218,7 +8222,7 @@
    "answer_score": 1.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8232,7 +8236,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8246,7 +8250,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8260,7 +8264,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8274,7 +8278,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8288,7 +8292,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8302,7 +8306,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8316,7 +8320,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8330,7 +8334,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8344,7 +8348,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8358,7 +8362,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8372,7 +8376,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8386,7 +8390,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8400,7 +8404,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8414,7 +8418,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8428,7 +8432,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8442,7 +8446,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8456,7 +8460,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8470,7 +8474,7 @@
    "answer_score": 0.0,
    "citation_score": 0,
    "fabricated": false,
-   "confidence": 0.1267,
+   "confidence": 0.1333,
    "answer": "4"
   },
   {
@@ -8485,8 +8489,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8501,8 +8505,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8517,8 +8521,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8533,8 +8537,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8549,8 +8553,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8565,8 +8569,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8581,8 +8585,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8597,8 +8601,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8613,8 +8617,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8629,8 +8633,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8641,12 +8645,12 @@
    "source": "modern",
    "convention": "krishnamurti/true/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8661,8 +8665,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8677,8 +8681,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8693,8 +8697,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8709,8 +8713,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8725,8 +8729,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8741,8 +8745,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8757,8 +8761,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8773,8 +8777,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8789,8 +8793,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8805,8 +8809,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8821,8 +8825,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8837,8 +8841,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8853,8 +8857,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8869,8 +8873,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8885,8 +8889,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8901,8 +8905,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8917,8 +8921,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8933,8 +8937,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8945,12 +8949,12 @@
    "source": "modern",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8965,8 +8969,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8981,8 +8985,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -8997,8 +9001,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9013,8 +9017,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9029,8 +9033,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9045,8 +9049,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9061,8 +9065,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9077,8 +9081,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9093,8 +9097,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9109,8 +9113,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9125,8 +9129,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9141,8 +9145,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9157,8 +9161,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9169,12 +9173,12 @@
    "source": "modern",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9189,8 +9193,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9201,12 +9205,12 @@
    "source": "modern",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9221,8 +9225,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9237,8 +9241,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9253,8 +9257,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9269,8 +9273,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9285,8 +9289,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9301,8 +9305,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9317,8 +9321,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9333,8 +9337,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9349,8 +9353,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9365,8 +9369,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9381,8 +9385,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9397,8 +9401,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9413,8 +9417,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9425,12 +9429,12 @@
    "source": "modern",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9445,8 +9449,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9461,8 +9465,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9473,12 +9477,12 @@
    "source": "modern",
    "convention": "lahiri/true/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9493,8 +9497,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9509,8 +9513,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9525,8 +9529,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9541,8 +9545,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9557,8 +9561,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9573,8 +9577,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9589,8 +9593,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9605,8 +9609,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9621,8 +9625,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9637,8 +9641,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9653,8 +9657,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9669,8 +9673,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9681,12 +9685,12 @@
    "source": "modern",
    "convention": "raman/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9701,8 +9705,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9717,8 +9721,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9733,8 +9737,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9749,8 +9753,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9765,8 +9769,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9781,8 +9785,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9797,8 +9801,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9813,8 +9817,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9829,8 +9833,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9845,8 +9849,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9861,8 +9865,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9873,12 +9877,12 @@
    "source": "modern",
    "convention": "raman/true/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9893,8 +9897,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -9909,8 +9913,8 @@
    "fabricated": false,
    "confidence": 0.0444,
    "answer": {
-    "nakshatra": "Ashwini",
-    "pada": 3
+    "nakshatra": "Ashlesha",
+    "pada": 1
    }
   },
   {
@@ -10467,7 +10471,7 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 1.0,
+   "answer_score": 0.0,
    "fabricated": false,
    "confidence": 0.5,
    "answer": false
@@ -10493,7 +10497,7 @@
    "source": "BPHS",
    "convention": "lahiri/mean/whole_sign",
    "parse_error": false,
-   "answer_score": 0.0,
+   "answer_score": 1.0,
    "fabricated": false,
    "confidence": 0.5,
    "answer": false
@@ -13703,43 +13707,43 @@
  "summary": {
   "overall": {
    "n": 955,
-   "answer_acc": 0.208,
+   "answer_acc": 0.211,
    "answer_ci": [
-    0.1834,
-    0.2348
+    0.1863,
+    0.238
    ],
    "citation_n": 692,
    "citation_mean": -0.0723,
    "fabricated_rate": 0.0766,
    "parse_error_rate": 0.0,
-   "brier": 0.1329,
-   "ece": 0.0216
+   "brier": 0.1347,
+   "ece": 0.0214
   },
   "by_level": {
    "0": {
     "n": 95,
-    "answer_acc": 0.0958,
+    "answer_acc": 0.0945,
     "answer_ci": [
-     0.0514,
-     0.1716
+     0.0505,
+     0.17
     ],
     "citation_n": 0,
     "parse_error_rate": 0.0,
-    "brier": 0.0162,
-    "ece": 0.0958
+    "brier": 0.0157,
+    "ece": 0.0945
    },
    "1": {
     "n": 804,
-    "answer_acc": 0.232,
+    "answer_acc": 0.2357,
     "answer_ci": [
-     0.2041,
-     0.2624
+     0.2077,
+     0.2662
     ],
     "citation_n": 636,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
-    "brier": 0.1524,
+    "brier": 0.1546,
     "ece": 0.0118
    },
    "2": {
@@ -13760,16 +13764,16 @@
   "by_task": {
    "aspect": {
     "n": 90,
-    "answer_acc": 0.2778,
+    "answer_acc": 0.2889,
     "answer_ci": [
-     0.1958,
-     0.378
+     0.2054,
+     0.3896
     ],
     "citation_n": 90,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
-    "brier": 0.2006,
+    "brier": 0.2054,
     "ece": 0.0
    },
    "citation": {
@@ -13816,30 +13820,30 @@
    },
    "dignity": {
     "n": 90,
-    "answer_acc": 0.2,
+    "answer_acc": 0.2111,
     "answer_ci": [
-     0.1304,
-     0.2941
+     0.1395,
+     0.3063
     ],
     "citation_n": 90,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
-    "brier": 0.16,
+    "brier": 0.1665,
     "ece": 0.0
    },
    "lordship": {
     "n": 150,
-    "answer_acc": 0.1267,
+    "answer_acc": 0.1333,
     "answer_ci": [
-     0.0826,
-     0.1894
+     0.088,
+     0.197
     ],
     "citation_n": 150,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
-    "brier": 0.1106,
+    "brier": 0.1156,
     "ece": 0.0
    },
    "nakshatra": {
@@ -13856,15 +13860,15 @@
    },
    "positions": {
     "n": 95,
-    "answer_acc": 0.0958,
+    "answer_acc": 0.0945,
     "answer_ci": [
-     0.0514,
-     0.1716
+     0.0505,
+     0.17
     ],
     "citation_n": 0,
     "parse_error_rate": 0.0,
-    "brier": 0.0162,
-    "ece": 0.0958
+    "brier": 0.0157,
+    "ece": 0.0945
    },
    "rule": {
     "n": 60,
@@ -13910,16 +13914,16 @@
   "by_source": {
    "BPHS": {
     "n": 697,
-    "answer_acc": 0.2288,
+    "answer_acc": 0.2331,
     "answer_ci": [
-     0.1992,
-     0.2615
+     0.2033,
+     0.2659
     ],
     "citation_n": 667,
     "citation_mean": -0.0435,
     "fabricated_rate": 0.045,
     "parse_error_rate": 0.0,
-    "brier": 0.1545,
+    "brier": 0.157,
     "ece": 0.0143
    },
    "Brihat Jataka": {
@@ -13994,15 +13998,15 @@
    },
    "modern": {
     "n": 203,
-    "answer_acc": 0.1089,
+    "answer_acc": 0.1083,
     "answer_ci": [
-     0.0731,
-     0.1592
+     0.0726,
+     0.1585
     ],
     "citation_n": 0,
     "parse_error_rate": 0.0,
-    "brier": 0.0486,
-    "ece": 0.0448
+    "brier": 0.0483,
+    "ece": 0.0442
    }
   },
   "by_convention": {
@@ -14017,22 +14021,22 @@
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
-    "brier": 0.24,
-    "ece": 0.1733
+    "brier": 0.2378,
+    "ece": 0.1667
    },
    "krishnamurti/mean/whole_sign": {
     "n": 80,
-    "answer_acc": 0.1726,
+    "answer_acc": 0.1842,
     "answer_ci": [
-     0.1053,
-     0.2699
+     0.1144,
+     0.2829
     ],
     "citation_n": 60,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
-    "brier": 0.12,
-    "ece": 0.0373
+    "brier": 0.1297,
+    "ece": 0.0508
    },
    "krishnamurti/true/placidus": {
     "n": 10,
@@ -14045,22 +14049,22 @@
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
-    "brier": 0.1654,
-    "ece": 0.0733
+    "brier": 0.1644,
+    "ece": 0.0667
    },
    "krishnamurti/true/whole_sign": {
     "n": 80,
-    "answer_acc": 0.1331,
+    "answer_acc": 0.1578,
     "answer_ci": [
-     0.0753,
-     0.2246
+     0.0939,
+     0.2531
     ],
     "citation_n": 60,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
-    "brier": 0.0984,
-    "ece": 0.0437
+    "brier": 0.1161,
+    "ece": 0.0453
    },
    "lahiri/mean/placidus": {
     "n": 10,
@@ -14073,22 +14077,22 @@
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
-    "brier": 0.0161,
-    "ece": 0.1267
+    "brier": 0.0178,
+    "ece": 0.1333
    },
    "lahiri/mean/whole_sign": {
     "n": 471,
-    "answer_acc": 0.2404,
+    "answer_acc": 0.2423,
     "answer_ci": [
-     0.204,
-     0.281
+     0.2058,
+     0.283
     ],
     "citation_n": 324,
     "citation_mean": -0.1543,
     "fabricated_rate": 0.1636,
     "parse_error_rate": 0.0,
-    "brier": 0.143,
-    "ece": 0.0367
+    "brier": 0.1439,
+    "ece": 0.0361
    },
    "lahiri/true/placidus": {
     "n": 10,
@@ -14101,22 +14105,22 @@
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
-    "brier": 0.24,
-    "ece": 0.1733
+    "brier": 0.2378,
+    "ece": 0.1667
    },
    "lahiri/true/whole_sign": {
     "n": 104,
-    "answer_acc": 0.2166,
+    "answer_acc": 0.2279,
     "answer_ci": [
-     0.1483,
-     0.3051
+     0.1578,
+     0.3173
     ],
     "citation_n": 68,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
-    "brier": 0.1349,
-    "ece": 0.0204
+    "brier": 0.1445,
+    "ece": 0.0345
    },
    "raman/mean/placidus": {
     "n": 10,
@@ -14129,22 +14133,22 @@
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
-    "brier": 0.0907,
-    "ece": 0.0267
+    "brier": 0.0911,
+    "ece": 0.0333
    },
    "raman/mean/whole_sign": {
     "n": 80,
-    "answer_acc": 0.2109,
+    "answer_acc": 0.2,
     "answer_ci": [
-     0.1359,
-     0.3125
+     0.127,
+     0.3005
     ],
     "citation_n": 60,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
-    "brier": 0.1411,
-    "ece": 0.0893
+    "brier": 0.1298,
+    "ece": 0.0764
    },
    "raman/true/placidus": {
     "n": 10,
@@ -14157,65 +14161,65 @@
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
-    "brier": 0.0907,
-    "ece": 0.0267
+    "brier": 0.0911,
+    "ece": 0.0333
    },
    "raman/true/whole_sign": {
     "n": 80,
-    "answer_acc": 0.1437,
+    "answer_acc": 0.1288,
     "answer_ci": [
-     0.0832,
-     0.2369
+     0.0721,
+     0.2194
     ],
     "citation_n": 60,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
-    "brier": 0.105,
-    "ece": 0.0513
+    "brier": 0.0927,
+    "ece": 0.0399
    }
   },
   "by_tier": {
    "EASY": {
     "n": 270,
-    "answer_acc": 0.213,
+    "answer_acc": 0.2167,
     "answer_ci": [
-     0.1683,
-     0.2656
+     0.1717,
+     0.2696
     ],
     "citation_n": 180,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
-    "brier": 0.1326,
+    "brier": 0.1348,
     "ece": 0.0352
    },
    "HARD": {
     "n": 151,
-    "answer_acc": 0.0801,
+    "answer_acc": 0.0793,
     "answer_ci": [
-     0.0465,
-     0.1346
+     0.0459,
+     0.1336
     ],
     "citation_n": 56,
     "citation_mean": -0.8929,
     "fabricated_rate": 0.9464,
     "parse_error_rate": 0.0,
-    "brier": 0.0294,
-    "ece": 0.0735
+    "brier": 0.0292,
+    "ece": 0.0727
    },
    "MEDIUM": {
     "n": 534,
-    "answer_acc": 0.2416,
+    "answer_acc": 0.2453,
     "answer_ci": [
-     0.2072,
-     0.2796
+     0.2107,
+     0.2835
     ],
     "citation_n": 456,
     "citation_mean": 0.0,
     "fabricated_rate": 0.0,
     "parse_error_rate": 0.0,
-    "brier": 0.1624,
+    "brier": 0.1646,
     "ece": 0.0
    }
   }

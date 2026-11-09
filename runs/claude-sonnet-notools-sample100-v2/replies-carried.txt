@@ -1,0 +1,276 @@
+### L0-positions-krishnamurti-mean-ws-000005
+{"answer": {"Sun": {"sign": "Capricorn", "deg_in_sign": 25.3, "nakshatra": "Dhanishta", "pada": 1}, "Moon": {"sign": "Leo", "deg_in_sign": 10.0, "nakshatra": "Magha", "pada": 4}, "Mars": {"sign": "Cancer", "deg_in_sign": 5.0, "nakshatra": "Pushya", "pada": 1}, "Mercury": {"sign": "Sagittarius", "deg_in_sign": 21.0, "nakshatra": "Purva Ashadha", "pada": 3}, "Jupiter": {"sign": "Virgo", "deg_in_sign": 17.0, "nakshatra": "Hasta", "pada": 3}, "Venus": {"sign": "Capricorn", "deg_in_sign": 5.0, "nakshatra": "Uttara Ashadha", "pada": 3}, "Saturn": {"sign": "Leo", "deg_in_sign": 22.0, "nakshatra": "Purva Phalguni", "pada": 3}, "Rahu": {"sign": "Pisces", "deg_in_sign": 17.2, "nakshatra": "Revati", "pada": 1}, "Ketu": {"sign": "Virgo", "deg_in_sign": 17.2, "nakshatra": "Hasta", "pada": 3}, "Lagna": {"sign": "Sagittarius"}}, "citations": [], "confidence": 0.03, "note": "Estimated by hand; only Sun, nodes and Lagna roughly computed."}
+
+### L0-positions-krishnamurti-true-ws-000006
+{"answer": {"Sun": {"sign": "Libra", "deg_in_sign": 14.9, "nakshatra": "Swati", "pada": 3}, "Moon": {"sign": "Taurus", "deg_in_sign": 15.0, "nakshatra": "Rohini", "pada": 2}, "Mars": {"sign": "Libra", "deg_in_sign": 25.0, "nakshatra": "Vishakha", "pada": 2}, "Mercury": {"sign": "Libra", "deg_in_sign": 5.0, "nakshatra": "Chitra", "pada": 4}, "Jupiter": {"sign": "Gemini", "deg_in_sign": 18.0, "nakshatra": "Ardra", "pada": 4}, "Venus": {"sign": "Libra", "deg_in_sign": 28.0, "nakshatra": "Vishakha", "pada": 3}, "Saturn": {"sign": "Virgo", "deg_in_sign": 25.0, "nakshatra": "Chitra", "pada": 1}, "Rahu": {"sign": "Capricorn", "deg_in_sign": 24.2, "nakshatra": "Dhanishta", "pada": 1}, "Ketu": {"sign": "Cancer", "deg_in_sign": 24.2, "nakshatra": "Ashlesha", "pada": 3}, "Lagna": {"sign": "Scorpio"}}, "citations": [], "confidence": 0.03, "note": "Estimated by hand."}
+
+### L0-positions-lahiri-mean-ws-000004
+{"answer": {"Sun": {"sign": "Sagittarius", "deg_in_sign": 27.3, "nakshatra": "Uttara Ashadha", "pada": 1}, "Moon": {"sign": "Cancer", "deg_in_sign": 21.0, "nakshatra": "Ashlesha", "pada": 2}, "Mars": {"sign": "Virgo", "deg_in_sign": 3.0, "nakshatra": "Uttara Phalguni", "pada": 2}, "Mercury": {"sign": "Sagittarius", "deg_in_sign": 17.0, "nakshatra": "Purva Ashadha", "pada": 2}, "Jupiter": {"sign": "Pisces", "deg_in_sign": 14.0, "nakshatra": "Uttara Bhadrapada", "pada": 4}, "Venus": {"sign": "Aquarius", "deg_in_sign": 5.0, "nakshatra": "Dhanishta", "pada": 4}, "Saturn": {"sign": "Virgo", "deg_in_sign": 23.0, "nakshatra": "Hasta", "pada": 4}, "Rahu": {"sign": "Scorpio", "deg_in_sign": 18.3, "nakshatra": "Jyeshtha", "pada": 1}, "Ketu": {"sign": "Taurus", "deg_in_sign": 18.3, "nakshatra": "Rohini", "pada": 3}, "Lagna": {"sign": "Libra"}}, "citations": [], "confidence": 0.03, "note": "Estimated by hand."}
+
+### L0-positions-lahiri-mean-ws-000025
+{"answer": {"Sun": {"sign": "Aries", "deg_in_sign": 13.6, "nakshatra": "Bharani", "pada": 1}, "Moon": {"sign": "Leo", "deg_in_sign": 5.0, "nakshatra": "Magha", "pada": 2}, "Mars": {"sign": "Gemini", "deg_in_sign": 12.0, "nakshatra": "Ardra", "pada": 2}, "Mercury": {"sign": "Taurus", "deg_in_sign": 3.0, "nakshatra": "Krittika", "pada": 2}, "Jupiter": {"sign": "Cancer", "deg_in_sign": 21.0, "nakshatra": "Ashlesha", "pada": 2}, "Venus": {"sign": "Taurus", "deg_in_sign": 25.0, "nakshatra": "Mrigashira", "pada": 1}, "Saturn": {"sign": "Sagittarius", "deg_in_sign": 8.0, "nakshatra": "Mula", "pada": 3}, "Rahu": {"sign": "Scorpio", "deg_in_sign": 16.7, "nakshatra": "Jyeshtha", "pada": 1}, "Ketu": {"sign": "Taurus", "deg_in_sign": 16.7, "nakshatra": "Rohini", "pada": 3}, "Lagna": {"sign": "Scorpio"}}, "citations": [], "confidence": 0.03, "note": "Estimated by hand."}
+
+### L0-positions-lahiri-true-ws-000007
+{"answer": {"Sun": {"sign": "Gemini", "deg_in_sign": 29.8, "nakshatra": "Punarvasu", "pada": 3}, "Moon": {"sign": "Pisces", "deg_in_sign": 29.0, "nakshatra": "Revati", "pada": 4}, "Mars": {"sign": "Cancer", "deg_in_sign": 26.0, "nakshatra": "Ashlesha", "pada": 3}, "Mercury": {"sign": "Cancer", "deg_in_sign": 8.0, "nakshatra": "Pushya", "pada": 2}, "Jupiter": {"sign": "Virgo", "deg_in_sign": 20.0, "nakshatra": "Hasta", "pada": 4}, "Venus": {"sign": "Taurus", "deg_in_sign": 21.0, "nakshatra": "Rohini", "pada": 4}, "Saturn": {"sign": "Scorpio", "deg_in_sign": 28.0, "nakshatra": "Jyeshtha", "pada": 4}, "Rahu": {"sign": "Cancer", "deg_in_sign": 28.9, "nakshatra": "Ashlesha", "pada": 4}, "Ketu": {"sign": "Capricorn", "deg_in_sign": 28.9, "nakshatra": "Dhanishta", "pada": 2}, "Lagna": {"sign": "Taurus"}}, "citations": [], "confidence": 0.03, "note": "Estimated by hand."}
+
+### L0-positions-lahiri-true-ws-000008
+{"answer": {"Sun": {"sign": "Pisces", "deg_in_sign": 16.8, "nakshatra": "Revati", "pada": 1}, "Moon": {"sign": "Gemini", "deg_in_sign": 14.0, "nakshatra": "Ardra", "pada": 3}, "Mars": {"sign": "Capricorn", "deg_in_sign": 28.0, "nakshatra": "Dhanishta", "pada": 2}, "Mercury": {"sign": "Aquarius", "deg_in_sign": 29.0, "nakshatra": "Purva Bhadrapada", "pada": 3}, "Jupiter": {"sign": "Capricorn", "deg_in_sign": 5.0, "nakshatra": "Uttara Ashadha", "pada": 3}, "Venus": {"sign": "Aries", "deg_in_sign": 18.0, "nakshatra": "Bharani", "pada": 2}, "Saturn": {"sign": "Capricorn", "deg_in_sign": 11.0, "nakshatra": "Shravana", "pada": 1}, "Rahu": {"sign": "Gemini", "deg_in_sign": 9.2, "nakshatra": "Ardra", "pada": 1}, "Ketu": {"sign": "Sagittarius", "deg_in_sign": 9.2, "nakshatra": "Mula", "pada": 3}, "Lagna": {"sign": "Pisces"}}, "citations": [], "confidence": 0.03, "note": "Estimated by hand."}
+
+### L0-positions-lahiri-true-ws-000009
+{"answer": {"Sun": {"sign": "Aries", "deg_in_sign": 9.7, "nakshatra": "Ashwini", "pada": 3}, "Moon": {"sign": "Cancer", "deg_in_sign": 8.0, "nakshatra": "Pushya", "pada": 2}, "Mars": {"sign": "Aries", "deg_in_sign": 25.0, "nakshatra": "Bharani", "pada": 4}, "Mercury": {"sign": "Aries", "deg_in_sign": 21.0, "nakshatra": "Bharani", "pada": 3}, "Jupiter": {"sign": "Virgo", "deg_in_sign": 15.0, "nakshatra": "Hasta", "pada": 2}, "Venus": {"sign": "Taurus", "deg_in_sign": 20.0, "nakshatra": "Rohini", "pada": 4}, "Saturn": {"sign": "Capricorn", "deg_in_sign": 15.0, "nakshatra": "Shravana", "pada": 2}, "Rahu": {"sign": "Aquarius", "deg_in_sign": 11.9, "nakshatra": "Shatabhisha", "pada": 2}, "Ketu": {"sign": "Leo", "deg_in_sign": 11.9, "nakshatra": "Magha", "pada": 4}, "Lagna": {"sign": "Aquarius"}}, "citations": [], "confidence": 0.03, "note": "Estimated by hand."}
+
+### L0-positions-raman-mean-ws-000004
+{"answer": {"Sun": {"sign": "Gemini", "deg_in_sign": 20.6, "nakshatra": "Punarvasu", "pada": 1}, "Moon": {"sign": "Virgo", "deg_in_sign": 20.6, "nakshatra": "Hasta", "pada": 4}, "Mars": {"sign": "Pisces", "deg_in_sign": 12.0, "nakshatra": "Uttara Bhadrapada", "pada": 3}, "Mercury": {"sign": "Gemini", "deg_in_sign": 28.0, "nakshatra": "Punarvasu", "pada": 3}, "Jupiter": {"sign": "Pisces", "deg_in_sign": 17.6, "nakshatra": "Revati", "pada": 1}, "Venus": {"sign": "Gemini", "deg_in_sign": 18.0, "nakshatra": "Ardra", "pada": 4}, "Saturn": {"sign": "Pisces", "deg_in_sign": 2.0, "nakshatra": "Purva Bhadrapada", "pada": 4}, "Rahu": {"sign": "Leo", "deg_in_sign": 11.6, "nakshatra": "Magha", "pada": 4}, "Ketu": {"sign": "Aquarius", "deg_in_sign": 11.6, "nakshatra": "Shatabhisha", "pada": 2}, "Lagna": {"sign": "Aries"}}, "citations": [], "confidence": 0.03, "note": "Estimated by hand."}
+
+### L0-positions-raman-true-ws-000002
+{"answer": {"Sun": {"sign": "Aquarius", "deg_in_sign": 23.3, "nakshatra": "Purva Bhadrapada", "pada": 1}, "Moon": {"sign": "Cancer", "deg_in_sign": 15.0, "nakshatra": "Pushya", "pada": 4}, "Mars": {"sign": "Gemini", "deg_in_sign": 25.0, "nakshatra": "Punarvasu", "pada": 2}, "Mercury": {"sign": "Aquarius", "deg_in_sign": 12.0, "nakshatra": "Shatabhisha", "pada": 2}, "Jupiter": {"sign": "Leo", "deg_in_sign": 5.0, "nakshatra": "Magha", "pada": 2}, "Venus": {"sign": "Aquarius", "deg_in_sign": 28.0, "nakshatra": "Purva Bhadrapada", "pada": 3}, "Saturn": {"sign": "Cancer", "deg_in_sign": 5.0, "nakshatra": "Pushya", "pada": 1}, "Rahu": {"sign": "Libra", "deg_in_sign": 27.7, "nakshatra": "Vishakha", "pada": 3}, "Ketu": {"sign": "Aries", "deg_in_sign": 27.7, "nakshatra": "Krittika", "pada": 1}, "Lagna": {"sign": "Virgo"}}, "citations": [], "confidence": 0.03, "note": "Estimated by hand."}
+
+### L1-aspect-krishnamurti-mean-ws-000009
+{"answer": ["Mars"], "citations": [], "confidence": 0.8, "note": "No verse citation I am sure of."}
+
+### L1-aspect-lahiri-mean-ws-000029
+{"answer": ["Mercury", "Jupiter", "Saturn"], "citations": [], "confidence": 0.8, "note": "No verse citation I am sure of."}
+
+### L1-aspect-lahiri-mean-ws-000031
+{"answer": ["Rahu"], "citations": [], "confidence": 0.8, "note": "No verse citation I am sure of."}
+
+### L1-aspect-lahiri-mean-ws-000037
+{"answer": [], "citations": [], "confidence": 0.8, "note": "No verse citation I am sure of."}
+
+### L1-aspect-lahiri-true-ws-000003
+{"answer": ["Moon", "Mars", "Jupiter", "Venus"], "citations": [], "confidence": 0.8, "note": "No verse citation I am sure of."}
+
+### L1-aspect-lahiri-true-ws-000009
+{"answer": ["Mars", "Venus", "Rahu"], "citations": [], "confidence": 0.8, "note": "No verse citation I am sure of."}
+
+### L1-aspect-raman-mean-ws-000001
+{"answer": ["Sun", "Mercury", "Venus"], "citations": [], "confidence": 0.8, "note": "No verse citation I am sure of."}
+
+### L1-aspect-raman-mean-ws-000003
+{"answer": [], "citations": [], "confidence": 0.8, "note": "No verse citation I am sure of."}
+
+### L1-aspect-raman-true-ws-000003
+{"answer": ["Saturn"], "citations": [], "confidence": 0.8, "note": "No verse citation I am sure of."}
+
+### L1-aspect-raman-true-ws-000007
+{"answer": ["Jupiter"], "citations": [], "confidence": 0.8, "note": "No verse citation I am sure of."}
+
+### L1-combustion-krishnamurti-mean-ws-000009
+{"answer": ["Mars", "Mercury", "Venus"], "citations": [], "confidence": 0.85, "note": "No verse citation I am sure of."}
+
+### L1-combustion-lahiri-mean-ws-000014
+{"answer": ["Mercury"], "citations": [], "confidence": 0.85, "note": "No verse citation I am sure of."}
+
+### L1-combustion-lahiri-mean-ws-000016
+{"answer": [], "citations": [], "confidence": 0.85, "note": "No verse citation I am sure of."}
+
+### L1-combustion-lahiri-mean-ws-000034
+{"answer": ["Mercury", "Saturn"], "citations": [], "confidence": 0.85, "note": "No verse citation I am sure of."}
+
+### L1-combustion-lahiri-true-ws-000000
+{"answer": ["Mercury"], "citations": [], "confidence": 0.85, "note": "No verse citation I am sure of."}
+
+### L1-combustion-lahiri-true-ws-000008
+{"answer": ["Mercury"], "citations": [], "confidence": 0.85, "note": "No verse citation I am sure of."}
+
+### L1-combustion-raman-mean-ws-000005
+{"answer": [], "citations": [], "confidence": 0.85, "note": "No verse citation I am sure of."}
+
+### L1-combustion-raman-true-ws-000002
+{"answer": [], "citations": [], "confidence": 0.85, "note": "No verse citation I am sure of."}
+
+### L1-combustion-raman-true-ws-000005
+{"answer": [], "citations": [], "confidence": 0.85, "note": "No verse citation I am sure of."}
+
+### L1-dasha-krishnamurti-true-ws-000002
+{"answer": "Mercury", "citations": [], "confidence": 0.8, "note": "No verse citation I am sure of."}
+
+### L1-dasha-krishnamurti-true-ws-000008
+{"answer": "Mercury", "citations": [], "confidence": 0.65, "note": "No verse citation I am sure of."}
+
+### L1-dasha-krishnamurti-true-ws-000009
+{"answer": "Jupiter", "citations": [], "confidence": 0.85, "note": "No verse citation I am sure of."}
+
+### L1-dasha-lahiri-mean-ws-000007
+{"answer": "Mercury", "citations": [], "confidence": 0.85, "note": "No verse citation I am sure of."}
+
+### L1-dasha-lahiri-mean-ws-000011
+{"answer": "Saturn", "citations": [], "confidence": 0.75, "note": "No verse citation I am sure of."}
+
+### L1-dasha-lahiri-mean-ws-000013
+{"answer": "Mars", "citations": [], "confidence": 0.55, "note": "No verse citation I am sure of."}
+
+### L1-dasha-lahiri-mean-ws-000019
+{"answer": "Rahu", "citations": [], "confidence": 0.7, "note": "No verse citation I am sure of."}
+
+### L1-dasha-lahiri-mean-ws-000035
+{"answer": "Ketu", "citations": [], "confidence": 0.8, "note": "No verse citation I am sure of."}
+
+### L1-dasha-raman-true-ws-000007
+{"answer": "Venus", "citations": [], "confidence": 0.5, "note": "No verse citation I am sure of."}
+
+### L1-dignity-krishnamurti-mean-ws-000007
+{"answer": "friend", "citations": [], "confidence": 0.85, "note": "No verse citation I am sure of."}
+
+### L1-dignity-krishnamurti-true-ws-000009
+{"answer": "exalted", "citations": [], "confidence": 0.9, "note": "No verse citation I am sure of."}
+
+### L1-dignity-lahiri-mean-ws-000008
+{"answer": "neutral", "citations": [], "confidence": 0.8, "note": "No verse citation I am sure of."}
+
+### L1-dignity-lahiri-mean-ws-000022
+{"answer": "own", "citations": [], "confidence": 0.9, "note": "No verse citation I am sure of."}
+
+### L1-dignity-lahiri-mean-ws-000023
+{"answer": "enemy", "citations": [], "confidence": 0.8, "note": "No verse citation I am sure of."}
+
+### L1-dignity-raman-true-ws-000005
+{"answer": "neutral", "citations": [], "confidence": 0.8, "note": "No verse citation I am sure of."}
+
+### L1-lordship-krishnamurti-mean-pl-000001
+{"answer": "2", "citations": [], "confidence": 0.85, "note": "No verse citation I am sure of."}
+
+### L1-lordship-krishnamurti-mean-ws-000005
+{"answer": "12", "citations": [], "confidence": 0.9, "note": "No verse citation I am sure of."}
+
+### L1-lordship-krishnamurti-true-pl-000003
+{"answer": "10", "citations": [], "confidence": 0.85, "note": "No verse citation I am sure of."}
+
+### L1-lordship-lahiri-mean-pl-000000
+{"answer": "1", "citations": [], "confidence": 0.85, "note": "No verse citation I am sure of."}
+
+### L1-lordship-lahiri-mean-ws-000011
+{"answer": "7", "citations": [], "confidence": 0.9, "note": "No verse citation I am sure of."}
+
+### L1-lordship-lahiri-mean-ws-000032
+{"answer": "11", "citations": [], "confidence": 0.9, "note": "No verse citation I am sure of."}
+
+### L1-lordship-lahiri-mean-ws-000034
+{"answer": "3", "citations": [], "confidence": 0.9, "note": "No verse citation I am sure of."}
+
+### L1-lordship-lahiri-mean-ws-000038
+{"answer": "10", "citations": [], "confidence": 0.9, "note": "No verse citation I am sure of."}
+
+### L1-lordship-lahiri-true-pl-000005
+{"answer": "2", "citations": [], "confidence": 0.85, "note": "No verse citation I am sure of."}
+
+### L1-lordship-lahiri-true-ws-000002
+{"answer": "5", "citations": [], "confidence": 0.9, "note": "No verse citation I am sure of."}
+
+### L1-lordship-raman-mean-pl-000005
+{"answer": "9", "citations": [], "confidence": 0.85, "note": "No verse citation I am sure of."}
+
+### L1-lordship-raman-mean-ws-000003
+{"answer": "10", "citations": [], "confidence": 0.9, "note": "No verse citation I am sure of."}
+
+### L1-lordship-raman-true-pl-000002
+{"answer": "10", "citations": [], "confidence": 0.85, "note": "No verse citation I am sure of."}
+
+### L1-lordship-raman-true-pl-000003
+{"answer": "2", "citations": [], "confidence": 0.85, "note": "No verse citation I am sure of."}
+
+### L1-lordship-raman-true-ws-000006
+{"answer": "8", "citations": [], "confidence": 0.9, "note": "No verse citation I am sure of."}
+
+### L1-nakshatra-krishnamurti-mean-ws-000007
+{"answer": {"nakshatra": "Krittika", "pada": 2}, "citations": [], "confidence": 0.9, "note": "No verse citation I am sure of."}
+
+### L1-nakshatra-krishnamurti-true-ws-000008
+{"answer": {"nakshatra": "Pushya", "pada": 2}, "citations": [], "confidence": 0.9, "note": "No verse citation I am sure of."}
+
+### L1-nakshatra-lahiri-mean-ws-000000
+{"answer": {"nakshatra": "Purva Phalguni", "pada": 1}, "citations": [], "confidence": 0.9, "note": "No verse citation I am sure of."}
+
+### L1-nakshatra-lahiri-mean-ws-000010
+{"answer": {"nakshatra": "Magha", "pada": 1}, "citations": [], "confidence": 0.9, "note": "No verse citation I am sure of."}
+
+### L1-nakshatra-lahiri-mean-ws-000028
+{"answer": {"nakshatra": "Chitra", "pada": 3}, "citations": [], "confidence": 0.9, "note": "No verse citation I am sure of."}
+
+### L1-nakshatra-lahiri-true-ws-000001
+{"answer": {"nakshatra": "Purva Ashadha", "pada": 3}, "citations": [], "confidence": 0.9, "note": "No verse citation I am sure of."}
+
+### L1-nakshatra-raman-mean-ws-000007
+{"answer": {"nakshatra": "Rohini", "pada": 4}, "citations": [], "confidence": 0.9, "note": "No verse citation I am sure of."}
+
+### L1-nakshatra-raman-mean-ws-000008
+{"answer": {"nakshatra": "Mrigashira", "pada": 2}, "citations": [], "confidence": 0.9, "note": "No verse citation I am sure of."}
+
+### L1-nakshatra-raman-true-ws-000006
+{"answer": {"nakshatra": "Jyeshtha", "pada": 1}, "citations": [], "confidence": 0.85, "note": "No verse citation I am sure of."}
+
+### L1-rule-mangal_8th_aspect_ketu-lahiri-mean-ws-000004
+{"answer": true, "citations": [], "confidence": 0.9, "note": "No verse citation I am sure of."}
+
+### L1-rule-mangal_ketu_primary-lahiri-mean-ws-000003
+{"answer": true, "citations": [], "confidence": 0.9, "note": "No verse citation I am sure of."}
+
+### L1-rule-mangal_shani_malefic-lahiri-mean-ws-000000
+{"answer": false, "citations": [], "confidence": 0.9, "note": "No verse citation I am sure of."}
+
+### L1-rule-shani_10th_aspect_mars-lahiri-true-ws-000000
+{"answer": true, "citations": [], "confidence": 0.9, "note": "No verse citation I am sure of."}
+
+### L1-rule-venus_own_sign-lahiri-mean-ws-000001
+{"answer": true, "citations": [], "confidence": 0.95, "note": "No verse citation I am sure of."}
+
+### L1-rule-venus_own_sign-lahiri-true-ws-000001
+{"answer": true, "citations": [], "confidence": 0.95, "note": "No verse citation I am sure of."}
+
+### L1-varga-krishnamurti-mean-ws-000002
+{"answer": "Libra", "citations": [], "confidence": 0.85, "note": "No verse citation I am sure of."}
+
+### L1-varga-krishnamurti-true-ws-000008
+{"answer": "Aquarius", "citations": [], "confidence": 0.8, "note": "No verse citation I am sure of."}
+
+### L1-varga-lahiri-mean-ws-000030
+{"answer": "Libra", "citations": [], "confidence": 0.8, "note": "No verse citation I am sure of."}
+
+### L1-varga-lahiri-mean-ws-000032
+{"answer": "Aquarius", "citations": [], "confidence": 0.8, "note": "No verse citation I am sure of."}
+
+### L1-varga-lahiri-true-ws-000005
+{"answer": "Libra", "citations": [], "confidence": 0.8, "note": "No verse citation I am sure of."}
+
+### L1-varga-raman-mean-ws-000004
+{"answer": "Virgo", "citations": [], "confidence": 0.8, "note": "No verse citation I am sure of."}
+
+### L1-varga-raman-true-ws-000002
+{"answer": "Cancer", "citations": [], "confidence": 0.85, "note": "No verse citation I am sure of."}
+
+### L1-yoga-budha_aditya-lahiri-mean-ws-000008
+{"answer": true, "citations": [], "confidence": 0.95, "note": "No verse citation I am sure of."}
+
+### L1-yoga-budha_aditya-lahiri-mean-ws-000013
+{"answer": false, "citations": [], "confidence": 0.95, "note": "No verse citation I am sure of."}
+
+### L1-yoga-gaja_kesari_classical-lahiri-mean-ws-000008
+{"answer": true, "citations": [], "confidence": 0.55, "note": "No verse citation I am sure of."}
+
+### L1-yoga-gaja_kesari_moon_kendra-lahiri-mean-ws-000005
+{"answer": true, "citations": [], "confidence": 0.95, "note": "No verse citation I am sure of."}
+
+### L1-yoga-gaja_kesari_moon_kendra-lahiri-mean-ws-000009
+{"answer": false, "citations": [], "confidence": 0.95, "note": "No verse citation I am sure of."}
+
+### L1-yoga-gaja_kesari_moon_kendra-lahiri-mean-ws-000011
+{"answer": true, "citations": [], "confidence": 0.95, "note": "No verse citation I am sure of."}
+
+### L2-citation-1dc8378a5033
+{"answer": null, "citations": [], "confidence": 0.1, "note": "Not sure of the exact chapter and verse; abstaining."}
+
+### L2-citation-3f08c3d42198
+{"answer": null, "citations": [], "confidence": 0.1, "note": "Not sure of the exact chapter and verse; abstaining."}
+
+### L2-citation-623850b3e0ab
+{"answer": null, "citations": [], "confidence": 0.1, "note": "Not sure of the exact chapter and verse; abstaining."}
+
+### L2-citation-7caed961b97a
+{"answer": null, "citations": [], "confidence": 0.1, "note": "Not sure of the exact verse; abstaining."}
+
+### L2-citation-a9cbd6036e8e
+{"answer": null, "citations": [], "confidence": 0.1, "note": "Not sure of the exact chapter and verse; abstaining."}
+
+### L2-citation-adc1fb52b58d
+{"answer": null, "citations": [], "confidence": 0.1, "note": "Not sure of the exact chapter and verse; abstaining."}
+
