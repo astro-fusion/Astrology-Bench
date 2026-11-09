@@ -166,6 +166,8 @@ class Manifest:
         chosen = [by_id[i] for i in self.ids]
         if items_sha256(chosen) != self.data["items_sha256"]:
             raise PackError("items changed since the pack was written (items sha256 differs)")
+        if not self.data.get("pack"):
+            return chosen  # chunked pack: chunk files are checked by progressive.check_chunks
         pack = self.path.with_name(self.data["pack"])
         if pack.exists() and _sha(pack.read_bytes()) != self.data["pack_sha256"]:
             raise PackError(f"{pack.name} was altered after it was written")

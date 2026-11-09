@@ -45,7 +45,8 @@ def resolve(path: str, root: Path | None = None) -> Path:
 
 
 def complete(card: dict[str, Any], result: RunResult, *, root: Path | None = None,
-             replies: str | Path | None = None, pack: str | Path | None = None) -> Disclosure:
+             replies: str | Path | None = None, pack: str | Path | None = None,
+             brief: str | Path | None = None) -> Disclosure:
     """Fill the computed fields of a disclosure card from the run and the files."""
     data = dict(card)
     data["input_mode"] = result.input_mode
@@ -61,7 +62,11 @@ def complete(card: dict[str, Any], result: RunResult, *, root: Path | None = Non
             data[f"{key}_sha256"] = sha256_file(source)
         elif data.get(f"{key}_path"):
             data[f"{key}_sha256"] = sha256_file(resolve(data[f"{key}_path"], root))
+    if brief is not None:  # an existing file given directly (e.g. the chunk manifest)
+        data["brief_path"] = rel(brief, root)
     for key in ("brief_path", "agent_report_path"):
+        if key == "brief_path" and brief is not None:
+            continue
         if data.get(key) and not resolve(data[key], root).exists():
             raise FileNotFoundError(f"{key} {data[key]} does not exist")
     return Disclosure.model_validate(data)
@@ -112,7 +117,10 @@ def render_card(result: RunResult) -> str:
     sample = (f"{d.sample.n} items, seed {d.sample.seed}, ids sha256 `{d.sample.ids_sha256}`"
               if d.sample else f"full split ({result.item_count} items)")
     rows = [
-        ("Run id", f"`{result.run_id}`"), ("Kind", result.kind), ("Harness", d.harness),
+        ("Run id", f"`{result.run_id}`"), ("Kind", result.kind),
+        ("Status", result.status if result.status == "complete" else
+         f"partial: {result.answered_n}/{result.item_count} answered, not ranked"),
+        ("Harness", d.harness),
         ("Model id", f"`{d.model_id}`"), ("Model name", d.model_name), ("Effort", d.effort),
         ("Tools allowed", "yes" if d.tools_allowed else "no"), ("Tools used", tools),
         ("Operator", d.operator), ("Date", d.date), ("Input mode", d.input_mode),

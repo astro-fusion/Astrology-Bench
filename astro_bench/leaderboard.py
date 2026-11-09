@@ -76,7 +76,7 @@ def render(results: Sequence[RunResult]) -> str:
         "solver kind (ADR-002): baselines first, then models, then systems; only models and "
         "systems are ranked. `ablation: nochart` rows are never ranked.",
     ]
-    main = [r for r in results if not r.ablation]
+    main = [r for r in results if not r.ablation and r.status == "complete"]
     for title, kinds in SECTIONS:
         group = [r for r in main if r.kind in kinds]
         if not group:
@@ -87,11 +87,20 @@ def render(results: Sequence[RunResult]) -> str:
         else:
             group.sort(key=_baseline_key)
         lines += ["", f"## {title}", ""] + _block(group, ranked)
+    partial = sorted((r for r in results if r.status == "partial" and not r.ablation),
+                     key=lambda r: r.run_id)
+    if partial:
+        lines += ["", "## In progress (not ranked)", "",
+                  "| run | kind | date | answered / total | card |", "|---|---|---|---|---|"]
+        for r in partial:
+            card = f"[CARD](runs/{r.run_id}/CARD.md)" if r.disclosure else "-"
+            lines.append(f"| `{r.run_id}` | {r.kind} | {r.created_at[:10]} | "
+                         f"{r.answered_n}/{r.item_count} | {card} |")
     ablations = sorted((r for r in results if r.ablation), key=_baseline_key)
     if ablations:
         lines += ["", "## Ablations (not ranked)", ""] + _block(ablations, False)
     lines += ["", "## Runs", ""]
-    for result in [*main, *ablations]:
+    for result in [*main, *partial, *ablations]:
         desc = f"; {result.solver_description}" if result.solver_description else ""
         sample = (f", sample n={result.sample_n} seed={result.sample_seed}"
                   if result.sample_n is not None else "")

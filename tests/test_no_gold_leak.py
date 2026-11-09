@@ -96,3 +96,28 @@ def test_guard_catches_the_2026_11_09_leak(tmp_path: Path) -> None:
     (tmp_path / "level2").mkdir()
     (tmp_path / "level2" / "citation.jsonl").write_text(dump_item(leaky) + "\n")
     assert any("canon id" in leak for leak in find_leaks(tmp_path, canon))
+
+
+def test_committed_packs_leak_no_gold() -> None:
+    """Every committed prompt pack and chunk under runs/ hides the gold of its items."""
+    canon = Canon.load_or_empty(ROOT / "canon")
+    by_id = {i.id: i for i in load_items(ITEMS)}
+    packs = sorted((ROOT / "runs").rglob("pack-*.md"))
+    leaks = []
+    for pack in packs:
+        text = pack.read_text(encoding="utf-8")
+        if '"gold"' in text:
+            leaks.append(f"{pack.name}: gold key")
+        for item_id in re.findall(r"`(L\d-[A-Za-z0-9_.\-]+)`", text):
+            item = by_id.get(item_id)
+            if item is None:
+                continue
+            secrets = [*item.canon_ids, item.generator.name] + ([item.rule_id] if item.rule_id
+                                                                 else [])
+            leaks += [f"{pack.name}: {item_id} {s}" for s in secrets if s in text]
+            for cid in item.canon_ids:
+                entry = canon.entry(cid)
+                if item.answer_type == "citation" and entry and entry.verse and \
+                        _whole(f"{entry.chapter}.{entry.verse}", text):
+                    leaks.append(f"{pack.name}: {item_id} locus")
+    assert leaks == []

@@ -289,6 +289,11 @@ class RunResult(_Strict):
     sample_n: int | None = None
     sample_ids_sha256: str | None = None
     disclosure: Disclosure | None = None
+    #: "partial" while a manual run is still missing replies (never ranked).
+    status: Literal["complete", "partial"] = "complete"
+    answered_n: int | None = None
+    missing_ids: list[str] = Field(default_factory=list)
+    pack_manifest: str | None = None
     bench_version: str
     items_sha256: str
     split: str
