@@ -44,7 +44,7 @@ Answer accuracy is the mean answer score with a Wilson 95% interval. Citation sc
 
 ## Runs
 
-- `app-tools-astrofusion-dev`: http_json:app-tools (app_tools; AstroFusion MCP kundali tools over Rust engines plus canon rule-key citations, no LLM (dev split; adapter described in the private repo)), input birth, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `5dc500ffaf8c`
+- `app-tools-astrofusion-dev`: http_json:app-tools (app_tools; AstroFusion MCP kundali tools over Rust engines plus canon rule-key citations, no LLM (dev split, regenerated after the Level 2 id leak fix; adapter described in the private repo)), input birth, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `ce28c9245b9f`
 - `baseline-constant`: constant (baseline), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `ce28c9245b9f`
 - `baseline-mock`: mock (baseline), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `ce28c9245b9f`
 - `baseline-oracle`: oracle (oracle), input chart, split dev, 955 items, bench 0.1.0, engine 7018b2a, items sha256 `ce28c9245b9f`
