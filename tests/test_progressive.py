@@ -140,3 +140,50 @@ def test_incomplete_header_and_edited_chunk_are_refused(items_dir: Path, tmp_pat
     chunk = tmp_path / "pack" / "pack-25-chunk-02.md"
     chunk.write_text(chunk.read_text() + "edited\n")
     assert main(args) == 2
+
+
+def test_pack_ids_completes_a_partial_run(items_dir: Path, tmp_path: Path,
+                                         canon: Canon) -> None:
+    man = _chunk(items_dir, tmp_path / "pack")
+    manifest = str(tmp_path / "pack" / "pack-25.manifest.json")
+    missing = [man["ids"][3], man["ids"][17], man["ids"][24]]
+    answered = [i for i in man["ids"] if i not in missing]
+    ids_file = tmp_path / "ids.txt"
+    ids_file.write_text("# missing\n" + "\n".join(reversed(missing)) + "\n")
+    out = tmp_path / "pack" / "missing.md"
+    assert main(["pack", "--items", str(items_dir), "--ids", str(ids_file), "--manifest",
+                 manifest, "--out", str(out)]) == 0
+    text = out.read_text()
+    assert HEADER_BLOCK in text and "## System prompt" in text
+    assert [line for line in text.splitlines() if line.startswith("## Item ")] == [
+        f"## Item {n} of 3: `{i}`" for n, i in enumerate(missing, 1)]  # manifest order
+    assert all(f"`{i}`" not in text for i in answered)
+    by_id = {i.id: i for i in load_items(items_dir)}
+    for item_id in missing:
+        assert all(cid not in text for cid in by_id[item_id].canon_ids)
+    side = json.loads((tmp_path / "pack" / "missing.manifest.json").read_text())
+    assert side["ids"] == missing and side["parent_manifest"] == "pack-25.manifest.json"
+    # first session leaves three ids unanswered; the small chunk completes the run later
+    first = tmp_path / "first.txt"
+    first.write_text(_replies(items_dir, answered, canon))
+    later = tmp_path / "later.txt"
+    later.write_text(_replies(items_dir, missing, canon))
+    base = ["ingest", "--pack", manifest, "--kind", "model", "--description", "m",
+            "--run-id", "m1", "--items", str(items_dir), "--canon", FIXTURE,
+            "--out", str(tmp_path / "res")]
+    assert main([*base, "--replies", str(first)]) == 0
+    assert load_result(tmp_path / "res" / "m1.json").status == "partial"
+    assert main([*base, "--replies", str(later)]) == 0
+    result = load_result(tmp_path / "res" / "m1.json")
+    assert result.status == "complete" and result.summary.overall.answer_acc == 1.0
+
+
+def test_pack_ids_refusals(items_dir: Path, tmp_path: Path) -> None:
+    man = _chunk(items_dir, tmp_path / "pack")
+    manifest = str(tmp_path / "pack" / "pack-25.manifest.json")
+    out = str(tmp_path / "x.md")
+    assert main(["pack", "--items", str(items_dir), "--ids", man["ids"][0], "--out", out]) == 2
+    assert main(["pack", "--items", str(items_dir), "--ids", f"{man['ids'][0]},L9-nope",
+                 "--manifest", manifest, "--out", out]) == 2
+    assert main(["pack", "--items", str(items_dir), "--ids", man["ids"][0], "--manifest",
+                 manifest, "--out", out]) == 0

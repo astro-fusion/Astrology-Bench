@@ -39,7 +39,8 @@
   "engine_commit": "7018b2a",
   "deviations": [
    "Answered all six Level 2 citation items null with empty citations.",
-   "Re-scored on dev split v2 (Swiss Ephemeris gold, CORRECTIONS 2026-11-09) without a new model call: 92 of 100 replies from claude-code-sonnet-tools-sample100 are carried over unchanged; the 8 items whose prompt changed in v2 (L0-positions-raman-true-ws-000006, L1-combustion-lahiri-mean-ws-000033, L1-dignity-krishnamurti-true-ws-000004, L1-dignity-krishnamurti-true-ws-000005, L1-dignity-lahiri-mean-ws-000038, L1-lordship-raman-mean-ws-000009, L1-varga-lahiri-mean-ws-000004, L1-varga-lahiri-true-ws-000007) are dropped and unanswered, so the row is partial."
+   "Re-scored on dev split v2 (Swiss Ephemeris gold, CORRECTIONS 2026-11-09) without a new model call: 92 of 100 replies from claude-code-sonnet-tools-sample100 are carried over unchanged; the 8 items whose prompt changed in v2 (L0-positions-raman-true-ws-000006, L1-combustion-lahiri-mean-ws-000033, L1-dignity-krishnamurti-true-ws-000004, L1-dignity-krishnamurti-true-ws-000005, L1-dignity-lahiri-mean-ws-000038, L1-lordship-raman-mean-ws-000009, L1-varga-lahiri-mean-ws-000004, L1-varga-lahiri-true-ws-000007) are dropped and unanswered, so the row is partial.",
+   "Completing replies for the 8 ids missing here (runs/packs/pack-100-chart-v2/missing-claude-v2.md), when they arrive, come from a separate session on a later date than the original run, not from the session that produced the other 92 replies."
   ],
   "notes": "Measured as a coding-agent harness: any local tool allowed, no network, and the brief forbade reading the benchmark and research repositories (gold and oracle). Level 0 positions were computed with pyswisseph (Moshier fallback, no .se1 files); Level 1 answers came from the agent's own Python rules run on the pack's chart tables, not hand-checked (agent report). About 10 minutes."
  },

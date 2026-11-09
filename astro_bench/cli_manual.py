@@ -18,9 +18,11 @@ from .progressive import (
     load_sidecar,
     merge,
     missing_by_chunk,
+    parse_ids,
     read_header,
     sidecar_path,
     write_chunked_pack,
+    write_ids_chunk,
     write_sidecar,
 )
 from .runner import SampleInfo, load_result, run, write_result
@@ -54,6 +56,18 @@ def _filter(items: list[Item], args: argparse.Namespace) -> list[Item]:
 
 
 def cmd_pack(args: argparse.Namespace) -> int:
+    if args.ids:
+        if not args.manifest:
+            _log("--ids needs --manifest (the pack the ids come from)")
+            return 2
+        try:
+            side = write_ids_chunk(Manifest.load(args.manifest), load_items(args.items),
+                                   parse_ids(args.ids), Path(args.out))
+        except PackError as exc:
+            _log(f"refused: {exc}")
+            return 2
+        print(f"wrote {args.out} and {side}; ingest its replies with --pack {args.manifest}")
+        return 0
     items = _filter(load_items(args.items), args)
     if not items:
         _log("no items selected")

@@ -211,3 +211,40 @@ def missing_by_chunk(manifest: dict[str, Any], missing: Sequence[str]
         if ids:
             out.append((chunk["file"], ids))
     return out
+
+
+def parse_ids(spec: str) -> list[str]:
+    """Ids from a comma list or a file (one per line, or comma separated; # comments)."""
+    path = Path(spec)
+    text = path.read_text(encoding="utf-8") if path.is_file() else spec
+    lines = [ln.split("#", 1)[0] for ln in text.splitlines()]
+    return [x.strip() for ln in lines for x in ln.split(",") if x.strip()]
+
+
+def write_ids_chunk(manifest: Manifest, items: Sequence[Item], ids: Sequence[str],
+                    out: Path) -> Path:
+    """One chunk with only ``ids`` from the manifest's item set and input mode.
+
+    The chunk has the same redaction and fill-in header as the pack's own chunks; its
+    replies are ingested under the original manifest. A small ``<stem>.manifest.json``
+    records the parent manifest's sha256 and the chunk's own sha256.
+    """
+    chosen = {i.id: i for i in manifest.check(items)}
+    unknown = [i for i in ids if i not in chosen]
+    if unknown:
+        raise PackError(f"{len(unknown)} ids are not in {manifest.path.name}, e.g. {unknown[0]}")
+    wanted = set(ids)
+    ordered = [i for i in manifest.ids if i in wanted]
+    mode = manifest.data["input_mode"]
+    views = [to_solver_item(chosen[i], mode) for i in ordered]
+    text = render_chunk(views, 1, 1, 1, len(views), mode)
+    text = text.replace("# Astro-Bench prompt pack, chunk 01 of 01",
+                        f"# Astro-Bench prompt pack {manifest.path.name}, selected items", 1)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(text, encoding="utf-8")
+    meta = {"parent_manifest": manifest.path.name,
+            "parent_manifest_sha256": _sha(manifest.path.read_bytes()),
+            "input_mode": mode, "ids": ordered, "sha256": _sha(text.encode("utf-8"))}
+    side = out.with_name(out.stem + ".manifest.json")
+    side.write_text(json.dumps(meta, indent=1) + "\n", encoding="utf-8")
+    return side

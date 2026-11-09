@@ -278,6 +278,8 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--sample-seed", type=int, default=0)
     p.add_argument("--chunk", type=int, help="split into self-contained files of this many "
                    "items (--out is then a directory)")
+    p.add_argument("--ids", help="only these ids (comma list or file); needs --manifest")
+    p.add_argument("--manifest", help="existing pack manifest the --ids come from")
     p.add_argument("--level")
     p.add_argument("--task")
     p.add_argument("--convention")

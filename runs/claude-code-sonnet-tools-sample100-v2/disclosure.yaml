@@ -21,6 +21,9 @@ deviations:
   L1-dignity-krishnamurti-true-ws-000005, L1-dignity-lahiri-mean-ws-000038, L1-lordship-raman-mean-ws-000009,
   L1-varga-lahiri-mean-ws-000004, L1-varga-lahiri-true-ws-000007) are dropped and unanswered, so the row
   is partial.'
+- Completing replies for the 8 ids missing here (runs/packs/pack-100-chart-v2/missing-claude-v2.md), when
+  they arrive, come from a separate session on a later date than the original run, not from the session
+  that produced the other 92 replies.
 notes: 'Measured as a coding-agent harness: any local tool allowed, no network, and the brief forbade
   reading the benchmark and research repositories (gold and oracle). Level 0 positions were computed with
   pyswisseph (Moshier fallback, no .se1 files); Level 1 answers came from the agent''s own Python rules

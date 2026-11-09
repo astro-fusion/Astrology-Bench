@@ -1,0 +1,16 @@
+{
+ "parent_manifest": "pack-100.manifest.json",
+ "parent_manifest_sha256": "ab7b12578d036b6fca14d45dc78bb7d407af537e6432e6752c0901b119535d31",
+ "input_mode": "chart",
+ "ids": [
+  "L0-positions-raman-true-ws-000006",
+  "L1-combustion-lahiri-mean-ws-000033",
+  "L1-dignity-krishnamurti-true-ws-000004",
+  "L1-dignity-krishnamurti-true-ws-000005",
+  "L1-dignity-lahiri-mean-ws-000038",
+  "L1-lordship-raman-mean-ws-000009",
+  "L1-varga-lahiri-mean-ws-000004",
+  "L1-varga-lahiri-true-ws-000007"
+ ],
+ "sha256": "9717de6804f3a794f49d41d198cc00002853c6a13a68cf43611c2c9beec6f771"
+}
