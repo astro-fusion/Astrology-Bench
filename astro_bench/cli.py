@@ -16,6 +16,7 @@ from .generators import generate_items
 from .generators.common import repo_root
 from .io import item_files, items_sha256, load_items, write_items
 from .leaderboard import write_leaderboard
+from .manual import Manifest, PackError, ReplaySolver, parse_replies, slug, write_pack
 from .runner import SampleInfo, check_result, load_result, run, write_result
 from .sampling import ids_sha256, stratified_sample
 from .schema import DESCRIBED_KINDS, Item
@@ -178,6 +179,50 @@ def cmd_run(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_pack(args: argparse.Namespace) -> int:
+    items = _filter(load_items(args.items), args)
+    if not items:
+        _log("no items selected")
+        return 2
+    keys = [k.strip() for k in args.stratify.split(",") if k.strip()]
+    seed = None
+    if args.sample:
+        seed = args.sample_seed
+        items = stratified_sample(items, args.sample, keys, seed)
+    manifest = write_pack(items, Path(args.out), input_mode=args.input_mode, fmt=args.format,
+                          sample_seed=seed, stratify=keys if args.sample else None)
+    print(f"wrote {args.out} ({len(items)} items, input mode {args.input_mode}) and {manifest}")
+    return 0
+
+
+def cmd_ingest(args: argparse.Namespace) -> int:
+    if not (args.description or "").strip():
+        _log("--description is required (harness, model, date)")
+        return 2
+    canon = Canon.load_or_empty(args.canon)
+    manifest = Manifest.load(args.pack)
+    try:
+        items = manifest.check(load_items(args.items))
+        replies = parse_replies(Path(args.replies).read_text(encoding="utf-8"))
+    except PackError as exc:
+        _log(f"refused: {exc}")
+        return 2
+    extra = sorted(set(replies) - set(manifest.ids))
+    if extra:
+        _log(f"refused: {len(extra)} reply ids are not in the pack, e.g. {extra[0]}")
+        return 2
+    missing = len(set(manifest.ids) - set(replies))
+    sample = SampleInfo(manifest.data.get("sample_seed"), len(items), ids_sha256(items))
+    result = run(ReplaySolver(replies), items, canon,
+                 solver_name=f"manual:{slug(args.description)}", kind=args.kind,
+                 description=args.description, input_mode=manifest.data["input_mode"],
+                 run_id=args.run_id, model=args.model, provider="manual", sample=sample)
+    path = write_result(result, args.out)
+    print(f"{path}: {len(replies)} replies, {missing} missing (scored as parse errors)")
+    print(format_summary(result.summary))
+    return 0
+
+
 def cmd_score(args: argparse.Namespace) -> int:
     result = load_result(args.result)
     problems = check_result(result)
@@ -262,6 +307,33 @@ def build_parser() -> argparse.ArgumentParser:
     r.add_argument("--model")
     r.add_argument("--provider")
     r.set_defaults(func=cmd_run)
+
+    p = sub.add_parser("pack", help="write a prompt pack for a manual or IDE-agent run")
+    p.add_argument("--items", default="items")
+    p.add_argument("--out", required=True, help="pack file, e.g. pack.md")
+    p.add_argument("--format", choices=["md", "jsonl"], default="md")
+    p.add_argument("--input-mode", choices=["chart", "birth"], default="chart")
+    p.add_argument("--sample", type=int, help="reproducible stratified subset of N items")
+    p.add_argument("--stratify", default="task,level")
+    p.add_argument("--sample-seed", type=int, default=0)
+    p.add_argument("--level")
+    p.add_argument("--task")
+    p.add_argument("--convention")
+    p.set_defaults(func=cmd_pack)
+
+    ing = sub.add_parser("ingest", help="score the replies to a prompt pack")
+    ing.add_argument("--pack", required=True, help="the pack's .manifest.json")
+    ing.add_argument("--replies", required=True,
+                     help="'### <id>' blocks each followed by a JSON object, "
+                          "or JSONL {id, response}")
+    ing.add_argument("--kind", choices=["model", "system", "system_ui"], required=True)
+    ing.add_argument("--description", required=True, help="harness, model and date")
+    ing.add_argument("--items", default="items")
+    ing.add_argument("--canon", default="canon")
+    ing.add_argument("--out", default="results")
+    ing.add_argument("--run-id")
+    ing.add_argument("--model")
+    ing.set_defaults(func=cmd_ingest)
 
     s = sub.add_parser("score", help="print the summary of a results file")
     s.add_argument("result")

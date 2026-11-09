@@ -101,6 +101,28 @@ astro-bench run --solver mypkg.solver:answer --kind model
   path) or `reply: text`, `rate_limit_per_minute`, `timeout_s` and `retry_on_429`. No
   credentials belong in the repository.
 
+### Measuring an IDE agent or chat UI by hand
+
+No API key is needed: write a prompt pack, paste it into the agent or chat, save the
+replies, and ingest them.
+
+```sh
+astro-bench pack --items items/ --sample 100 --stratify task,level --sample-seed 1 \
+  --input-mode birth --out pack.md            # also writes pack.manifest.json
+# paste pack.md into the agent; save its replies as replies.txt:
+#   ### <item_id>
+#   {"answer": ..., "citations": [...], "confidence": 0.7}
+astro-bench ingest --pack pack.manifest.json --replies replies.txt --kind system_ui \
+  --description "Cursor agent, <model>, 2026-11-09" --out results/
+```
+
+The pack holds the system prompt once and each item's redacted view, never the gold.
+`ingest` refuses replies whose ids are not in the pack or a pack edited after it was
+written, scores missing ids as parse errors, and also accepts a JSONL of
+`{"id": ..., "response": ...}`. Label the run `--kind system_ui` for an IDE agent or chat
+UI (`model` only for a bare model with no tools) and name the harness, model and date in
+`--description`.
+
 ## Required output format
 
 The system prompt (`astro_bench/prompts/system.md`) requires one JSON object:

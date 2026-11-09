@@ -53,7 +53,7 @@ def call_solver(solver: Solver, item: Item, input_mode: InputMode) -> str:
 
 @dataclass(frozen=True)
 class SampleInfo:
-    seed: int
+    seed: int | None
     n: int
     ids_sha256: str
 
