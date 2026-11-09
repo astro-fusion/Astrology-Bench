@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import json
 import os
 import sys
 from collections import Counter
@@ -12,10 +13,11 @@ from pathlib import Path
 
 from . import BENCH_VERSION, DEV_SEED, ENGINE_COMMIT
 from .canon import Canon
+from .disclosure import complete, load_card, write_cards
 from .generators import generate_items
 from .generators.common import repo_root
 from .io import item_files, items_sha256, load_items, write_items
-from .leaderboard import write_leaderboard
+from .leaderboard import load_results, write_leaderboard
 from .manual import Manifest, PackError, ReplaySolver, parse_replies, slug, write_pack
 from .runner import SampleInfo, check_result, load_result, run, write_result
 from .sampling import ids_sha256, stratified_sample
@@ -172,6 +174,8 @@ def cmd_run(args: argparse.Namespace) -> int:
                  description=args.description or "", input_mode=args.input_mode,
                  run_id=args.run_id, model=args.model, provider=args.provider,
                  convention_filter=args.convention, sample=sample)
+    if args.disclosure:
+        result.disclosure = complete(load_card(args.disclosure), result)
     path = write_result(result, args.out)
     s = result.summary.overall
     print(f"{path}: n={s.n} acc={s.answer_acc:.3f} cite={s.citation_mean} "
@@ -199,6 +203,9 @@ def cmd_ingest(args: argparse.Namespace) -> int:
     if not (args.description or "").strip():
         _log("--description is required (harness, model, date)")
         return 2
+    if not args.disclosure:
+        _log(f"--disclosure card.yaml is required for kind {args.kind} (ADR-002)")
+        return 2
     canon = Canon.load_or_empty(args.canon)
     manifest = Manifest.load(args.pack)
     try:
@@ -217,9 +224,33 @@ def cmd_ingest(args: argparse.Namespace) -> int:
                  solver_name=f"manual:{slug(args.description)}", kind=args.kind,
                  description=args.description, input_mode=manifest.data["input_mode"],
                  run_id=args.run_id, model=args.model, provider="manual", sample=sample)
+    pack = manifest.path.with_name(manifest.data["pack"])
+    result.disclosure = complete(load_card(args.disclosure), result, replies=args.replies,
+                                 pack=pack if pack.exists() else None)
+    if not result.disclosure.pack_sha256:
+        result.disclosure.pack_sha256 = manifest.data["pack_sha256"]
     path = write_result(result, args.out)
     print(f"{path}: {len(replies)} replies, {missing} missing (scored as parse errors)")
     print(format_summary(result.summary))
+    return 0
+
+
+def cmd_disclose(args: argparse.Namespace) -> int:
+    """Attach a disclosure block to an existing result; scores are not touched."""
+    result = load_result(args.result)
+    result.disclosure = complete(load_card(args.disclosure), result, replies=args.replies,
+                                 pack=args.pack)
+    path = Path(args.result)
+    path.write_text(json.dumps(result.model_dump(mode="json", exclude_none=True), indent=1,
+                               ensure_ascii=False) + "\n", encoding="utf-8")
+    print(f"disclosure added to {path}")
+    return 0
+
+
+def cmd_cards(args: argparse.Namespace) -> int:
+    written = write_cards(load_results(args.results), args.runs)
+    for path in written:
+        print(f"wrote {path}")
     return 0
 
 
@@ -303,6 +334,8 @@ def build_parser() -> argparse.ArgumentParser:
     r.add_argument("--level")
     r.add_argument("--task")
     r.add_argument("--convention", help="e.g. lahiri/mean/whole_sign")
+    r.add_argument("--disclosure", help="disclosure card YAML (required by score for model, "
+                   "system, app_tools and system_ui)")
     r.add_argument("--run-id")
     r.add_argument("--model")
     r.add_argument("--provider")
@@ -331,9 +364,22 @@ def build_parser() -> argparse.ArgumentParser:
     ing.add_argument("--items", default="items")
     ing.add_argument("--canon", default="canon")
     ing.add_argument("--out", default="results")
+    ing.add_argument("--disclosure", help="disclosure card YAML (required; ADR-002)")
     ing.add_argument("--run-id")
     ing.add_argument("--model")
     ing.set_defaults(func=cmd_ingest)
+
+    dc = sub.add_parser("disclose", help="attach a disclosure card to a result file")
+    dc.add_argument("result")
+    dc.add_argument("--disclosure", required=True)
+    dc.add_argument("--replies", help="raw replies file (hashed)")
+    dc.add_argument("--pack", help="prompt pack file (hashed)")
+    dc.set_defaults(func=cmd_disclose)
+
+    cd = sub.add_parser("cards", help="render runs/<run_id>/CARD.md and runs/README.md")
+    cd.add_argument("--results", default="results")
+    cd.add_argument("--runs", default="runs")
+    cd.set_defaults(func=cmd_cards)
 
     s = sub.add_parser("score", help="print the summary of a results file")
     s.add_argument("result")

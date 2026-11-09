@@ -185,6 +185,7 @@ does not clearly beat `constant` and `nochart` on a slice has shown nothing on i
 - Level 4 is schema only.
 - v1 (TypeScript, 32 items, mock agent) is retired. See [CHANGELOG.md](CHANGELOG.md).
 - Gold corrections are logged in [CORRECTIONS.md](CORRECTIONS.md).
+- Every published model or system row is disclosed in [runs/](runs/README.md): brief, raw replies, agent report and a card.
 
 ## Contributing
 

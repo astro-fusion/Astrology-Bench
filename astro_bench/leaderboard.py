@@ -43,7 +43,9 @@ def kind_label(result: RunResult) -> str:
 
 def _row(rank: str, result: RunResult, level: str, s: Stat) -> str:
     acc = f"{100 * s.answer_acc:.1f}% [{100 * s.answer_ci[0]:.1f}, {100 * s.answer_ci[1]:.1f}]"
-    return (f"| {rank} | {result.solver} | {kind_label(result)} | {result.created_at[:10]} "
+    solver = (f"[{result.solver}](runs/{result.run_id}/CARD.md)" if result.disclosure
+              else result.solver)
+    return (f"| {rank} | {solver} | {kind_label(result)} | {result.created_at[:10]} "
             f"| {result.input_mode} | {level} | {s.n} | {acc} | {_num(s.citation_mean, True)} "
             f"| {_pct(s.fabricated_rate)} | {_pct(s.parse_error_rate)} | {_num(s.brier)} |")
 

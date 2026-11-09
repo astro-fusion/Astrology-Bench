@@ -15,7 +15,7 @@ from .graders import grade_answer, grade_citations
 from .io import items_sha256
 from .parse import ParseError, parse_response
 from .redact import to_solver_item
-from .schema import DESCRIBED_KINDS, InputMode, Item, PerItem, RunResult
+from .schema import DESCRIBED_KINDS, DISCLOSED_KINDS, InputMode, Item, PerItem, RunResult
 from .score import summarize
 from .solvers import BASELINES, NoChartSolver, Solver, default_kind
 
@@ -139,4 +139,13 @@ def check_result(result: RunResult) -> list[str]:
     problems = []
     if result.kind in DESCRIBED_KINDS and not result.solver_description.strip():
         problems.append(f"kind {result.kind} needs a non-empty solver_description")
+    if result.kind in DISCLOSED_KINDS:
+        d = result.disclosure
+        if d is None:
+            problems.append(f"kind {result.kind} needs a disclosure block (ADR-002)")
+        elif d.input_mode != result.input_mode:
+            problems.append("disclosure input_mode differs from the run's input_mode")
+        elif result.sample_ids_sha256 and (d.sample is None
+                                           or d.sample.ids_sha256 != result.sample_ids_sha256):
+            problems.append("disclosure sample differs from the run's sample")
     return problems

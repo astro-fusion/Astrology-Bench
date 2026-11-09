@@ -12,6 +12,7 @@ from astro_bench.cli import main
 from astro_bench.io import load_items
 from astro_bench.manual import parse_replies, slug
 from astro_bench.solvers.oracle import OracleSolver
+from tests.helpers import write_card
 
 FIXTURE = str(Path(__file__).parent / "fixtures" / "canon")
 
@@ -67,7 +68,7 @@ def test_ingest_oracle_round_trip(items_dir: Path, tmp_path: Path, canon: Canon)
     args = ["ingest", "--pack", str(tmp_path / "pack.manifest.json"), "--replies",
             str(replies), "--kind", "system_ui", "--description",
             "Cursor agent, model X, 2026-11-09", "--items", str(items_dir), "--canon", FIXTURE,
-            "--out", str(tmp_path / "res")]
+            "--out", str(tmp_path / "res"), "--disclosure", str(write_card(tmp_path))]
     assert main(args) == 0
     [path] = list((tmp_path / "res").glob("*.json"))
     result = json.loads(path.read_text())
@@ -82,7 +83,8 @@ def test_ingest_missing_and_extra_ids(items_dir: Path, tmp_path: Path, canon: Ca
     man = _pack(items_dir, tmp_path / "pack.md")
     base = ["ingest", "--pack", str(tmp_path / "pack.manifest.json"), "--kind", "model",
             "--description", "chat UI 2026-11-09", "--items", str(items_dir),
-            "--canon", FIXTURE, "--out", str(tmp_path / "res")]
+            "--canon", FIXTURE, "--out", str(tmp_path / "res"),
+            "--disclosure", str(write_card(tmp_path))]
     partial = tmp_path / "partial.txt"
     partial.write_text(_oracle_replies(items_dir, man["ids"][:20], canon))
     assert main([*base, "--replies", str(partial)]) == 0
@@ -103,7 +105,8 @@ def test_ingest_jsonl_and_tamper(items_dir: Path, tmp_path: Path, canon: Canon) 
     replies.write_text("".join(json.dumps(r) + "\n" for r in rows))
     base = ["ingest", "--pack", str(tmp_path / "pack.manifest.json"), "--replies",
             str(replies), "--kind", "model", "--description", "batch 2026-11-09",
-            "--items", str(items_dir), "--canon", FIXTURE, "--out", str(tmp_path / "res")]
+            "--items", str(items_dir), "--canon", FIXTURE, "--out", str(tmp_path / "res"),
+            "--disclosure", str(write_card(tmp_path))]
     assert main(base) == 0
     result = json.loads(next((tmp_path / "res").glob("*.json")).read_text())
     assert result["summary"]["overall"]["answer_acc"] == 1.0

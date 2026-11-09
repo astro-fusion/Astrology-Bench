@@ -31,6 +31,18 @@ and apps that take birth data cannot consume the positions table that models are
    sample are comparable.
 6. **Nochart is a kind of ablation, not a solver.** `nochart:<solver>` results are labelled
    `ablation: nochart` and are never ranked.
+7. **Disclosure** (amended 2026-11-09). Every published row except `oracle` and `baseline`
+   carries a `disclosure` block, and `astro-bench score` rejects a row without one. It
+   records the harness, the exact model id and name, the effort or reasoning setting,
+   whether tools were allowed and which were used, the operator, the date, the input mode,
+   the sample (n, seed, sha256 of the sampled ids), the sha256 of the prompt pack and of
+   the raw replies, paths to the verbatim brief and the agent's own report, every
+   deviation from the brief, and notes. Effort is recorded even when the operator cannot
+   read it ("default, unknown"); it is never left empty. The brief, the agent report and
+   the raw replies are published under `runs/<run_id>/` with a rendered `CARD.md`, and
+   `runs/README.md` indexes them; the leaderboard links each row to its card. The source
+   of a card is `runs/<run_id>/disclosure.yaml`; hashes are computed from the files, so
+   anyone can check that the published replies are the ones that were scored.
 
 ## Non-goals
 

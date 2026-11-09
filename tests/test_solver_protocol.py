@@ -15,7 +15,7 @@ from astro_bench.runner import call_solver, check_result, run
 from astro_bench.sampling import ids_sha256, stratified_sample
 from astro_bench.schema import Item, SolverItem
 from astro_bench.solvers import default_kind, get_solver
-from tests.helpers import peek_at_gold
+from tests.helpers import peek_at_gold, write_card
 
 FIXTURE = str(Path(__file__).parent / "fixtures" / "canon")
 HIDDEN = {"gold", "canon_ids", "rule_id", "generator", "source", "split", "grader"}
@@ -82,7 +82,7 @@ def test_kinds_and_descriptions(small_items: list[Item], canon: Canon) -> None:
     res = run(lambda i: "", small_items[:2], canon, solver_name="pkg:fn", kind="system")
     assert check_result(res)  # no description
     res = res.model_copy(update={"solver_description": "model X + retrieval"})
-    assert check_result(res) == []
+    assert any("disclosure" in p for p in check_result(res))
     nochart = run(get_solver("nochart:constant", small_items, canon), small_items[:3], canon,
                   solver_name="nochart:constant")
     assert nochart.ablation == "nochart" and nochart.kind == "baseline"
@@ -96,7 +96,8 @@ def test_cli_kind_rules(tmp_path: Path, capsys: pytest.CaptureFixture[str]) -> N
     assert main([*base, "--solver", "tests.helpers:always_true"]) == 2  # kind required
     assert main([*base, "--solver", "tests.helpers:always_true", "--kind", "app_tools"]) == 2
     assert main([*base, "--solver", "tests.helpers:always_true", "--kind", "app_tools",
-                 "--description", "app 1.2 with chart tool", "--run-id", "app"]) == 0
+                 "--description", "app 1.2 with chart tool", "--run-id", "app",
+                 "--disclosure", str(write_card(tmp_path))]) == 0
     assert main(["score", str(tmp_path / "res" / "app.json")]) == 0
     # a system result without a description is rejected by score
     path = tmp_path / "res" / "app.json"

@@ -229,6 +229,51 @@ class Summary(_Strict):
     by_tier: dict[str, Stat]
 
 
+#: Kinds that must publish a disclosure block (everything but oracle and baseline).
+DISCLOSED_KINDS = ("model", "system", "app_tools", "system_ui")
+
+
+class DisclosureSample(_Strict):
+    n: int
+    seed: int | None = None
+    ids_sha256: str
+
+
+class Disclosure(_Strict):
+    """What was run, how, by whom, and the files that let anyone audit it (ADR-002 §7).
+
+    ``effort`` is recorded even when unknown ("default, unknown"), never left empty.
+    Paths are relative to the repository root.
+    """
+
+    harness: str = Field(min_length=1)
+    model_id: str = Field(min_length=1)
+    model_name: str = Field(min_length=1)
+    effort: str = Field(min_length=1)
+    tools_allowed: bool
+    tools_used: list[str] | Literal["unknown"]
+    operator: str = Field(min_length=1)
+    date: str = Field(min_length=1)
+    input_mode: InputMode
+    sample: DisclosureSample | None = None
+    pack_path: str | None = None
+    pack_sha256: str | None = None
+    replies_path: str | None = None
+    replies_sha256: str | None = None
+    brief_path: str = Field(min_length=1)
+    agent_report_path: str | None = None
+    engine_commit: str | None = None
+    deviations: list[str] = Field(default_factory=list)
+    notes: str = ""
+
+    @field_validator("effort", "harness", "model_id", "model_name", "operator", "date")
+    @classmethod
+    def _not_blank(cls, value: str) -> str:
+        if not value.strip():
+            raise ValueError("must not be blank")
+        return value
+
+
 class RunResult(_Strict):
     run_id: str
     created_at: str
@@ -243,6 +288,7 @@ class RunResult(_Strict):
     sample_seed: int | None = None
     sample_n: int | None = None
     sample_ids_sha256: str | None = None
+    disclosure: Disclosure | None = None
     bench_version: str
     items_sha256: str
     split: str

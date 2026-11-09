@@ -162,6 +162,14 @@ thing.
 - **Nochart is a kind of ablation, not a solver.** `nochart:<solver>` results are
   labelled `ablation: nochart` and are never ranked.
 
+Every published model or system row is fully disclosed for research use (ADR-002,
+decision 7): its card in `runs/<run_id>/CARD.md` names the harness, the model id, the
+effort setting (recorded as unknown rather than omitted), the tools allowed and used, the
+operator and date, the input mode and sample, and every deviation from the brief, and it
+links the verbatim brief, the agent's own report and the raw replies with their sha256.
+A reader can therefore re-score the published replies with `astro-bench ingest` and get
+the published numbers, and can judge for themselves how the run was set up.
+
 ## Splits and contamination
 
 - `dev` is public. It is generated with seed 20261108 and committed under `items/`.
